@@ -86,6 +86,7 @@ body{
 .classButton:hover {
     background-image: linear-gradient(to right,#751aff, #1affa3);
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 /* Qua centro gli elementi della matrice rispetto all'asse x del wrapperBody
