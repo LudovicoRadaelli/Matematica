@@ -1,0 +1,119 @@
+body{
+    font-family: 'Crimson Text', serif;
+    background-color: #222;
+    position: relative;
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*Elementi del banner principale*/
+
+#wrapper {
+    width: 100%;
+    height: 15vh;
+    background-color: #222;
+    padding: 0px;
+    margin: 0%;
+}
+
+#logo {
+    height: auto;
+    transform: scale(0.8);
+    margin: auto;
+}
+
+#logo:hover {
+    cursor: pointer;
+    stroke: url(#grad2);
+}
+
+#gradientLineWrapper {
+    width: 100%;
+    height: 10%;
+    padding-bottom: 4px;
+    border: 0%;
+    margin: 0%;
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
+}
+
+
+/*ELEMENTI DEL CORPO DELLA PAGINA*/
+
+#wrapperBody {
+    position: absolute;
+    width: 100%;   
+    height: 85%; 
+    padding: 0%;
+    border: 0%;
+    margin-left: 0 auto;
+}
+
+#firstRowWrapper, #secondRowWrapper {
+    display: inline-block;
+    width: 80%;
+    
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Qui centro gli elementi della matrice rispetto all'asse y del wrapperBody*/
+#firstRowWrapper {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+/*#secondRowWrapper {
+    margin-top: 1.25%;
+    margin-bottom: 2.5%;
+}*/
+/*-------------------------------------------------------------------------*/
+
+.classButton {
+    width: 20%;
+    height: 50%;
+    padding: 2vh;
+    background-image: linear-gradient(to right, #ff8a00, #e52e71);
+    border: 0%;
+    border-radius: 100px;
+    float: left;
+}
+
+.classButton:hover {
+    background-image: linear-gradient(to right,#751aff, #1affa3);
+    cursor: pointer;
+}
+
+/* Qua centro gli elementi della matrice rispetto all'asse x del wrapperBody
+La somma dei margini deve essere 25%*/
+#primoSportivo, #terzoSportivo {
+    margin-left: 23%;
+    margin-right: 2%;
+}
+
+#primoScientifico, #quartoSportivo {
+    margin-left: 2%;
+    margin-right: 23%;
+}
+/*---------------------------------------------------------------------------*/
+
+.internoBottone {
+    background-color: #222;
+    padding: 8%;
+    border: 1px;
+    border-radius: 100px;
+    margin: auto 0%;
+    color: whitesmoke;
+    font-size: 2vw;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+
+p {
+    color: white;
+}
