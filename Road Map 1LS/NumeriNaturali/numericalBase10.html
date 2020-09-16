@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="numericalBase10Style.css">
+    <script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <title>Numeri in base 10</title>
+</head>
+<body>
+    
+    <div id="gradientLineWrapper"> <!--la linea di divisione tra il banner principale ed il corpo della pagina-->
+        <div id="wrapper"> <!-- contenitore degli elementi del banner principale-->
+            <a id="logoWrapper" href="https://ludovicoradaelli.github.io/Matematica/">
+                <svg id="logo" height="106" width="106">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: #ff8a00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e52e71;stop-opacity:1" />
+                        </linearGradient>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color: #751aff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color: #1affa3;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle id="poligIcon" cx="52" cy="88.6" r="100" transform = "rotate(180,50,86.6) translate(21,76) scale(0.5)" 
+                    style="fill:transparent; stroke: url(#grad1); stroke-width:5" />
+                    <polygon id="poligIcon" transform = "rotate(180,50,86.6) translate(-4,76) scale(0.5)" 
+                    points="52,2 152,2 102,82.6" style="fill:transparent; stroke: url(#grad1);stroke-width:3" />
+                    <polygon id="poligIcon" transform = "rotate(180,50,86.6) translate(-4,76) scale(0.5)" 
+                    points="52,2 152,2 152,102 52,102" style="fill:transparent; stroke: url(#grad1);stroke-width:3" />
+                    <polygon id="poligIcon" transform = "rotate(180,50,86.6) translate(-4,76) scale(0.5)" 
+                    points="52,2 152,2 182.9,97.11 102,155.88 22.9,97.11 " style="fill:transparent; stroke: url(#grad1);stroke-width:3" />
+                    <polygon id="poligIcon" transform = "rotate(180,50,86.6) translate(-4,76) scale(0.5)"  
+                    points="52,2 152,2 202.79,88.23 152,175.21 52.73,175.21 4,88.6" style="fill:transparent; stroke: url(#grad1);stroke-width:3" />
+                </svg>
+            </a>     
+        </div>        
+    </div>
+    <div id="wrappreBody">
+        <div id="activityTitle">
+            Numeri in base 10
+        </div>
+        <div id="textWrapper">
+            <div id="tableWrapper">
+                <div id="targetNumber"> numero assegnato: </div>
+                <div id=numberDisplayer>totale: 0</div>
+            </div>
+            <div id="column1" class="column">
+                <div id=row1column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row2column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row3column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row4column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row5column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row6column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row7column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row8column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+                <div id=row9column1 class="columnElement" onclick="power3Clicked(event)">1000€</div>
+            </div>
+            <div id="column2" class="column">
+                <div id=row1column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row2column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row3column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row4column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row5column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row6column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row7column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row8column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+                <div id=row9column2 class="columnElement" onclick="power2Clicked(event)">100€</div>
+            </div>
+            <div id="column3" class="column">
+                <div id=row1column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row2column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row3column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row4column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row5column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row6column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row7column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row8column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+                <div id=row9column3 class="columnElement" onclick="power1Clicked(event)">10€</div>
+            </div>
+            <div id="column4" class="column">
+                <div id=row1column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row2column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row3column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row4column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row5column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row6column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row7column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row8column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+                <div id=row9column4 class="columnElement" onclick="power0Clicked(event)">1€</div>
+            </div>
+            <div id="cifra4" class="cifra">0</div>
+            <div id="cifra3" class="cifra">0</div>
+            <div id="cifra2" class="cifra">0</div>
+            <div id="cifra1" class="cifra">0</div>
+            
+        </div>
+    </div>
+    <script src="numericalBase10JS.js"></script> 
+</body>
+</html>
+
