@@ -1,0 +1,22 @@
+h1 {
+    color: #34A853;
+}
+
+#chat {
+    font-size: larger;
+}
+#step1 {
+    color: #4285F4;
+}
+
+#step2, #step5 {
+    color: #EA4335;
+}
+
+#step3 {
+    color: #FBBC05;
+}
+
+#step4 {
+    color: #34A853;
+}

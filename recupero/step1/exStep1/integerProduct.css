@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-size: 1.2rem;
+}
+
+#start {
+    width: 6em;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}  
+
+form {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+input {
+    height: 1.5rem
+}
+
+button {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    width: 10em;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+
+/*
+.wrapper {
+    position: relative;
+    display: block;
+}
+
+#signX, #signY, #x, #y, #equal {
+    float: left;
+}
+
+#x, #y, #equal {
+    margin-right: 0.5em;
+}
+*/
+
