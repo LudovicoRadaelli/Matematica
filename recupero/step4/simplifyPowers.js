@@ -45,9 +45,11 @@ function simplifyPowers() {
     m = 1;
 
     //basi
-    for(var i = 0; i<2; i++) {
+    while(b[0]===b[1]){
+      for(var i = 0; i<2; i++) {
         b[i] = Math.floor(Math.random()*6+2);
         b[3-i] = b[i];
+      }
     }
     
     //potenze
