@@ -1,0 +1,3 @@
+function goToLink() {
+    if()
+}
