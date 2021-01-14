@@ -6,3 +6,8 @@
 .try1 {
     margin-left: 5%;
 }
+
+.line {
+    padding: 3%;
+    border-bottom: 1px black solid;
+}
