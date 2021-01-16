@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="teoriaAssiomatica.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <title>Geometria euclidea</title>
+</head>
+<body>
+    <article>
+        <h1 style="color: red;">Geometria euclidea</h1>
+        <p>La parola <i>geometria</i> non vi è nuova,   <br>
+            alle medie l'avete studiata in lungo ed in largo:
+            <br>
+            lati, angoli, prismi, tetraedi, piramidi, triangoli,<br>
+            teoremi di Pitagora e la lista è ancora lunghissima
+        </p>
+
+        <p><b>Quindi perché la studiamo anche al liceo?</b><br>
+            (poi con quell'aggettivo inquietante, <i>euclidea</i>)</p>
+        
+        <p class="line">Ai tempi di Euclide si conoscevano già tante cose sulla geometria,<br>
+            ma Euclide ebbe un'idea geniale: <i>metterle in ordine</i>.<br>
+            Cerchiamo di capire la sua intuizione attraverso il seguente gioco.
+        </p>
+
+
+        <h2 style="margin-top: 10%; color: #34A853;">Gioco delle parole</h2>
+        
+        <p>Il vocabolario italiano contiene ben centosessantamila parole. <br>
+            Immaginatele sparpagliate su un tavolo</p>
+
+        <img class="images" src="parole.png" width="50%">
+
+        <p class="separa">Scegliamo poche parole iniziali e stabiliamo alcune regole per il gioco</span>:</p>
+        
+        <div id="wrapperGame">
+
+            <div class="gameRules border">
+                <h3 class="center" style="color: #4285F4">Regole del gioco</h3>
+            
+                <ol>
+                    <li>
+                        <b>ogni parola può essere invertita</b><br>
+                        <p><i>Esempio</i></p>
+                        <p>zattera &rightarrow; arettaz</p>
+                    </li>
+                    <li>
+                        <b>
+                            date due parole, posso prendere una o più sillabe 
+                            consecutive della prima e concatenarle con 
+                            una o più sillabe della seconda parola 
+                        </b>
+                        <p><i>Esempio</i></p>
+                        <p> aiuo<span style="color: red">la</span>     sas<span style="color: red">sa</span>te &rightarrow; 
+                            <span style="color: red">lasa</span>            
+                        </p>
+                    </li>
+                    <li>
+                        <b>
+                            di ogni parola posso prendere la lettera iniziale o finale  
+                            e concatenarla con un'altra parola
+                        </b>
+                        <p><i>Esempio</i></p>
+                        <p>       
+                            <span style="color: red">z</span>attera aiuola &rightarrow; <span style="color: red">z</span>aiuola
+                        </p>
+                    </li>
+                    
+                </ol>
+            </div>
+
+            <div class="gameRules">
+                <div class="border">
+                    <h3 class="center" style="margin-top: 5%; color: #4285F4;">Parole iniziali</h3>
+                    <ol>
+                        <li>
+                            zattera
+                        </li>
+                        <li>
+                            aiuola
+                        </li>
+                        <li>
+                            sassate
+                        </li>
+    
+                    </ol>
+                </div>
+    
+                <div class="border">
+                    <h3 class="center" style="color: #4285F4">Obiettivo</h3>
+                    <p>Riusciamo ad ottenere tutte le<br>
+                        parole del vocabolario italiano?</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="separa"> Premete i pulsanti per vedere un esempio di questo gioco</p>
+
+        <div class="ssWrapperWrapper">
+            <p id="ssButton">
+                <button onclick="myShow.previous()">Previous</button>
+                <button onclick="myShow.next()">Next</button>
+            </p>
+            <div id="ssWrapper">
+                <img class="sliderShow" src="c0001.png" width="50%">
+                <img class="sliderShow" src="c0002.png" width="50%">
+                <img class="sliderShow" src="c0003.png" width="50%">
+                <img class="sliderShow" src="c0004.png" width="50%">
+                <img class="sliderShow" src="c0005.png" width="50%">
+                <img class="sliderShow" src="c0006.png" width="50%">
+                <img class="sliderShow" src="c0007.png" width="50%">
+                <img class="sliderShow" src="c0008.png" width="50%">
+                <img class="sliderShow" src="c0009.png" width="50%">
+                <img class="sliderShow" src="c0010.png" width="50%">
+                <img class="sliderShow" src="c0011.png" width="50%">
+                <img class="sliderShow" src="c0012.png" width="50%">
+                <img class="sliderShow" src="c0013.png" width="50%">
+            
+            </div>
+        </div>
+    </article>
+
+    <script>
+        myShow = w3.slideshow(".sliderShow", 0);
+    </script>
+        
+</body>
+
+</html>
+
+

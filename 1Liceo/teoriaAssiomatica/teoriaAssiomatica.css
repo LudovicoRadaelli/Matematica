@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: x-large;
+    font-family: 'Patrick Hand', cursive;
+}
+
+article  {
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+}
+
+.images {
+    border: 1px solid black;
+}
+
+
+#wrapperGame {
+    position: relative;
+    background-color: lightgray;
+}
+
+.gameRules {
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+    clear: initial;
+}
+
+
+.separa {
+    clear: both;
+
+}
+
+#ssWrapper {
+    border: solid 1px black;
+}
+
+#ssButton {
+    margin-bottom: 0;
+}
+
+.border {
+    padding: 1%;
+    border: 1px black solid;
+    border-radius: 1.2em;
+    margin-bottom: 2%;
+    
+}
+
+.center {
+    text-align: center;
+}
