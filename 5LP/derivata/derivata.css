@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+article {
+    width: 60%;
+    margin: auto;
+}
+
+.line {
+    padding-bottom: 2em;
+    border-bottom: 1px black solid;
+    margin-bottom: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+.newRange {
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+img {
+    border: 1px solid black;
+}
+
+#formulaCoeffAngolare {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+#rangeH {
+    margin-top: 1.5em;
+}
+
+#wrapperApprofondimento {
+    position: relative;
+}
+
+#formulaApprofondimento {
+    display: inline-block;
+    width: 90%;
+}
+
+#approfondimento {
+    display: inline-block;
+    width: 1.2em;
+    border: 1px solid black;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#approfondimento:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
