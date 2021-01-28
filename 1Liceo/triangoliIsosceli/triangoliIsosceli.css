@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+article {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+#firstLine {
+    margin-top: 15%;
+}
+
+.line {
+    padding-bottom: 2em;
+    border-bottom: 1px black solid;
+    margin-bottom: 2em;
+}
+
+.clear {
+    clear: both;
+}
+
+#istruzioniWrapper {
+    display: block;
+    width: 70vw;
+    height: 50vh;
+    position: fixed;
+    padding: 1em;
+    border: 5px rgb(224, 224, 19) solid;
+    margin-left: 15vw;
+    margin-top: 20vh;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 2em;
+}
+
+#istruzioni {
+    position: relative;
+    vertical-align: auto;
+    margin: auto;
+}
+
+#chiudi {
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+
+#chiudi:hover {
+    transform: scale(1.1);
+}
+
+#defTriangoliWrapper {
+    padding: 1em;
+    background-color: rgb(240, 234, 234);
+}
+
+#defTriangoli {
+    margin-top: 0%;
+}
+
+.noMarginBottom {
+    margin-bottom: 0;
+}
+
+.grayBG {
+    padding: 1em;
+    background-color: rgb(240, 234, 234);
+}
+
+.dim {
+    display: inline-block;
+}
+
+.qed {
+    position: absolute;
+    right: 2vw;
+}
+
+#ss1Title, #ss2Title {
+    display: inline-block;
+}
+
+#ss1Button, #ss2Button {
+    margin-left: 1.3em;
+    display: inline-block;
+}
+
+
+.image {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.negazioneSecondoCriterio {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border {
+    border: 1px black solid;
+}
+
+.centred {
+    width: fit-content;
+    margin: auto;
+}
+
+/*#afterTry {
+    display: none;
+}*/
+
+.imageDimInv {
+    width: 50%;
+}
+
+#imgDimInv2 {
+    float: left;
+}
+
+#qedWrapper {
+    position: relative;
+    display: block
+}
+
+
+#definizioni {
+    margin-top: 200vh;
+    margin-bottom: 100vh;
+}
+
+.definizioni {
+    margin-top: 100vh;
+}
+
+.giphy-embed {
+    margin-top: 1em;
+}
