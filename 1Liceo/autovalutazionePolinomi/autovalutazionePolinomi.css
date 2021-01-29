@@ -1,0 +1,21 @@
+article {
+    width: 60%;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+#generaCompito {
+    transform: scale(1.2);
+}
+
+#generaCompito:hover {
+    transform: scale(1.3);
+}
+
+.gray {
+    color: rgb(184, 184, 184);
+}
+
+.inline {
+    display: inline;
+}

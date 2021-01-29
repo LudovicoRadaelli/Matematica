@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="autovalutazionePolinomi.css">
+    <title>scheda di autovalutazione</title>
+</head>
+<body>
+    
+    <article>
+        <h1 style="color: red; font-size: 2em;"> SCHEDA DI AUTOVALUTAZIONE</h1>
+        <p>
+            Quelli che vedete sono gli obiettivi che dovreste raggiungere.<br>
+            Cliccate il pulsante per generare una simulazione di compito
+        </p>
+        <button id="generaCompito" onclick="compito()">Genera compito</button>
+    
+        <h2>1) So risolvere somme e prodotti tra polinomi?</h2>
+        <p class="inline"><button><b>Somme: </b></button></p>
+        <p class="inline" id="somme"></p>
+        <p class="gray">Altri esercizi a pag. 361 dal 57 al 78</p>
+        <p class="inline"><button><b>Prodotti: </b></button></p>
+        <p class="inline" id="prodotti"></p>
+        <p class="gray">Altri esercizi a pag. 366 dal 145 al 153</p>
+
+        <h2>2) So risolvere espressioni con somme e prodotti?</h2>
+        <p class="inline"><button><b>Espressione: </b></button></p>
+        <p class="inline" id="espressione1"></p>
+        <p class="gray">Altri esercizi a pag. 368  dal 182 al 206</p>
+
+        <h2>3) So riconoscere e risolvere i prodotti notevoli?</h2>
+        <p class="inline"><button><b>Somma per differenza: </b></button></p>
+        <p class="inline" id="sommaPerDifferenza"></p>
+        <p class="gray">Altri esercizi a pag. 375 dal 272 al 279</p>
+        <p class="inline"><button><b>Quadrato di binomio: </b></button> </p>
+        <p class="inline" id="quadratoDiBinomio"></p>
+        <p class="gray">Altri esercizi a pag. 378 dal 311 al 321</p>
+        <p class="inline"><button><b>Quadrato di trinomio: </b></button> </p>
+        <p class="inline" id="quadratoDiTrinomio"></p>
+        <p class="gray">Altri esercizi a pag. 381 dal 372 al 379</p>
+        <p class="inline"><button><b>Cubo di binomio: </b></button>    </p>
+        <p class="inline" id="cuboDiTrinomio"></p>
+        <p class="gray">Altri esercizi a pag. 383 dal 399 al 408</p>
+
+
+        <h2>4) So risolvere espressioni dove compaiono anche prodotti notevoli?</h2>
+        <p class="inline"><button><b>Espressione: </b></button> </p>
+        <p class="inline" id="espressione2"></p>
+        <p class="gray">Altri esercizi a pag. 383 dal 441 al 485</p>
+
+    </article>
+<script src="autovalutazionePolinomi.js"></script>
+</body>
+</html>
