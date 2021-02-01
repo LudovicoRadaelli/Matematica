@@ -3,12 +3,12 @@
     src: url("FuturaHandwritten.ttf") /* TTF file for CSS3 browsers */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 
 
 body {
     font-size: 1em;
-    font-family:'FuturaHandwritten', 'Comic Sans MS', cursive, sans-serif, 'Patrick Hand', cursive;
+    font-family:'FuturaHandwritten', 'Comic Sans MS', cursive, sans-serif;
 }
 
 button {
