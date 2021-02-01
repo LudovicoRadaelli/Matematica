@@ -1,0 +1,11 @@
+.hint {
+    display: none;
+}
+
+button {
+    display: block;
+}
+
+.buttonHint {
+    display: none;
+}
