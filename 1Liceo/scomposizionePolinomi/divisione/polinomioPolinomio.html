@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="polinomioPolinomio.css">
+    <title>Divisione tra due polinomi</title>
+</head>
+<body>
+    <h2 style="color: red;">Divisione tra due polinomi</h2>
+    <ul>
+
+        <li>
+            <h3>Dove studiare?</h3>
+            <ul>
+                <li><p>Pagine 346, 347, 348 del libro di testo.</p></li>
+                <li>
+                    <p>Nel caso in cui il libro di testo non vi sia chiaro, potete guardare il seguente video.</p>
+                    <button onclick="display(0)">Guarda video</button>
+                    <iframe id="video0" width="300" height="300" src="https://www.youtube.com/embed/e5k6jnQlNQM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                        
+                </li>
+            </ul>
+        </li>
+    
+        <li>
+            <h3>Esercizi svolti</h3>
+            <ul>
+                <li>
+                    <p id="es1" onclick="display(1)">Esercizio 1</p>
+                    <video id="video1" width="300" controls>
+                    <source src="video/divisioneTraPolinomi1.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <p id="es2" onclick="display(2)">Esercizio 2</p>
+                    <video id="video2" width="300" controls>
+                        <source src="video/divisioneTraPolinomi2.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <p id="es3" onclick="display(3)"> Esercizio 3</p>
+                    <video id="video3" width="300" controls>
+                    <source src="video/divisioneTraPolinomi3.mp4" type="video/mp4">
+                </video>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3>Esercizi per allenarsi</h3>
+            <p>Pag. 397 dal 591 al 608</p>
+        </li>
+    </ul>
+
+    <script src="polinomioPolinomio.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+#video0, #video1, #video2, #video3, #video4, #video5 {
+    display: none;
+}
+
+#es1:hover, #es2:hover, #es3:hover {
+    cursor: pointer;
+    color:  rgb(27, 233, 27);
+}
