@@ -1,0 +1,13 @@
+#video1 {
+    display: block;
+}
+
+#es1:hover, #es2:hover, #es3:hover {
+    cursor: pointer;
+    color:  rgb(27, 233, 27);
+}
+
+.clickable:hover {
+    cursor: pointer;
+    color:  rgb(27, 233, 27);
+}
