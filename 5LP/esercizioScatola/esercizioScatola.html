@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Derivata di una funzione</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="esercizioScatola.css">
+</head>
+<body>
+    
+    <article>
+
+        <h2>Esercizio</h2>
+        <p>
+            Una ditta di logistica produce scatole da imballaggio.<br>
+            Le scatole vengono ricavate da un cartone rettangolare avente lunghezza \(2\,m\) ed altezza \(1\,m\).<br>
+            In figura è rappresenta lo schema di pieghe tramite il quale ottenere la scatola.    
+        </p>
+        <img src="images/schemaScatola.png">
+        <p>
+            Muovete lo slider della figura interattiva per osservare come, cambiando 
+            la dimensione del lato evidenziato in rosso, cambino anche le altre dimensioni della scatola.
+        </p>
+        <div id="geogebra1"></div>
+        <ul>
+            <li>
+                Quali valori può assumere il lato evidenziato in rosso?
+            </li>
+            <li>
+                Quanto valgono le dimensioni della scatola (lunghezza, larghezza e profondità) <i><b>in funzione</b></i> del lato evidenziato 
+                in rosso?
+            </li>
+            <li>
+                Quanto vale il volume della scatola <i><b>in funzione</b></i> del lato evidenziato in rosso?
+            </li>
+            <li>
+                Quanto deve misurare il lato evidenziato in rosso perché il volume della scatola sia massimo?
+            </li>
+        </ul>
+
+        <button onclick="show(s)">Mostra grafico volume</button>
+        <div id="geogebra2"></div>
+        
+    
+    </article>
+    <!--
+        <article>
+        <h2><span style = "color: red;">Il coefficiente angolare</span></h2>
+
+        <h3><span style="color: red;">Cosa è?</span></h3>
+
+        <div class="line">
+            <p>Prendiamo la retta \(y = \color{blue}{3}\color{black}{x}+2\)</p>
+
+            <img src="images/derivata1.png">
+            
+            <p>
+                Il coefficiente angolare \( \color{blue}{m}\color{black}{=}\color{blue}{3}\) ci dice che pendenza ha la retta.
+            </p>
+        </div>
+
+
+        <div class="line">
+            <p>Usate lo slider per variare \(\color{blue}{m}\) e guardate come cambia la pendenza della retta.</p>
+        
+            -6<input type="range" id="range" class="range" value="3" min="-6" max="6" step="0.1" defaulteValue="3" onmousemove="changeValue()">6
+
+            <div id="newRange" class="newRange"><span style='color: blue;'>m</span>=<span style='color: blue;'>3</span></div>
+
+            
+        </div>
+
+        <div class="line">
+            <h3><span style="color: red;">Come si calcola?</span></h3>
+            <p>
+                Per trovare il coefficiente angolare di una retta prendiamo due suoi punti qualsiasi 
+                \(\color{#f40099}{A(x_{A}, y_{A})}\) e \(\color{#ff7f00}{B(x_{B}, y_{B})}\) ed usiamo la formula
+            </p>
+            <p id="formulaCoeffAngolare">
+                \[m = \frac{\color{#0000ff}{y_{B}-y_{A}}}{\color{#00cc00}{x_{B}-x_{A}}}\]    
+            </p>
+            <p>
+                Sostanzialmente la formula rappresenta "quanto ci siamo alzati" (\(\color{#0000ff}{y_{B}-y_{A}}\)), 
+                rispetto a quanto "ci siamo spostati" (\(\color{#00cc00}{x_{B}-x_{A}}\)).
+            </p>
+            <p>
+                Trascinate i due punti e guardate: variano le misure dei segmenti blu e verde, ma il loro rapporto è costante:
+            </p>
+            <p id="ggCoefAngolare">\[m = \frac{\color{#0000ff}{3}}{\color{#00cc00}{1}} = 3\]</p>
+
+            <div onclick="writeFormula()" id="geogebra4"></div>
+        </div>
+
+
+        <div class="line">
+            <p>
+                Ora vorremmo estendere il concetto di coefficienta angolare ad una funzione qualsiasi, ovvero definire uno
+                strumento matematico che ci dica qual è la "pendenza" di una funzione in un punto.
+            </p>
+            <p>Provate a trascinare il punto rosa e vedete la pendenza della retta tangente al grafico nel punto. 
+                Più la retta è pendente più la variazione della funzione è grande.</p>
+            <div id="geogebra2"></div>    
+        </div>
+
+        <h2><span style = "color: red;">La derivata di una funzione</span></h2>
+        <img src="images/derivata2.png">
+
+        <div class="line">
+            <p>
+                Sia \(f\) una funzione continua in un punto \(x_{0}\).<br>
+                Prendiamo un punto vicino a \(x_{0}\):  
+            </p>
+            <p style="text-align: center;">
+                \(x_{0} + h\)<br>
+                (leggetelo "\(x_{0} +\) pochissimo") 
+            </p>
+            <p>
+                La funzione in \( \color{#f40099}{x_{0}}\) vale \(\color{#f40099}{f(x_{0}})\)<br>
+                In \(\color{#ff7f00}{x_{0}+h}\)   vale \(\color{#ff7f00}{f(x_{0}+h)}\)
+            </p>
+        </div>  
+
+
+        <div class="line">
+            <img src="images/derivata3.png">
+            <p> 
+                Guardiamo <span style="color: #009900">la retta</span> che passa per i punti \( \color{#f40099}{\left( x_{0}, f\right(x_{0}\left) \right)} \) e \( \color{#ff7f00}{\left( x_{0}+h, f\right(x_{0}+h\left) \right)} \)<br>
+                Il suo coefficiente angolare è 
+            </p>
+            <div id="wrapperApprofondimento">
+                <div id="formulaApprofondimento">
+                    \[ \frac{f\left( x_{0} + h\right) - f\left( x_{0}\right)}{h} \]
+                </div>
+                <div id="approfondimento" onclick="goToLink()">?</div>              
+            </div>
+            <p class="clear">
+                La pendenza di questa retta non è ancora la pendenza della funzione <i><b>nel</b></i> punto \(x_{0}\), ma quasi...
+            </p>
+            
+        </div>
+
+        <div class="line">
+            <div id="geogebra3"></div> 
+
+            0<input type="range" id="rangeH" class="range" value="2" min="0.01" max="2.5" step="0.1" defaulteValue="2" onmousemove="changeValueH()">2,5
+            
+            <div id="newRangeH" class="newRange">h = 2</div>
+
+            <p>
+                Usando lo slider, prendete \(h\) sempre più piccolo, in modo che il punto \(\color{#ff7f00}{\left(x_{0}+h, f(x_{0}+h)\right)}\) 
+                sia sempre più vicino al punto \(\color{#f40099}{\left(x_{0}, f(x_{0})\right)}\), fino a sovrapporsi ad esso <i>al limite</i>.
+            </p>
+
+            <p>
+                In altre parole la pendenza della funzione nel punto \(x_{0}\) numericamente è 
+                \[ \underset{h \rightarrow 0}{\lim} \frac{f\left( x_{0} + h\right) - f\left( x_{0}\right)}{h}\]
+            </p>
+            <p>Questa è la definizione di derivata della funzione \(f\) nel punto \(x_{0}.\)</p>
+            <p>Per indicarla si usa il simbolo \(f'(x_{0})\)</p>
+        </div>
+
+        <div id="riassunto">
+            <h2>Riassumendo</h2>
+            <p>
+                La derivata di \(f\) in \(x_{0}\) è per definizione 
+                \[f'(x_{0}) = \underset{h \rightarrow 0}{\lim} \frac{f\left( x_{0} + h\right) - f\left( x_{0}\right)}{h}\]
+            </p>
+            <p>
+                Geometricamente \(f'(x_{0})\) rappresenta il coefficiente angolare della retta tangente al grafico di \(f\) nel
+                punto \((x_{0},f(x_{0}))\).
+            </p>
+            <p>
+                Più il modulo della derivata è grande più la funzione sta crescendo rapidamente. 
+            </p>
+        </div>
+
+
+
+
+    </article>
+    -->
+
+    <script src="esercizioScatola.js"></script>
+</body>
+</html>

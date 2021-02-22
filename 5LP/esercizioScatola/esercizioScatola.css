@@ -1,0 +1,18 @@
+article {
+    width: 60%;
+    margin: auto;
+    font-size: 1.2em;
+}
+
+#geogebra1 {
+    width: 100%;
+    margin: auto;
+}
+
+li {
+    margin-top: 1em;
+}
+
+#geogebra2 {
+    visibility: hidden;
+}
