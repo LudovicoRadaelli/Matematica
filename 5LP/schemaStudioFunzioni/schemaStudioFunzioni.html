@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="schemaStudioFunzione.css">
+    <title>Schema studio funzione</title>
+</head>
+<body>
+    <h1>Schema studio funzione</h1>
+    <span style="color: red">in rosso</span> i punti più importanti,<br>
+    <span style="color: gray">in grigio</span> i punti che potete tralasciare in prima battuta.
+    <ul>
+        <li>
+            <h3 class="red">Dominio</h3>
+            <p>In che punti è definita la funzione?</p>
+        </li>
+
+        <li>
+            <h3 class="gray">Simmetrie</h3>
+            <p>Calcolo la funzione in \(-x\), ovvero \(f(-x)\).</p>
+            <ul>
+                <li>
+                    \(f(-x)=f(x)\)? Allora la funzione è pari.<br> 
+                    Il grafico è simmetrico rispetto all'asse \(y\).<br><br>
+                </li>
+                <li>
+                    \(f(-x)=-f(x)\)? Allora la funzione è dispari.<br> 
+                    Il grafico è simmetrico rispetto all'origine \(y\).<br><br>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3 class="red">Segno</h3>
+            <p>Cerco i valori di \(x\) per cui la funzione è positiva, ovvero risolvo \(f(x)\geq 0\)</p>
+        </li>
+
+        <li>
+            <h3 class="gray">Intersezioni con gli assi</h3>
+            <p>
+                Controllo se la funzione interseca l'asse \(x\) oppure l'asse \(y\).
+            </p>
+            <ul>
+                <li>
+                    Per trovare le intersezioni con l'asse \(x\) risolvo l'equazione \(f(x)=0\).<br><br>
+                </li>
+                <li>
+                    Per trovare le intersezioni con l'asse \(y\) calcolo la funzione in \(0\), 
+                    ovvero calcolo il valore di (f(0).<br><br>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3 class="red">Frontiera</h3>
+            <p>
+                Guardo il dominio per individuare la frontiera.<br>
+                Calcolo il limite della funzione in corrispondenza di <i>ogni</i> punto della frontiera: \(\underset{x\rightarrow x_{frontiera}}{lim}f(x)=\,\,...\) 
+            </p>
+        </li>
+        
+        <li>
+            <h3 class="red">Continuità</h3>
+            <p>
+                Controllo se <b>tra i punti del dominio</b> ci sono eventuali punti di discontinuità.
+                <ul>
+                    <li>
+                        Se la funzione è definita a tratti, controllo i punti dove si incollano i vari pezzi della funzione. 
+                    </li>
+                    <li>
+                        Se la funzione non è definita a tratti, allora è composta da funzioni elementari, quindi è continua.
+                    </li>
+                </ul>
+
+            </p>
+        </li>
+
+        <li>
+            <h3 class="red">Monotonia</h3>
+            <p>
+                Calcolo la derivata della funzione e studio quando il suo segno è positivo, ovvero risolvo la disequazione \(f'(x) \geq 0\).<br>
+                Disegno il grafico dei segni indicando con il simbolo \(\nearrow\) dove la funzione cresce  e con \(\searrow\)  dove la funzione decresce.<br>
+                Guardo di che tipologia sono i punti "in mezzo" alle frecce:
+            </p>
+            <ul>
+                <li>
+                    <i>punto di massimo</i>: \(\nearrow\) \(\searrow\)<br><br>
+                    
+                </li>
+                <li>
+                    <i>punto di minimo</i>: \(\searrow\) \(\nearrow\)<br><br>
+                
+                </li>
+                <li>
+                    <i>punto di flesso a tangente orizzontale</i>: \(\nearrow\) \(\nearrow\) oppure \(\searrow\) \(\searrow\)<br><br><br>
+                    
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <h3 class="red">Derivabilità</h3>
+            <p>
+                Controllo se <b>tra i punti in cui la funzione è continua</b> esiste qualche punto in cui la funzione non è derivabile.<br>
+                In altre parole, calcolo il dominio della derivata.<br><br>
+                Prendo i punti \(x_{0}\) che non appartengono al dominio della derivata e calcolo sia 
+                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x)\) che \(\underset{x\rightarrow x^{+}_{0}}{lim}f'(x)\).<br>
+                Il punto \(x_{0}\) è un
+                <ul>
+                    <li>
+                        <b><i>flesso a tangente verticale</i></b>
+                        <ul>
+                            <p>se</p>
+                            <li>
+                                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x) = \underset{x\rightarrow x^{+}_{0}}{lim}f'(x) = +\infty\)
+                            </li>
+                            <p>oppure</p>
+                            <li>
+                                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x) = \underset{x\rightarrow x^{+}_{0}}{lim}f'(x) = -\infty\)<br><br>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b><i>cuspide</i></b>
+                        <ul>
+                            <p>se</p>
+                            <li>
+                                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x) = +\infty\)
+                                \(\,\)e\(\,\)
+                                \(\underset{x\rightarrow x^{+}_{0}}{lim}f'(x) = -\infty\)
+                            </li>
+                            <p>oppure</p>
+                            <li>
+                                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x) = -\infty\)
+                                \(\,\)e\(\,\)
+                                \(\underset{x\rightarrow x^{+}_{0}}{lim}f'(x) = +\infty\)<br><br>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <b><i>punto angoloso</i></b>
+                        <ul>
+                            <p>se</p>
+                            <p>
+                                \(\underset{x\rightarrow x^{-}_{0}}{lim}f'(x) = \neq \underset{x\rightarrow x^{+}_{0}}{lim}f'(x)\,\)
+                                ed almeno uno dei due limiti è finito
+                            </p>
+                            
+                    </li>
+                </ul>
+            </p>
+        </li>
+    </ul>
+</body>
+</html>
