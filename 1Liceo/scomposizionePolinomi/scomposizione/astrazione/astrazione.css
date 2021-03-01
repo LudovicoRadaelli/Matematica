@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+.grey {
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0;
+    background: lightgray;
+}
+
+.inline {
+    width: 1.2em;
+    height: 1.2em;
+    display: inline-block;
+    margin: 0;
+}
+
+.green {
+    color: rgb(0, 187, 0);
+}
+
+li {
+    margin-bottom: 1em;
+}
