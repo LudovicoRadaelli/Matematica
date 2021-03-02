@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <title>Scomposizione polinomi</title>
 </head>
 <body>
-    <h2 style="color: red">Scomposizione di polinomi</h2>
+
+    <h2 style="color: red">Divisione tra polinomi</h2>
     <ul>
         <div id="done">
             <li class="noHighlight">
@@ -27,35 +28,56 @@
                     tramite la regola di Ruffini
                 </li>
             </ul>
-            <li class="noHighlight">
-                Scomposizione
-            </li>
-                <ul>
-                    <li>
-                        tramite somma per differenza
-                    </li>
-                    <li onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteRaccoglimentoAFattorComune/tramiteRaccoglimentoAFattorComune.html')">
-                        tramite raccoglimento a fattore comune
-                    </li>
-                    <li onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteQuadratoDiBinomio/tramiteQuadratoDiBinomio.html')">
-                        tramite quadrato di binomio
-                    </li>
-            </ul>
-        </div>
-        <div id="todo">
-                <ul>
-                    
-                    <li>
-                        tramite trinomio speciale
-                    </li>
-                    <li>
-                        tramite regola di Ruffini
-                    </li>
-                </ul>
+    </ul>
+    
+
+    <h2 style="color: red">Scomposizione di polinomi</h2>   
+    <ul>
+        <p style="color: gray" class="noHighlight"> Da provare sempre</p>
+        <li onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteRaccoglimentoAFattorComune/tramiteRaccoglimentoAFattorComune.html')">
+            tramite raccoglimento a fattore comune
+        </li>
+
+        <p style="color: gray" class="noHighlight">Se il polinomio ha un numero pari di termini maggiore o uguale a 4</p>
+        <!--todo-->
+        <li onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/')">
+            tramite raccoglimento a fattor parziale
+        </li>
+        
+        <p style="color: gray" class="noHighlight"> Se il polinomio ha <b>2 termini</b></p>
+        <ul>
             
+            <li style="list-style-type: disc;" onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteSommaPerDifferenza/tramiteSommaPerDifferenza.html')">
+                tramite somma per differenza
+            </li>
+            
+            <li style="list-style-type: disc;"  onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/sommaDifferenzaDiCubi/sommaDifferenzaDiCubi.html')">
+                della somma/differenza di cubi
+            </li>
+        </ul>
+        <p style="color: gray" class="noHighlight">Se il polinomio ha <b>3 termini</b></p>
+        <ul>
+            <li style="list-style-type: disc;"  onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteQuadratoDiBinomio/tramiteQuadratoDiBinomio.html')">
+                tramite quadrato di binomio
+            </li>
+            
+            <li style="list-style-type: disc;"  onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/trinomioSpeciale/trinomioSpeciale.html')">
+                tramite trinomio speciale
+            </li>
+        </ul>
+        
+        <p style="color: gray" class="noHighlight">Se nessuna scomposizione ha funzionato</p>
+        <li onclick="goToLink('https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/tramiteRuffini/tramiteRuffini.html')">
+            tramite regola di Ruffini
+        </li>
+    
         </div>
         
     </ul>
+
+    <h2 style="color: red">Esercizi riassuntivi svolti</h2>
+    <p>Cliccate <a href="'https://ludovicoradaelli.github.io/Matematica/1Liceo/scomposizionePolinomi/scomposizione/'">QUA</a></p>
+    
 
     
     <script src="scomposizionePolinomi.js"></script>
