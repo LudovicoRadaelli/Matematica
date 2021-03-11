@@ -1,0 +1,21 @@
+article {
+    width: 80%;
+    margin: auto;
+}
+li {
+    margin-bottom: 0.5em;;
+}
+
+hr {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+button {
+    margin-bottom: 1em;
+}
+
+.hint {
+    display: none;
+    color: gray;
+}
