@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="attivita1.css">
+    <title>Attività sulle frazioni algebriche equivalenti</title>
+</head>
+<body>
+    <article>
+    
+        <h1 style="color: red;">Attività sulle frazioni algebriche equivalenti</h1>
+
+        <section>
+            <h2>Attività 1</h2>
+            <p>
+                Consideriamo la frazione algebrica 
+                \[\frac{-3x+1}{x-7}\]
+                Con \(x\) indichiamo una quantità <i>variabile</i>, cioè che cambia.<br>
+                Usate lo slider qua sotto per cambiare il valore di \(x\).
+            </p>
+            <div id="container1" class="container">
+                <div id="left">
+                    <ul>
+                        <input id="slider1" class="slider" onmousemove="xValue()" type="range" min="-4" max="4" step="0.1" value="2">
+                        <li id="xValue">
+                            \(x=\color{red}{2}\)
+                        </li>
+                        <li id="yValue">
+                            \(\color{black}{}\frac{-3\color{red}{x}\color{black}{+1}}{\color{red}{x}\color{black}{-7}}=\frac{-3\cdot\color{red}{\left(2\right)}\color{black}{+1}}{\color{red}{2}\color{black}{-7}}=\color{blue}{1}\)
+                        </li>
+                    </ul>
+                    <p id="explanation">
+                        Quindi se \(x\) vale \(\color{red}{2}\),<br> 
+                        la frazione algebrica vale \(\color{blue}{1}\)
+                    </p>
+                </div>
+                <div id="right"></div>
+                
+            </div>
+            <ul id="questions">
+                <li>
+                    Quanto vale la frazione algebrica se \(x\) vale 3?<br>
+                    Potete rispondere usando slider.
+                </li>
+                <li>
+                    Quanto vale la frazione algebrica se \(x\) vale -2?<br>
+                    Potete rispondere usando slider.
+                </li>
+                <li>
+                    Quanto vale la frazione algebrica se \(x\) vale 5?<br>
+                    In questo caso dovete calcolarlo a mano.
+                </li>
+                <li>
+                    Quanto vale la frazione algebrica se \(x\) vale 7?<br>
+                    Anche in questo caso dovete calcolarlo a mano.
+                </li>
+            </ul>
+        </section>
+            
+        <section>
+            <h2>Attività 2</h2>
+            <p>
+                Considerate le frazioni algebriche
+                \[\frac{-2-x}{x^2} \quad \text{e} \quad -\frac{2+x}{x^2}\]
+            </p>
+            <ul>
+                <li>
+                    Quanto vale la prima frazione algebrica, se \(x\) vale 2?<br>
+                    E la seconda?
+                </li>
+                <li>
+                    Provate a riempire la seguente tabella. <br>
+                    A sinistra trovate i valori della \(x\), a destra dovete inserire i valori che ciascuna frazione assume in corrispendenza di quell'\(x\).<br>
+                    <button onclick="spiegazione(1)">Non ho capito</button>
+                    <video class="spiegazione" controls>
+                        <source src="video/spiegazione(1).mp4" type="video/mp4">
+                    </video>
+                    <table>
+                        <tr>
+                          <th style="background-color: gray;">\(x\)</th>
+                          <th style="background-color: gray;">\(\frac{-2-x}{x^2}\)</th> 
+                          <th style="background-color: gray;">\(-\frac{2+x}{x^2}\)</th>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>-1</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>-5</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td id="valore1"></td>
+                          <td id="valore2"></td>
+                        </tr>
+                        <tr>
+                            <td>-10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                      </table>
+                </li>
+                <li>
+                    <p>
+                        Quando avete finito di riempire la tabella clicca <button onclick="aggiungiParagrafo(1)">QUA</button>
+                    </p>
+                    <p class="paragrafoAggiunto">
+                        I valori assunti da \(\frac{-2-x}{x^2}\) e da \(-\frac{2+x}{x^2}\) sono sempre uguali.<br>
+                        Quindi le frazioni pur essendo diverse nella <b>forma</b>, rappresentano la stessa quantità.<br>
+                        In tal caso si dice che le frazioni algebriche sono <b>equivalenti</b>.<br><br>
+                    
+                        Ricordate che in una frazione il segno può assumere tre posizioni 
+                        \[\color{red}{-}\color{black}{}\frac{N}{D},\quad
+                        \frac{\color{red}{-}\color{black}{}N}{D},\quad 
+                        \frac{N}{\color{red}{-}\color{black}{}D}\] 
+                        Ecco perché le frazioni algebriche sono uguali! Si ha
+                        \[\color{red}{-}\color{black}{}\frac{2+x}{x^2} = \frac{\color{red}{-}\color{black}{}\left(2+x\right)}{x^2} = \frac{-2-x}{x^2}\]
+                    </p>
+                </li>
+                <li class="paragrafoAggiunto">
+                    Dire se le seguenti frazioni sono equivalenti:
+                    <ul>
+                        <li>
+                            \[\frac{-2-x}{6-x} \quad \text{e} \quad -\frac{2+x}{6-x}\]
+                            <button onclick="spiegazione(2)">Non ho capito</button>
+                            <video class="spiegazione" controls>
+                                <source src="video/spiegazione(2).mp4" type="video/mp4">
+                            </video>
+                        </li>
+                        <li>
+                            \[-\frac{x^2-x+5}{x-1} \quad \text{e} \quad \frac{x^2+x+5}{1-x}\]
+                        </li>
+                        <li>
+                            \[\frac{-x^2+7}{x^5-1} \quad \text{e} \quad -\frac{x^2+7}{x^5-1}\]
+                        </li>
+                        <li>
+                            \[\frac{-x}{x^3+x+1} \quad \text{e} \quad \frac{x}{-x^3-x-1}\]
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Attività 3</h2>
+            <p>
+                Considerate le frazioni algebriche 
+                \[\frac{x^2-9}{x^2+4x+3} \quad \text{e} \quad \frac{x-3}{x+1}\]
+            </p>
+            <ul>
+                <li>
+                    Riempite la seguente tabella:
+                    <table style="margin-top: 2vh;">
+                        <tr>
+                          <th style="background-color: gray;">\(x\)</th>
+                          <th style="background-color: gray;">\(\frac{x^2-9}{x^2+4x+3}\)</th> 
+                          <th style="background-color: gray;">\(\frac{x-3}{x+1}\)</th>
+                        </tr>
+                        <tr>
+                          <td>-2</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>0</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                </li>
+                <p>
+                    Quando avete finito di riempire la tabella clicca <button onclick="aggiungiParagrafo(2)">QUA</button>
+                </p>
+
+                <div class="paragrafoAggiunto">
+                    <p>
+                        I valori assunti dalle frazioni algebriche sono uguali. Quindi sembrerebbero essere frazioni <b>equivalenti</b>.
+                    </p>
+                    <li>
+                        Prendiamo la prima frazione algebrica, \(\frac{x^2-9}{x^2+4x+3}\).<br>
+                        <ul>
+                            <li>
+                                Scomponete il numeratore.
+                            </li>
+                            <li>
+                                Scomponete il denominatore.
+                            </li>
+                        </ul>
+                        <p>
+                            Ora riuscita a capire perché \(\frac{x^2-9}{x^2+4x+3}\) e \(\frac{x-3}{x+1}\) sono frazioni equivalenti?
+                        </p>
+                </div>
+                
+            </ul>
+        </section>
+    </article>
+    <script src="attivita1.js"></script>
+</body>
+</html> 
+
+
+
