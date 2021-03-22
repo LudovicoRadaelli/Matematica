@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(255, 94, 36);
+}
+
+h2 {
+    font-size: 1.2em;
+    color: rgb(255, 94, 36);
+}
+
+body {
+    font-size: 24px;
+    line-height: 150%;
+    width: 60%;
+    margin: auto;
+}
+
+span.green {
+    color: #05b00b;
+}
+
+span.violet {
+    color: #b3019b;
+}
+
+@media (max-width: 400px) {
+    .formula {
+        overflow-x: scroll;
+    }
+}
+
+.regola {
+    background-color: #a9ffac;
+    padding: 1rem;
+}
+
+@media (max-width: 850px) {
+    .regola {
+        font-size: 0.8rem;   
+    }
+}
+
+li {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.previousNext {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+button#previous {
+    font-size: 1.5rem;
+}
+
+button#next {
+    font-size: 1.5rem;
+}
+
+
+
+
+/* #item3, #item4, #item5, #item6 {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    .generatoreEsempi {
+        border: 1px black solid;
+        font-size: 0.7rem;
+    }
+
+    .controller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 100%;
+        display: flex;
+        padding-left: 1em;
+    }
+
+    p.insideItem {
+        width: 50%;
+    }
+
+    input.insideItem {
+        width: 50%;
+    }
+
+    button.insideItem {
+        width: 50%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .generatoreEsempi {
+        border: 1px black solid;
+        font-size: 0.95rem;
+    }
+
+    .controller {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 100%;
+        display: flex;
+        padding-left: 1em;
+    }
+
+    p.insideItem {
+        width: 35%;
+    }
+
+    input.insideItem {
+        padding-left: 1em;
+        width: 25%;
+    }
+
+    button.insideItem {
+        width: 25%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 32.5%;
+        margin-right: 32.5%;
+    }
+    
+} */
+

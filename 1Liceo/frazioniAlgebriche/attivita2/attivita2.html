@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="attivita2.css">
+    <title>Attività sulle frazioni algebriche equivalenti</title>
+</head>
+<body>
+    <article>
+    
+        <h1>ATTIVIT&Agrave; SULLE FRAZIONI ALGEBRICHE (2)</h1>
+
+        <hr>
+
+        
+        <div class="ssWrapper">
+            <div class="c1">
+                <p>
+                    Nelle scorse lezioni abbiamo visto che due frazioni si dicono <b>equivalenti</b> fra loro quando la loro
+                    <span class="green"><b>forma</b></span> è <span class="green"><b>differente</b></span>, ma il <span class="violet"><b>valore 
+                    che rappresentano</b></span> è <span class="violet"><b>uguale</b></span> in corrispondenza di ogni \(x\).
+                </p>
+
+                <h2>Creare frazioni algebriche equivalenti</h2>
+
+                <p>
+                    &Egrave; possibile "creare" frazioni algebriche equivalenti ad una frazione assegnata.
+                    Prendiamo ad esempio
+                </p>
+                <p class="formula">
+                    \[ \frac{x+2}{x+1} \]
+                </p>
+                <p>
+                    Se moltiplico la frazione per \(\color{RGB(0,200,0)}{1}\) il valore della frazione non cambia.<br>
+                </p>
+                <p class="formula">
+                    \[ \frac{x+2}{x+1} = \frac{x+2}{x+1} \cdot \color{RGB(0,200,0)}{1} \]
+                </p>
+                <p>
+                    Scriviamo quell' \(\color{RGB(0,200,0)}{1}\) in maniera più stramba, ovvero come 
+                    \( \frac{\color{RGB(0,200,0)}{x-6}}{\color{RGB(0,200,0)}{x-6}} \).<br>
+                    Possiamo riscrivere
+                </p>
+                <p class="formula">
+                    \[ \frac{x+2}{x+1} = \frac{x+2}{x+1} \cdot \color{RGB(0,200,0)}{1} \color{black}{=} \frac{x+2}{x+1} \cdot \frac{\color{RGB(0,200,0)}{x-6}}{\color{RGB(0,200,0)}{x-6}} \]
+                </p>
+                <!-- \cdot \frac{\color{#05b00b}{x-6}}{\color{#05b00b}{x-6}} \color{black}{=} \frac{x^2-4x-12}{x^2-5x-6} -->
+                <p>
+                    Ora svolgiamo i calcoli
+                </p>
+                <p class="formula">
+                    \[ \frac{x+2}{x+1} = \frac{x+2}{x+1} \cdot \color{RGB(0,200,0)}{1} \color{black}{=} 
+                    \frac{x+2}{x+1} \cdot \frac{\color{RGB(0,200,0)}{x-6}}{\color{RGB(0,200,0)}{x-6}} \color{black}{=} 
+                    \frac{x^2-4x-12}{x^2-5x-6} \]
+                </p>
+                
+                <p>
+                    Siamo sicuri che la frazione ottenuta, \(\frac{x^2-4x-12}{x^2-5x-6}\), abbia lo stesso valore di 
+                    quella da cui siamo partiti, \(\frac{x+2}{x+1}\), perché \( \frac{x-6}{x-6} \) è solamente una maniera 
+                    più complicata di scrivere \(1\), quindi di fatto abbiamo molitplicato per \(1\).
+                </p>
+                <p>
+                    In generale, si ha la seguente regola:
+                </p>
+
+                <div class="regola">
+                    <p>
+                        Consideriamo una qualsiasi frazione algebrica \(\frac{N(x)}{D(x)}\).<br> 
+                        Moltiplichiamo sia il numeratore che il denominatore della frazione per un polinomio qualsiasi \(P(x)\).<br>
+                        La frazione così ottenuta è equivalente a quella di partenza.
+                        Ovvero,
+                    </p>
+                    <p class="formula">\[ \frac{N(x)}{D(x)} = \frac{N(x) \cdot P(x)}{D(x) \cdot P(x)} \]</p>
+    
+                </div>
+
+                <p>
+                    Facciamo qualche esempio pratico
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            Partiamo dalla frazione \( \frac{x^2-3}{2x+1} \). <br>
+                            Moltiplichiamo numeratore e denominatore per 
+                            \( P(x) = \color{RGB(0,200,0)}{x-2} \):
+                        </p>
+                        <p class="formula">
+                            \[ \frac{x^2-3}{2x+1} = \frac{\left(x^2-3\right) \cdot \color{RGB(0,200,0)}{\left(x-2\right)} }{\left(2x+1\right) \cdot \color{RGB(0,200,0)}{\left(x-2\right)}} \color{black}{ = }
+                            \frac{x^3-2x^2-3x+6}{2x^2-3x-2}
+                            \]
+                        </p>
+                        <p style="margin-top: 1rem;">Quindi la frazione \(\frac{x^2-3}{2x+1}\) è equivalente alla frazione \(\frac{x^3-2x^2-3x+6}{2x^2-3x-2}\)</p>  
+                    </li>
+                    <hr>
+                    <li>
+                        <p>
+                            Partiamo dalla frazione \( \frac{-2x-5}{3x-2} \). <br>
+                            Moltiplichiamo numeratore e denominatore per 
+                            \( P(x) = \color{RGB(0,200,0)}{7x-1} \):
+                        </p>
+                        <p class="formula">
+                            \[ \frac{-2x-5}{3x-2} = \frac{\left(-2x-5\right) \cdot \color{RGB(0,200,0)}{\left(7x-1\right)} }{\left(3x-2\right) \cdot \color{RGB(0,200,0)}{\left(7x-1\right)}} \color{black}{ = }
+                            \frac{-14x^2-33x+5}{21x^2-17x+2}
+                            \]
+                        </p>
+                        <p style="margin-top: 1rem;">Quindi la frazione \(\frac{-2x-5}{3x-2}\) è equivalente alla frazione \(\frac{-14x^2-33x+5}{21x^2-17x+2}\)</p>  
+                    </li>
+                </ul>
+                <hr>
+
+                <p class="previousNext">
+                    <button id="previous" onclick="ss1.previous()">&leftarrow;</button>
+                    <button id="next" onclick="ss1.next()">&rightarrow;</button>
+                </p>
+            </div>
+
+            <div class="c1">
+                <p>
+                    Vediamo a cosa serve saper ottenere una frazione equivalente ad una assegnata.
+                </p>
+                <h2>Somma tra frazioni</h2>
+                <p>
+                    Due frazioni algebriche si possono sommare/sottrarre 
+                    <span class="violet"><b>solo se hanno lo stesso denominatore</b></span>.
+                </p>
+                <div class="regola">
+                    <p>
+                        Date due frazioni algebriche \(\frac{N(x)}{D(x)}\) e \(\frac{M(x)}{D(x)}\), la loro somma è
+                    </p>
+                    <p class="formula">
+                        \[\frac{N(x)}{D(x)}+\frac{M(x)}{D(x)} = \frac{N(x)+M(x)}{D(x)}\]
+                    </p>
+                </div>
+                <p>
+                    Qualche esempio:
+                </p>
+                <ul>
+                    <li class="formula">
+                        \[\frac{3x^2-1}{x+1} + \frac{-6x^2+x+4}{x+1} = \frac{-3x^2+x+3}{x+1}\]
+                    </li>
+                    <li>
+                        \[\frac{5x^2-3x+7}{-2x+7} + \frac{-8x^2+8x-3}{-2x+7} = \frac{-3x^2+5x+4}{-2x+7}\]
+                    </li>
+                    <li>
+                        \[ \frac{-3x+1}{x+2}-\frac{5x-2}{x+2} = \frac{-8x+3}{x+2} \]
+                    </li>
+                </ul>
+
+                <hr>
+                
+                <p class="previousNext">
+                    <button id="previous" onclick="ss1.previous()">&leftarrow;</button>
+                    <button id="next" onclick="ss1.next()">&rightarrow;</button>
+                </p>
+            </div> 
+            
+            <div class="c1">
+                <h2>Problema 1</h2>
+
+                <p>
+                    Eseguire la seguente somma di frazioni algebriche
+                </p>
+                <p class="formula">
+                    \[ \frac{2x+1}{x+3} + \frac{x+5}{\left(x+3\right)\left(x-2\right)} \]
+                </p>
+                
+                <hr>
+                <p><b>Suggerimento</b></p>
+                <p>
+                    Il problema è che queste due frazioni <b>non hanno lo stesso denomionatore</b>, quindi non sappiamo come sommarle.
+                </p>
+                <p>
+                    Riuscite a trovare una frazione equivalente a \(\frac{2x+1}{x+3}\) che abbia come denominatore \(\left(x+3\right)\left(x-2\right)\)?
+                </p>
+
+                <p class="previousNext">
+                    <button id="previous" onclick="ss1.previous()">&leftarrow;</button>
+                    <button id="next" onclick="ss1.next()">&rightarrow;</button>
+                </p>
+            </div>
+
+            <div class="c1">
+                <h2>Problema 2</h2>
+
+                <p>
+                    Eseguire la seguente somma di frazioni algebriche
+                </p>
+                <p class="formula">
+                    \[ \frac{x^2+5}{x+7} + \frac{x+1}{x+2} \]
+                </p>
+                
+                <hr>
+                <p><b>Suggerimento</b></p>
+                <p>
+                    Come prima problema è che queste due frazioni <b>non hanno lo stesso denomionatore</b>, quindi non sappiamo come sommarle.
+                </p>
+                <p>
+                    Riuscite a trasformare la frazione \( \frac{2x+1}{x+3} \) e la frazione \( \frac{x+1}{x+2} \) in frazioni che hanno lo stesso denominatore?
+                </p>
+
+                <p class="previousNext">
+                    <button id="previous" onclick="ss1.previous()">&leftarrow;</button>
+                    <!-- <button id="next" onclick="ss1.next()">&rightarrow;</button> -->
+                </p>
+            </div>
+        </div>
+    </article>
+    <script src="attivita2.js"></script>
+</body>
+</html> 
+
+<!-- <br>
+                <p>
+                    Qua sotto trovate un generatore di frazioni equivalenti alla frazione \( \frac{x+2}{x+1} \). Potete scegliere il <b>grado</b> del polinomio ed
+                    i suoi <b>coefficienti</b>.
+                </p>
+                <div class="generatoreEsempi">
+                    <div class="controller">
+
+                        <div class="item" id="item1">
+                            <p class="insideItem">Grado polinomio: <span>\(0\)</span></p>
+                            <input id="grado" class="insideItem" type="range" min=0 max=4 step=1 value=0 onmousemove="cambiaGrado()" ontouchmove="cambiaGrado()">
+                        </div>
+
+                        <div class="item" id="item2">
+                            <p class="insideItem">Termine noto: <span>\(4\)</span></p>
+                            <input id="coeff0" class="insideItem" type="range" min=-5 max=5 step=1 value=4 onmousemove="cambiaTermineNoto()" ontouchmove="cambiaTermineNoto()">
+                        </div>
+
+                        <div class="item" id="item3">
+                            <p class="insideItem">Coefficiente di \(x\): <span>\(-1\)</span></p>
+                            <input id="coeff1" class="insideItem" type="range" min=-5 max=5 step=1 value=-1 >
+                        </div>
+
+                        <div class="item" id="item4">
+                            <p class="insideItem">Coefficiente di \(x^2\): <span>\(2\)</span></p>
+                            <input id="coeff2" class="insideItem" type="range" min=-5 max=5 step=1 value=2 >
+                        </div>
+
+                        <div class="item" id="item5">
+                            <p class="insideItem">Coefficiente di \(x^3\): <span>\(-2\)</span></p>
+                            <input id="coeff3" class="insideItem" type="range" min=-5 max=5 step=1 value=-2 >
+                        </div>
+
+                        <div class="item" id="item6">
+                            <p class="insideItem">Coefficiente di \(x^4\): <span>\(3\)</span></p>
+                            <input id="coeff4" class="insideItem" type="range" min=-5 max=5 step=1 value=3 >
+                        </div>
+                        
+                    </div>
+                    <div class="displayer">
+                        <p id="displayerFormula" class="formula">\[ \frac{x+2}{x+1} = \frac{x+2}{x+1} \cdot \frac{4}{4} = \frac{4x + 8}{4x+4}\]</p>
+                    </div>
+                </div>
+
+            </div> -->
+
+            <!--  -->
+
+
