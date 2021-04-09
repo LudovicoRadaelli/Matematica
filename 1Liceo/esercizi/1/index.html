@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi</title>
+</head>
+<body>
+
+    <h2>Esercizio 1</h2>
+    <p class="formula">
+        \( \frac{x-2}{x^2+4} : \frac{x-2}{x} + \frac{9x+1}{x^4+5x^2+4} \)
+    </p>
+    <a href="#sol1" class="soluzione">Soluzione</a>
+    
+    <hr>
+
+    <h2>Esercizio 2</h2>
+    <p class="formula">
+        \( \left( x - \frac{3x-5}{x+1} \right) : \left( 2 - \frac{x^2-2x+5}{x^2+2x+1} \right) \)
+    </p>
+    <a href="#sol2" class="soluzione">Soluzione</a>
+    <!-- <p class="soluzione">
+        \( x+1 \)
+    </p> -->
+
+    <hr>
+
+    <h2>Esercizio 3</h2>
+    <p class="formula">
+        \( \left( \frac{1}{x-1} + \frac{1}{x+1} + \frac{4}{x^2-1} \right) : \frac{x^2-4}{x^2-3x+2} \)
+    </p>
+    <a href="#sol3" class="soluzione">Soluzione</a>
+
+    <hr>
+
+    <h2>Esercizio 4</h2>
+    <p class="formula">
+        \( \left( x-2-\frac{5}{x+2} \right) \cdot \frac{x^2-4}{x-3} \)
+    </p>
+    <a href="#sol4" class="soluzione">Soluzione</a>
+
+    <hr>
+
+    <h2>Esercizio 5</h2>
+    <p class="formula">
+        \( \left( \frac{1}{x+2} + \frac{2x^2}{x^2+5x+6} \right) : \frac{x}{x^2-x-6} \)
+    </p>
+    <a href="#sol5" class="soluzione">Soluzione</a>
+
+    <hr>
+
+    <div class="space">
+        \(\qquad\)
+    </div>
+
+
+    <!-- SOLUZIONI -->
+
+    <h2 id="sol1">Soluzione Esercizio 1 </h2>
+
+    <div class="column-container">
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x-2}{x^2+4} : \frac{x-2}{x} + \frac{9x+1}{x^4+5x^2+4} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Svolgiamo la divisione: la trasformiamo in moltiplicazione ribaltando \( \frac{x-2}{x} \). 
+            </div>
+            <div class="cella-numero-passaggi">
+                1
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                        \( \frac{x-2}{x^2+4} \cdot \frac{x}{x-2} + \frac{9x+1}{x^4+5x^2+4} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Semplifichiamo il numeratore della prima frazione con il denominaore della seconda frazione
+            </div>
+            <div class="cella-numero-passaggi">
+                2
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{\overset{1}{\cancel{x-2}}}{x^2+4} \cdot \frac{x}{\underset{1}{\cancel{x-2}}} + \frac{9x+1}{x^4+5x^2+4} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Svolgiamo la moltiplicazione tra le due frazioni: moltiplichiamo il numeratore con il numeratore ed il 
+                denominatore con il denominatore.
+            </div>
+            <div class="cella-numero-passaggi">
+                3
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x}{x^2+4} + \frac{9x+1}{x^4+5x^2+4} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Scomponiamo i denominatori.
+                <br><br>
+                1) Il primo denominatore non si può scomporre, perché è la somma tra due numeri positivi.
+                <br><br>
+                2) Il secondo denominatore ha la struttura di un trinomio speciale.
+                <br>
+                Posto \(x^2=a\) si ha
+                <br><br>
+                \(x^4+5x^2+4 = \) 
+                \( a^2 + 5a +4 = \)
+                \( \left( a+1 \right)\cdot\left(a+4\right) = \)
+                \( \left( x^2+1 \right)\cdot\left(x^2+4\right) \)
+            </div>
+            <div class="cella-numero-passaggi">
+                4
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x}{x^2+4} + \frac{9x+1}{\left( x^2+1 \right)\cdot\left(x^2+4\right)} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Per effettuare la somma dobbiamo svolgere il procedimento del m.c.m.
+                <br><br>
+                1) 
+                <br>
+                Troviamo il  m.c.m. tra \(x^2+4\) e \( \left( x^2+1 \right)\left(x^2+4\right) \), che  è 
+                \( \left( x^2+1 \right)\left(x^2+4\right) \). 
+                <br>
+                Scriviamolo al denominatore 
+                <br><br>
+                2) Moltiplichiamo ogni numeratore per la divisione tra il m.c.m. ed il denominatore.
+                
+            </div>
+            <div class="cella-numero-passaggi">
+                5
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x \cdot \left( x^2+1 \right) + \left( 9x+1 \right) \cdot 1 }{\left( x^2+1 \right)\cdot\left(x^2+4\right)} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Svolgo i calcoli al numeratore. Prima le moltiplicazioni.
+            </div>
+            <div class="cella-numero-passaggi">
+                6
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ x^3 + x + 9x +1 }{\left( x^2+1 \right)\cdot\left(x^2+4\right)} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                Poi le somme
+            </div>
+            <div class="cella-numero-passaggi">
+                7
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ x^3 + 10x +1 }{\left( x^2+1 \right)\cdot\left(x^2+4\right)} \)
+                </p>
+            </div>
+            <div class="cella-spiegazione">
+                
+            </div>
+            <div class="cella-numero-passaggi">
+                8
+            </div>
+        </div>
+        <!-- 
+            <div class="row-container">
+                <div class="cella-formula">
+                    <p class="formula">
+                        \(  \)
+                    </p>
+                </div>
+                <div class="cella-spiegazione">
+                    
+                </div>
+                <div class="cella-numero-passaggi">
+                    
+                </div>
+            </div>
+       -->
+    </div>
+    
+    <hr>
+
+    <h2 id="sol2">Soluzione Esercizio 2</h2>
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( x - \frac{3x-5}{x+1} \right) : \left( 2 - \frac{x^2-2x+5}{x^2+2x+1} \right) \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                1
+            </div>
+        </div>
+    
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(  \frac{x\cdot\left(x+1\right) - \left(3x-5\right)\cdot1}{x+1}  : \frac{2 \cdot \left( x^2+2x+1 \right) - \left( x^2-2x+5 \right)\cdot1}{x^2+2x+1}  \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                2
+            </div>
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \(  \frac{x^2+x -3x+5}{x+1}  :  \frac{ 2x^2+4x+2 -x^2+2x-5 }{x^2+2x+1}   \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            3
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \( \frac{x^2-2x+5}{x+1}  :  \frac{ x^2+6x-3 }{x^2+2x+1}    \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            4
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \(  \frac{x^2-2x+5}{x+1}  \cdot  \frac{x^2+2x+1 }{ x^2+6x-3}  \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            5
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \( \frac{x^2-2x+5}{x+1}  \cdot  \frac{ \left(x+1\right)^2 }{ x^2+6x-3}  \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            6
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \( \frac{x^2-2x+5}{\underset{1}{\cancel{x+1}}}  \cdot  \frac{ \left(x+1\right)^\cancel{2} }{ x^2+6x-3} \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            7
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \( \frac{x^3+x^2-2x^2-2x+5x+5}{x^2+6x-3} \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            8
+        </div>
+    </div>
+
+    <div class="row-container">
+        <div class="cella-formula">
+            <p class="formula">
+                \( \frac{x^3-x^2+3x+5}{x^2+6x-3} \)
+            </p>
+        </div>
+        
+        <div class="cella-numero-passaggi">
+            9
+        </div>
+    </div>
+
+    <hr>
+    
+    <h2 id="sol3">Soluzione Esercizio 3</h2>
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{1}{x-1} + \frac{1}{x+1} + \frac{4}{x^2-1} \right) : \frac{x^2-4}{x^2-3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                1
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{1}{x-1} + \frac{1}{x+1} + \frac{4}{\left(x+1\right)\cdot\left(x-1\right)} \right) : \frac{x^2-4}{x^2-3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                2
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{ 1\cdot \left(x+1\right) + 1\cdot \left(x-1\right) + 4\cdot1 }{\left(x+1\right)\cdot\left(x-1\right)} \right) : \frac{x^2-4}{x^2-3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                3
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{ x+1 + x-1 + 4 }{\left(x+1\right)\cdot\left(x-1\right)} \right) : \frac{x^2-4}{x^2-3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                4
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2x+ 4 }{\left(x+1\right)\cdot\left(x-1\right)}  : \frac{x^2-4}{x^2-3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                4
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2x+ 4 }{\left(x+1\right)\cdot\left(x-1\right)}  \cdot \frac{x^2-3x+2}{x^2-4} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                5
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2\left(x+ 2\right) }{\left(x+1\right)\cdot\left(x-1\right)}  \cdot \frac{\left(x-1\right)\left(x-2\right)}{\left(x+2\right)\left(x-2\right)} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                6
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2\left(x+ 2\right) }{\left(x+1\right)\cdot\left(x-1\right)}  \cdot \frac{\left(x-1\right)\left(x-2\right)}{\left(x+2\right)\left(x-2\right)} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                6
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2\left(x+ 2\right) }{\left(x+1\right)\cdot \underset{1}{\bcancel{\left(x-1\right)}}}  \cdot \frac{\overset{1}{\bcancel{\left(x-1\right)}}\overset{1}{\cancel{\left(x-2\right)}}}{\left(x+2\right)\underset{1}{\cancel{\left(x-2\right)}}} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                7
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2\left(x+ 2\right) }{\left(x+1\right)\cdot \left(x+2\right)} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                8
+            </div>
+        </div>
+    </div>
+
+    <div class="column-container">
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{ 2x+ 4 }{x^2+3x+2} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                9
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 id="sol4">Soluzione Esercizio 4</h2>
+    
+    <div class="column-container">
+        
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( x-2-\frac{5}{x+2} \right) \cdot \frac{x^2-4}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                1
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{x-2}{1}-\frac{5}{x+2} \right) \cdot \frac{x^2-4}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                2
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{\left(x-2\right)\cdot\left(x+2\right)-5\cdot1}{x+2} \cdot \frac{x^2-4}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                3
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x^2-4-5}{x+2} \cdot \frac{x^2-4}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                4
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{x^2-9}{x+2} \cdot \frac{x^2-4}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                5
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{\left(x+3\right)\cdot\left(x-3\right)}{x+2} \cdot \frac{\left(x+2\right)\cdot\left(x-2\right)}{x-3} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                6
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{\left(x+3\right)\cdot\overset{1}{\cancel{\left(x-3\right)}}}{\underset{1}{\bcancel{x+2}}} \cdot \frac{\overset{1}{\bcancel{\left(x+2\right)}}\cdot\left(x-2\right)}{\underset{1}{\cancel{x-3}}} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                7
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \frac{\left(x+3\right)\cdot\left(x-2\right)}{1} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                8
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( x^2+x-6 \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                9
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <h2 class="sol5">Soluzione Esercizio 5</h2>
+
+    <div class="column-container">
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{1}{x+2} + \frac{2x^2}{x^2+5x+6} \right) : \frac{x}{x^2-x-6} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                1
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \( \left( \frac{1}{x+2} + \frac{2x^2}{\left(x+3\right)\cdot\left(x+2\right)} \right) : \frac{x}{x^2-x-6} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                2
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{1\cdot\left(x+3\right) \, + \, 2x^2\cdot1}{\left(x+3\right)\cdot\left(x+2\right)}  : \frac{x}{x^2-x-6} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                3
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ x + 3 + 2x^2 }{\left(x+3\right)\cdot\left(x+2\right)}  : \frac{x}{x^2-x-6} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                4
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ x + 3 + 2x^2 }{\left(x+3\right)\cdot\left(x+2\right)}  \cdot \frac{x^2-x-6}{x} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                5
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ x + 3 + 2x^2 }{\left(x+3\right)\cdot\left(x+2\right)}  \cdot \frac{\left(x-3\right)\cdot\left(x+2\right)}{x} \)
+                </p>
+                <p>
+                    Il numeratore della prima frazione ha 3 termini. 
+                    <br>
+                    Non è un trinomio speciale perché il coefficiente di \(x^2\) è \(2\).
+                    <br>
+                    Non è neanche un quadrato di binomio, perché nessuno dei termini è un quadrato. L'unica possibilità è usare Ruffini.
+                    Provateci... fallisce anche Ruffini! Quindi il polinomio è irriducibile, vvero non si può scompore.
+
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                6
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ 2x^2 + x + 3  }{\left(x+3\right)\cdot\underset{1}{\cancel{\left(x+2\right)}}}  \cdot \frac{\left(x-3\right)\cdot\overset{1}{\cancel{\left(x+2\right)}}}{x} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                7
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ \left(2x^2 + x + 3\right) \cdot \left(x-3\right)}{\left(x+3\right)\cdot x} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                8
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ 2x^3-6x^2+x^2-3x+3x-9 }{x^2+3x} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                9
+            </div>
+        </div>
+
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(\frac{ 2x^3-5x^2-9 }{x^2+3x} \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                9
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+        <div class="row-container">
+            <div class="cella-formula">
+                <p class="formula">
+                    \(  \)
+                </p>
+            </div>
+            
+            <div class="cella-numero-passaggi">
+                
+            </div>
+        </div>
+    -->
+
+</body>
+</html>
+
+<!-- 
+
+<h2>Esercizio </h2>
+<p class="formula">
+    \(  \)
+</p>
+<div class="suggerimento">
+    <p>Suggerimenti</p>
+</div> 
+
+
+<h2>Soluzione Esercizio </h2>
+table>
+    <tr>
+        <td>
+            
+        </td>
+        <td>
+
+        </td>
+        <td>
+
+        </td>
+    </tr>
+</table>    
+<hr>
+
+-->
