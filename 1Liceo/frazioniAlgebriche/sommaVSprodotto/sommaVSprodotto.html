@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="sommaVSprodotto.css">
+    <title>Somma VS prodotto</title>
+</head>
+<body>
+
+    <h1><span style="color: red;">Somma</span> V.S. <span style="color: blue;">Prodotto</span></h1>
+    
+    <div id="img-container">
+        <img src="image/sommaVSprodotto.png" alt="">
+    </div>
+
+    <p>Svolgiamo la <span style="color: red;"><b>SOMMA</b></span></p>.
+    
+    <p class="formula">
+        \[ \frac{x^2-3x}{3x^3+15x^2-72x} \color{red}{+} \color{black}{} \frac{2x+16}{x^3-6x^2+9x}\]
+    </p>
+
+    <p>Scomponiamo i denominatori.</p>.
+    
+    <p class="formula">
+        \[ \frac{x^2-3x}{3\cdot x\cdot\left(x-3\right)\cdot\left(x+8\right)} \color{red}{+} \color{black}{} \frac{2x+16}{x\cdot\left(x-3\right)^2}\]
+    </p>
+    
+    <p>Troviamo il m.c.m. tra i denominatori e scriviamo un'unica frazione.</p>
+    
+    <p class="formula">
+        \[ \frac{\qquad\qquad\qquad\qquad\qquad}{3\cdot x\cdot\left(x-3\right)^2\cdot\left(x+8\right)} \]
+    </p>
+
+    <p>
+        Moltiplichiamo ogni <span style="color: #008000"><b>numeratore</b></span> per il <span style="color: #ff69b4;"><b>risultato della divisione tra il m.c.m. ed il relativo denominatore</b></span>.
+    </p>
+
+    <p class="formula">
+        \[ \frac
+        {\color{#008000}{\left(x^2-3x\right)}\color{black}{\cdot}\color{#ff69b4}{\left(x-3\right)}
+        \color{red}{+}\color{#008000}{3}\color{black}{\cdot}\color{#ff69b4}{\left(x+8\right)}}{3\cdot x\cdot\left(x-3\right)^2\cdot\left(x+8\right)} \]
+    </p>
+    <p>
+        Svolgiamo i conti al numeratore
+    </p>
+    <p class="formula">
+        \[ \frac{x^3-3x^2-3x^2+9x\color{red}{+}\color{black}{}3x+24}{3\cdot x\cdot\left(x-3\right)^2\cdot\left(x+8\right)} \]
+    </p>
+
+    <p>Sommiamo i monomi simili al numeratore</p>
+    <p class="formula">
+        \[ \frac{x^3-6x^2+12x+24}{3\cdot x\cdot\left(x-3\right)^2\cdot\left(x+8\right)} \]
+    </p>
+    <p>
+        Con questo abbiamo terminato di svolgere la somma. <br><br>
+        Passiamo al <span style="color: blue"><b>PRODOTTO</b></span>
+    </p>
+
+    <p class="formula">
+        \[ \frac{x^2-3x}{3x^3+15x^2-72x} \color{blue}{\cdot} \color{black}{} \frac{2x+16}{x^3-6x^2+9x}\]
+    </p>
+
+    <p>
+        Scomponiamo <u>tutti</u> i numeratori e denominatori delle frazioni che dobbiamo moltiplicare.
+    </p>
+
+    <p class="formula">
+        \[ \frac{x\cdot\left(x-3\right)}{3\cdot x\cdot\left(x-3\right)\cdot\left(x+8\right)} \color{blue}{\cdot} \color{black}{} \frac{2\cdot\left(x+8\right)}{x\cdot\left(x-3\right)^2}\]
+    </p>
+
+    <p>
+        Semplifichiamo sia verticalmente che in croce.
+    </p>
+
+    <p class="formula">
+        \[ \frac{\overset{1}{\cancel{x}}\cdot\overset{1}{\bcancel{\left(x-3\right)}}}{3\cdot x\cdot \underset{1}{\bcancel{\left(x-3\right)}} \cdot \underset{1}{\bcancel{\left(x+8\right)}}} \color{blue}{\cdot} \color{black}{} \frac{2\cdot \bcancel{\left(x+8\right)} }{\underset{1}{\cancel{x}}\cdot\left(x-3\right)^2}\]
+    </p>
+
+    <p>
+        Moltiplichiamo il numeratore con il numeratore ed il denominatore con il denominatore.
+    </p>
+
+    <p class="formula">
+        \[ \frac{2}{3x\left(x-3\right)^2} \]
+    </p>
+
+    <p>
+        Svolgiamo i calcoli al denominatore.
+    </p>
+
+    <p class="formula">
+        \[ \frac{2}{3x\left(x^2+9-6x\right)} \]
+    </p>
+    <p class="formula">
+        \[ \frac{2}{3x^3+27x-18x^2} \]
+    </p>
+</body>
+</html>

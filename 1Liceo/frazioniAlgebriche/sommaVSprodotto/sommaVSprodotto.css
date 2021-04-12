@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    width: 70%;
+    padding: 1rem;
+    margin: auto;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 1px black solid;
+    margin: auto;
+}
+
+.formula {
+    font-size: 1.6rem;
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    #img-container {
+        overflow: scroll;
+        width: 100%;
+    }
+    
+    img {
+        width: 200%;
+    }
+
+    .formula {
+        font-size: 1.5rem;
+        overflow-x: scroll;
+    }
+}
+
