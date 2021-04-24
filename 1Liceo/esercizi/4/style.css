@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 24px;
+    width: 70%;
+    padding: 1rem;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    margin: auto;
+    
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.formula {
+    font-size: 1.7rem;
+}
+
+
+
+.suggerimento {
+    color: gray;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.space {
+    margin-bottom: 1000px;
+}
+
+.peso { 
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.es-img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#es-link {
+    color: gray;
+}
+
+video {
+    width: 100%;
+    border: 1px solid black;
+}
+@media (max-width: 400px) {
+    html {
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+
+    body {
+        font-size: 20px;
+        width: 98%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .formula {
+        font-size: 1rem;
+        overflow-x: scroll;
+    }
+
+    .row-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+    
+    .cella-formula {
+        width: 100%;
+    }
+    
+    .cella-spiegazione {
+        width: 100%;
+        padding: 1rem;
+        border: 0.01rem black solid;
+    }
+    
+    .cella-numero-passaggi {
+        width: 5%;
+        text-align: center;
+        font-size: 0.8rem;
+        margin-left: 2%;
+        border: 0.01rem black solid;
+        border-radius: 50%;
+    }
+
+    video {
+        width: 100%;
+    }
+
+}
