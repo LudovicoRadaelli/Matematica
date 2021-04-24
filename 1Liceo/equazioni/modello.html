@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <link rel="stylesheet" href="modello.css">
+    <title>Modelli matematici</title>
+</head>
+<body>
+    
+    <div id="sketch"></div>
+    <div id="container">
+
+        <div id="animation-controls" class="container">
+            <div class="button-container">
+                <button id="play-pause-button" onclick="changePlayValue()">&#9654;</button>
+                <button onclick="refresh()">&#8634;</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="meet-container" class="container">
+            <div class="button-container">
+                <button id="meet-decrease" class="change-value" onclick="meetDecrease()">-</button>
+                <button id="meet-increase" class="change-value" onclick="meetIncrease()">+</button>
+            </div>
+            <p id="meet-value" class="value">punto d'incontro: 500</p>
+        </div>
+
+        <hr>
+
+        <div id="start-container" class="container">
+            <div class="button-container">
+                <button id="start-decrease" class="change-value" onclick="startDecrease()">-</button>
+                <button class="change-value" id="start-increase" onclick="startIncrease()">+</button>
+            </div>
+            <input id="start-change" class="change-value" type="range" min=0 max=10 value=6.66 step=0.01 onchange="startChange()">
+            <p id="start-value" class="value">ritardo partenza: 6.66</p>
+        </div>
+    </div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>
