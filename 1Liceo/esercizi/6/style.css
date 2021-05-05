@@ -1,0 +1,42 @@
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+hr {
+    margin-top: 1rem;
+}
+
+.ex {
+    margin-bottom: 3rem;
+}
+
+.example {
+    border: 1px black solid;
+    padding: 1rem;
+}
+
+.extra-padding {
+    padding-bottom: 4rem;
+}
+
+@media print {
+    h1 {
+        page-break-before: always;
+    }
+}
