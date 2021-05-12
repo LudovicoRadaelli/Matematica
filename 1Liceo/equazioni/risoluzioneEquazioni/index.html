@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Equazioni di I grado</title>
+</head>
+<body>
+    <nav id="nav-bar">
+        <ul>
+            <li>
+                <a href="#1">1) Cosa significa risolvere un'equazione?</a>
+            </li>
+            <li>
+                <a href="#2">2) In che modo si risolve un'equazione?</a>
+            </li>
+            <li>
+                <a href="#3">3) Metodo pratico per svolgere gli esercizi</a>
+            </li>
+        </ul>
+    </nav>
+    <div id="content-container">
+        <h1>Equazioni di primo grado</h1>
+
+        <hr>
+        <hr>
+        
+        <h2 id="1">1) Cosa significa risolvere un'equazione?</h2>
+        
+        <p>
+            Consideriamo il polinomio \( 2x + 5 \).
+            <br>
+            Sappiamo che \(x\) è un numero "camuffato" da lettera.
+            <br>
+            Quale numero? Beh, \(x\) potrebbe essere <b><i>qualsiasi</i></b> numero. 
+            <br>
+            A seconda di che numero è
+            \(x\), il valore di \(2x+5\) cambia.
+            <br>
+        </p>
+
+        <button id="sottrai1" class="inputButton" onclick="sottrai(1)">-</button><button id="aggiungi1" class="inputButton" onclick="aggiungi(1)">+</b></button>
+        <div class="espressione-container">
+            <p>
+                Ad esempio \(x\) potrebbe essere <span id="numberInput1" class="numberInput">\(\color{red}{6}\)</span> 
+                <br>
+                Di conseguenza,
+                
+            </p>
+            <p id="espressione1" class="formula">
+                \(2\color{red}{x}\color{black}{\,\,+\,\, 5 \,\,\,=\,\,\,  2\cdot}\color{red}{6}\color{black}{\,\,+\,\, 5 \,\,\,=\,\,\, 17}\)
+            </p>
+        </div>
+        <br>
+        <p>
+            Consideriamo anche il polinomio \(3x+3\).
+            <br>
+            Come per il polinomio precedente, il valore di \(3x+3\) dipende dal valore di \(x\)
+        </p>
+        <button id="sottrai2" class="inputButton" onclick="sottrai(2)">-</button><button id="aggiungi2" class="inputButton" onclick="aggiungi(2)">+</b></button>
+        <div class="espressione-container">
+            <p>
+                Ad esempio \(x\) potrebbe essere <span id="numberInput2" class="numberInput">\(\color{red}{6}\)</span> 
+                <br>
+                Di conseguenza,
+                
+            </p>
+            <p id="espressione2" class="formula">
+                \(3\color{red}{x}\color{black}{\,\,+\,\, 3 \,\,\,=\,\,\,  3\cdot}\color{red}{6}\color{black}{\,\,+\,\, 3 \,\,\,=\,\,\, 21}\)
+            </p>
+        </div>
+
+        <br>
+        <p >
+            Ora facciamoci la seguente domanda: 
+        </p>
+        <p id="domanda">
+            <span style="color: green;"><b>esiste un numero \(x\) per il quale \(2x+5\) è uguale a \(3x+3\)?</b></span>
+        </p>
+        <p>
+            In altre parole <span style="color: green;"><b>stiamo cercando un valore \(x\) tale che:</b></span>
+        </p>
+        <p id="domanda">
+            \[\color{green}{2x+5=3x+3}\]
+        </p>
+
+        <p>
+            Proviamo a vedere se riusciamo ad indovinare questo misterioso numero.
+        </p>
+
+        <button id="sottrai3" class="inputButton" onclick="sottrai(3)">-</button><button id="aggiungi3" class="inputButton" onclick="aggiungi(3)">+</b></button>
+        <div id="espressione3-container" class="espressione-container">
+            <p>
+                Se <span id="numberInput3" class="numberInput">\(x = \color{red}{6}\)</span>
+            </p>
+            <p id="espressione3" class="formula">
+                \(2\color{red}{x}\color{black}{\,\,+\,\, 5 \,\,\,=\,\,\,  2\cdot}\color{red}{6}\color{black}{\,\,+\,\, 5 \,\,\,=\,\,\, 17}\)
+                <br>
+                \(3\color{red}{x}\color{black}{\,\,+\,\, 3 \,\,\,=\,\,\,  3\cdot}\color{red}{6}\color{black}{\,\,+\,\, 3 \,\,\,=\,\,\, 21}\)
+            </p>  
+        </div>
+        <br>
+        <hr>
+        <p>Riassumendo:</p>
+        <p>
+            Un'equazione è un'uguaglianza tra quantità che coinvolgono delle <b>incognite</b>. <br>
+            Risolvere un'equazione significa trovare per quale valore dell'incognita l'uguaglianza è vera.
+        </p>
+        <br>
+        <br>
+        <hr>
+        <hr>
+
+        <h2 id="2">2) In che modo si risolve un'equazione?</h2>
+
+        <br>
+        <div class="video-container">
+            <video class="video" src="imagesAndVideos/Equazione1.mp4" controls></video>
+        </div>
+        <br>
+        <p>
+            Provate voi a manipolare la forma di quest'equazione spostando i termini che la compongono da una parte
+            all'altra dell'uguale.
+        </p>
+        <br>
+        <div class="video-container">
+            <script type="text/javascript">url = parent.document.URL; document.write('<iframe style="border: none" src=\'https://graspablemath.com/canvas/embed.html?load=_31cfad8b3225c3b4&options={"use_toolbar": false, "vertical_scroll": false}&parent_url='+url+'\' width=100% height=5%></iframe>');</script>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <h2 id="3">3) Metodo pratico per svolgere gli esercizi</h2>
+        <br>
+        Data un'equazione, per risolverla si effettuano i seguenti passaggi:
+        <ul>
+            <li>Si svolgono tutti i calcoli a sinistra e destra dell'uguale.</li>
+            <li>Si portano i termini incogniti a sinistra dell'uguale ed i termini noti a destra dell'uguale.</li>
+            <li>Si effettuano le somme in entrambi i membri dell'equazione.</li>
+            <li>Si isola la \(x\) dividendo entrambi i membri per il cofficiente della \(x\).</li>
+        </ul>
+        <br>
+        <h3>Esempio svolto 1</h3>
+        <div class="video-container">
+            <video class="video" src="imagesAndVideos/equazione2.mp4"></video>
+        </div>
+        <br>
+        <h3>Esempio svolto 2</h3>
+        <div class="video-container">
+            <video class="video" src="imagesAndVideos/equazione3.mp4"></video>
+        </div>
+        <br>
+        <h3>Esempio svolto 3</h3>
+        <div class="video-container">
+            <video class="video" src="imagesAndVideos/equazione4.mp4"></video>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
