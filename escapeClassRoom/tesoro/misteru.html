@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misteru</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-size: 23px;
+        width: 70%;
+        padding: 1rem;
+        padding-top: 1.3rem;
+        margin: auto;
+        color: #6cd1c3;
+        background-color: #000;
+        line-height: 1.5rem;
+    }
+
+    audio {
+        display: block;
+        width: 50%;
+        margin: auto;
+    }
+
+    #musica, 
+    #parole {
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    
+
+    #laptop-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+    }
+
+    #mobile-container {
+        display: none;
+    }
+
+    #testo {
+        width: 50%;
+        color: #6cd1c3;
+    }
+
+    #traduzione {
+        width: 50%;
+        
+        text-align: right;
+        color: tomato;
+    }
+
+    @media (max-width: 950px) {
+        body {
+            font-size: 18px;
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+        #laptop-container {
+            display: flex;
+        }
+        #mobile-container {
+            display: none;
+        }
+    }
+    
+
+    
+
+    @media (max-width: 754px) {
+        body {
+            font-size: 18px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        #mobile-container {
+            display: none;
+        }
+        #laptop-container {
+            display: flex;
+        }
+    }
+
+    @media (max-width: 650px) {
+        body {
+            font-size: 18px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            color: tomato;
+        }
+
+        p {
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+
+        audio {
+            width: 100%;
+            height: 6vh;
+        }
+
+        #laptop-container {
+            display: none;
+        }
+
+        #mobile-container {
+            display: block;
+        }
+
+        .tomato {
+            color: tomato;
+        }
+    }
+
+
+
+
+</style>
+<body>
+    <audio src="img/Davide Ambrogio - Misteru.mp3" controls autoplay></audio>
+    <p id="musica"><i>Voce e musica: D. Ambrogio</i></p>
+    <p id="parole"><i>Testo: I.Buttitta</i></p>
+    <div id="laptop-container">
+        <div id="testo">
+            <h1>Misteru</h1>
+            <p>
+                E’ l’arba
+                <br>
+                e sugnu davanti o mari
+                <br>
+                a scriviri e pinzari
+                <br>
+                o misteru da vita e da natura
+                <br>
+                ca mi mpidisci di sapiri
+                <br>
+                cu sugnu
+                <br>
+                di unni vegnu
+                <br>
+                e chi vinni a fari nto munnu
+                <br>
+                <br>
+
+                ​
+
+                Ancora un sacciu
+                <br>
+                chi è a carni
+                <br>
+                l’ossa
+                <br>
+                i vini
+                <br>
+                u sangu
+                <br>
+                e i miliardi di celluli
+                <br>
+                chi nascinu e morinu
+                <br>
+                e mi fannu cantari
+                <br>
+                <br>
+
+                ​
+
+                Un sacciu chi è a vuci,
+                <br>
+                si resta spersa nni l’aria
+                <br>
+                o nna portamu cu l’anima;
+                <br>
+                e si fu omu, animali
+                <br>
+                diavolu o santu
+                <br>
+                cu nna detti prima
+                <br>
+                e nni nzignò a parrari
+                <br>
+                <br>
+
+                ​
+
+                Un sacciu cu fici u cielu
+                <br>
+                unni pighhiò i culura
+                <br>
+                u punzeddu
+                <br>
+                e si pi stanchizza si scudò
+                <br>
+                di signari i limmiti
+                <br>
+
+                ​
+
+                E un sacciu mancu
+                <br>
+                cu quali arti e misteri
+                <br>
+                pittò i muntagni chi petri
+                <br>
+                ca cancianu forma e apparenza
+                <br>
+                tutti i voti ca taliàmu
+                <br>
+                <br>
+
+                ​
+
+                U misteru è puisia,
+                <br>
+                è u chiù granni sognu,
+                <br>
+                fa bella e ricca a vita
+                <br>
+                e dura di sempre;
+                <br>
+                e io ci campu dintra
+                <br>
+                filici di ci essiri
+                <br>
+                si sugnu cca all’arba
+                <br>
+                davanti u mari
+                <br>
+                a scriviri e pinzari
+                <br>
+                senza sapiri pirchì u fazzu,
+                <br>
+                cu mu fa fari,
+                <br>
+                e si servi fallu.
+                <br>
+                <br>
+
+                ​
+
+                Cca a pinzari ca semu cincu miliardi
+                <br>
+                e semu tutti diversi:
+                <br>
+                diversi di gesti
+                <br>
+                <br>
+
+                Di figura
+                <br>
+                di mmagini
+                <br>
+                di impronta
+                <br>
+                e di curaggiu.
+                <br>
+                <br>
+
+                diversa a taliata
+                <br>
+                u projiri e u riciviri
+                <br>
+                u chianciri e u cantari
+                <br>
+                l’amari e u disamari.
+                <br>
+                <br>
+
+                Nuddu e nudda
+                <br>
+                ora e mai
+                <br>
+                fu ed è
+                <br>
+                di corpu e d'anima
+                <br>
+                copia uguali e pricisa
+                <br>
+                di nàutru e di nàutra.
+                <br>
+                <br>
+            </p>
+        </div>
+        <div id="traduzione">
+            <h1>Mistero</h1>
+            <p>
+                E’ l’alba 
+                <br>
+                e sono davanti al mare 
+                <br>
+                a scrivere e pensare 
+                <br>
+                al mistero della vita e della natura  
+                <br>
+                che mi impedisce di sapere 
+                <br>
+                chi sono, 
+                <br>
+                da dove vengo 
+                <br>
+                e che venni a fare al mondo.
+                <br>
+                <br>
+
+
+                Ancora no so 
+                <br>
+                cos’è la carne, 
+                <br>
+                le ossa, 
+                <br>
+                le vene, 
+                <br>
+                il sangue 
+                <br>
+                e le miliardi di cellule 
+                <br>
+                che nascono e muoiono 
+                <br>
+                e mi fanno cantare.
+                <br>
+                <br>
+
+                Non so cos’è la voce, 
+                <br>
+                se si disperde nell’aria 
+                <br>
+                o ce la portiamo in cielo con l’anima; 
+                <br>
+                e se fu uomo, animale, 
+                <br>
+                diavolo o santo 
+                <br>
+                chi fu il primo a darcela 
+                <br>
+                e ci insegnò a parlare.
+                <br>
+                <br>
+
+                Non so chi fece il cielo, 
+                <br>
+                dove prese i colori, 
+                <br>
+                il pennello 
+                <br>
+                E se per stanchezza dimenticò 
+                <br>
+                di segnare i confini. 
+                <br>
+                Non so nemmeno 
+                <br>
+                con quale arte e mestiere 
+                <br>
+                dipinse le montagne con le pietre 
+                <br>
+                che cambiano forme e colore 
+                <br>
+                tutte le volte che le guardiamo. 
+                <br>
+                <br>
+
+                Il mistero è poesia, 
+                <br>
+                è il più grande sogno, 
+                <br>
+                fa bella e ricca la vita 
+                <br>
+                e dura da sempre; 
+                <br>
+                e io ci vivo dentro 
+                <br>
+                felice di esserci 
+                <br>
+                se sono qui all’alba 
+                <br>
+                a scrivere e pensare 
+                <br>
+                senza sapere perché lo faccio, 
+                <br>
+                chi me lo fa fare 
+                <br>
+                e se serve farlo.
+                <br>
+                <br>
+                Qui a pensare 
+                <br>
+                che siamo cinque miliardi
+                <br>
+                e siamo tutti diversi: 
+                <br>
+                diversi i gesti, 
+                <br>
+                <br>
+                
+                la figura, 
+                <br>
+                l’immagine, 
+                <br>
+                l’impronta 
+                <br>
+                e il coraggio. 
+                <br>
+                
+                Diversa la guardata, 
+                <br>
+                il porgere e il ricevere, 
+                <br>
+                il piangere e il cantare, 
+                <br>
+                l’amare e il disamare.
+                <br>
+                <br>
+
+                Nessuno e nessuna, 
+                <br>
+                ora e mai, 
+                <br>
+                fu ed è, 
+                <br>
+                di corpo e d’anima, 
+                <br>
+                copia uguale e precisa, 
+                <br>
+                di un altro e di un’altra
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+
+    <div id="mobile-container">
+        <h1>Misteru</h1>
+
+        <p class="tomato">E’ l’arba</p>
+        <p>E’ l’alba</p>
+        <p class="tomato">e sugnu davanti o mari</p>
+        <p>e sono davanti al mare</p>
+        <p class="tomato">a scriviri e pinzari</p>
+        <p>a scrivere e pensare</p>
+        <p class="tomato">o misteru da vita e da natura</p>
+        <p>al mistero della vita e della natura</p>
+        <p class="tomato">ca mi mpidisci di sapiri</p>
+        <p>che mi impedisce di sapere</p>
+        <p class="tomato">cu sugnu</p>
+        <p>chi sono</p>
+        <p class="tomato">di unni vegnu</p>
+        <p>da dove vengo</p>
+        <p class="tomato">e chi vinni a fari nto munnu</p>
+        <p>e che venni a fare al mondo</p>
+        <br>
+        <p class="tomato">Ancora un sacciu</p>
+        <p>Ancora no so </p>
+        <p class="tomato">chi è a carni</p>
+        <p>cos’è la carne</p>
+        <p class="tomato">l’ossa</p>
+        <p>le ossa</p>
+        <p class="tomato">i vini</p>
+        <p>le vene</p>
+        <p class="tomato">u sangu</p>
+        <p>il sangue</p>
+        <p class="tomato">e i miliardi di celluli</p>
+        <p>e i miliardi di cellule</p>
+        <p class="tomato">chi nascinu e morinu</p>
+        <p>che nascono e muoiono</p>
+        <p class="tomato">e mi fannu cantari</p>
+        <p>e mi fanno cantare</p>
+        <br>
+        <p class="tomato">Un sacciu chi è a vuci,</p>
+        <p>Non so cos'è la voce</p>
+        <p class="tomato">si resta spersa nni l’aria</p>
+        <p>se si disperde nell’aria</p>
+        <p class="tomato">o nna portamu cu l’anima;</p>
+        <p>o ce la portiamo in cielo con l’anima</p>
+        <p class="tomato">e si fu omu, animali</p>
+        <p>e se fu opmo, animale</p>
+        <p class="tomato">diavolu o santu</p>
+        <p>diavolo o santo</p>
+        <p class="tomato">cu nna detti prima</p>
+        <p>che fu il primo a darcela</p>
+        <p class="tomato">e nni nzignò a parrari</p>
+        <p>e ci insegnò a parlare</p>
+        <br>
+        <p class="tomato">Un sacciu cu fici u Cielu</p>
+        <p>Non so chi fece il cielo</p>
+        <p class="tomato">unni pighhiò i culura</p>
+        <p>dove prese i colori</p>
+        <p class="tomato">u punzeddu</p>
+        <p>il pennello</p>
+        <p class="tomato">u si pi stanchizza si scudò</p>
+        <p>u se per stanchezza di scordò</p>
+        <p class="tomato">di signari i limmiti</p>
+        <p>di segnare i confini</p>
+        <br>
+        <p class="tomato">E un sacciu mancu</p>
+        <p>Non so nemmeno </p>
+        <p class="tomato">cu quali arti e misteri</p>
+        <p>con quale arte e maestria</p>
+        <p class="tomato">pittò i muntagni chi Petri</p>
+        <p>dipinse le montagne</p>
+        <p class="tomato">ca cancianu forma e apparenza</p>
+        <p>che cambiano forma ed apparenza</p>
+        <p class="tomato">tutti i voti ca taliàmu</p>
+        <p>tutte le volte che le guardiamo</p>
+        <br>
+        <p class="tomato">U misteru è puisia,</p>
+        <p>Il mistero è poesia</p>
+        <p class="tomato">è u chiù granni sognu,</p>
+        <p>è il più grande sogno</p>
+        <p class="tomato">fa bella e ricca a vita</p>
+        <p>fa bella e ricca la vita</p>
+        <p class="tomato">e dura di sempre;</p>
+        <p>e dura da sempre</p>
+        <p class="tomato">e io ci campu dintra</p>
+        <p>ed io ci vivo dentro</p>
+        <p class="tomato">filici di ci essiri</p>
+        <p>felice di esserci</p>
+        <p class="tomato">si sugnu cca all’arba</p>
+        <p>se sono qui all'alba</p>
+        <p class="tomato">davanti u mari</p>
+        <p>davanti al mare</p>
+        <p class="tomato">a scriviri e pinzari</p>
+        <p>a scrivere e pensare</p>
+        <p class="tomato">senza sapiri pirchì u fazzu,</p>
+        <p>senza sapere perché lo faccio</p>
+        <p class="tomato">cu mu fa fari,</p>
+        <p>chi me lo fa fare</p>
+        <p class="tomato">e si servi fallu.</p>
+        <p>e se serve farlo</p>
+        <br>
+        <p class="tomato">CCa a pinzari ca semu cincu miliardi</p>
+        <p>Qui a pensare che siamo cinque miliardi</p>
+        <p class="tomato">e semu tutti diversi:</p>
+        <p>e siamo tutti diversi:</p>
+        <p class="tomato">diversi di gesti</p>
+        <p>diversi i gesti</p>
+        <p class="tomato">di figura</p>
+        <p>la figura</p>
+        <p class="tomato">di mmagini</p>
+        <p>l'immagine</p>
+        <p class="tomato">di impronta</p>
+        <p>l'impronta </p>
+        <p class="tomato">e di curaggiu.</p>
+        <p>e il coraggio</p>
+        <p class="tomato">diversa a taliata</p>
+        <p>diversa lo sguardo</p>
+        <p class="tomato">u projiri e u riciviri</p>
+        <p>il porgere ed il ricevere</p>
+        <p class="tomato">u chianciri e u cantari</p>
+        <p>il piangere ed il cantare</p>
+        <p class="tomato">l’amari e u disamari.</p>
+        <p>l'amare ed il disamare</p>
+        <br>
+        <p class="tomato">Nuddu e nudda</p>
+        <p>Nessuno e nessuna</p>
+        <p class="tomato">ora e mai</p>
+        <p>ora e mai</p>
+        <p class="tomato">fu ed è</p>
+        <p>fu ed è</p>
+        <p class="tomato">di corpu e d'anima </p>
+        <p>di corpo e d'anima</p>
+        <p class="tomato">copia uguali e pricisa</p>
+        <p>copia uguale e pricisa</p>
+        <p class="tomato">di nàutru e di nàutra.</p>
+        <p>di un'altro e di un'altra</p>
+        
+    </div>
+​
+</body>
+</html>
