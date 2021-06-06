@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 65%;
+    height: 100vh;
+    margin: auto;
+    margin-bottom: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #6cd1c3;
+    padding: 1em;
+    background-color: #111;
+    border: 1px #efd178 solid;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 60vw;
+    height: 30vw;
+}

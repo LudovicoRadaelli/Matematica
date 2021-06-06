@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <title>Escape (class)Room</title>
+</head>
+
+<body> 
+  <p>
+    Una password di 10 cifre. <br>
+    Cercatela nel video.<br>
+  </p>  
+
+  <div class="container">
+    <video id="myVideo" autoplay loop controls>
+      <source src="video/mandelbrot.mp4" type="video/mp4">
+    </video>
+  </div>
+  <br>
+
+  <div class="sliderContainer">
+    <input id="speedSlider" class="slider" type="range" min="0" max="50" step="1" value="0" onchange="changeSpeed()" ontouchend="changeSpeed()">
+    <p id="speedPar" class="par">0</p>
+  </div>
+  <div class="sliderContainer">
+    <input id="startSlider" class="slider" type="range" min="0" max="150" step="1" value="0" onchange="changeStart()" ontouchend="changeStart()">
+    <p id="startPar" class="par">0</p>
+  </div>
+  <div class="sliderContainer">
+    <input id="endSlider" class="slider" type="range" min="100" max="240" step="1" value="240" onchange="changeEnd()" ontouchend="changeEnd()">
+    <p id="endPar" class="par">240</p>
+  </div>
+  <br>
+  
+  <hr>
+  <p>
+    <span id="key">🗝️</span>
+  </p>
+  
+  <p class="formula">
+    \(43x^3-1490x^2-3616x-4477\)
+  </p>
+  <hr>
+
+  <p id="passwordTitle">PASSWORD</p>
+  <input id="password" type="password">
+  <button id="checkPassword" onclick="checkPassword()">Invia</button>
+  
+
+  <script src="script.js"></script> 
+
+</body> 
+</html>
