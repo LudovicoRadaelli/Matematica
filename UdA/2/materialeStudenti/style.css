@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 60%;
+    height: 400vh;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    color: #DB4437;
+    text-align: center;
+}
+
+#activityTitle {
+    font-size: 1.6rem;
+    color: #0F9D58;
+    text-align: center;
+}
+
+#esTrapezoidi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.esTrap {
+    width: 20%;
+    height: 1.5rem;
+    color: white;
+    background-color:  #4285F4;
+    border: 0.2rem #91bafc solid;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+}
+
+.esTrap:hover {
+    transform: scale(1.1);
+}
+
+#geogebra1 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+#sketch1 {
+    width: 402px;
+    height: 402px;
+    border: 0.01rem black solid;
+    margin: auto;
+}
+
+.p5Canvas {
+    width: 100%;
+    margin: auto;
+}
+
+#eraseButton  {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    color: white;
+    background-color:  #4285F4;
+    border: 0.2rem #91bafc solid;
+}
+
+#geogebra2 {
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#numRect-container {
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#rangeN {
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#hint1 {
+    width: auto;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+.on {
+    position: relative;
+    display: inline-block;
+}
+  
+.on .onTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4285F4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.on .onTxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4285F4 transparent transparent transparent;
+}
+
+.on:hover .onTxt {
+    visibility: visible;
+}

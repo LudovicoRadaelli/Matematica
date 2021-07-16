@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="p5.js/sketch.js"></script>
+    <title>Homework 1</title>
+</head>
+<body>
+
+    <h1>Homework 1</h1>
+    <p id="activityTitle"><b><i>Il calcolo dell'area di una trapezoide</i></b></p>
+    
+    <p>
+        Con la parola <span style="color: #DB4437">trapezoide</span> indichiamo la parte di piano sottesa dal grafico 
+        di una funzione e compresa tra tale curva, l'asse \(x\) e due rette perpendicolari a tale asse. 
+    </p>
+    <div id="esTrapezoidi">
+        <button class="esTrap" onclick="esTrap(0)">Esempio 1</button>
+        <button class="esTrap" onclick="esTrap(1)">Esempio 2</button>
+        <button class="esTrap" onclick="esTrap(2)">Esempio 3</button>
+        <button class="esTrap" onclick="esTrap(3)">Esempio 4</button>
+    </div>
+
+    <div id="geogebra1"></div>
+    
+    <p>
+        <b>Come facciamo a calcolare l'area di un trapezoide?</b>
+        <br>
+        Non abbiamo nessuna formula diretta da usare. Anzi, se ci pensate, conosciamo poche formule dell'area di figure:
+        rettangolo, triangolo, quadrato... cerchiamo di lavorare con quello che abbiamo!
+    </p>
+    <p>
+        Siccome non sappiamo calcolare <b><i>esattamente</i></b> l'area del trapezoide, proviamo ad <b><i>approssimarla</i></b>
+        tramite figure di cui sappiamo calcolare l'area, rettangoli ad esempio.
+    </p>
+    <p>
+        Provate a ricoprire il trapezoide in figura con tanti rettangoli.
+    </p>
+    <div id="sketch1">
+    </div>
+    <button id="eraseButton" onclick="cancella()">Cancella</button>
+
+    <p>
+        Come vedete non riusciamo a ricoprire tutto il trapezoide. Però inserendo rettangoli sempre più piccoli riusciamo 
+        ad ottenere un'approssimazione sempre migliore della sua area.
+    </p>
+    <p>
+        Ora vediamo un modo furbo di effettuare il ricoprimento.
+    </p>
+    <div id="geogebra2"></div>
+    <div id="hint1" style="color: gray;">muovi lo slider</div>
+    <p>
+        Ad ogni passo l'intervallo \(\left[1,3\right]\) viene suddiviso in \(n\) intervalli.
+        <br>
+        A questo punto costruiamo tutti i rettangoli che hanno
+        <ul>
+            <li>
+                come base uno degli intervallini
+            </li>
+            <br>
+            <li>
+                come altezza il valore più piccolo  assunto dalla funzione nell'intervallino stesso.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Vediamo che più il numero \(n\) di intervallini è grande, più la stima dell'area del trapezoide è precisa.
+        Saremmo tentati di dire che 
+        <br>
+        <br>
+        <span style="color: #DB4437">
+            per \(n \rightarrow \infty\) la somma di tutte le aree dei rettangolo è esattamente uguale all'area del trapezoide.
+        </span>
+    </p>
+
+    <p>
+        Nella prossima lezione daremo rigore a quest'intuizione, arrivando alla definizione di 
+        <span style="color: #4285F4;">integrale definito</span>
+    </p>
+
+
+    
+
+
+
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
