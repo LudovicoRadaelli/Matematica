@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.7rem;
+}
+
+/* --------- NAVIGATION BAR --------- */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 0;
+}
+
+.button-style {
+    padding: 1rem;
+    border-radius: 18px  18px  18px 18px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.background-mod0 {
+    background-color:  #4285F4;   
+}
+
+.background-mod1 {
+    background-color: #DB4437;   
+}
+
+.background-mod2 {
+    background-color: #F4B400;   
+}
+
+.background-mod3 {
+    background-color: #0F9D58;   
+}
+
+nav::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  /* border-radius: 10px; */
+  background-color: #F5F5F5;
+}
+
+nav::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+nav::-webkit-scrollbar-thumb
+{
+  /* border-radius: 10px; */
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: white;
+}
+
+
+.button-style:hover { 
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+nav h2 #first {
+    margin-top: 1rem;
+}
+
+nav hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 0.001rem  #2272f1 solid;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.03rem 0.03rem black;
+}
+
+
+.nestedUl h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.90rem;
+}
+
+.nestedItem {
+    color: white;
+}
+
+
+/* --------- MAIN --------- */
+
+main {
+    width: 75%;
+    margin-left: 25%;
+}
+
+main #title {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    text-align: center;
+    line-height: 2.3rem;
+    margin-top: auto;
+}
+
+#title #h-container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    width: 60%;
+    padding: 1rem 0 1rem 0;
+    border: 0.01rem #F4B400 solid;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem 1rem lightgray;
+}
+
+#title h1,
+#title h2 {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+
+#title #titoloLezione {
+    color: #DB4437;
+    font-size: 2.5rem;
+}
+
+#title h2 {
+    font-size: 1.7rem;
+}
+
+#title #cdc {
+    color: #4285F4;
+}
+
+#title #candidato {
+    color: #0F9D58;
+}
+
+#title hr {
+    width: 80%;
+    border-top: 0.01rem #F4B400 solid;
+}
+
+.item-container {
+    /* width: 90%;
+    margin: auto; */
+    min-height: 100vh;
+    margin-top: 2rem;
+}
+
+.item-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.items {
+    width: 80%;
+    /* background: #e4eeff; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
+}
+
+.color-mod0 {
+    color: #4285F4;
+}
+
+.border-color-mod0 {
+    border: 0.1rem #4285F4 solid;
+}
+
+.color-mod1 {
+    color: #DB4437;
+}
+
+.border-color-mod1 {
+    border: 0.1rem #DB4437 solid;
+}
+
+.color-mod2 {
+    color: #F4B400;
+}
+
+.border-color-mod2 {
+    border: 0.1rem #F4B400 solid;
+}
+
+.color-mod3 {
+    color: #0F9D58;
+}
+
+.border-color-mod3 {
+    border: 0.1rem #0F9D58 solid;
+}
+
+#item-container-mediazione table ,
+#item-container-prerequisiti table {
+    width: 80%;
+    margin: auto;
+    font-size: 0.95rem;
+    line-height: normal;
+    background-color: rgb(240, 240, 240);
+}
+
+
+#item-container-prerequisiti td {
+    vertical-align: top;
+    width: 50%;
+    padding: 1rem;
+}
+
+#item-container-osa table {
+    width: 90%;
+    margin: auto;
+    font-size: 0.95rem;
+    line-height: normal;
+    background-color: rgb(240, 240, 240);
+}
+
+#item-container-osa td {
+    vertical-align: top;
+    width: 33.3333333%;
+    padding: 1rem;
+}
+
+.right-border {
+    border-right: 2px white solid;
+}
+
+#item-container-mediazione table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    background-color: rgb(240, 240, 240);
+}
+
+#item-container-mediazione .li-tic {
+    width: 90%;
+    /* text-align: justify; */
+}
+
+#item-container-mediazione a {
+    text-decoration: underline;
+    color: #4285F4; 
+}
+
+#item-container-valutazione table {
+    
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    background-color: rgb(240, 240, 240);
+}
+
+#item-container-valutazione .thin-td {
+    width: 5%;
+    text-align: center;
+}
+
+#item-container-valutazione td {
+    width: auto;
+}
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+.video-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
+}
+
+.video-row iframe {
+    width: 50%;
+    height: 30%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* #titleButtonFasi-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
+
+#fasiSvolgimento {
+    width: 50%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.fasi-btn {
+    font-size: 60px;
+    padding: 0.2rem;
+    margin: 0;
+} */
+
+
+
+.fasi-btn {
+    font-size: 2rem;
+    display: inline-block;
+    transform: scale(1.4);
+
+}
+
+.fasi-btn:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+
+#progressBar {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*-------------IMAGES-------------*/
+.student-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.student {
+    width: 10%;
+    height: 10%;
+}
+
+#road {
+    width: 20%;
+    float: left;
+    padding: 0.5rem;
+}
+
+#ability {
+    width: 10%;
+    margin-right: 1rem;
+    float: left;
+}
+
+#goal {
+    position: absolute;
+    top: 90px;
+    right: 10px;
+    width: 10%;
+    margin-right: 1rem;
+    float: right;
+}
+
+#timetable {
+    width: 20%;
+    float: right;
+    padding: 0.7rem;
+    margin-right: 1rem;
+}
+
+#technology {
+    width: 30%;
+    float: right;
+    margin-right: 1rem;
+}
+
+#cooperation {
+    width: 15%;
+    float: right;
+    margin-right: 1rem;
+}
+
+#classroom {
+    width: 15%;
+    float: right;
+    margin-right: 1rem;
+}
+
+#EE {
+    width: 20%;
+    float: right;
+    margin-right: 1rem;
+}
+
+.on {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .on .onTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4285F4;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    padding: 0.3rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .on .onTxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4285F4 transparent transparent transparent;
+  }
+  
+  .on:hover .onTxt {
+    visibility: visible;
+  }
+

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Progettazione Lezione</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="button-style background-mod0"><h2 id="first"><a href="#analisiContestoClasse" class="link">Analisi del contesto classe</a></h2></li>
+            
+            <li class="button-style background-mod1"><h2><a href="#collocazioneNelCurricolo" class="link">Collocazione nel curriculo</a></h2></li>
+            
+            <li class="button-style background-mod2"><h2><a href="#analisiPrequisiti" class="link">Analisi dei prerequisiti</a></h2></li>
+            
+            <li class="button-style background-mod3"><h2><a href="#OSA" class="link">Obiettivi specifici di apprendimento</a></h2></li>
+            
+            <li  class="button-style background-mod0">
+                <h2><a href="#mediazioneDidattica" class="link">Mediazione didattica</a></h2>
+                <ul class="nestedUl">
+                    <li><h3><a href="" class="link nestedItem">&bullet; Tempi e spazi</a></h3></li>
+                    <li><h3><a href="" class="link nestedItem">&bullet; Strumenti e risorse</a></h3></li>
+                    <li><h3><a href="" class="link nestedItem">&bullet; Metodologia didattica</a></h3></li>
+                    <li><h3><a href="" class="link nestedItem">&bullet; Strategie inclusive</a></h3></li>
+                </ul>
+            </li>
+            
+            <li class="button-style background-mod1"><h2><a href="#fasiSvolgimento" class="link">Fasi di svolgimento</a></h2></li>
+            
+            <li class="button-style background-mod2"><h2><a href="#verificaEValutazione" class="link">Verifica e valutazione</a></h2></li>
+
+            <li class="button-style background-mod3"><h2><a href="#recupero" class="link">Interventi di recupero</a></h2></li>
+
+            <li class="button-style background-mod0"><h2><a href="#materialeStudenti" class="link">Matriale fornito agli studenti</a></h2></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="title">
+            <div id="h-container">
+                <h1 id="titoloLezione">Elementi di calcolo delle probabilità</h1>
+                <hr>
+                <h2 id="cdc"><i>Concorso STEM 2021 - A026</i></h2>
+                <h2 id="candidato"><i>Candidato: Ludovico Radaelli</i></h2>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <h2  id="analisiContestoClasse" class="color-mod0">Analisi del contesto classe</h2>
+            <div class="items border-color-mod0" data-aos="zoom-in" data-aos-duration="1200">
+                <p> 
+                    La classe del \(4°\) anno di un liceo Scientifico, indirizzo <i>"Scienze Applicate"</i> è composta da \(25\) alunni.
+                    <br><br>
+                    I livelli di apprendimento degli studenti e studentesse della classe sono fortemente eterogenei, pur riscontrandosi un diffuso interesse per la materia.
+                    <br><br>
+                </p>
+                <div class="student-container">
+                    <img src="img/student.png" alt="" class="student"><img src="img/student (1).png" alt="" class="student"><img src="img/student.png" alt="" class="student"><img src="img/student (1).png" alt="" class="student">
+                </div>
+
+                <p>
+                    Del gruppo classe fa parte:
+                    <ul>
+                        <li>
+                            un alunno con DSA certificati, con diagnosi di dislessia e discalculia, per il quale è stato redatto un Piano Didattico Personalizzato come previsto dall'<i>art. 5 del D.M. del 12 luglio 2001</i>.
+                        </li>
+                        <br>
+                        <li>
+                            un alunno con disturbo dell'attenzione <div class="on">(ADHD)<div class="onTxt">Attention-deficit<br>hyperactivity disorder</div> </div>,
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <h2 id="collocazioneNelCurricolo" class="color-mod1">Collocazione nel curriculo</h2>
+            <div class="items border-color-mod1" data-aos="zoom-in" data-aos-duration="1200">
+                
+                <p>
+                    <img src="img/road.png" alt="" id="road">     Il segmento del curricolo relativo agli "Elementi di probabilità" è ricco di spunti applicativi ed i tipi di 
+                    ragionamenti adottati sono differenti rispetto a quelli impiegati nella maggior parte degli argomenti affrontati durante l'anno.
+                    <br>
+                    <br>
+                    Può risultare strategico ai fini della motivazione degli studenti introdurlo nell' <span class="color-mod1">ultimo mese dell'anno scolastico</span>, subito dopo il calcolo combinatorio.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="item-container" id="item-container-prerequisiti">
+            <h2 id="analisiPrequisiti" class="color-mod2">Analisi dei prerequisiti</h2>
+            <div class="items border-color-mod2" data-aos="zoom-in" data-aos-duration="1200">
+                <p>
+                    <img src="img/ability.png" alt="" id="ability">
+                    Di seguito vengono riportate le pre-abilità e le pre-conoscenze necessarie per affrontare in modo proficuo l'unità didattica:
+                    <table>
+                        <tr>
+                            <th class="right-border">Pre-conoscenze</th>
+                            <th>Pre-abilità</th>
+                        </tr>
+                        <tr>
+                            <td class="right-border">
+                                Conoscere la terminologia relativa al calcolo combinatorio: 
+                                <i>permutazioni</i>,
+                                <i>disposizioni semplici e con ripetizione</i>,
+                                <i>combinazioni semplici e con ripetizione</i>,
+                            </td>
+                            <td>Saper applicare le tecniche di calcolo combinatorio</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">Conoscere le principali operazioni insiemistiche:
+                                <i>intersezione ed unione tra insiemi</i>, <i>complemetare di un insieme</i>
+                            </td>
+                            <td>Saper rappresentare gli insiemi e le operazioni tra di essi attraverso i diagrammi di Venn</td>
+                        </tr>
+                        <tr>
+                            <td class="right-border">Conoscere i principali connettori logici:
+                                <i>e</i>, <i>o</i>, <i>non</i>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <!-- <tr>
+                            <td class="right-border"></td>
+                            <td></td>
+                        </tr> -->
+
+                    </table> 
+                </p>
+            </div>
+        </div>
+
+        <div class="item-container" id="item-container-osa">
+            <h2 id="OSA" class="color-mod3">
+                Obiettivi specifici di apprendimento <br>
+                e <br> 
+                Competenze
+            </h2>
+            <div class="items border-color-mod3" data-aos="zoom-in" data-aos-duration="1200">
+                    <p>
+                        Facendo riferimento alle <i>Indicazioni Nazionali</i> del secondo biennio del Liceo Scientifico, indirizzo <i>"Scienze Applicate"</i>, gli obiettivi e le conoscenze previsti per quest'unità sono i seguenti:
+                        <img src="img/goal.png" alt="" id="goal">
+    
+                        <table>
+                            <tr>
+                                <th class="right-border">Competenze</th>
+                                <th class="right-border">Conoscenze</th>
+                                <th>Abilità</th>
+                            </tr>
+                            <tr>
+                               
+                                <td class="right-border">
+                                    Saper elaborare un modello probabilistico di un fenomeno tratto da un contesto reale
+                                </td>
+                                <td class="right-border">
+                                    <i>Dati e previsioni</i>
+                                    <hr>
+                                    Conoscere la definizione di probabilità
+                                    <br>
+                                    <br>
+                                    Conoscere la probabilità condizionate
+                                    <br>
+                                    <br>
+                                    Conoscere il teorema di Bayes
+                                </td>
+                                <td>
+                                    <i>Dati e previsioni</i>
+                                    <hr>
+                                    Saper calcolare la probabilità di un evento attraverso l'ausilio del calcolo combinatorio
+                                    <br>
+                                    <br>
+                                    Saper calcolare la probabilità dell'unione ed intersezione di eventi
+                                    <br>
+                                    <br>
+                                    Saper calcolare la probabilità condizionata
+                                    <br>
+                                    <br>
+                                    Saper applicare il teorema di Bayes a situazioni tratte della realtà
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    <p>
+                        <div class="on"> <i>Competenze chiave di cittadinanza</i>
+                            <div class="onTxt">DM n. 139 del 22 agosto 2007</div>
+                        </div>
+                        <ul>
+                            <li>
+                                Imparare ad imparare;
+                            </li>
+                            <br>
+                            <li>
+                                Collaborare e partecipare.
+                            </li>
+                        </ul>
+                    </p>
+            </div>
+
+        <div class="item-container" id="item-container-mediazione">
+            <h2 id="mediazioneDidattica" class="color-mod0">Mediazione didattica</h2>
+            <div class="items border-color-mod0" data-aos="zoom-in" data-aos-duration="1200">
+                <h3 class="color-mod0">
+                    Tempi e spazi 
+                </h3>
+                <p>
+                    I tempi riportati di seguito sono flessibili e verranno rimodulati secondo le esigenze di apprendimento 
+                    della classe riscontrate nelle verifiche in itinere.
+                    <ul>
+                        <img src="img/timetable.png" alt="" id="timetable">
+                        <li>\(5\) lezioni in aula per un totale di \(10\) ore</li>
+                        <br>
+                        <li> \(5\) ore a casa</li>
+                        <br>
+                        <li> 2 ore di verifica</li>
+                        
+                    </ul>
+                </p>
+                <hr>
+                <h3 class="color-mod0">Strumenti e risorse</h3>
+                <p>
+                    Per affrontare quest'unità di apprendimento gli alunni avranno a disposizione 
+                    <ul>
+                        <li class="li-tic">
+                            Materiale multimediale realizzato dal docente. 
+                            <br>
+                            <br>
+                            L'utilizzo dei linguaggi HTML, CSS e Javascript per la creazione di pagine Web rende possibile l'organizzazione
+                            equilibrata di testi, immagini e video e permette di aggiungere interattività al materiale di  studio.
+                            <br>
+                            &Egrave; inoltre possibile integrare nella pagina web le diverse TIC a disposizione 
+                            <br>
+                            <br>
+                            <ul>
+                                <img src="img/technology.png" alt="" id="technology">
+                                <li>
+                                    <a href="https://www.geogebra.org/">GeoGebra</a>, 
+                                </li>
+                                <li>
+                                    <a href="https://www.google.it/intl/it/forms/about/">Google Moduli</a>, 
+                                </li>
+                                <li>
+                                    <a href="https://cmap.ihmc.us/cmaptools/">CMapTools</a>
+                                </li>
+                                <li>
+                                    <a href="https://scratch.mit.edu/">Scratch</a>
+                                </li>
+                                <li>
+                                    <a href="https://p5js.org/examples/">P5.js</a>                                          
+                                </li>
+                            </ul>
+                
+                        </li>
+                        <br>
+                        <li>
+                            Il libro di testo
+                        </li>
+                    </ul>
+                    
+                </p>
+                <hr>
+                <h3 class="color-mod0">Metodologia didattica</h3>
+                <p>
+                    <ul>
+                        <li>
+                            
+                            <p>
+                                <span class="color-mod0">Didattica induttiva e laboratoriale</span>
+                                <br>
+                                <img src="img/cooperation.png" alt="" id="cooperation">
+                                Viene favorita la collaborazione tra gli studenti, che a partire da problemi semplici vengono guidati verso lo sviluppo
+                                di considerazioni applicabili ad un'ampia classe di casi.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="color-mod0">Flipped Classroom</span>
+                                <br>
+                                <img src="img/classroom.png" alt="" id="classroom">
+                                Questo tipo di metodologia si ritiene adeguata per far fronte all'evidente limite del 
+                                tempo a disposizione.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <span class="color-mod0"><a href="https://explorabl.es/">Explorable Explanation</a></span>
+                                <br>
+                                Le Exporable Explanation (EE) sono documenti Web che attraverso vari media 
+                                (testo, immagini, audio, video) veicolano informazioni in maniera che il lettore possa interagire con esse. 
+                                <br>
+                                <img src="img/explorable explanation.png" alt="" id="EE">
+                                Questa modalità facilità il lettore nell'esplorazione dei concetti comunicati dal documento e lo
+                                rende <i>active reader</i>. 
+                            </p>
+                        </li>
+                    </ul>
+                    
+                    <br>                
+                </p>
+                <hr>
+                <h3 class="color-mod0">Strategie inclusive</h3>
+                <p>
+                    <span class="color-mod0">Alunno con DSA</span>
+                    <br>
+                    In ottemperanza alla <i>Legge 170/2010 sul diritto allo studio degli studenti DSA</i>, alla <i>direttiva sui BES (DIR. 27/12/2012)</i> e alle <i>Linee guida 12/07/2011</i>, si impiegheranno le misure dispensative e gli strumenti compensativi previsti dal PDP dello studente, funzionali a garantire il suo successo formativo e a valorizzare le sue potenzialità.
+                </p>
+                <table>
+                    <tr>
+                        <th class="right-border">Misure compensative</th>
+                        <th>Strumenti dispensativi</th>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            Utilizzo di formulari e mappe concettuali, per compensare lo sforzo mnemonico. Calcolatrice elettronica
+                        </td>
+                        <td>
+                            Dispensa dalla copiatura alla lavagna: si forniscono gli appunti della lezione su piattaforma/ausilio di registrazione vocale.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            Utilizzo di sintesi vocali e materiale digitali.
+                        </td>
+                        <td>
+                            Maggiore attenzione al contenuto, più che alla forma, in un elaborato
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            Utilizzo di un font adeguato nella traccia della prova scritta e maggior tempo per lo svolgimento 
+                        </td>
+                        <td>
+                            A discrezione dello studente, è possibile utilizzare il software di videoscrittura <a href="">Math-o-mir</a> per realizzare i compiti.
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    <span class="color-mod0">Alunno con ADHD</span>
+                    <br>
+                    Vengono messi in pratica i seguenti accorgimenti:
+                    <br>
+                    <br>
+                    <ul>
+                        <li>
+                            Il banco viene tenuto lontano da fonti di distrazione e possibilmente vicino alla cattedra.
+                        </li>
+                        <li>
+                            Individuare una zona, diversa da quella dove siede ordinariamente l'alunno, che venga indicata 
+                            come <i>"zona della concentrazione"</i> dove svolgere compiti importanti.
+                        </li>
+                        <li>
+                            Articolari i problemi in punti.
+                        </li>
+                        <li>
+                            Pianificare il lavoro insieme all'alunno.
+                        </li>
+                        <li>
+                            Se la situazione lo rende necessario, viene affiancato un compagno/a di classe con funzione di tutor.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="item-container">
+            
+            <!-- <div id="titleButtonFasi-container">
+                <span class="fasi-btn" id="left-btn">&triangleleft;</span>
+                <h2  id="fasiSvolgimento" class="color-mod1">Fasi di svolgimento</h2>
+                <span class="fasi-btn" id="left-btn">&triangleright;</span>
+            </div> -->
+
+            <h2  id="fasiSvolgimento" class="color-mod1">
+                <div class="fasi-btn" id="left-btn" onclick="changePage(-1)">&triangleleft;</div>
+                Fasi di svolgimento
+                <div class="fasi-btn" id="left-btn" onclick="changePage(1)">&triangleright;</div>
+            </h2>
+            <div id="progressBar"></div>
+
+            <div class="items border-color-mod1" data-aos="zoom-in" data-aos-duration="1200">
+                
+                <div class="slide">
+                    <p>
+                        La seguente scansione delle lezioni è flessibile e può essere rimodulata secondo le esigenze di apprendimento 
+                        della classe riscontrate nelle verifiche in itinere.
+                    </p> 
+                    <p><b class="color-mod1">Homework 1</b> <i>(1h)</i></p>
+                    <p>
+                        Explorable Explanation sui concetti di 
+                        <ul>
+                            <li>
+                                Esperimento aleatorio
+                            </li>
+                            <li>
+                                Spazio campionario
+                            </li>
+                            <li>
+                                Evento
+                            </li>
+                        </ul> 
+                        
+                    </p>
+                </div>
+            
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Lezione 1</b> <i>(2h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Discussione del Homework 1;
+                            </li>
+                            <br>
+                            <li>
+                                <span class="color-mod1">Concezione classica della probabilità.</span>
+                                <br>
+                                Vengono presentati agli studenti tre esperimenti aleatori di crescente complessità.
+                                Per ognuno di essi vengono presi in esame \(2\) eventi.
+                                <br>
+                                Gli studenti vengono divisi in \(5\) gruppi eterogenei. Ognuno di questi gruppo ha il compito di 
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        valutare quale dei due eventi ritiene più probabile;
+                                    </li>
+                                    <li>
+                                        scrivere una breve argomentazione a sostegno della propria tesi.
+                                    </li>
+                                </ul>
+                                <br>
+                                Successivamente si intraprende la discussione dei tre esperimenti.
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        si individuano le diverse posizioni dei gruppi
+                                    </li>
+                                    <li>
+                                        si confrontano argomenti di tesi opposte 
+                                    </li>
+                                    <li>
+                                        si confrontano argomenti di tesi concordi.
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Homework 2</b> <i>(1h)</i></p>
+                    <p>
+                        Viene proposto una breve video lezione nella quale
+                        <br>
+                        <ul>
+                            <li>
+                                si riassumono le analisi degli esperimenti aleatori sviluppate nella lezione precedente;
+                            </li>
+                            <br>
+                            <li>
+                                vengono introdotte la <span class="color-mod1">definizione classica di probabilità</span> e le nozioni di <span class="color-mod1">evento certo</span>, <span class="color-mod1">impossibile</span> e <span class="color-mod1">contrario</span>.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Lezione 2</b> <i>(2h)</i> </p>
+                    <p>
+                        <ul>
+                            <li>
+                                Discussione del Homework 2;
+                            </li>
+                            <br>
+                            <li>
+                                <span class="color-mod1">Probabilità dell'unione di due eventi</span>
+                                <br>
+                                La classe viene suddivisa in gruppi da \(5\) di livello eterogeneo.
+                                <br>
+                                Vengono proposti attraverso una scheda un numero congruo di esperimenti aleatori per i quali vengono 
+                                richieste  
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>
+                                        il calcolo della probabilità di un evento \(E_{1}\);
+                                    </li>
+                                    <br>
+                                    <li>
+                                        il calcolo della probabilità di un evento \(E_{2}\);
+                                    </li>
+                                    <br>
+                                    <li>
+                                        il calcolo della probabilità dell'evento \(E_{1} \cap E_{2}\);
+                                    </li>
+                                    <br>
+                                    <li>
+                                        il calcolo della probabilità dell'evento \(E_{1} \cup E_{2}\).
+                                    </li>
+                                </ul>
+                                <br>
+                                Infine viene richiesto di osservare i dati raccolti e cercare un relazione tra di essi.
+                                <br>
+                                Si introduce così la formula della probabilità dell'unione tra due eventi.
+                                <br>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Homework 3</b> <i>(1h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Esercizi di consolidamento sulla Lezione 2.
+                            </li>
+                            <br>
+                            <li>
+                                Explorable Explanation sulla <span class="color-mod1">probabilità condizionata</span> integrata da 
+                                <a href="https://setosa.io/ev/conditional-probability/">questa simulazione</a>.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Lezione 3</b> <i>(2h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Discussione del Homework 3;
+                            </li>
+                            <br>
+                            <li>
+                                <span class="color-mod1">Probabilità dell'intersezione di eventi</span>
+                                <br>
+                                Vengono presentati alla classe alcuni problemi, da risolvere in coppie di due studenti.
+                            </li>
+                            <br>
+                            <li>
+                                Si ripartisce la classe in \(5\) gruppi, ad ognuno dei quali viene richiesto di produrre un 
+                                foglio che sintetizzi il lavoro svolto fino a quel momento.
+                                <br>
+                                Vengono poste domande che favoriscano l'<span class="color-mod1">analisi meta-cognitiva</span>: individuazione di un indice di argomenti,
+                                concetti chiave, formule principali e ricavabili a partire da altre
+                            </li>
+                            <br>
+                        </ul>
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Homework 4</b> <i>(1h)</i></p>
+                    <p>
+                        <ul>
+                            <li>Esercizi riassuntivi sulla probabilità dell'unione ed intersezione di eventi.</li>
+                        </ul>                  
+                    </p>
+                </div>
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Lezione 4</b> <i>(2h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Discussione del Homework 4;
+                            </li>
+                            <br>
+                            <li>
+                                <span class="color-mod1">Problema di Monty Hall</span>
+                                <br>
+                                Dopo aver presentato il problema di Monty Hall alla classe viene richiesto al ciascun alunno 
+                                di presentare la propri tesi, argomentandola, e di ragionare sulla validità di quelle dei 
+                                propri compagni.
+                            </li>
+                            <br>
+                            <li>
+                                <span class="color-mod1">Teorema di Bayes</span>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="slide">
+                    <p><b class="color-mod1">Homework 5</b> <i>(1h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Svolgere l'Explorable Explanation disponibile <a href="https://web.archive.org/web/20160313220645/http://blog.vctr.me/monty-hall/">QUI</a>
+                            </li>
+                            <br>
+                            <li>
+                                Ricercare sul Web la soluzione rigorosa del Problema di Monty Hall.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                
+            
+                <div class="slide">
+                    <p><b class="color-mod1">Lezione 5</b> <i>(2h)</i></p>
+                    <p>
+                        <ul>
+                            <li>
+                                Discussione del Homework 5;
+                            </li>
+                            <br>
+                            <li>
+                                Applicazioni del Teorema di Bayes in contesti reali: 
+                                <br>
+                                analisi dell'articolo <a href="https://archiviodpc.dirittopenaleuomo.org/d/4213-il-teorema-di-bayes-fa-capolino-al-tribunale-di-milano">"Il teorema di Bayes fa capolino al tribunale di Milano"</a> 
+                            </li>
+                            <br>
+                            <li>
+                                Esercizi sulle applicazioni del Teorema di Bayes.
+                                La classe viene divisa in \(5\) gruppi e ad ogni gruppo viene assegnata una scheda di esercizi, 
+                                i primi guidati.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                    
+                <div class="slide">
+                    <p><b class="color-mod1">Verifica scritta</b> <i>(2h)</i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="item-container" id="item-container-valutazione">
+            <h2  id="verificaEValutazione" class="color-mod2">Verifica e valutazione</h2>
+            <div class="items border-color-mod2" data-aos="zoom-in" data-aos-duration="1200">
+                <h3 class="color-mod2">Valutazione dei pre-requisiti</h3>
+                <p>
+                    I prerequisiti di questa Unità di Apprendimento sono stati valutati nel contesto dell'Unità precedente.
+                </p>
+                <h3 class="color-mod2">Verifica in itinere</h3>
+                <p>
+                    <ul>
+                        <li>
+                            La discussione degli Homework permette di avere continui feedback da parte degli alunni.
+                    
+                        </li>
+                        <li>
+                            Vengono osservati comportamenti degli alunni durante lo svolgimento di lavori di gruppo e 
+                            la partecipazione alle attività.
+                        </li>
+                    </ul>
+                </p>
+                <h3 class="color-mod2">Valutazione sommativa</h3>
+                <p>
+                    Verrà predisposta una specifica tabella per la valutazione dei singoli esercizi assegnati nella verifica, 
+                    elaborata sulla base di questa tabella generale, approvata in sede di consiglio di classe.
+                </p>
+                <table>
+                    <tr style="margin-bottom: 1rem;">
+                        <th colspan="4"><b>Griglia di valutazione</b></th>
+                    </tr>
+                    <tr>
+                        <th class="right-border"><b>Indicatori</b></th>
+                        <th class="right-border">Peso</th>
+                        <th class="right-border">Giudizio</th>
+                        <th>Voto \(/\,\,10\)</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="right-border">
+                            
+                                <b>CONOSCENZE:</b>
+                                <br>
+                                Conoscenza di principi, teorie,
+                                concetti, termini, regole, metodi,
+                                tecniche 
+                            
+                        </td>
+                        <td class="thin-td right-border"  rowspan="2">
+                            \(35\%\)
+                        </td>
+                        <td class="right-border">
+                            
+                                Conoscenze molto scarse. Presenza di serie lacune
+                                contenutistiche. Mancanza di comprensione delle
+                                richieste. Mancata applicazione dei concetti e delle
+                                procedure o presenza di errori estremamente gravi.
+                                Lessico inadeguato . Neppur guidato l’alunno sa
+                                orientarsi
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(2/3\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            
+                                Conoscenze lacunose o estremamente superficiali.
+                                Impostazione errata degli esercizi o con errori diffusi.
+                                Svolgimenti incompleti. Incoerenza nelle
+                                argomentazioni. Esposizione impropria e confusa 
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(4\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border" rowspan="2">
+                            
+                                <b>ABILIT&Aacute;:</b>
+                                <br>
+                                Applicazione di concetti e
+                                procedure proprie degli esercizi
+                                proposti.
+                                <br>
+                                Completezza nella risoluzione;
+                                trattazione esauriente rispetto alle
+                                richieste
+                                <br>
+                                Correttezza nei calcoli e nei
+                                procedimenti.
+                                <br>
+                                Uso corretto del formalismo
+                                matematico e del linguaggio
+                                specifico.
+                                Coerenza nelle argomentazioni
+                            
+                        </td>
+                        <td class="thin-td right-border" rowspan="2">
+                           \(35\%\)
+                        </td>
+                        <td class="right-border">
+                            
+                                Conoscenze incerte, parziali o settoriali. Incompleta
+                                risoluzione degli esercizi. Esposizione imprecisa.
+                                Ridotta padronanza del linguaggio specifico 
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(5\)
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                        <td class="right-border">
+                            
+                                Conoscenze fondamentali. Risoluzione corretta
+                                superiore al 60% delle richieste per le prove con
+                                valutazione a punteggio. Trattazione completa di alcune
+                                delle richieste. Assenza di errori particolarmente gravi.
+                                Esposizione semplice, ma sostanzialmente ordinata. 
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(6\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border" rowspan="3">
+                            
+                                <b>COMPETENZE:</b>
+                                <br>
+                                Individuazione delle strategie
+                                risolutive più appropriate
+                                Rielaborazione personale delle
+                                conoscenze 
+                            
+                        </td>
+                        <td class="thin-td right-border" rowspan="3">
+                            \(35\%\)
+                        </td>
+                        <td class="right-border">
+                            
+                                Conoscenza discreta dei contenuti e applicazione
+                                corretta delle procedure. Trattazione completa di alcune
+                                delle richieste Esposizione appropriata. Uso
+                                sostanzialmente corretto della simbologia specifica e
+                                degli strumenti delle discipline. 
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(7\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            
+                                Comprensione puntuale e conoscenza sicura dei
+                                contenuti. Individuazione di strategie opportune per la
+                                risoluzione degli esercizi . Esposizione efficace ed
+                                accurata. Possesso della simbologia specifica e degli
+                                strumenti della disciplina 
+                              
+                        </td>
+                        <td class="thin-td right-border">
+                            \(8\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="right-border">
+                            
+                                Preparazione ampia ed approfondita. Utilizzo sicuro
+                                delle conoscenze. Rielaborazione dei contenuti con
+                                apporti personali. Esposizione rigorosa,ricca, articolata
+                            
+                        </td>
+                        <td class="thin-td right-border">
+                            \(9-10\)
+                        </td>
+                    </tr>
+                     <!-- 
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                      -->
+
+                </table>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <h2  id="recupero" class="color-mod3">Interventi di recupero</h2>
+            <div class="items border-color-mod3" data-aos="zoom-in" data-aos-duration="1200">
+                <p>
+                    Una volta effettuata la verifica, a seconda del risultato ottentuto, viene data la possibilità di 
+                    <ul>
+                        <li>
+                            svolgere attività di recupero insieme al docente (\(1\) lezione), lavorando sulle difficoltà incontrate.
+                            <br>
+                            A conclusione di tale attività viene effettuata una verifica orale.
+                        </li>
+                        <br>
+                        <li>
+                            svolgere  attività di potenziamento, approfondendo gli argomenti svolti attraverso uno di quesi video:
+                            <br>
+                            <br>
+
+                            <div id="video-container">
+                                <div id="first-row" class="video-row">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/658xlubwnDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SDw2Pu0-H4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            <div id="second-row" class="video-row">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/tP-Ipsat90c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ud_frfkt1t0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="item-container">
+            <h2  id="materialeStudenti" class="color-mod0">Materiale fornito agli studenti</h2>
+            <div class="items border-color-mod0" data-aos="zoom-in" data-aos-duration="1200">
+                
+            </div>
+        </div>
+
+        
+
+        <!-- <div class="item-container">
+            <h2  id="analisiContestoClasse" class="color-mod3">Analisi del contesto classe</h2>
+            <div class="items border-color-mod3" data-aos="zoom-in" data-aos-duration="1200">
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+                <p>La classe blablablablablablabla</p>
+            </div>
+        </div> -->
+
+        <script src="script.js"></script>  
+    </main>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

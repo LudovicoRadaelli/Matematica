@@ -1,0 +1,39 @@
+let slide = 0;
+let boxWidth = 100/document.getElementsByClassName("slide").length;
+
+for(let i=0; i<document.getElementsByClassName("slide").length; i++) {
+    document.getElementsByClassName("slide")[i].style.display = "none";
+}
+document.getElementsByClassName("slide")[slide].style.display = "block";
+
+for(let i=0; i<document.getElementsByClassName("slide").length; i++) {
+    let div = document.createElement("DIV");
+    div.style.width = boxWidth+"%";
+    div.style.minHeight = "0.2rem";
+    div.className = "box"
+    if(i===0) {
+        div.style.backgroundColor = "#DB4437";
+    }
+    document.getElementById("progressBar").appendChild(div);
+    
+}
+
+
+function changePage(delta) {
+    for(let i=0; i<document.getElementsByClassName("slide").length; i++) {
+        document.getElementsByClassName("slide")[i].style.display = "none";
+    }
+    
+    slide = slide + delta;
+    slide = slide % document.getElementsByClassName("slide").length;
+    document.getElementsByClassName("slide")[slide].style.display = "block";
+
+    for(let i=0; i<document.getElementsByClassName("slide").length; i++) {
+        if(i<=slide) {
+            document.getElementsByClassName("box")[i].style.backgroundColor = "#DB4437";
+        } else {
+            document.getElementsByClassName("box")[i].style.backgroundColor = "white";
+        }
+        
+    }
+}
