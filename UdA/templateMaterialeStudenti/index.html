@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="p5.js/sketch.js"></script>
+    <title>Homework 1</title>
+</head>
+<body>
+    
+    <div id="macro-settings-container">
+        <div class="macro-item" >
+            <img src="settings.png" class="settings-icon" onclick="openSettings('flex')"></img>
+            <img src="close.png" class="settings-icon" onclick="openSettings('none')" style="display: none;">
+        </div>
+        <div id="settings-panel" class="macro-item">
+            <div id="fonts" class="settings-item">
+                <div class="font" onclick="changeFont('Times New Roman')" style="font-family: 'Times New Roman', Times, serif;">Times New Roman</div>
+                <div class="font" onclick="changeFont('Arial')" style="font-family:Arial, Helvetica, sans-serif ">Arial</div>
+                <div class="font" onclick="changeFont('Brush Script MT,cursive')" style="font-family: 'Brush Script MT', cursive">Verdana</div>
+            </div>
+            <hr>
+            <div class="settings-item">
+                <div id="font-size-button">
+                    <p>Dimesione caratteri: <span id="size">24</span>px</p>
+                    <button id="increaseFont" onclick="fontSize(-1)">&minus;</button>        
+                    <button id="decreaseFont" onclick="fontSize(1)">&plus;</button>        
+                </div>
+        
+                <div id="line-height-button">
+                    <p>Spazio tra le righe: <span id="lineHeight">1.7</span>rem</p>
+                    <button id="increaseLineHeight" onclick="changeLineHeight(-0.05)">&minus;</button>        
+                    <button id="decreaseLineHeight" onclick="changeLineHeight(0.05)">&plus;</button>  
+                </div>
+            
+                <div id="words-space-button" >
+                    <p>Spazio tra le parole: <span id="wordsSpace">1</span>px</p>
+                    <button id="increaseWordsSpace" onclick="changeWordsSpace(-1)">&minus;</button>        
+                    <button id="decreaseWordsSpace" onclick="changeWordsSpace(1)">&plus;</button>  
+                </div>
+        
+                <div id="characters-space-button">
+                    <p>Spazio tra le lettere: <span id="charactersSpace">1</span>px</p>
+                    <button id="increaseCharactersSpace" onclick="changeCharactersSpace(-1)">&minus;</button>        
+                    <button id="decreaseCharactersSpace" onclick="changeCharactersSpace(1)">&plus;</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <main id="main">
+
+        <h1>Homework 1</h1>
+        <p id="activityTitle"><b><i>Titolo attività</i></b></p>
+        <p>
+            A cloud was on the mind of men, and wailing went the weather,
+Yea, a sick cloud upon the soul when we were boys together.
+Science announced nonentity and art admired decay;
+The world was old and ended: but you and I were gay;
+Round us in antic order their crippled vices came—
+Lust that had lost its laughter, fear that had lost its shame.
+Like the white lock of Whistler, that lit our aimless gloom,
+Men showed their own white feather as proudly as a plume.
+Life was a fly that faded, and death a drone that stung;
+The world was very old indeed when you and I were young.
+They twisted even decent sin to shapes not to be named:
+Men were ashamed of honour; but we were not ashamed.
+Weak if we were and foolish, not thus we failed, not thus;
+When that black Baal blocked the heavens he had no hymns from us
+Children we were—our forts of sand were even as weak as we,
+High as they went we piled them up to break that bitter sea.
+Fools as we were in motley, all jangling and absurd,
+When all church bells were silent our cap and bells were heard.
+
+Not all unhelped we held the fort, our tiny flags unfurled;
+Some giants laboured in that cloud to lift it from the world.
+I find again the book we found, I feel the hour that flings
+Far out of fish-shaped Paumanok some cry of cleaner things;
+And the Green Carnation withered, as in forest fires that pass,
+Roared in the wind of all the world ten million leaves of grass;
+Or sane and sweet and sudden as a bird sings in the rain—
+Truth out of Tusitala spoke and pleasure out of pain.
+Yea, cool and clear and sudden as a bird sings in the grey,
+Dunedin to Samoa spoke, and darkness unto day.
+But we were young; we lived to see God break their bitter charms.
+God and the good Republic come riding back in arms:
+We have seen the City of Mansoul, even as it rocked, relieved—
+Blessed are they who did not see, but being blind, believed.
+
+This is a tale of those old fears, even of those emptied hells,
+And none but you shall understand the true thing that it tells—
+Of what colossal gods of shame could cow men and yet crash,
+Of what huge devils hid the stars, yet fell at a pistol flash.
+The doubts that were so plain to chase, so dreadful to withstand—
+Oh, who shall understand but you; yea, who shall understand?
+The doubts that drove us through the night as we two talked amain,
+And day had broken on the streets e’er it broke upon the brain.
+Between us, by the peace of God, such truth can now be told;
+Yea, there is strength in striking root and good in growing old.
+We have found common things at last and marriage and a creed,
+And I may safely write it now, and you may safely read.
+
+G. K. C.
+            
+            
+            
+            
+        </p>
+        
+        <!-- <div id="geogebra1"></div>
+        <div id="sketch1"> -->
+    </main>
+
+    
+
+
+
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

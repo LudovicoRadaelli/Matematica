@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 200vh;
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    background-color: darkblue;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-right: 0.01rem  #2272f1 solid;
+    border-bottom: 0;
+}
+
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+nav h2 #first {
+    margin-top: 1rem;
+}
+
+nav hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 0.001rem  #2272f1 solid;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    color: #ff609d;
+}
+
+.nestedUl h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.90rem;
+}
+
+.nestedItem {
+    color: white;
+}
+
+main {
+    width: 75%;
+    margin-left: 25%;
+}
+
+main #title {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+
+    text-align: center;
+    margin-top: auto;
+}
+
+#h-container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    width: 60%;
+    padding: 1rem 0 1rem 0;
+    background-color: #34bbbb;
+    /* border: 0.2rem #00008b solid; */
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem 1rem gray;
+}
+
+#title h1,
+#title h2 {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+    color: darkblue;
+}
+
+#title h1 {
+    font-size: 2.5rem;
+    text-shadow: 0.1rem 0.1rem #ff609d;
+
+}
+
+#title h2 {
+    font-size: 1.7rem;
+}
+
+.item-container h2 {
+    text-align: center;
+    color: #2272f1;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-container {
+    margin-top: 1rem;
+}
+
+.items {
+    width: 80%;
+    /* background: #e4eeff; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+   /*  border: 0.01rem #2272f1 solid;
+    border-radius: 30px; */
+    margin: auto;
+}

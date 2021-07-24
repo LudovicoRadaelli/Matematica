@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+
+/*-------SETTINGS---------*/
+
+#macro-settings-container {
+    width: 30%;
+    height: 100vh;
+    
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+.settings-icon {
+    float: left;
+    width: 7%;
+}
+
+.settings-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#settings-panel {
+    display: none;
+    width: 100%;
+    background: transparent;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.settings-item {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#fonts {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.font {
+    width: 100%;
+    border: 0.01rem black solid;
+    text-align: center;
+}
+
+#font-size-button, 
+#line-height-button,
+#words-space-button,
+#characters-space-button {
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-items: center;
+}
+
+#font-size-button button,
+#line-height-button button, 
+#words-space-button  button,
+#characters-space-button button{
+    margin-left: 1rem;
+}
+
+/*------------------------*/
+
+
+main {
+    width: 60%;
+    height: 400vh;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    color: #DB4437;
+    text-align: center;
+}
+
+#activityTitle {
+    font-size: 1.6rem;
+    color: #0F9D58;
+    text-align: center;
+}
+
+#esTrapezoidi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.esTrap {
+    width: 20%;
+    height: 1.5rem;
+    color: white;
+    background-color:  #4285F4;
+    border: 0.2rem #91bafc solid;
+    margin-left: 2.25%;
+    margin-right: 2.25%;
+}
+
+.esTrap:hover {
+    transform: scale(1.1);
+}
+
+#geogebra1 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+#sketch1 {
+    width: 402px;
+    height: 402px;
+    border: 0.01rem black solid;
+    margin: auto;
+}
+
+
+.p5Canvas {
+    width: 100%;
+    margin: auto;
+}
+
+#eraseButton  {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    color: white;
+    background-color:  #4285F4;
+    border: 0.2rem #91bafc solid;
+}
+
+#geogebra2 {
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#numRect-container {
+    width: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#rangeN {
+    display: block;
+    width: 500px;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#hint1 {
+    width: auto;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+.on {
+    position: relative;
+    display: inline-block;
+}
+  
+.on .onTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4285F4;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.on .onTxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4285F4 transparent transparent transparent;
+}
+
+.on:hover .onTxt {
+    visibility: visible;
+}
