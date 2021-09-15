@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sistemi lineari</title>
+</head>
+<body>
+    <h1>Sistemi lineari</h1>
+    <h2>Equazione in due incognite</h2>
+    <p>
+        Prendiamo l'equazione \( x + y = 10 \). Esistono infinite coppie di valori \(x\) e \(y\) che soddisfano quest'equazione.
+    </p>
+    <br>
+    <table>
+        <tr>
+            <th>\(x\)</th>
+            <th>\(y\)</th>
+            <th>\(x + y\)</th>
+        </tr>
+        <tr>
+            <td>\(1\)</td>
+            <td>\(9\)</td>
+            <td>\(1 + 9 = 10\)</td>
+        </tr>
+        <tr>
+            <td>\(2\)</td>
+            <td>\(8\)</td>
+            <td>\(2 + 8 = 10\)</td>
+        </tr>
+        <tr>
+            <td>\(-3\)</td>
+            <td>\(13\)</td>
+            <td>\(-3 + 13 = 10\)</td>
+        </tr>
+        <tr>
+            <td>\(100\)</td>
+            <td>\(-90\)</td>
+            <td>\(100 + (-90 = 10) \)</td>
+        </tr>
+        <tr>
+            <td>...</td>
+            <td>...</td>
+            <td>...</td>
+        </tr>
+    </table>
+    <br>
+    <h2>Cosa è un sistema lineare?</h2>
+    <p>
+        Stavolta consideriamo due equazioni, ognuna delle quali con due incognite:
+    </p>
+    <p class="formula">
+        \[ x + 2y = 1 \quad\text{ e }\quad 3x - 4y = 2\]
+    </p>
+    <p>Sappiamo che l'equazione \(x + 2y = 1\) ha infinite soluzioni.</p>
+    <p>Anche l'equazione \(3x - 4y = 2\) ha infinite soluzioni.</p>
+    <p>La domanda che ci poniamo è: <b>esiste una soluzione in comune?</b></p>
+    <p>Ovvero, esiste una coppia di valori \(x\) ed \(y\) che è soluzione sia della prima che della seconda equazione?</p>
+    <p>Se tale coppia esiste, diremo che è soluzione del <span class="color">sistema lineare</span></p>
+    <p class="formula">
+        \[
+            \begin{equation*}
+            \begin{cases}
+            x + 2y = 1 \\
+            3x - 4y = 2
+            \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <h2>Metodo di sostituzione</h2>
+    <p>
+        Noi sappiamo risolvere solo equazioni con un'incognita, non con due. Se riusciamo a 
+        trovare un modo di "trasformare" le due equazioni del sistema in equazioni in un'incognita, abbiamo vinto.
+    </p>
+    <p>
+        Ecco qua due esempi:
+    </p>
+    <br>
+    <h3>Esempio 1</h3>
+    <div class="video-container">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/sistemiSostituzione1.mp4" controls></video>
+    </div>
+    <br>
+    <h3>Esempio 2</h3>
+    <div  class="video-container">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/sistemiSostituzione2.mp4" controls></video>
+    </div>
+    <br>
+    <p>
+        Lo schema del procedimento è questo:
+    </p>
+    <br>
+    <ul>
+        <li>
+            Scelgo una delle due equazioni.
+            <br>
+            In questa scelgo una delle due incognite.
+            <br>
+            La isolo.
+        </li>
+        <li>
+            Sostituisco l'incognita isolata nell'altra equazione.
+        </li>
+        <li>
+            Risolvo l'equazione in un'incognita che ho ottenuto.
+        </li>
+        <li>
+            Sostituisco nell'altra equazione la soluzione ottenuta.
+        </li>
+    </ul>
+
+    <h2>Esercizi</h2>
+    <div class="video-container">
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/eserciziSostituzione.png">
+    </div>
+</body>
+</html>
