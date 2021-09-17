@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Proprietà potenze</title>
+</head>
+<body>
+    <h1>Proprietà delle potenze</h1>
+    <div class="media-container">
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/prima/proprietaPotenze/img/potenzeBaseEsponente.png" alt="">
+    </div>
+    <br>
+
+    <h2>Potenze con <u>base</u> uguale</h2>
+
+    <p id="esempio1">
+        \[
+            \color{red}{3}^{\color{blue}{4}} \color{black}{\,\,\cdot\,\,} \color{red}{3}^{\color{blue}{2}} \color{black}{\,\,\,=\,\,\,} \color{red}{3}^{\color{blue}{6}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            L'esponente del risultato è la <u>somma</u> degli esponenti.
+        </li>
+        <li>
+            La base del risultato rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio1" onclick="generaEsempio(1)">Genera un altro esempio</button>
+    <hr>
+
+    <p id="esempio2">
+        \[
+            \color{red}{3}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{3}^{\color{blue}{3}} \color{black}{\,\,\,=\,\,\,} \color{red}{3}^{\color{blue}{4}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            L'esponente del risultato è la <u>differenza</u> degli esponenti
+        </li>
+        <li>
+            La base del risultato rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio2" onclick="generaEsempio(2)">Genera un altro esempio</button>
+    <br>
+
+    <h2>Potenze con <u>esponente</u> uguale</h2>
+
+    <p id="esempio3">
+        \[
+            \color{red}{3}^{\color{blue}{4}} \color{black}{\,\,\cdot\,\,} \color{red}{7}^{\color{blue}{4}} \color{black}{\,\,\,=\,\,\,} \color{red}{21}^{\color{blue}{4}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            La base del risultato è il <u>prodotto</u> delle basi
+        </li>
+        <li>
+            L'esponente della base rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio3" onclick="generaEsempio(3)">Genera un altro esempio</button>
+    <hr>
+
+    <p id="esempio4">
+        \[
+            \color{red}{10}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{5}^{\color{blue}{7}} \color{black}{\,\,\,=\,\,\,} \color{red}{2}^{\color{blue}{7}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            La base del risultato è la <u>divisione</u> delle basi
+        </li>
+        <li>
+            L'esponente della base rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio4" onclick="generaEsempio(4)">Genera un altro esempio</button>
+    <hr>
+    
+    <h3>Esercizi per casa</h3>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/prima/proprietaPotenze/img/eserciziPotenze.png" alt="">
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://ludovicoradaelli.github.io/Matematica/2022/ -->
