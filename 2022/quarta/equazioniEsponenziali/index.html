@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Equazioni esponenziali</title>
+</head>
+<body>
+    <h1>Equazioni esponenziali</h1>
+    
+    <h2>Alcune cose utili da ricordare</h2>
+    <p>
+        Negli esercizi che impareremo a risolvere, spesso sarà utile sfruttare alcune proprietà dell potenze che vi ricordo qui di seguito.
+        <span style="color: gray">(Premendo il pulsante potete generare nuovi esempi.)</span>
+    </p>
+    <br>
+    
+    <h4>Potenze negative</h4>
+    <p id="esempio1">
+        \[
+            \left( \frac{\color{#0F9D58}{2}}{\color{blue}{3}} \right)^{\color{red}{\boldsymbol{-}}\color{black}{5}} = \frac{\color{blue}{3}}{\color{#0F9D58}{2}}^{5}
+        \]
+    </p>
+    <p>
+        Detta male, è come se il meno dell'esponente "ribaltasse" numeratore e denominatore della frazione su cui agisce l'esponente stesso.
+    </p>
+    <button class="generaEsempio" id="generaEsempio1" onclick="generaEsempio(1)">Genera un altro esempio</button>
+
+    <h4>Radici e potenze frazionarie</h4>
+    <p id="esempio2">
+        \[
+        \sqrt[\color{blue}{2}]{3^{\color{red}{5}}} = 3^{\frac{\color{red}{5}}{\color{blue}{2}}}  
+        \]
+    </p>
+    <p>
+        Possiamo riscrivere la radice di un numero come potenza frazionaria di quello stesso numero. L'<span style="color: blue">indice</span> di radice diventa il <span style="color: blue">denominatore</span> dell'esponente. L'<span style="color: red">esponente</span> de numero sotto radice diventa il <span style="color: red">numeratore</span> dell'esponente frazionario.
+    </p>
+    <button class="generaEsempio" id="generaEsempio2" onclick="generaEsempio(2)">Genera un altro esempio</button>
+    <br>
+    <h4>Proprietà potenze</h4>
+    <p>Se avete bisogno di una rinfrescata sulle proprietà basilari delle potenze, potete trovarle <a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/proprietaPotenze/index.html">qui</a></p>
+    <br>
+    <hr>
+    <br>
+    
+
+    <h2>Equazioni esponenziali - <i>"passaggio agli esponenti"</i></h2>
+    <p>
+        Se vi dico che \(2^{A}\) è uguale a \(2^{B}\), che cosa sapete dirmi sugli esponenti \(A\) e \(B\)?
+    </p>
+    <button id="mostraRisposta" class="generaEsempio" onclick="mostraRisposta()">Mostra risposta</button>
+    <p id="risposta">
+        Ma certo, \(A\) deve essere esattamente uguale a \(B\)!
+    </p>
+    <p>
+        Sfruttiamo questo semplice ragionamento per risolvere questa equazione:
+        \[
+            2^x \cdot 4 = 8 \cdot \sqrt{2}
+        \]
+    </p>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/equazioniEsponenziali/img/eq1.mp4" controls></video>
+    <br>
+    <p>Vediamo un esercizio della stessa tipologia, ma di difficoltà più elevata.</p>
+    <br>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/equazioniEsponenziali/img/eq2.mp4" controls></video>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Equazioni esponenziali - <i>"incognita ausiliaria"</i></h2>
+    <p>
+        Prendete questa equazione piccola piccola:
+        \[ 
+            8 \color{red}{+} \color{black}{ 2^{x+1} = 2^{2x}}
+        \]
+        Tentati di risolverla come prima? Sta volta ci dice male! Vi ho evidenziato quel \(\color{red}{+}\), perché a causa sua 
+        non possiamo trasformare \(8 + 2^{x+1}\) in \(2^{qualcosa}\): le proprietà delle potenze vagono solo se le potenze sono <u>moltiplicate</u> tra di loro.
+    </p>
+    <p>Vediamo quale strategia possiamo seguire questa volta</p>
+    <br>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/equazioniEsponenziali/img/eq3.mp4" controls></video>
+    <br>
+    <p>Risolviamo l'equazione che avevamo lasciato in sospeso</p>
+    <br>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/equazioniEsponenziali/img/eq4.mp4" controls></video>
+    
+
+
+    
+    <br>    
+    <h3>Esercizi per casa</h3>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/equazioniEsponenziali/img/esercizi.png" alt="">
+    
+    <div id="gimmiSpace"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://ludovicoradaelli.github.io/Matematica/2022/ -->
