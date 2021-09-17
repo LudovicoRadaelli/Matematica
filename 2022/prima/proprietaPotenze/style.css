@@ -84,6 +84,9 @@ ul {
 
 .concavita {
     display: inline;
-    width: 1rem;
-    
+    width: 1rem;    
+}
+
+#gimmiSpace {
+    height: 50vh;
 }
