@@ -112,10 +112,127 @@
             Sostituisco nell'altra equazione la soluzione ottenuta.
         </li>
     </ul>
+    <br>
+    <hr>
+    <br>
 
-    <h2>Esercizi</h2>
+    <h2>Metodo di riduzione</h2>
+    <p>
+        Prima di vedere il metodo vero e proprio, capiamo il meccanismo che ne sta alla base con un piccolo gioco.
+    </p>
+    <p>
+        Ci sono quattro quantità: \(\color{red}{A}\), \(\color{red}{B}\), \(\color{blue}{C}\), \(\color{blue}{D}\).
+    </p>
+    <p>
+        Abbiamo questa informazione:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    \color{red}{A} \color{black}{\,\,=\,\,} \color{red}{B} \\
+                    \color{blue}{C} \color{black}{\,\,=\,\,} \color{blue}{D}
+                \end{cases}
+            \end{equation*}
+        \]
+        ovvero sappiamo che \(\color{red}{A}\) è uguale a \(\color{red}{B}\) e che \(\color{blue}{C}\) è uguale a \(\color{blue}{D}\).
+    </p>
+    <br>
+    <div id="quiz-container">
+        <p style="text-align: center;">
+            Secondo voi è vero che 
+        </p>
+        <p id="domanda"> 
+            \[
+                \color{red}{A} \color{black}{\,+\,} \color{blue}{C} \color{black}{\,\,=\,\,} \color{red}{B} \color{black}{\,+\,} \color{blue}{D} \,\,\color{black}{\text{?}}
+            \]
+        </p>
+        <div id="button-container">
+            <button id="si" onclick="checkAnswer(true)">Sì</button> 
+            <button id="no" onclick="checkAnswer(false)">No</button>
+        </div>
+        <div id="right" style="width:70%;height:0;margin:auto;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/3o7abKhOpu0NwenH3O" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p></p>
+        <div id="wrong"style="width:70%;height:0;margin:auto;padding-bottom:76%;position:relative;"><iframe src="https://giphy.com/embed/xT5LMzIK1AdZJ4cYW4" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p></p>
+        <button id="altraDomanda" onclick="altraDomanda()">Fammi un'altra domanda</button>
+    </div>
+    <p>
+        In sostanza, partendo da due uguaglianze <b>vere</b>, possiamo combinarle per ottenere una terza uguaglianza ancora <b>vera</b>.
+    </p>
+    <p>
+        Il discorso è identico se \(A\), \(B\), \(C\), \(D\) sono polinomi.
+    </p>
+    <br>
+
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/riduzioneConcetto.mp4" controls></video>
+    <br>
+
+    <p>Guardate l'esempio nel riquadro grigio (cliccate il pulsante sotto per creare nuovi esempi)</p>
+    <br>
+    <div id="quiz-container">
+        <p style="text-align: center;"><b>Creare una nuova equazione a partire da due equazioni assegnate</b></p>
+        <br>
+        <p style="text-align: center; color: gray;">
+            Partiamo dalle due equazioni assegnate:
+        </p>
+        <p id="eq1">
+            \[  
+                \begin{equation*}
+                    \begin{cases}
+                        \overset{\color{red}{A}}{\color{gray}{\overbrace{\color{red}{x+2y}}}}=\overset{\color{red}{B}}{\color{gray}{\overbrace{\color{red}{1}}}} \\
+                        \\
+                        \underset{\color{blue}{C}}{\color{gray}{\underbrace{\color{blue}{-2x+7y}}}}=\underset{\color{blue}{D}}{\color{gray}{\underbrace{\color{blue}{3}}}}
+                    \end{cases}
+                \end{equation*}
+             \]
+        </p>
+        <p style="text-align: center;">\(\Downarrow\)</p>
+        <p style="text-align: center; color: gray;">
+            Scegliamo una combinazione:
+        </p>
+        <p id="eq2" class="formula">
+            \[
+                2\color{red}{A} \color{black}{\,\,+\,\,5} \color{blue}{C} \color{black}{\,\,=\,\,2} \color{red}{B} \color{black}{\,\,+\,\,5} \color{blue}{D}
+            \]
+        </p>
+        <p style="text-align: center; color: gray;">
+            Sostituiamo \(A\), \(B\), \(C\), \(D\).
+        </p>
+        <p id="eq3" class="formula">
+            \[
+                2\color{red}{\left(x+2y\right)} \color{black}{\,\,+\,\,5} \color{blue}{\left(-2x+7y\right)} \color{black}{\,\,=\,\,2\,\cdot} \color{red}{1} \color{black}{\,\,+\,\,5\,\cdot} \color{blue}{3}
+            \]
+        </p>
+        <p style="text-align: center; color: gray;">
+            Svolgiamo le moltiplicazioni:
+        </p>
+        <p  id="eq4" class="formula">
+            \[
+                2x +4y -10x +35y = 2 + 15
+            \]
+        </p>
+        <p style="text-align: center; color: gray;">
+            Sommiamo i monomi simili ed ecco la nostra nuova equazione:
+        </p>
+        <p  id="eq5" class="formula">
+            \[
+                \color{gray}{\boxed{\color{black}{-8x +39y = 17}}}
+            \]
+        </p>
+        
+        <hr>
+        <br>
+        <button id="generaEsempio" onclick="generaEsempio()">Genera un altro esempio</button>
+    </div>
+    
+    <p>
+        Vediamo come poter usare questo meccanismo per risolvere un sistema.
+    </p>
+    <br>
+    
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/sistemiRiduzione.mp4" controls></video>
+ 
+    <!-- <h2>Esercizi</h2>
     <div class="video-container">
         <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/img/eserciziSostituzione.png">
-    </div>
+    </div> -->
+    <script src="script.js"></script>
 </body>
 </html>
