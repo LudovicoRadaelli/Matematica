@@ -57,3 +57,43 @@ ul {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
+
+button {
+    display: block;
+    width: auto;
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#si, #no {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#right, #wrong {
+    display: none;
+}
+
+#altraDomanda {
+    display: none;
+}
+
+#quiz-container {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formula {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
