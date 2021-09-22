@@ -92,3 +92,7 @@ button {
     overflow-x: scroll;
     overflow-y: hidden;
 }
+
+.gray {
+    color: gray;
+}
