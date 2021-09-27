@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #DB4437;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #4285F4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #F4B400;
+    font-size: 1.1rem;
+}
+
+.media-container {
+    width: 98%;
+}
+
+video, img {
+    display: block;
+    width: 100%;
+}
+
+table, td, th {
+    border: 0.01rem solid black; 
+}
+
+td, th {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.grayBackground {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem 1rem 1rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.geogebra-container {
+    background-color: rgb(240, 240, 240);
+}
+
+.ggbTransform {
+    width: 100% !important;
+}
+
+.green {
+    color: #0F9D58;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
+}
+
+.blue {
+    color: #4285F4;
+}
+
+.gray {
+    color: gray;
+}
+
+.formula {
+    overflow-x: scroll;
+}
+
+button {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
+}
+
+ul {
+    padding-left: 3rem;
+}
+
+
+.esempio {
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+
+.prevNext-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev, .next {
+    width: 20%;
+    height: 0.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    margin: 0.5rem;
+}
+
+.again {
+    width: 40%;
+    height: 0.5rem;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1.2rem;
+    margin: 0.5rem;
+}
+
