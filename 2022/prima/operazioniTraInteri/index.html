@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Operazioni tra numeri interi</title>
+</head>
+<body>
+    <h1>Operazioni tra numeri interi</h1>
+    <br>
+    <h2>L' insieme dei numeri interi \(\mathbb{Z}\)</h2>
+    <p>Abbiamo studiato l'inisieme \(\mathbb{N}\) dei numeri naturali</p>
+    <p>
+        \[
+            \mathbb{N} = \left\{ 0, 1, 2, 3, 4, 5, \dots \right\}.
+        \]
+    </p>
+    <p>
+        Definiamo l'insieme dei <b><i>numeri interi</i></b>, che indichiamo con \(\mathbb{Z}\):
+    </p>
+    <br>
+    <p class="formula">
+        \[
+            \mathbb{Z} = \left\{\dots, -5, -4, -3, -2, -1,\,\, 0,\, 1,\, 2,\, 3,\, 4,\, 5,\, \dots \right\}
+        \]
+    </p>
+    <br>
+    <p>\(\mathbb{Z}\) contiene tutti i numeri naturali, con l'aggiunta dei <b><i>numeri interi negativi</i></b>.</p>
+    <br>
+    <p>Dato un numero intero, chiameremo <b><i>modulo</i></b> il numero considerato senza segno</p>
+    <h3>Esempi</h3>
+    <ul class="esempi-container" style="border: 0.01rem solid #F4B400; padding: 1rem 1rem 1rem 2rem">
+        <p>Il numero <span id="numero">\(\color{red}{-}\color{blue}{3}\)</span> ha </p>
+        <br>
+        <li><b><i>segno</i></b> <span id="segno">\(\color{red}{-}\)</span></li>
+        <br>
+        <li><b><i>modulo</i></b> <span id="modulo">\(\color{blue}{3}\)</span></li>
+        <br>
+        <button onclick="segnoModulo()">Nuovo esempio</button>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Operazioni in \(\mathbb{Z}\)</h2>
+    <h3 class="blue"><u>Somme algebriche</u></h3>
+    <p>
+        Con <b><i>somme algebriche</i></b> intendiamo sia addizioni che sottrazioni. Quindi esempi di somme algebriche sono:
+        \[
+            2 - 7
+        \]
+        \[ 
+            -51 + 7
+        \]
+        \[
+            -2 - 10 
+        \]
+        \[
+            2 + 9
+        \]
+    </p>
+    <p>Per svolgerle distinguo due casi:</p>
+    <br>
+
+    <p><span class="blue"><b>&bullet; Se hanno lo stesso segno</b></span></p>
+    
+    <ul class="grayBackground regola" style="margin-top: 0;">
+        <li class="passaggio">
+            Il segno del risultato è il segno dei due numeri addizionati.
+        </li>
+        <li class="passaggio">
+            Il modulo del risultato è la somma dei moduli.
+        </li>
+    </ul>
+    <h3>Esempi</h3>
+    <div class="esempi-container" style="border: 0.01rem solid #F4B400;">
+        <div class="esempio">
+            \(
+                -6 - 8 =  
+            \)
+        </div>
+        <div class="prevNext-container">
+            <button class="prev" onclick = "step(-1,1)" disabled>&leftarrow;</button>
+            <button class="next" onclick = "step(1,1)">&rightarrow;</button>
+            <button class="again" style="display: none;" onclick="nuovoEsempio(1)">Nuovo esempio</button>
+        </div>
+    </div>
+    <br>
+    <!-- <video src="" controls></video> -->
+    <br>
+
+    <p><span class="blue"><b>&bullet; Se hanno segno differente</b></span></p>
+    <ul class="grayBackground regola" style="margin-top: 0;">
+        <li class="passaggio">
+            Il segno del risultato è il segno del numero con modulo maggiore.
+        </li>
+        <li class="passaggio">
+            Il modulo del risultato è la sottrazione tra il modulo più grande ed il modulo più piccolo.
+        </li>
+    </ul>
+    <h3>Esempi</h3>
+    <div class="esempi-container" style="border: 0.01rem solid #F4B400;">
+        <div class="esempio">
+            \(
+                -16 +7 =  
+            \)
+        </div>
+        <div class="prevNext-container">
+            <button class="prev" onclick = "step(-1,2)" disabled>&leftarrow;</button>
+            <button class="next" onclick = "step(1,2)">&rightarrow;</button>
+            <button class="again" style="display: none;" onclick="nuovoEsempio(2)">Nuovo esempio</button>
+        </div>
+    </div>
+    <br>
+    <!-- <video src="" controls></video> -->
+    <br>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://ludovicoradaelli.github.io/Matematica/2022/ -->
