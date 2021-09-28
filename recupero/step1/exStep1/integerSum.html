@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" type="text/css" href="integerSumStyle.css">
+    <link rel="stylesheet" type="text/css" href="studio.css">
     <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
@@ -12,11 +12,35 @@
     <title>Somma tra interi</title>
 </head>
 <body>
-    <h1>Somma tra interi</h1>
-    <p>Risolvete le somme che appaiono sullo schermo.<br>L'obiettivo è riuscire a risolverne correttamente 10 consecutive. 
-    </p>
-     <button id="start" onclick=start()>Inizia!</button>
-     <script src="integerSum.js"></script>
+
+    <div id="page0" class="page">
+        <h1>Somma tra interi</h1>
+        <p id="spiegazione">
+            Risolvete le somme che appaiono sullo schermo.<br>L'obiettivo è riuscire a risolverne correttamente 10 consecutive. 
+        </p>
+        <button id="start" onclick=start()><b><i>Inizia!</i></b></button>
+    </div>
+
+
+    <div id="page1" class="page">
+
+        <div id="question-container">
+            <h2 id="domanda"></h2>
+            <form id='sum'><input id='result'></input></form>
+            <br>
+            <button id="inviaSoluzione" onclick='checkResult(result)'><b><i>Invia soluzione</i></b></button>
+        </div>
+        
+        
+        <div id="gif-container">
+
+        </div>
+        <button id="riprovaContinua"></button>
+    </div>
+    
+
+
+     <script src="studio.js"></script>
 
 </body>
 </html>
