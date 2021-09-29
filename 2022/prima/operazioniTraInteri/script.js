@@ -23,7 +23,7 @@ if(c >= d) {
 } else {
     signRis = signD;
 }
-let ris = Math.floor(c+d);
+let ris = Math.max(c,d) - Math.min(c,d);
 
 
 
