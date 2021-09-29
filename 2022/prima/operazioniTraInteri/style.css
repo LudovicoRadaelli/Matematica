@@ -98,6 +98,13 @@ button {
     box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
 }
 
+.button-arrow {
+    display: inline;
+    min-height: 100%;
+    width: 70%;
+    margin-top:auto;    
+}
+
 ul {
     padding-left: 3rem;
 }
