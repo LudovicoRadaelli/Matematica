@@ -1,4 +1,4 @@
-let slideAddizione = 0; 
+let slideAddizione = 0;  
 
 let signA = "-";
 let a = 6;
