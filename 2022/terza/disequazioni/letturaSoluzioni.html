@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Approfondimento disequazioni II grado</title>
+</head>
+<style>
+    #puntoVerde {
+        display: inline;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        width: 0.5rem;
+    }
+</style>
+<body>
+    <h2>Come si legge la soluzione a partire dal grafico</h2>
+    <br>
+    <div class="media-container">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/letturaSoluzione.mp4" controls></video>
+    </div>
+    <br>
+    <div id="geogebra-container1">
+        <!-- <p id="polinomioParabola" style="text-align: center;">\(> 0 \)</p> -->
+        <p>
+            Disegnamo la parabola che rappresenta l'equazione
+            \[y =  -x^2 + 2x + 2 \]
+        </p>
+        <div id="geogebra1"></div>
+        <br>
+        <p>Il punto verde <img id="puntoVerde" src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/puntoVerde.png" alt=""> ha coordinate</p>  
+        <p style="text-align: center;"><span id="x">\[x = 1\]</span></p>
+        <p style="text-align: center;"><span id="y">\[y \color{gray}{= -1^2 + 2\cdot1 +2} \color{black}{= 3}\]</span> </p>
+        <p>Provate spostare il punto verde.</p>
+        <p>
+            Osservate: 
+        </p>
+        <ul>
+            <li>
+                se il valore di \(x\) lo scelgo all'interno dell'intervallo rosso, la \(y\) assume valore positivo.
+            </li>
+            <li>
+                se invece il valore di \(x\) lo scelgo all'interno degli intervalli blu, la \(y\) assume valore negativo.
+            </li>
+        </ul>
+        <p></p>
+    </div>
+
+
+    <script src="letturaSoluzioni.js"></script>
+</body>
+</html>
