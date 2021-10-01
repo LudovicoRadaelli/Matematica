@@ -409,6 +409,70 @@ function segnoModulo() {
 
 }
 
+let sign1, sign1_, f1, sign2, sign2_, f2, signProduct_, product;
+
+function generaEsempioProdotto() {
+    sign = ["+", "-"];
+
+    sign1 = sign[Math.floor(Math.random()*2)];
+    if(sign1 === "+") {
+        sign1_ = "\\color{red}{+}\\color{black}{}"
+    } else {
+        sign1_ = "\\color{blue}{-}\\color{black}{}"
+    }
+    
+    sign2 = sign[Math.floor(Math.random()*2)];
+    if(sign2 === "+") {
+        sign2_ = "\\color{red}{+}\\color{black}{}"
+    } else {
+        sign2_ = "\\color{blue}{-}\\color{black}{}"
+    }
+
+    f1 = Math.floor(Math.random()*20 + 1);
+    f2 = Math.floor(Math.random()*10 + 1);
+
+    console.log(`${sign1} ${sign1_} ${f1} ${sign2} ${sign2_} ${f2} ${signProduct_} ${product}`)
+
+    if(sign1 === sign2) {
+        signProduct_ = "\\color{red}{+}\\color{black}{}";
+    } else {
+        signProduct_ = "\\color{blue}{-}\\color{black}{}";
+    }
+
+    product = Math.floor(f1*f2)
+
+    if(sign1 === "+") {
+        if(sign2 === "+") {
+            document.getElementById("esempioProdotto").innerHTML = 
+            `\\[
+                ${f1} \\cdot ${f2} = ${product}
+            \\]`;  
+        } else {
+            document.getElementById("esempioProdotto").innerHTML = 
+            `\\[
+                ${f1} \\cdot \\left(${sign2_}${f2}\\right) =  ${signProduct_}${product}
+            \\]`;
+        }
+    } else {
+        if(sign2 === "+") {
+            document.getElementById("esempioProdotto").innerHTML = 
+            `\\[
+                ${sign1_}${f1} \\cdot ${f2} = ${signProduct_}${product}
+            \\]`
+        } else {
+            document.getElementById("esempioProdotto").innerHTML = 
+            `\\[
+                ${sign1_}${f1} \\cdot \\left(${sign2_}${f2}\\right) = ${product}
+            \\]` 
+        }
+        
+    }
+
+    MathJax.typesetClear([document.getElementById("esempioProdotto")]);
+    MathJax.typesetPromise([document.getElementById("esempioProdotto")]).then(() => {});
+}
+
+
 
 /* var ggbApp1 = new GGBApplet({
     "appName": "classic", 
