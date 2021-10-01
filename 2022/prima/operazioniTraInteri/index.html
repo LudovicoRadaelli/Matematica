@@ -86,8 +86,8 @@
             \)
         </div>
         <div class="prevNext-container">
-            <button class="prev" onclick = "step(-1,1)" disabled><img class="button-arrow" src="https://ludovicoradaelli.github.io/Matematica/2022/prima/operazioniTraInteri/img/left-arrow.png" alt=""></button>
-            <button class="next" onclick = "step(1,1)"><img class="button-arrow" src="https://ludovicoradaelli.github.io/Matematica/2022/prima/operazioniTraInteri/img/right-arrow.png" alt=""></button>
+            <button class="prev" onclick = "step(-1,1)" disabled><img class="button-arrow" src="img/left-arrow.png" alt=""></button>
+            <button class="next" onclick = "step(1,1)"><img class="button-arrow" src="img/right-arrow.png" alt=""></button>
             <button class="again" style="display: none;" onclick="nuovoEsempio(1)">Nuovo esempio</button>
         </div>
     </div>
@@ -112,14 +112,70 @@
             \)
         </div>
         <div class="prevNext-container">
-            <button class="prev" onclick = "step(-1,2)" disabled><img class="button-arrow" src="https://ludovicoradaelli.github.io/Matematica/2022/prima/operazioniTraInteri/img/left-arrow.png" alt=""></button>
-            <button class="next" onclick = "step(1,2)"><img class="button-arrow" src="https://ludovicoradaelli.github.io/Matematica/2022/prima/operazioniTraInteri/img/right-arrow.png" alt=""></button>
+            <button class="prev" onclick = "step(-1,2)" disabled><img class="button-arrow" src="img/left-arrow.png" alt=""></button>
+            <button class="next" onclick = "step(1,2)"><img class="button-arrow" src="img/right-arrow.png" alt=""></button>
             <button class="again" style="display: none;" onclick="nuovoEsempio(2)">Nuovo esempio</button>
         </div>
     </div>
     <br>
     <!-- <video src="" controls></video> -->
+    <hr>
     <br>
+    <h3 class="blue"><u>Prodotto tra numeri interi</u></h3>
+    
+    <div class="grayBackground">
+        <p>Nella moltiplicazione tra numeri interi</p>
+        <ul style="padding: 1rem;">
+            <li>il segno si trova attraverso la regola dei segni, che trovate qua sotto</li>
+            <li>il modulo è dato dal prodotto dei moduli</li>
+        </ul>
+    </div>
+    
+    <table style="margin: auto;">
+        <tr>
+            <th colspan="2">Regola dei segni</th>
+        </tr>
+        <tr>
+            <td>\[ \color{red}{+} \color{black}{\,\,\cdot\,\,} \color{red}{+} = \color{red}{+} \]</td>
+            <td>\[ \color{blue}{-} \color{black}{\,\,\cdot\,\,} \color{blue}{-} = \color{red}{+}\]</td>
+        </tr>
+        <tr>
+            <td>\[ \color{red}{+} \color{black}{\,\,\cdot\,\,} \color{blue}{-} = \color{blue}{-} \]</td>
+            <td>\[ \color{blue}{-} \color{black}{\,\,\cdot\,\,} \color{red}{+} = \color{blue}{-}\]</td>
+        </tr>
+    </table>
+    <br>
+    <h3>Esempi</h3>
+    <div class="example-container">
+        <div id="esempioProdotto">
+            \[
+                \left(-3\right)\cdot\left(-7\right) = 21
+            \]
+        </div>
+        <button id="generaEsempioProdotto" onclick="generaEsempioProdotto()">Nuovo esempio</button>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h3 class="blue"><u>Potenze di numeri negative</u></h3>
+    <div class="grayBackground">
+        <p style="text-align: center;">
+            ⚠️⚠️⚠️
+        </p>
+        <p>
+            \[-3^{\color{red}{2}} \quad\text{è diverso da}\quad \left(-3\right)^{\color{red}{2}}\]        
+        </p>
+    </div>
+    
+    <p>
+        &bullet; Nel primo caso la potenza è riferita solmente al modulo.
+    </p>    
+    <p> 
+        &bullet; Nel secondo caso la potenza è riferita sia al segno che al modulo.
+    </p>
+
 
 
     <script src="script.js"></script>
