@@ -51,7 +51,7 @@ h3 {
     font-size: 1.1rem;
 }
 
-ul {
+.grayBackground {
     background-color: rgb(240, 240, 240);
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -80,4 +80,8 @@ ul {
     display: inline;
     width: 1rem;
     
+}
+
+.gray {
+    color: gray;
 }
