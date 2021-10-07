@@ -63,6 +63,7 @@ function disegna() {
 
 function pulisci() {
     console.log("function pulisci()");
+    pointList = [];
     background(255);
     drawGrid() 
 
