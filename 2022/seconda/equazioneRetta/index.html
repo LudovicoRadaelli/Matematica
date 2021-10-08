@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Materiale per la lezione</title>
+</head>
+<body>
+    <h1>Equazione della retta</h1>
+    <br>
+    <div id="retta-sketch"></div>
+    <p id="equationText">\[ y = \,\color{blue}{1} \color{black}{\,x +\,} \color{red}{0}\]</p>
+    <div id="controls-container">        
+        <div class="input" id="mInput">
+            <p class="label">\(\color{blue}{m}\): </p>
+            <input class="range"  id="mRange" type="range" min=-10 max=10 step=0.1 value="1" onchange="changeLine()">
+            <button class="increase-button" id="mMinus" onclick="mChange(-0.1)">\(-\)</button>
+            <button class="increase-button" id="mPlus" onclick="mChange(0.1)">\(+\)</button>
+        </div>
+        <div class="input" id="qInput">
+            <span class="label">\(\color{red}{q}\): </span>
+            <input class="range" id="qRange" type="range" min=-10 max=10 step=0.1 value="0" onchange="changeLine()">
+            <button class="increase-button" id="qMinus" onclick="qChange(-0.1)">\(-\)</button>
+            <button class="increase-button" id="qPlus" onclick="qChange(0.1)">\(+\)</button>
+        </div>    
+    </div>
+    <br>
+    <ul class="grayBackground" style="padding-left: 2rem;">
+        <li>
+            Come cambia la retta se aumento il valore del numero blu?
+            <br>
+            E se lo diminuisco?
+        </li>
+        <li>
+            Come cambia la retta se aumento il valore del numero rosso?
+            <br>
+            E se lo diminuisco?
+        </li>
+    </ul>
+
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/equazioneRetta/img/perDiegoECristian.mp4" controls></video>
+
+    <script src="script.js"></script>
+</body>
