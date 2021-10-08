@@ -93,13 +93,27 @@ button {
     overflow-y: hidden;
 }
 
-.gray {
-    color: gray;
+.green {
+    color: #0F9D58;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
 }
 
 .blue {
     color: #4285F4;
 }
+
+.gray {
+    color: gray;
+}
+
+
 
 #home-container {
     display: block;
@@ -112,3 +126,4 @@ button {
     border-radius: 50%;
     z-index: -1;
 }
+
