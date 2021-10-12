@@ -220,3 +220,22 @@ button {
     display: inline;
 }
 
+#zoom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoom {
+    width: 20%;
+    margin: 0.5rem;
+}
+
+#unit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
