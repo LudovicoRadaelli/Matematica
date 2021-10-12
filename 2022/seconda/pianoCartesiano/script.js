@@ -32,19 +32,25 @@ function draw() {
 
 function drawGrid() {
 
-  stroke("black")
+    stroke("black")
+    let denom = document.getElementById("unity-input").value;
+    denom = parseInt(denom);
 
-  for(let i = 0; i<=width; i += u) {
-    strokeWeight(0.4);
-    line(i,0,i,height);
-    line(0,i,width,i);
-  }
-  strokeWeight(1);
-  line(width/2,0,width/2,height);
-  line(0,height/2,width,height/2);
-
-  strokeWeight(6);
-  point(width/2,height/2)
+    if(denom <= 40) {
+        
+        console.log("YAAAAAAAAAAAAAAAA")
+        for(let i = 0; i<=width; i += u) {
+            strokeWeight(0.4);
+            line(i,0,i,height);
+            line(0,i,width,i);
+        }
+    }
+    strokeWeight(1);
+    line(width/2,0,width/2,height);
+    line(0,height/2,width,height/2);
+    
+    strokeWeight(6);
+    point(width/2,height/2);
 }
 
 function disegna() {
@@ -74,6 +80,30 @@ function indietro() {
     console.log(pointList);
     pulisci();
     letsDraw = true;
+}
+
+function resize() {
+    let denom = document.getElementById("unity-input").value;
+    denom = parseInt(denom);
+    u = sketchWidth/denom;
+    
+    noStroke();
+    fill(255);
+    rect(0,0,width,height);
+    drawGrid();        
+    
+    pointList.pop();
+    disegna();
+
+    document.getElementById("min").innerHTML = `\\(${-denom/2}\\)`;
+    document.getElementById("max").innerHTML = `\\(${denom/2}\\)`;
+    MathJax.typesetClear([document.getElementById("min"), document.getElementById("max")]);
+    MathJax.typesetPromise([document.getElementById("min"), document.getElementById("max")]).then(() => {});
+}
+
+function zoom(delta) {
+    document.getElementById("unity-input").value = parseInt(document.getElementById("unity-input").value) + 10*delta;
+    resize();
 }
 
 /* MathJax.typesetClear([document.getElementsByClassName("calcoliEquazione"), document.getElementsByClassName("nuovaEquazione")]);
