@@ -25,6 +25,19 @@
         <button onclick="disegna()">Disegna punto</button>
         <button onclick="pulisci()">Pulisci</button>
     </div>
+    <br>
+    <br>
+
+    <div id="unit-container">
+        <div id="min">\(-5\)</div>
+        <input type="range" id="unity-input" min="10" max="1000" step="10" value="10" onchange="resize()" style="display: block; width: 80%; margin: auto;">
+        <div id="max">\(5\)</div>
+    </div>
+    <br>
+    <div id="zoom-container">
+        <img id="zoomOut" class="zoom" src="img/zoom-out.png" alt="" style="width: 1rem;" onclick="zoom(-1)">
+        <img id="zoomIn" class="zoom" src="img/zoom-in.png" alt="" style="width: 1rem;" onclick="zoom(1)">
+    </div>
 
     <script src="script.js"></script>
 </body>
