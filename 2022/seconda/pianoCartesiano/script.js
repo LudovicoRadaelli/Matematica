@@ -78,7 +78,7 @@ function pulisci() {
 function indietro() {
     pointList.pop();
     console.log(pointList);
-    pulisci();
+    rect(0,0,width,height);
     letsDraw = true;
 }
 
