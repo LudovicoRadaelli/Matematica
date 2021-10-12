@@ -78,7 +78,13 @@ function pulisci() {
 function indietro() {
     pointList.pop();
     console.log(pointList);
+    
+    fill(255);
+    noStroke();
     rect(0,0,width,height);
+    
+    drawGrid();
+    
     letsDraw = true;
 }
 
