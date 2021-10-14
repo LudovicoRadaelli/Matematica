@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2° Bi</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .exercise-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .input-container {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .sign {
+        width: 50%;
+        text-align: center;
+        color: blue;
+    }
+
+    .coefficient {
+        width: 50%;
+        text-align: center;
+        color: blue;
+    }
+
+    .svolgimento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .calcoliEquazione {
+        padding-bottom: 0.5rem;
+    }
+
+    .nuovaEquazione {
+        height: 10%;
+        border-top: 0.01rem gray solid;
+        padding-top: 0.5rem
+    }
+
+    .help {
+        display: none;
+    }
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+    <br>
+    
+    <p>Per ripassare i metodi di <b>sostituzione</b> e <b>riduzione</b>, cliccate <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/index.html">QUA</a></p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di <b>riduzione</b>. 
+    </p>
+    <br>
+    <div class="container">
+        <div class="exercise-container">
+            <div class="input-container" style="display: none;">
+                <input id="coeff1" class="coefficient" type="number" min="-10" max="10" step="1" value="6">
+                <input list="sign" id="sign" class="sign"  name ="sign" value="+">
+                <datalist id="sign">
+                    <option value="+">
+                    <option value="-">
+                </datalist>
+                <input id="coeff2" class="coefficient" type="number" min="-10" max="10" step="1" value="7">
+            </div>
+            <div class="system">
+                \(
+                    \begin{equation*}
+                        \begin{cases}
+                            10x + 12y = 1 \\
+                            \\
+                            4x - 14y = -2
+                        \end{cases}
+                    \end{equation*}
+                \)
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="svolgimento" style="display: none;">
+        <div class="calcoliEquazione"></div>
+        <div class="nuovaEquazione"></div>
+    </div>  
+
+    <button id="calcola" onclick="calcola(1)" style="display: none;">Calcola!</button>
+    <br>
+    
+    <button class="help-button" onclick="help(1)">Non riesco a risolverla</button>
+    <br>
+    <div class="help">
+        <p class="gray">Cliccate nei box ed inserite due numeri e l'operazione che volete eseguire tra le equazioni. <br> Premete il tasto <button style ="display: inline-block;" disabled>Calcola!</button> per effettuare i calcoli. <br> Riprovate fino a che non ottenete una nuova equazione in cui non c'è più o la \(x\) o la \(y\)</p>
+        <br>
+    </div>
+    <button id="soluzione-button1" onclick="mostraSoluzione(1)" >Soluzione</button>
+
+    <p id="soluzione1" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = \dfrac{6}{47}\\
+                        \\
+                        y = -\dfrac{5}{94}
+                    \end{cases}
+                \end{equation*} \)
+        </span>
+    </p>
+
+</div>
+    <br>
+    <hr>
+    <br>
+    <h2>Esercizio 2</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di <b><i>sostituzione</i></b>:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                        -\left(y-1\right) +1 = x\left(x +7\right) -x^2 -3x \\
+                    \\
+                    5\left(x + y\right) + 1 = x -3y
+                \end{cases}
+            \end{equation*}
+        \] 
+    </p>
+
+    <button class="help-button" onclick="help(2)">Non so risolverla</button>
+    <div class="help">
+        <ul>
+            <li class="gray">Se non ricordate come svolgere il prodotto tra polinomi guardate il video disponbile <a href="https://youtu.be/2OqTOqpDb2A?t=404" target="_blank">QUA</a></li>
+            <li class="gray">Se non vi è chiaro il metodo di sostituzione gurdate il video disponibile <a href="https://youtu.be/rkwDJ2bh3uc?t=141">QUI</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <button id="soluzione-button2" onclick="mostraSoluzione(2)">Soluzione</button>
+    <p id="soluzione2" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = \dfrac{17}{28}\\
+                        \\
+                        y = -\dfrac{3}{7}
+                    \end{cases}
+                \end{equation*} 
+            \)
+                   
+        </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 3</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo che ritenete puù opportuno.
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    3y\left(y - 1\right) - 3\left(x+y^2\right) - 1 = 0  \\
+                    \\
+                    3x + 5\left(x + y\right) = 6y
+                \end{cases}
+            \end{equation*}
+        \] 
+    </p>
+
+    <button class="help-button" onclick="help(3)">Non so risolverla</button>
+    <div class="help">
+        <ul>
+            <li class="gray">Se non ricordate come svolgere il prodotto tra polinomi guardate il video disponbile <a href="https://youtu.be/2OqTOqpDb2A?t=404" target="_blank">QUA</a></li>
+            <li class="gray">Se non vi è chiaro il metodo di sostituzione gurdate il video disponibile <a href="https://youtu.be/rkwDJ2bh3uc?t=141">QUI</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <button id="soluzione-button3" onclick="mostraSoluzione(3)">Soluzione</button>
+    <p id="soluzione3" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = -\dfrac{1}{27}\\
+                        \\
+                        y = -\dfrac{8}{27}
+                    \end{cases}
+                \end{equation*} \)
+        </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+
+      
+    <script src="es3.js"></script>
+</body>

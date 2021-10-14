@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2° Bi</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .exercise-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+    }
+
+    .input-container {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .sign {
+        width: 50%;
+        text-align: center;
+        color: blue;
+    }
+
+    .coefficient {
+        width: 50%;
+        text-align: center;
+        color: blue;
+    }
+
+    .svolgimento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .calcoliEquazione {
+        padding-bottom: 0.5rem;
+    }
+
+    .nuovaEquazione {
+        height: 10%;
+        border-top: 0.01rem gray solid;
+        padding-top: 0.5rem
+    }
+
+    .help {
+        display: none;
+    }
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+    <br>
+    
+    <p>Per ripassare i metodi di <b>sostituzione</b> e <b>riduzione</b>, cliccate <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/sistemiLineari/index.html">QUA</a></p>
+    <br>
+    <hr>
+    <br>
+    <p class="gray">Questa è una simulazione del compito in classe. Per un allenamento efficace provatelo a svolgere in 2 ore, senza appunti, cellulare o calcolatrice.</p>
+    <br>
+    <h2>Esercizio 1</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di <b>sostituzione</b>. 
+    </p>
+    <br>
+    <p class="container">
+        \(
+            \begin{equation*}
+                \begin{cases}
+                    2x + y = 3 \\
+                    \\
+                    6x + 4y = 21
+                \end{cases}
+            \end{equation*}
+        \)
+    </p>
+    <br>
+    <button id="soluzione-button1" onclick="mostraSoluzione(1)" >Soluzione</button>
+    <p id="soluzione1" class="gray" style="text-align: center; display: none;">
+        Soluzione
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x = -\dfrax{9}{2}\\
+                    \\
+                    y = 12
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di <b>riduzione</b>. 
+    </p>
+    <br>
+    <p class="container">
+        \(
+            \begin{equation*}
+                \begin{cases}
+                    12x + 5y = -2 \\
+                    \\
+                    14x - 10y = 1 \\
+                    
+                \end{cases}
+            \end{equation*}
+        \)
+    </p>
+    <br>
+    <button id="soluzione-button2" onclick="mostraSoluzione(2)" >Soluzione</button>
+    <p id="soluzione2" class="gray" style="text-align: center; display: none;">
+        Soluzione
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x = -\dfrac{3}{38}\\
+                    \\
+                    y = -\dfrac{4}{19} 
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Risolvere il seguente sistema con un metodo a piacere. 
+    </p>
+    <br>
+    <p class="container">
+        \(
+            \begin{equation*}
+                \begin{cases}
+                    2\left(x - 2\right) -5 \left(y - 1\right) = -1\\
+                    \\
+                    -\left[1 -2\left(x - 1\right)\right] = x
+                \end{cases}
+            \end{equation*}
+        \)
+    </p>
+    <br>
+    <button id="soluzione-button3" onclick="mostraSoluzione(3)" >Soluzione</button>
+    <p id="soluzione3" class="gray" style="text-align: center; display: none;">
+        Soluzione
+        <br>
+        \[
+        \begin{equation*}
+            \begin{cases}
+                x = 3\\
+                \\
+                y = \dfrac{8}{5} 
+            \end{cases}
+        \end{equation*}
+    \]
+        
+    </p>
+    <br>
+
+    <h2>Esercizio 4</h2>
+    <p>
+        Risolvere il seguente sistema con un metodo a piacere. 
+    </p>
+    <br>
+    <p class="container">
+        \(
+            \begin{equation*}
+                \begin{cases}
+                    \dfrac{x -2}{10} - 2\dfrac{y - 1}{15} = \dfrac{1}{6}\\
+                    \\
+                    \dfrac{x + 1}{2} = \dfrac{-x +2}{5}
+                \end{cases}
+            \end{equation*}
+        \)
+    </p>
+    <br>
+    <button id="soluzione-button4" onclick="mostraSoluzione(4)" >Soluzione</button>
+    <p id="soluzione4" class="gray" style="text-align: center; display: none;">
+        Soluzione
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x = -\dfrac{1}{7}\\
+                    \\
+                    y = -\dfrac{13}{7}
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <br>
+
+    <h2>Esercizio 5</h2>
+    <p>
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x = 5\\
+                    \\
+                    y = 1
+                \end{cases}
+            \end{equation*}
+        \] 
+        è soluzione del sistema riportato qui sotto? Motivare la risposta.
+    </p>
+    <br>
+    <p >
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x + 2y = 7\\
+                    \\
+                    x - y = 8
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <br>
+    
+
+    
+    
+
+      
+    <script>
+        function mostraSoluzione(n) {
+        document.getElementById("soluzione-button"+n).style.display = "none";
+        document.getElementById("soluzione"+n).style.display = "block";
+        /* document.getElementById("soluzione"+n).style.textAlign = "center"; */
+        }
+    </script>
+</body>
