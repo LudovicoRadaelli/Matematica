@@ -22,9 +22,9 @@ MathJax.typesetPromise([]).then(() => {});
 
 function generaEsempio(n) {
     if(n === 1) {
-        let b = Math.floor(Math.random()*12);
-        let e1 = Math.floor(Math.random()*12);
-        let e2 = Math.floor(Math.random()*12);
+        let b = Math.floor(Math.random()*12+2);
+        let e1 = Math.floor(Math.random()*12+1);
+        let e2 = Math.floor(Math.random()*12+1);
         let eRes = e1 + e2;
 
         document.getElementById("esempio"+n).innerHTML = 
@@ -47,8 +47,8 @@ function generaEsempio(n) {
     }
 
     if(n === 3) {
-        let b1 = Math.floor(Math.random()*12 + 1);
-        let b2 = Math.floor(Math.random()*12 + 1);
+        let b1 = Math.floor(Math.random()*12 + 2);
+        let b2 = Math.floor(Math.random()*12 + 2);
         let e = Math.floor(Math.random()*12 + 2);
         let bRes = b1*b2;
 
@@ -68,5 +68,21 @@ function generaEsempio(n) {
         MathJax.typesetClear([document.getElementById("esempio"+n)]);
         MathJax.typesetPromise([document.getElementById("esempio"+n)]).then(() => {});
     }
+
+    if(n === 5) {
+        let e1 = Math.floor(Math.random()*12 + 2);
+        let e2 = Math.floor(Math.random()*12 + 2);
+        let b = Math.floor(Math.random()*12 + 2);
+        let eRes = Math.floor(e1*e2);
+        document.getElementById("esempio"+n).innerHTML = 
+        `\\[ 
+            \\left(\\color{red}{${b}}\\color{black}{}^{\\color{blue}{${e1}}}\\right)^{\\color{blue}{${e2}}} = \\color{red}{${b}}^{\\color{blue}{${eRes}}}    
+        \\]`;
+        MathJax.typesetClear([document.getElementById("esempio"+n)]);
+        MathJax.typesetPromise([document.getElementById("esempio"+n)]).then(() => {});
+    }
+
+
+
 
 }
