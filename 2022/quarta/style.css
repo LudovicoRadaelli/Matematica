@@ -1,201 +1,533 @@
 * {
     box-sizing: border-box;
-    margin: 0;
+}
+
+
+
+#fixedBackground {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
 }
 
 body {
-    width: 90%;
-    margin: auto;
-    font-size: 17px;
-    line-height: 1.5rem;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7rem;
+    word-spacing:1px;
+    letter-spacing: 1px;
 }
 
-h1 {
+#pageTitle {
+    width: 70%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
     text-align: center;
     color: #DB4437;
+}
+
+/* --------- NAVIGATION BAR --------- */
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 0;
+}
+
+.button-style {
+    padding: 1rem;
+    border-radius: 18px  18px  18px 18px;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-h2 {
-    font-size: 1.3rem;
-    color: #4285F4;
+.background-mod0 {
+    background-color:  #4285F4;   
+}
+
+.background-mod1 {
+    background-color: #DB4437;   
+}
+
+.background-mod2 {
+    background-color: #F4B400;   
+}
+
+.background-mod3 {
+    background-color: #0F9D58;   
+}
+
+nav::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+nav::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+nav::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: white;
+}
+
+
+.button-style:hover { 
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.15rem;
+}
+
+nav h2 #first {
+    margin-top: 1rem;
+}
+
+nav hr {
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    border-top: 0.001rem  #2272f1 solid;
 }
 
-h3 {
-    color: #F4B400;
-    font-size: 1.1rem;
+.link {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0.03rem 0.03rem black;
 }
 
-.media-container {
-    width: 98%;
+
+.nestedUl h3{
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.90rem;
 }
 
-video, img {
-    display: block;
+.nestedItem {
+    color: white;
+}
+ */
+
+/* --------- MAIN --------- */
+
+main {
     width: 100%;
+    /* margin-left: 25%; se in modalità computer */
 }
 
-table, td, th {
-    border: 0.01rem solid black; 
+#titleHr {
+    border-top: lightgray;
 }
 
-td, th {
-    text-align: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-table {
-    border-collapse: collapse;
-}
-
-.grayBackground {
-    background-color: rgb(240, 240, 240);
-    padding: 1rem;    
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.geogebra-container {
-    background-color: rgb(240, 240, 240);
-}
-
-.ggbTransform {
-    width: 100% !important;
-}
-
-.generaEsempio {
-    display: block;
-    width: auto;
+.item-container {
+    width: 94%;
     margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-top: 3rem;
+    background-color: white;
 }
 
-.green {
+.item-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.items {
+    width: 96%;
+    padding: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0.3rem 0.3rem 0.5rem lightgray;
+}
+
+.color-mod0 {
+    color: #4285F4;
+}
+
+.border-color-mod0 {
+    border: 0.1rem #4285F4 solid;
+}
+
+.color-mod1 {
+    color: #DB4437;
+}
+
+.border-color-mod1 {
+    border: 0.1rem #DB4437 solid;
+}
+
+.color-mod2 {
+    color: #F4B400;
+}
+
+.border-color-mod2 {
+    border: 0.1rem #F4B400 solid;
+}
+
+.color-mod3 {
     color: #0F9D58;
 }
 
-.red {
+.border-color-mod3 {
+    border: 0.1rem #0F9D58 solid;
+}
+
+#item-container-mediazione table ,
+#item-container-prerequisiti table {
+    width: 80%;
+    margin: auto;
+    font-size: 0.95rem;
+    line-height: normal;
+    background-color: rgb(240, 240, 240);
+}
+
+
+#item-container-prerequisiti td {
+    vertical-align: top;
+    width: 50%;
+    padding: 1rem;
+}
+
+#item-container-osa table {
+    width: 90%;
+    margin: auto;
+    font-size: 0.95rem;
+    line-height: normal;
+    background-color: rgb(240, 240, 240);
+}
+
+#item-container-osa td {
+    vertical-align: top;
+    width: 33.3333333%;
+    padding: 1rem;
+}
+
+#item-container-mediazione table {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    background-color: rgb(240, 240, 240);
+}
+
+#item-container-mediazione .li-tic {
+    width: 90%;
+    /* text-align: justify; */
+}
+
+#item-container-mediazione a {
+    text-decoration: underline;
+    color: #4285F4; 
+}
+
+.fasi-btn {
+    font-size: 2rem;
+    display: inline-block;background-color: white;
+    border: 0;
+    padding: 0;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
     color: #DB4437;
+    transform: scale(1.4);
+
 }
 
-.yellow {
-    color: #F4B400;
+.fasi-btn:hover {
+    transform: scale(2);
+    cursor: pointer;
 }
 
-.blue {
-    color: #4285F4;
-}
-
-.gray {
-    color: gray;
-}
-
-#scomposizione-container {
+#progressBar {
+    width: 80%;
+    margin: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
+#item-container-valutazione table {
+    
+    width: 100%;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    background-color: rgb(240, 240, 240);
+}
 
-#scomposizione {
+#item-container-valutazione .thin-td {
+    width: 5%;
+    text-align: center;
+}
+
+#item-container-valutazione td {
+    width: auto;
+}
+
+.right-border {
+    border-right: 2px white solid;
+}
+
+.bottom-border {
+    border-bottom: 2px white solid;
+}
+
+/*-------------IMAGES-------------*/
+
+.student-container {
     display: flex;
-    align-self: flex-start;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+
+}
+
+.student {
+    width: 10%;
+    height: 10%;
+}
+
+#road {
     width: 20%;
-    margin-right: 0;
-    margin-left: 1rem;
+    float: left;
+    padding: 0.5rem;
+}
+
+#ability {
+    width: 10%;
+    position: absolute;
+    margin-right: 1rem;
+    /* right: -10px;
+    top: 28px; */
+    right: 80px;
+    top: -70px;
+    z-index: 3;
+}
+
+#competenzeConoscenzeAbilità {
+    position: relative;
+}
+
+#goal {
+    position: absolute;
+    top: -12px;
+    right: -33px;
+    width: 10%;
+    transform: scale(4);
+    margin-right: 1rem;
+    float: right;
+}
+
+#timetable {
+    width: 20%;
+    float: right;
+    padding: 0.7rem;
     margin-right: 1rem;
 }
 
-#numeroDaScomporre {
-    padding-right: 0.5rem;
-    text-align: right;
+#technology {
+    width: 18%;
+    float: right;
+    margin-right: 1rem;
 }
 
-#fattoriPrimi {
-    padding-left: 0.5rem;
-    border-left: 0.01rem black solid;
+#book {
+    width: 18%;
+    float: right;
+    margin-right: 1rem;
 }
 
-#scomposizioneSpiegazione {
-    margin-left: 2rem;
-    align-self: flex-start;
+#cooperation {
+    width: 15%;
+    float: right;
+    margin-right: 1rem;
+    margin-left: 0.4rem;
 }
 
-.formula {
-    overflow-x: scroll;
+#classroom {
+    width: 15%;
+    float: right;
+    margin-right: 1rem;
 }
 
-button {
-    display: block;
-    width: auto;
+#EE {
+    width: 20%;
+    float: right;
+    margin-right: 1rem;
+}
+
+/* --------------------------------------------------------- */
+
+/*-----------VIDEO PER IL POTENZIAMENTO-------------------*/
+
+#video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    height: 60%;
     margin: auto;
-    padding: 0.3rem;
-    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
 }
 
-.scompMacro-container {
+.video-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 1rem;
 }
 
-.scomp-container {
+.video-row iframe {
     width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    height: 30%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* ----------------------------------------- */
+
+
+#item-container-bibliografia {
+    font-size: 20px;
+}
+
+
+main #ringraziamenti {
+    position: relative;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;    
     justify-content: center;
-    align-items: flex-start;
+    text-align: center;
+    line-height: 2.3rem;
+    margin-top: auto;
 }
 
-.risultato-container {
+main #ringraziamenti #sketch1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    z-index: -1;
+
+}
+
+#ringraziamenti #h-container {
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: flex-start;
-    padding-right: 0.5rem;
+    flex-direction: column;    
+    justify-content: center;
+    width: 60%;
+    padding: 1rem 0 1rem 0;
+    border: 0.01rem #F4B400 solid;
+    border-radius: 30px;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem 1rem lightgray;
+    background-color: white;
+    z-index: 100;
 }
 
-.risultato {
-    text-align: right;
+#ringraziamenti h1,
+#ringraziamenti h2 {
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
-.fattore-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    padding-left: 0.5rem;
-    border-left: 0.01rem black solid;
+#ringraziamenti #titoloLezione {
+    color: #DB4437;
+    font-size: 2.5rem;
 }
 
-.fattore {
-    text-align: left;
+#ringraziamenti h2 {
+    font-size: 1.7rem;
 }
 
-.risultatiScomposizioni-container {
-    display: flex;
-    flex-direction: row;
+#ringraziamenti #cdc {
+    color: #4285F4;
 }
 
-.risultatiScomposizioni {
-    width: 50%;
+#ringraziamenti #candidato {
+    color: #0F9D58;
 }
 
-.esempi-container {
-    border: 0.01rem #F4B400 solid; 
-    padding: 1rem;
+#ringraziamenti hr {
+    width: 80%;
+    border-top: 0.01rem #F4B400 solid;
 }
+
+#grazie-img {
+    width: 70%;
+    margin: auto;
+}
+
+
+.on {
+    position: relative;
+    display: inline-block !important;
+  }
+
+  .on:hover {
+    border-bottom: 4px dotted #4285F4;
+  }
+  
+  .on .onTxt {
+    visibility: hidden;
+    width: 120px;
+    background-color: #4285F4;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    padding: 0.3rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .on .onTxt::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #4285F4 transparent transparent transparent;
+  }
+  
+  .on:hover .onTxt {
+    visibility: visible;
+  }
+
+
