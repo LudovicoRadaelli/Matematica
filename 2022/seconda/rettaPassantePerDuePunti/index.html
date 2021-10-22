@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Materiale per la lezione</title>
+</head>
+<style>
+    video {
+        border: 0.01rem lightgray solid;
+    }
+</style>
+<body>
+    <h1>Retta passante per due punti</h1>
+    <br>
+    <h2>Equazione della retta: piccolo riassunto</h2>
+    
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/rettaPassantePerDuePunti/img/riassuntoEquazioneRetta.mp4" controls></video>
+    <br>
+    <p>
+        L'equazione 
+        \[
+            y = mx + q
+        \]
+        viene detta <b>equazione della retta</b> perché se rappresentiamo <u>tutti</u> i punti che hanno coordinata 
+        \(y\) uguale a \(m\) volte la coordinata \(x\) più \(q\) la figura che otteniamo è proprio una retta.
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Come verificare se un punto appartiene ad una retta</h2>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/rettaPassantePerDuePunti/img/verificaAppartenenzaPuntoRetta.mp4" controls></video>
+    <br>
+    <p>
+        Prendiamo il punto 
+        \[A\left(2\,;\,\,3 \right)\] 
+        e la retta di equazione 
+        \[y = -2x + 7\]
+        Per controllare se il punto \(A\) appartiene alla retta sostituiamo le sue coordinate nell'equazione della retta.
+    </p>
+    <br>
+
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/rettaPassantePerDuePunti/img/gifAppartiene.mp4" controls defaultPlaybackRate = "1.5"></video>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Retta passante per due punti</h2>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/rettaPassantePerDuePunti/img/rettaPassantePerDuePunti.mp4" controls></video>
+    <br>
+    <p>
+        Prendiamo due punti 
+        \[
+            A\left(1\,;\,\,4\right) \,\,\,\,\text{e}\,\,\,\,\, B\left(-3\,;\,\,2\right)
+        \]   
+        Il nostro obiettivo è trovare l'equazione della retta passante per i punti \(A\) e \(B\).
+    </p>
+    <p>
+        L'equazione della retta in generale è 
+        \[
+            y = mx + q
+        \]
+    </p>
+    <p>
+        I due punti \(A\) e \(B\) appartengono alla retta, quindi le loro coordinate soddisfano l'equazione \(y = mx + q\,\,\): 
+    </p>
+    
+
+    <!-- <div style="border: 0.01rem lightgray solid;">
+        \[
+            A\left(1\,;\,\,4\right) \,\,\text{appartiene alla retta} 
+        \]
+        \[
+            \Updownarrow
+        \]
+        \[
+            4 = m\cdot1 + q
+        \]
+    </div>
+    <br>
+
+    <div  style="border: 0.01rem lightgray solid;">
+        \[
+            B\left(-3\,;\,\,2\right) \,\,\text{appartiene alla retta} 
+        \]
+        \[
+            \Updownarrow
+        \]
+        \[
+            2 = m\cdot\left(-3\right) + q
+        \]
+    </div> -->
+    <br>
+    <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/rettaPassantePerDuePunti/img/gifRettaPerDuePunti.mp4" controls defaultPlaybackRate = "3"></video>
+    <br>
+
+    <p>
+        Quindi per trovare \(m\) e \(q\) della retta dobbiamo risolvere il sistema 
+        \begin{cases}
+            4 = m\cdot1 + q \\
+            \\
+            2 = m\cdot\left(-3\right) + q
+        \end{cases}
+    </p>
+
+
+    <script src="script.js"></script>
+</body>
