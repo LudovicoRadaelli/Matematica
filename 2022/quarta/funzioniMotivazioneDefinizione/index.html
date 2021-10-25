@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Introduzione alle funzioni</title>
+</head>
+<body>
+    <h1>Introduzione alle funzioni</h1>
+    <br>
+
+    <h2>Alcuni esempi</h2>
+
+    <h3>Funzioni e multe</h3>
+    <div class="esempi-container">
+        <p>
+            Vogliamo creare un'app che una volta inserita la velocità di un veicolo (<b>input</b>) ci dica a quanto ammonta la multa
+            che il guidatore deve pagare (<b>output</b>).
+        </p>
+        <p>
+            Supponiamo che il limite di velocità sia \(100\frac{km}{h}\) e che per ogni kilometro orario eccedente il limite 
+            si paghi il quadrato del eccesso. In formule:
+        </p>
+        <br>
+        <p class="formula">
+            \[
+                \text{multa} = 
+                \begin{cases}
+                    0€ \quad \text{se velocità} \leq 100 \\
+                    \\
+                    \left(\text{velocità} - 100\right)^2€ \quad \text{se velocità}\geq 100
+                \end{cases}
+            \]
+        </p>
+        <br>
+
+        <p>
+            Di seguito il grafico della funzione:
+        </p>
+        <div id="sketch2"></div>
+        <!-- <div class="input-container">
+            <span>Velocità:</span><input type="number" id="inputSpeed" value="0"><span>\(\frac{km}{h}\)</span>
+        </div>
+        <div class="input-container">
+            <span>Multa:</span><span id="outputMulta"></span><span>\(0€\)</span>
+        </div> -->
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+
+    <h3>Funzioni e colori</h3>
+    <div class="esempi-container">
+        <p>
+            Provate a scrollare verso il basso il pannello rosso qui sotto.
+        </p>
+        <br>
+    
+        <p>
+            Come <b>input</b> consideriamo la distanza della barra di scorrimento del pannello qui sotto rispetto alla sua posizione iniziale.
+        </p>
+        <p>
+            Come <b>output</b> conseriamo il numero che otteniamo sottraendo all'input il più grande multiplo di \(360\) contenuto 
+            nell'input stesso. 
+        </p>
+        <p> 
+            L'output viene rappresentato sotto forma del colore corrispondente (<a href="https://it.wikipedia.org/wiki/Hue_Saturation_Brightness">sistema HSB</a> )
+        </p>
+        <br>
+    
+        <div id="colorDiv-container">
+            <div id="colorDiv"></div>
+        </div>
+        <br>
+        <p class="grayBackground" style="text-align: center;">
+            Input: <span id="inputScroll">0</span>;
+            <br>
+            Output: <span id="outputColor">0</span>;
+        </p>
+    
+        <p>Il grafico corrispondente è</p>
+        <br>
+
+        <div id="skecth1"></div>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- <h3>Funzioni e suoni</h3>
+    <div class="esempi-container">
+
+        <div id="sketch3">
+        </div>
+
+        <button id="play-button" onclick="playOscillator()" >Play!</button>
+    </div> -->
+    
+<script src="script.js"></script>
+</body>

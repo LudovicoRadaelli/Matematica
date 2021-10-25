@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #DB4437;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #4285F4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #F4B400;
+    font-size: 1.1rem;
+}
+
+.media-container {
+    width: 98%;
+}
+
+video, img {
+    display: block;
+    width: 100%;
+}
+
+table, td, th {
+    border: 0.01rem solid black; 
+}
+
+td, th {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.grayBackground {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;    
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.geogebra-container {
+    background-color: rgb(240, 240, 240);
+}
+
+.ggbTransform {
+    width: 100% !important;
+}
+
+.generaEsempio {
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.green {
+    color: #0F9D58;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
+}
+
+.blue {
+    color: #4285F4;
+}
+
+.gray {
+    color: gray;
+}
+
+
+.formula {
+    overflow-x: scroll;
+}
+
+button {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
+}
+
+
+.esempi-container {
+    border: 0.01rem #F4B400 solid; 
+    padding: 1rem;
+}
+
+
+/* ---------------------------------------------- */
+
+
+#colorDiv-container {
+    width: 80%;
+    height: 40vh;
+    margin: auto;
+    border: 1rem solid #222;
+    overflow-y: scroll;
+}
+
+#colorDiv {
+    width: 100%;
+    height: 1440px;
+    margin: auto;
+}
+
+#sketch1, #sketch2 {
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#inputSpeed {
+    width: 2rem;
+    margin: 0.3rem;
+}
+
