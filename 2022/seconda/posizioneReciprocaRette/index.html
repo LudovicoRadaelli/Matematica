@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Posizione reciproca di due rette</title>
+</head>
+<body>
+    <h1>Posizione reciproca di due rette</h1>
+    <br>
+    
+    <p>
+        Considerate la seguente retta:
+    </p>
+
+    <br>    
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/posizioneReciprocaRette/img/rettaBlu.png" alt=""> 
+    <br>
+
+    <p class="grayBackground">
+        Come può essere posizionata un'altra retta rispetto a questa blu? 
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Rette parallele</h2>
+    <p>
+        Le due rette sono <b>parallele</b>, ovvero non hanno nessun punto in comune.
+    </p>
+    
+    <br>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/posizioneReciprocaRette/img/retteParallele.png" alt=""> 
+    <br>
+
+    <p>
+        In questo caso l'inclinazione delle due rette è uguale, quindi: 
+    </p>
+
+    <p class="grayBackground" style="text-align: center;">
+        Due rette sono parallele
+        \[
+            \Updownarrow
+        \]
+        i coefficienti angolari delle due equazioni sono uguali.
+    </p>
+        
+        <p style="text-align: center;"></p>
+        
+    </p>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Le rette di equazioni \[y = \color{red}{3}\color{black}{}x + 2\]  \[ y = \color{red}{3}\color{black}{}x - 8 \] sono parallele perché hanno il coefficiente angolare 
+            uguale (in entrambi i casi è \(\color{red}{3}\)).
+        </p>
+        <br>
+        <hr>
+        <br>
+        <p>
+            Le rette di equazioni \[y = \color{red}{19}\color{black}{}x - 92\]  \[ y = \color{red}{19}\color{black}{}x + 18 \] sono parallele perché hanno il coefficiente angolare 
+            uguale (in entrambi i casi è \(\color{red}{3}\)).
+        </p>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+
+    <h2>Rette incidenti</h2>
+    <p>
+        Le due rette hanno un unico punto di intersezione.
+    </p>
+
+    <br>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/posizioneReciprocaRette/img/retteIncidenti.png" alt="">
+    <br>
+
+    <p class="grayBackground">
+        Per trovare le coordinate del punto di intersezione mettiamo a sistema le equazioni delle due rette.
+    </p>
+    <br>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            Trovare l'intersezione tra le rette \(y = -2x + 1\) e \(y = \dfrac{5}{2}x - 8\).
+        </p>
+        <br>
+        <p>
+            <b>
+                Svolgimento
+            </b>
+            <br>
+            Le coordinate \(x\) ed \(y\) del punto di intersezione <b><i>soddisfano</i></b> 
+            entrambe le equazioni delle rette. Per trovarle risolviamo il sistema:
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    y = \dfrac{5}{2}x - 8
+                \end{cases}
+            \]
+        </p>
+        <br>
+        <p id="mostraPassaggi" onclick="mostraPassaggi()" style="color: blue; text-align: center;"><u>mostra svolgimento</u></p>
+        
+        <p id="passaggi" style="display: none;">
+            Leviamo i denominatori nella seconda equazione:
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    \dfrac{2y}{\cancel{2}} = \dfrac{5x-16}{\cancel{2}} 
+                \end{cases}
+            \]
+            Sostituiamo \(-2x +1\) alla \(y\) della seconda equazione
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    2\left(-2x + 1\right) = 5x-16 
+                \end{cases}
+            \]
+            Svolgiamo i calcoli
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    -4x + 2 = 5x-16 
+                \end{cases}
+            \]
+            Portiamo tutti i termini incogniti a sinistra dell'uguale e tutti i termini noti a destra:
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    -4x -5x = -16 -2
+                \end{cases}  
+            \]
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    -9x = -18
+                \end{cases}  
+            \]
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    \dfrac{-9x}{-9} = \dfrac{-18}{-9}
+                \end{cases}  
+            \]
+            \[
+                \begin{cases}
+                    y = -2x + 1 \\
+                    \\
+                    x = -2
+                \end{cases}  
+            \]
+            Sostituiamo a \(-2\) alla \(x\) nella prima equazione:
+            \[
+                \begin{cases}
+                    y = -2\left(-2\right) + 1 \\
+                    \\
+                    x = -2
+                \end{cases}  
+            \]
+            \[
+                \begin{cases}
+                    y = -3 \\
+                    \\
+                    x = -2
+                \end{cases}  
+            \]
+        </p>
+
+        <p id="nascondiPassaggi" onclick="nascondiPassaggi()" style="display: none; color: blue; text-align: center;"><u>nascondi svolgimento</u></p>
+        <br>
+        <p>
+            La soluzione è
+            \[
+                \begin{cases}
+                    x = -2 \\
+                    \\
+                    y = -3
+                \end{cases}  
+            \]
+            quindi il punto di intersezione è \(\left(-2; -3\right)\)
+        </p>
+        <!-- 
+            INSERISCI VIDEO
+            <video src=""></video> 
+        -->
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h2>Rette coincidenti</h2>
+    <p>
+        Le due rette hanno infiniti punti di intersezione.
+    </p>
+
+    <br>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/posizioneReciprocaRette/img/retteCoincidenti.png" alt="">
+    <br>
+
+    <p>
+        Per essere esattamente sovrapposte le due rette devono avere la stessa inclinazione ed intersecare l'asse delle \(y\) 
+        nello stesso punto
+    </p>
+    <p class="grayBackground">
+        Due rette sono coincidenti
+        \[
+            \Updownarrow
+        \]
+        hanno lo stesso coefficiente angolare e lo stesso termine noto
+    </p>
+    <br>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p> Data la retta 
+            \[
+                y = 4x + (k+1)
+            \]
+            stabilire quanto deve valere \(k\) perché la retta sia coincidente con la retta \(y = 4x + 7\)
+        </p>
+        <br>
+        <p>
+            <b>Svolgimento:</b>
+            <br>
+            Il coefficiente delle due rette è lo stesso, \(4\).
+            <br>
+            Vogliamo che anche il termine noto sia uguale. quindi
+            \[
+                k + 1 = 7 \Rightarrow k = 7 - 1
+            \]
+            dunque \(k = 6\)
+        </p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
