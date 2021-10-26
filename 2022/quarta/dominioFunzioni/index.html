@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dominio di una funzione</title>
+</head>
+<body>
+    <h1>Dominio di una funzione</h1>
+    
+    <h2>Introduzione</h2>
+    <p>
+        Consideriamo la funzione 
+        \[
+            f\left(x\right) = \sqrt{x} + x
+        \]
+        ovvero quella legge che ad ogni numero \(x\) associa la radice quadrata del numero più il numero stesso.
+    </p>
+    <p>
+        Facciamoci un po' d'esempi:
+    </p>
+    <p style="text-align: center;">
+        \[1 \longmapsto \sqrt{1} + 1 = 2\]
+        <span class="gray">Ad \(1\) associo \(2\)</span>
+        \[4 \longmapsto \sqrt{4} + 4 = 6\]
+        <span class="gray">A \(4\) associo \(6\)</span>
+        \[0 \longmapsto \sqrt{0} + 0 = 0\]
+        <span class="gray">A \(0\) associo \(0\)</span>
+        \[-16 \longmapsto \color{red}{\sqrt{-16}}\color{black}{} + \left(-16\right) = \text{?!?!?}\]
+    </p>
+    <div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/fpXxIjftmkk9y" width="100%" height="100%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+    <br>
+    <p>
+        Problema: \(\sqrt{-16}\,\,\) <u>non esiste</u>! Quindi a \(-16\) non posso associare alcun numero seguendo la legge che definisce la funzione.
+    </p>
+    <br>
+    <p>
+        Morale: ci sono alcuni valori per cui la funzione è definita ed altri per cui non lo è.
+    </p>
+    <p class="grayBackground">
+        L'insieme dei valori per cui la funzione è definita si chiama <b>dominio</b>.
+    </p>
+
+    <h2>Come individuare il dominio</h2>
+    <p>Dobbiamo fare attenzione ad alcune operazioni "pericolose":</p>
+    <ul>
+        <br>
+        <li>
+            <b>Frazione:</b> 
+            <br>
+            in una frazione il denominatore deve essere diverso \(0\).
+            \[
+                \dfrac{N}{D} \,\,\Longrightarrow\,\, D \neq 0
+            \]
+        </li>
+        <li>
+            <b>Radice di indice pari:</b>
+            <br>
+             in una radice di indice pari l'argomento deve essere maggiore o uguale a \(0\).
+             \[
+                \sqrt[4]{\text{Arg}} \,\,\Longrightarrow\,\, \text{Arg} \geq 0
+             \]
+        </li>
+        <li>
+            <b>Logarimo:</b> 
+            <br>
+            in un logarimto l'argomento deve essere maggiore di \(0\).
+            \[
+                \log{\left(\text{Arg}\right)} \,\,\Longrightarrow\,\, \text{Arg} \gt 0
+            \]
+        </li>
+    </ul>
+    <br>
+    <p>Vediamo qualche esempio.</p>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <video src="img/dominio1.mp4" controls style="border: 0.01rem solid black;"></video>
+        <br>
+        <hr>
+        <br>
+        <video src="img/dominio2.mp4" controls style="border: 0.01rem solid black;"></video>
+        <br>
+        <hr>
+        <br>
+        <video src="img/dominio3.mp4" controls style="border: 0.01rem solid black;"></video>
+        <br>
+        <hr>
+        <br>
+    </div>
+    
+</body>
