@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Funzioni - definizione e proprietà</title>
+</head>
+<body>
+    <h1>Funzioni - definizione e proprietà</h1>
+    
+    <h2>Definizione</h2>
+    <p class="grayBackground">
+        Dati due insiemi \(A\) e \(B\) si definisce <b>funzione</b> da \(A\) a \(B\) una legge che <u>ad ogni</u> elemento 
+        dell'insieme \(A\) associa <u>uno ed un solo</u> elemento dell'insieme \(B\).
+    </p>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Consideriamo gli insiemi \[A = \left\{a, b, c, d \right\}\] \[B=\left\{1, 2, 3, 4, 5, 6, 7\right\}\]
+        </p>
+        <p>
+            Quella rappresentata di seguito <b>NON</b> è una funzione, perché all'elemento \(d\) non è associato nessun elemento dell'insieme d'arrivo,
+        </p>
+
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/noFunzioneEs.png" alt="">
+        <br>
+
+        <p>
+            Anche la seguete <b>NON</b> è una funzione, perché all'elemento \(a\) associo più di un'elemento dell'insieme \(B\)
+        </p>
+
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/noFunzioneEs(1).png" alt="">
+        <br>
+
+        <p>
+            La seguente invece rispetta la definizione di funzione: ad ogni elemento dell'insieme \(A\) associo un unico elemento dell'insieme \(B\)
+        </p>
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/funzioneEs.png" alt="">
+        <br>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Proprietà di una funzione</h2>
+    
+    <p class="grayBackground">
+        Data una funzione \(f\) da \(A\) a \(B\), l'<b>immagine</b> di un elemento \(x\) di \(A\) 
+        è l'elemento associato ad \(x\).
+    </p>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>Data la seguente funzione</p>
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/immagine.png" alt="">
+        <br>
+        <ul>
+            <li>
+                \(8\) è l'immagine di \(b\)
+            </li>
+            <li>
+                \(1\) è l'immagine di \(d\)
+            </li>
+            <li>
+                \(0\) non è immagine di alcun elemento dell'insieme \(A\) (perché nessun elemento dell'insieme di partenza è associato a \(0\))
+            </li>
+        </ul>
+    </div>
+    <br>
+
+    <h3 class="blue"><u>Funzioni iniettive</u></h3>
+    <p class="grayBackground" style="text-align: center;">
+        Una funzione si dice <b>iniettiva</b> 
+        \[
+            \Updownarrow
+        \]
+        se \(x \neq y\)  allora \(f\left(x\right) \neq f\left(y\right)\)
+        <br>
+        per ogni coppia di elementi \(x\) e \(y\) dell'insieme \(A\)
+    </p>
+    <p>
+        Dire che una funzione è iniettiva quindi corrisponde a dire che elementi diversi hanno immagini diverse.
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            La seguente funzione <b>non</b> è iniettiva, perché \(d\) ed \(f\) hanno la stessa immagine, \(3\):
+        </p>
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/nonIniettive.png" alt="">
+        <br>
+        <hr>
+        <br>
+        <p>
+            La seguente funzione invece è iniettiva: presi due elementi diversi, anche la loro immagine è differente.
+        </p>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/iniettiva.png" alt="">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3 class="blue"><u>Funzioni suriettive</u></h3>
+    <p class="grayBackground" style="text-align: center;">
+        Una funzione si dice <b>suriettiva</b> 
+        \[
+            \Updownarrow
+        \]
+        ogni elemento dell'insieme di arrivo è immagine di almeno un elemento dell'insieme di partenza.
+    </p>
+    <p>
+        Detta male: una funzione è suriettiva quando tutti gli elementi dell'insieme di arrivo ricevono almeno una 
+        freccia.
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            La seguente funzione è suriettiva, tutti gli elementi di \(B\) sono immagine di qualche elemento di \(A\):
+        </p>
+        <br>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/suriettiva.png" alt="">
+        <br>
+        <hr>
+        <br>
+        <p>
+            La seguente funzione invece è <b>non</b> è suriettiva: gli elemento \(2\) e \(3\) non sono immagini di alcun elemento di \(A\).
+        </p>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/nonSuriettiva.png" alt=""><!-- -------------------------------- -->
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3 class="blue"><u>Funzioni biiettive</u></h3>
+    <p class="grayBackground" style="text-align: center;">
+        Una funzione si dice <b>suriettiva</b> 
+        \[
+            \Updownarrow
+        \]
+        è sia iniettiva che suriettiva.
+    </p>
+    <p>
+        Provate a creare una funzione sia iniettiva a partire da questi due insiemi:
+    </p>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/try1.png" alt="">
+    <div id="soluzione1-button">
+        <br>
+        <button onclick="mostraSoluzione(1)">Soluzione</button>
+        <br>
+    </div>
+
+    <div class="gray" id="soluzione1" style="display: none;">
+        <br>
+        <p>
+            Non riuscite? Normale: <b>non si può</b>. Essendoci \(4\) elementi nell'insieme \(A\) e solo \(3\) 
+            nell'insieme \(B\) la funzione non può essere iniettiva: due elementi dovranno avere per forza la stessa immagine.
+        </p>
+        <br>
+    </div>
+
+    <p>
+        Ora provate a creare una funzione sia iniettiva a partire da questi due insiemi:
+    </p>
+    <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/try2.png" alt=""><!-- -------------------------------------- -->
+    <div id="soluzione2-button">
+        <br>
+        <button onclick="mostraSoluzione(2)">Soluzione</button>
+        <br>
+    </div>
+
+    <div class="gray" id="soluzione2" style="display: none;">
+        <br>
+        <p>
+            Stessa cosa di prima, la richiesta è impossibile. Infatti essendoci solo \(3\) elementi nell'insieme \(A\) e \(4\) 
+            nell'insieme \(B\), un elemento di \(B\) rimane "scoperto".
+        </p>
+        <br>
+    </div>
+    
+    <p>
+        Morale della favola: perché la funzione sia biettiva, l'insieme di partenza e di arrivo devono avere lo stesso numero
+        di elementi.
+    </p>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>Questa è una funzione biiettiva.</p>
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/biiettiva.png" alt="">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+<!-- https://ludovicoradaelli.github.io/Matematica/2022/quarta/equazioniLogaritmiche/img/ -->
