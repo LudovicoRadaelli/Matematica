@@ -48,11 +48,13 @@ function selected(j,i) {
     
     if(!banconotaObj[j][i].on) {
         banconota.style.backgroundColor = "rgba(0,0,255,0.7)";
+        banconota.style.color = "white";
         banconota.style.borderStyle = "solid";
         document.getElementsByClassName("powSelected")[j].innerHTML = parseInt(document.getElementsByClassName("powSelected")[j].innerHTML) + 1; 
         totale += Math.pow(document.getElementById("listaBasi").value, j);
     } else {    
         banconota.style.backgroundColor = "rgba(0,0,255,0.1)";
+        banconota.style.color = "black";
         banconota.style.borderStyle = "dashed";
         document.getElementsByClassName("powSelected")[j].innerHTML = parseInt(document.getElementsByClassName("powSelected")[j].innerHTML) - 1;
         totale -= Math.pow(base, j);
