@@ -15,6 +15,7 @@ generaBanconote();
 function generaBanconote() {
     totale = 0;
     let base = document.getElementById("listaBasi").value;
+    document.getElementById("totale").innerHTML = `<b>0€</b>  \\(\\longleftrightarrow\\) (0)<sub>${base}</sub> `;
 
     for(let j = 0; j < 5; j++) {
         
@@ -37,6 +38,8 @@ function generaBanconote() {
             banconota.style.marginBottom = "1rem";
         }
     }
+    MathJax.typesetClear([document.getElementById("totale")]);
+    MathJax.typesetPromise([document.getElementById("totale")]).then(() => {});
 }
 
 function selected(j,i) {
