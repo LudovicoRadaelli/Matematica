@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dominio di una funzione</title>
+</head>
+<body>
+    
+    <!-- RISPETTO ALLA STESSA SPIEGAZIONE PER IL QUARTO NON CI SONO I LOGARITMI ED ESPONENZIALI. I VIDEO CHE HO MESSO
+    POSSONO ESSERE AGGIUNTI AL DOCUMENTO PER IL QUARTO -->
+
+    <h1>Dominio di una funzione</h1>
+    <br>
+    <h2>Introduzione</h2>
+    <p>
+        Consideriamo la funzione \(f\,:\,\,\mathbb{R}\longrightarrow \mathbb{R}\)
+        \[
+            f\left(x\right) = \sqrt{x} + x
+        \]
+        ovvero quella legge che ad ogni numero \(x\) associa la radice quadrata del numero più il numero stesso.
+    </p>
+    <p>
+        Facciamoci un po' d'esempi:
+    </p>
+    <p style="text-align: center;">
+        \[1 \longmapsto \sqrt{1} + 1 = 2\]
+        <span class="gray">Ad \(1\) associo \(2\)</span>
+        \[4 \longmapsto \sqrt{4} + 4 = 6\]
+        <span class="gray">A \(4\) associo \(6\)</span>
+        \[0 \longmapsto \sqrt{0} + 0 = 0\]
+        <span class="gray">A \(0\) associo \(0\)</span>
+        \[-16 \longmapsto \color{red}{\sqrt{-16}}\color{black}{} + \left(-16\right) = \text{?!?!?}\]
+    </p>
+    <div style="width:100%;height:0;padding-bottom:50%;position:relative;"><iframe src="https://giphy.com/embed/fpXxIjftmkk9y" width="100%" height="100%" style="position:absolute;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+    <br>
+    <p>
+        Problema: \(\sqrt{-16}\,\,\) <u>non esiste</u>! Quindi a \(-16\) non posso associare alcun numero seguendo la legge che definisce la funzione.
+    </p>
+    <br>
+    <p>
+        Morale: ci sono alcuni valori per cui la funzione è definita ed altri per cui non lo è.
+    </p>
+    <p class="grayBackground">
+        L'insieme dei valori per cui la funzione è definita si chiama <b>dominio</b>.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Come individuare il dominio</h2>
+    <p>Dobbiamo fare attenzione ad alcune operazioni "pericolose":</p>
+    <ul>
+        <br>
+        <li>
+            <b>Frazione:</b> 
+            <br>
+            in una frazione il denominatore deve essere diverso \(0\).
+            \[
+                \dfrac{N}{D} \,\,\Longrightarrow\,\, D \neq 0
+            \]
+        </li>
+        <li>
+            <b>Radice di indice pari:</b>
+            <br>
+             in una radice di indice pari l'argomento deve essere maggiore o uguale a \(0\).
+             \[
+                \sqrt[4]{\text{Arg}} \,\,\Longrightarrow\,\, \text{Arg} \geq 0
+             \]
+        </li>
+    </ul>
+    <br>
+    <p>Vediamo qualche esempio.</p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/quarta/dominioFunzioni/img/dominio4.mp4" controls style="border: 0.01rem solid black;"></video>
+        <br>
+        <hr>
+        <br>
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/quarta/dominioFunzioni/img/dominio5.mp4" controls style="border: 0.01rem solid black;"></video>
+        <br>
+        <hr>
+        <br>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 id="graficare">Come graficare il dominio</h2>
+    <p>
+        Una volta trovato il dominio, lo dobbiamo <b>graficare</b>, ovvero riportare in un grafico.
+    </p>
+    <p>
+        Per farlo cancelliamo tutta la porzione di piano in corrispondenza dei valori della \(x\) che non fanno parte del dominio.
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/quarta/dominioFunzioni/img/graficareDominio.mp4" controls></video>
+    </div>
+    
+</body>
