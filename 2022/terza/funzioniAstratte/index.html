@@ -201,7 +201,150 @@
         <img src="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/img/biiettiva.png" alt="">
     </div>
 
+    <br>
+    <hr>
+    <br>
 
+    <h2 id="pari">Funzioni pari</h2>
+    <p class="grayBackground" style="text-align: center;">
+        Una funzione si dice <b>pari</b>
+        \[
+            \Updownarrow
+        \]
+        \[
+            f\left(-x\right) = f\left(x\right)
+        \]
+        per ogni \(x\) dell'insieme di partenza
+    </p>
+    <br>
+    <p>
+        Potete leggerla così: 
+    </p>
+    <p>
+        Se applico la funzione a due elementi di segno opposto (\(x\) e \(-x\)) ottengo la stessa immagine.
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Consideriamo la funzione \(f\,:\,\,\mathbb{R} \longrightarrow \mathbb{R}\) che ad ogni numero associa il quadrato 
+            di quel numero più 1:
+            \[
+                f\left(x\right) = x^2 + 1
+            \] 
+            Dimostriamo che è una funzione pari.
+        </p>
+        <br>
+        <p>
+            La funzione è strutturata così: 
+            \[
+                f\left(\color{blue}{\bullet}\color{black}{}\right) = \color{blue}{\bullet}\color{black}{}^2+1
+            \]
+            Quindi quando applichiamo la funzione a \(\color{blue}{-x}\) abbiamo
+            \[
+                 f\left(\color{blue}{-x}\color{black}{}\right) = \left(\color{blue}{-x}\color{black}{}\right)^2+1 = x^2 + 1
+            \]
+        </p>
+        <p>
+            \(f\left(x\right)\) che \(f\left(-x\right)\) hanno la stessa immagine, \(x^2+1\), quindi la funzione è pari. 
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <p>
+            Consideriamo la funzione \(f\,:\,\,\mathbb{R} \longrightarrow \mathbb{R}\) definita dalla seguente legge numerica:
+            \[
+                f\left(x\right) = 5x^4 + 2x^2 + 10
+            \] 
+            Dimostriamo che è una funzione pari.
+        </p>
+        <br>
+        <p>
+            La funzione ha questa struttura:
+            \[
+                f\left(\color{blue}{\bullet}\color{black}{}\right) = 5\cdot\color{blue}{\bullet}\color{black}{}^4 + 2\cdot\color{blue}{\bullet}\color{black}{}^2 + 10
+            \]
+        </p>
+        <p>
+            Quindi quando appichiamo la funzione a \(\color{blue}{-x}\) otteniamo
+            \[
+                \begin{align}
+                    f\left(\color{blue}{-x}\color{black}{}\right) &= 5\color{blue}{\left(-x\right)}\color{black}{}^4 + 2\color{blue}{\left(-x\right)}\color{black}{}^2 + 10 =\\
+                    &= 5x^4 + 2x^2 + 10
+                \end{align}
+            \]
+            Anche \(f\left(x\right) = 5x^4 + 2x^2 + 10\), quindi la funzione è pari.          
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Funzioni dispari</h2>
+    <p class="grayBackground" style="text-align: center;">
+        Una funzione si dice <b>pari</b>
+        \[
+            \Updownarrow
+        \]
+        \[
+            f\left(-x\right) = -f\left(x\right)
+        \]
+        per ogni \(x\) dell'insieme di partenza
+    </p>
+    <br>
+    <p>
+        Potete leggerla così: 
+    </p>
+    <p>
+        Se applico la funzione a due elementi di segno opposto (\(x\) e \(-x\)) ottengo immagini di segno opposto 
+        (\(f\left(x\right)\) e \(-f\left(x\right)\)).
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Consideriamo la funzione \(f\,:\,\,\mathbb{R} \longrightarrow \mathbb{R}\) che ad ogni numero associa il quadrato 
+            di quel numero più 1:
+            \[
+                f\left(x\right) = x^3 + x
+            \] 
+            Dimostriamo che è una funzione pari.
+        </p>
+        <br>
+        <p>
+            La funzione è strutturata così: 
+            \[
+                f\left(\color{blue}{\bullet}\color{black}{}\right) = \color{blue}{\bullet}\color{black}{}^3 + \color{blue}{\bullet}\color{black}{}
+            \]
+            Quindi quando applichiamo la funzione a \(\color{blue}{-x}\) abbiamo
+            \[
+                \begin{align} 
+                f\left(\color{blue}{-x}\color{black}{}\right) &= \color{blue}{\left(-x\right)}\color{black}{}^3 + \color{blue}{\left(-x\right)}\color{black}{} = \\
+                &= -x^3 - x 
+                \end{align}
+            \]
+            Dunque 
+            \[
+                f\left(x\right) = x^3 + x
+            \]
+            \[
+                f\left(-x\right) = -x^3 - x
+            \]
+        </p>
+        <p>
+            \(f\left(x\right)\) che \(f\left(-x\right)\) hanno immagini opposte, quindi la funzione è dispari. 
+        </p>
+    </div>
+
+
+    <!-- 
+        <p>
+            Se applico la funzione a due elementi di segno opposto (\(x\) e \(-x\)) ottengo elementi di segno opposto (\(f\)).
+        </p>
+     -->
 
     <script src="script.js"></script>
 </body>
