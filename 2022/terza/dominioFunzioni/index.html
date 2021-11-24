@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Dominio di una funzione</title>
 </head>
@@ -165,4 +166,164 @@
         <video src="https://ludovicoradaelli.github.io/Matematica/2022/terza/dominioFunzioni/img/graficareDominio.mp4" controls></video>
     </div>
     
+    <br>
+    <hr>
+    <br>
+
+    <h2>Comprendere il grafico di una funzione</h2>
+    <p>
+        Nei prossimi due esempi sono rappresentati i grafici di due funzioni. A partire da essi, vogliamo capire
+    </p>
+    <br>
+    <ul>
+        <li>
+            qual è il loro dominio;
+        </li>
+        <li>
+            qual è il loro segno.
+        </li>
+    </ul>
+    <br>
+    <video src="img/istruzioniGraficareDominioSegno.mp4" controls></video>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h3>Esempio 1</h3>
+    <br>
+    <div id="geogebra1"></div>
+    <br>
+    <div id="button-container">
+        <button id="graficaDominio-button" onclick="grafica(`dominio0`)">Grafica dominio</button>
+        <button id="graficaSegno-button" onclick="grafica(`segno0`)">Grafica segno</button>
+        <button id="mostraFunzione-button" onclick="grafica(`funzione0`)">Mostra funzione</button>
+    </div>
+    <br>
+    <div id="description-container">
+        <p id="dominio0" style="display: none;">
+            Il dominio della funzione è 
+            \[
+                x \lt -1 \quad\lor\quad x \geq 1
+            \]
+            quindi il suo grafico <b>non</b> passa per la zona evidenziata in rosso.
+        </p>
+        <p id="segno0" style="display: none;">
+            Il segno della funzione è <b>positivo</b> se 
+            \[
+                x \lt -1 \quad\lor\quad x \gt 1
+            \]
+            quindi per valori della \(x\) più grandi di \(1\), il grafico è tutto sopra l'asse delle \(x\), quindi <b>non</b> passa nella zona evidenziata sotto in blu.
+            <br>
+            <br>
+            Per tutti gli altri valori, il grafico è tutto sotto l'asse delle \(x\), quindi la funzione <b>non</b> passa nella zona evidenziata sopra in blu.
+        </p>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Esempio 2</h3>
+    <br>
+    <div id="geogebra2"></div>
+    <br>
+    <div id="button-container">
+        <button id="graficaDominio-button" onclick="grafica(`dominio1`)">Grafica dominio</button>
+        <button id="graficaSegno-button" onclick="grafica(`segno1`)">Grafica segno</button>
+        <button id="mostraFunzione-button" onclick="grafica(`funzione1`)">Mostra funzione</button>
+    </div>
+    <br>
+    <div id="description-container">
+        <p id="dominio1" style="display: none;">
+            Il dominio della funzione è 
+            \[
+                x \neq -1 \quad\lor\quad x \neq 1
+            \]
+            quindi il suo grafico <b>non</b> passa per le rette tratteggiate in rosso.
+        </p>
+        <p id="segno1" style="display: none;">
+            Il segno della funzione è <b>positivo</b> se 
+            \[
+                -2 \lt x \lt -1 \quad\lor\quad  x \gt 1
+            \]
+            quindi per valori della \(x\) compresi tra \(-1\) ed \(1\) oppure maggiori di \(1\), il grafico è tutto sopra l'asse delle \(x\), quindi <b>non</b> passa nella zona evidenziata sotto in blu.
+            <br>
+            <br>
+            Per tutti gli altri valori, il grafico è tutto sotto l'asse delle \(x\), quindi la funzione <b>non</b> passa nella zona evidenziata sopra in blu.
+        </p>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        Proviamo ora a fare il contrario:
+        <br>
+        dati <b class="red">dominio</b> e <b class="blue">segno</b> di una funzione assegnata, vogliamo graficarli.
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>Esempio 3</h3>
+    <br>
+    <p>
+        Prendiamo un funzione \(f\left(x\right)\) che ha:
+        <br>
+        <br>
+        <span class="red"><b>Dominio</b>: \[x \lt -3 \quad\lor\quad x \gt 1\]</span>
+        <br>
+        <span class="blue"><b>Segno</b>: \[ f\left(x\right)>0 \quad\text{se}\quad x \lt -3 \quad\lor\quad x \gt 1\]</span>
+    </p>
+    <p>Prima di usare i pulsanti, provate a graficare dominio e segno sul quaderno.</p>
+    <br>
+    <div id="geogebra3"></div>
+    <br>
+    <div id="button-container">
+        <button id="graficaDominio-button" onclick="grafica(`dominio2`)">Grafica dominio</button>
+        <button id="graficaSegno-button" onclick="grafica(`segno2`)">Grafica segno</button>
+    </div>
+    <br>
+    <div id="description-container">
+        <p id="dominio2" style="display: none;">
+            Siccome il dominio della funzione è 
+            \[
+                x \lt -3 \quad\lor\quad x \gt 1
+            \]
+            cancelliamo tutta la parte compresa tra \(-3\) e \(1\) (la cancellatura in rosso).
+        </p>
+        <p id="segno2" style="display: none;">
+            Il segno della funzione è <b>positivo</b> se 
+            \[
+                x \lt -3 \quad\lor\quad  x \gt 4
+            \]
+            quindi per valori della \(x\) minori di \(-3\) oppure compresi tra \(-1\) ed \(1\), sbarriamo la zona del grafico sotto l'asse delle \(x\).
+            <br>
+            <br>
+            Per tutti gli altri valori del dominio, sbarriamo la zona del grafico sopra l'asse delle \(x\).
+        </p>
+
+    </div>
+    
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <script src="script.js"></script>
 </body>
