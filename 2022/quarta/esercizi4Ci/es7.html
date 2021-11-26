@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Esercizi 4Ci</title>
 </head>
+<style>
+    #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
 <body>
     <h1>Compiti per casa</h1>
     <br>
@@ -18,10 +38,28 @@
         Ripassare il materiale disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/dominioFunzioni/index.hmlt">QUI</a>
     </p>
     <br>
+    <p>
+        Se volete rifare vecchi esercizi, oppure vedere i video di spiegazione pubblicati con essi, selezionate le schede relative dal seguente menù:
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
+    <br>
     <hr>
     <br>
     <p class="gray">
-        Questa è una simulazione del compito. Provate a svolgerla nelle condizioni del compito: 1 ora di tempo disponibile, no cellulare, no appunti.
+        Questa è una <b>simulazione</b> del compito: stesso numero di esercizi , difficoltà simile. Provate a svolgerlo in 1 ora su foglio protocollo, cercando produrre un lavoro quanto più leggibile.
+        Allenarsi nelle stesse condizioni della prova è importante!
     </p>
 
     <br>
@@ -63,10 +101,6 @@
         \]
         Rappresentare le informazioni ottenute in un grafico cartesiano.
     </p>
-    
-    <br>
-    <hr>
-    <br>
 
     <!-- <br>
     <button id="hint2-button" onclick="showHint(2)">Video spiegazione</button>
@@ -82,6 +116,13 @@
         function showHint(i) {
             document.getElementById("hint"+i+"-button").style.display = "none";
             document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/quarta/esercizi4Ci/es${ex[i].index + 1}.html`;
         }
     </script>
 </body>
