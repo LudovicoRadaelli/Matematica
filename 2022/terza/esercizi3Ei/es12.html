@@ -9,14 +9,56 @@
     <link rel="stylesheet" href="style.css">
     <title>Esercizi 3° Ei</title>
 </head>
+<style>
+    #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
 <body>
     <h1>Compiti</h1>
 
     <h2>Da studiare</h2>
 
     <p>
-        Studiare il paragrafo <span class="blue"><b>Comprendere il grafico una funzione</b></span> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/dominioFunzioni/index#comprendereGrafico">QUI</a>
+        Ripassare il materiale <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/dominioFunzioni/index#comprendereGrafico">QUI</a>
     </p>
+    <br>
+    <p>
+        Se volete rifare vecchi esercizi, oppure vedere i video di spiegazione pubblicati con essi, selezionate le schede relative dal seguente menù:
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
+
     
     <br>
     <hr>
@@ -150,7 +192,7 @@
         </li>
     </ul>
     <br>
-    
+
     <p class="gray">
         (L'esercizio extra è veramente extra. Già facendo i 3 esercizi avete la possibilità di accedere ad un signor voto)
     </p>
@@ -187,6 +229,13 @@
         function showHint(i) {
             document.getElementById("hint"+i+"-button").style.display = "none";
             document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/terza/esercizi3Ei/es${ex[i].index + 1}.html`;
         }
 
     </script>
