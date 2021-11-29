@@ -49,7 +49,7 @@ function generaEsempio(n) {
         let arg = Math.floor(Math.random()*9+1);
         let indexS = Math.floor(Math.random()*12+1);
         let expS = Math.floor(Math.random()*12+1);
-        let factor = Math.floor(Math.random()*9+1);
+        let factor = Math.floor(Math.random()*9+2);
         let index = indexS*factor;
         let exp = expS*factor;
 
