@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Radici di indice n</title>
+</head>
+<body>
+    <h1>Radici di indice \(n\)</h1>
+    <!-- <div class="media-container">
+        <img src="https://ludovicoradaelli.github.io/Matematica/2022/prima/proprietaPotenze/img/potenzeBaseEsponente.png" alt="">
+    </div> 
+    <br>
+    <hr>
+    <br>-->
+
+    <br>
+
+    <h2 id="definizione">1) Radice di indice \(n\) di un numero</h2>
+    <p class="grayBackground">
+        \(\sqrt[\color{red}{n}]{\color{blue}{A}}\) è quel numero che elevato alla \(\color{red}{n}\) dà come risultato \(\color{blue}{A}\).
+    </p>
+
+    <br>
+
+    <h3>Esempi</h3>    
+    <div class="esempi-container">
+        <p class="gray">
+            Scegliete voi il valore da dare ad \(\color{red}{n}\) e ad \(\color{blue}{A}\):
+        </p>
+        <br>
+        <div id="input-container">
+            <div id="nInput-container">
+                <div>
+                    \(\color{red}{n} \color{black}{=} \)
+                </div>
+                <input id="nInput" type="number" value="2" style="color: red;"> 
+            </div>
+            <div id="aInput-container">
+                <div>
+                    \(\color{blue}{A \,\,\color{black}{=}}\)
+                </div>
+                <input id="aInput" type="number" value="5" style="color: blue;">
+            </div>
+            <button onclick="generaDefinizione()">mostra definizione</button>
+        </div>
+        <br>
+    
+        <div id="generaDefinizione">
+            <p class="grayBackground" id="definizione">
+                \(\sqrt[\color{red}{2}]{\color{blue}{5}}\) è quel numero che elevato alla \(\color{red}{2}\) dà come risultato \(\color{blue}{5}\).
+            </p>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+
+
+    <p>
+        Diamo un nome alle varie parti che compongono una radice:
+    </p>
+    <br>
+    <div class="media-container">
+        <img src="img/nomenclaturaRadici.png" alt="">
+    </div> 
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <div id="esempio1">
+            <p>
+                \(\sqrt[\color{red}{2}]{\color{blue}{7}}\,\,\) ha
+            </p>
+            <ul>
+                <li>
+                    <span style="color: red;">indice</span>: \(\color{red}{2}\)
+                </li>
+                <li>
+                    <span style="color: blue;">argomento</span>: \(\color{blue}{7}\)
+                </li>
+            </ul>
+            <br>
+        </div>
+        
+
+        <button onclick="generaEsempio(1)">Mostrami un altro esempio</button>
+
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2 id="campoEsistenza">2) Definizione di una radice</h2>
+    <p class="grayBackground">
+        <b>Sfida</b>: trovate qual è il risultato di \(\sqrt[\color{red}{2}]{\color{blue}{-4}}\).
+    </p>
+
+    <img src="img/hideSolution.png" id="show-button1" onclick="show(1)"></img>
+    <div id="show1" style="display: none;">
+        <p>
+            <b>Soluzione</b>
+            <br>
+            Stiamo cercando il numero che elevato alla \(\color{red}{2}\) dà come risultato \(\color{blue}{-4}\).
+        </p>
+        <p>
+            C'è un problema: <u>qualsiasi</u> numero, elevato alla \(2\) dà come risultato un numero positivo (con il segno \(+\)).
+        </p>
+        <p>
+            Quindi \(\sqrt[2]{-4}\) non esiste!
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <p class="grayBackground">
+        <b>Altra sfida</b>: trovate qual è il risultato di \(\sqrt[\color{red}{3}]{\color{blue}{-27}}\).
+    </p>
+
+    <img src="img/hideSolution(2).png" id="show-button2" onclick="show(2)"></img>
+    <div id="show2" style="display: none;">
+        <p>
+            <b>Soluzione</b>
+            <br>
+            Stiamo cercando il numero che elevato alla \(\color{red}{3}\) dà come risultato \(\color{blue}{-27}\).
+        </p>
+        <p>
+            Stavolta la soluzione esiste: \(\sqrt[\color{red}{3}]{\color{blue}{-27}} = -3\).
+        </p>
+        <p>
+           Infatti 
+           \[\left(-3\right)^{\color{red}{3}} = \left(-3\right)\cdot\left(-3\right)\cdot\left(-3\right) = \color{blue}{-27}\] 
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>In sintesi:</p>
+    <div class="grayBackground">
+        <ul>
+            <li>
+                Le radici di <b>indice pari</b> sono definite solamente per argomenti positivi.
+            </li>
+            <br>
+            <li>
+                Le radici di <b>indice dispari</b> sono definite per qualisasi argomento (sia positivo che negativo).
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+
+    <h2 id="propInvariantiva">3) Proprietà invariantiva</h2>
+    <p>
+        La proprietà invariantiva può essere usata in due modi:
+    </p>
+    
+    <br>
+    
+    <p><b>Tramite divisione</b></p>
+    <div class="esempi-container">
+        <p id="esempio2" >
+            \[
+                \sqrt[\color{red}{8}]{6^{\color{red}{10}}} = \sqrt[\color{red}{4}]{6^{\color{red}{5}}}
+            \]
+        </p>
+        <p id="esempio-text2" class="gray">
+            <u>Divido</u> per \(2\) sia l'indice di radice, \(\color{red}{8}\), che l'esponente dell'argomento, \(\color{red}{10}\).
+        </p>
+        <br>
+        <button onclick="generaEsempio(2)">Mostrami un altro esempio</button>
+    </div>
+    <br>
+    
+
+    <p><b>Tramite moltiplicazione</b></p>
+    <div class="esempi-container">
+        <p id="esempio3" >
+            \[
+                \sqrt[\color{red}{2}]{7^{\color{red}{5}}} = \sqrt[\color{red}{6}]{7^{\color{red}{15}}}
+            \]
+        </p>
+        <p id="esempio-text3" class="gray">
+            <u>Moltiplico</u> per \(2\) sia l'indice di radice, \(\color{red}{8}\), che l'esponente dell'argomento, \(\color{red}{10}\).
+        </p>
+        <br>
+        <button onclick="generaEsempio(3)">Mostrami un altro esempio</button>
+    </div>
+    <br>
+    <!-- <p>
+        La proprietà invariantiva può essere usata in due modi:
+    </p>
+
+    <p>Per semplificare l'indice di radice con l'esponente dell'argomento.</p>
+    <div id="esempio1" class="esempi-container">
+        \[
+            \sqrt[2]{}
+        \]
+    </div>
+    <ul style="color: gray">
+        <li>
+            L'esponente del risultato è la <u>somma</u> degli esponenti.
+        </li>
+        <li>
+            La base del risultato rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio1" onclick="generaEsempio(1)">Genera un altro esempio</button>
+    <hr>
+
+    <p id="esempio2">
+        \[
+            \color{red}{3}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{3}^{\color{blue}{3}} \color{black}{\,\,\,=\,\,\,} \color{red}{3}^{\color{blue}{4}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            L'esponente del risultato è la <u>differenza</u> degli esponenti
+        </li>
+        <li>
+            La base del risultato rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio2" onclick="generaEsempio(2)">Genera un altro esempio</button>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Potenze con <u>esponente</u> uguale</h2>
+
+    <p id="esempio3">
+        \[
+            \color{red}{3}^{\color{blue}{4}} \color{black}{\,\,\cdot\,\,} \color{red}{7}^{\color{blue}{4}} \color{black}{\,\,\,=\,\,\,} \color{red}{21}^{\color{blue}{4}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            La base del risultato è il <u>prodotto</u> delle basi
+        </li>
+        <li>
+            L'esponente della base rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio3" onclick="generaEsempio(3)">Genera un altro esempio</button>
+    <hr>
+
+    <p id="esempio4">
+        \[
+            \color{red}{10}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{5}^{\color{blue}{7}} \color{black}{\,\,\,=\,\,\,} \color{red}{2}^{\color{blue}{7}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            La base del risultato è la <u>divisione</u> delle basi
+        </li>
+        <li>
+            L'esponente della base rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio4" onclick="generaEsempio(4)">Genera un altro esempio</button>
+    <br>
+    <hr>
+    <br>
+    <h2>Potenza di potenza</h2>
+    <p id="esempio5">
+        \[
+            \left(\color{red}{5}\color{black}{}^{\color{blue}{3}}\right)^{\color{blue}{2}} = \color{red}{5}^{\color{blue}{6}}
+        \]
+    </p>
+    <ul style="color: gray">
+        <li>
+            L'esponente del risultato è il prodotto degli esponenti.
+        </li>
+        <li>
+            La base del risultato rimane uguale.
+        </li>
+    </ul>
+    <button class="generaEsempio" id="generaEsempio4" onclick="generaEsempio(5)">Genera un altro esempio</button>
+    <hr>
+     -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- https://ludovicoradaelli.github.io/Matematica/2022/ -->
