@@ -66,8 +66,8 @@ function draw() {
   
   if(dropOn) {
     for(let i = 0; i < r.length; i++) {
-      if(r[i] <= window.innerWidth) {
-        r[i] += 5;
+      if(r[i] <= 400) {
+        r[i] += 3;
         stroke(dropColor[i], 400, 400- r[i]);
         strokeWeight(4);
         noFill();
@@ -95,6 +95,7 @@ function draw() {
   
   
   timer++;
+  console.log(r.length)
 }
 
 function mouseClicked() {
