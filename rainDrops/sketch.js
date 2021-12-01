@@ -100,6 +100,6 @@ function draw() {
 
 function mouseClicked() {
     start = true;
-    //rain.amp(0.025);
-    //rain.start();
+    rain.amp(0.025);
+    rain.start();
 } 
