@@ -69,7 +69,7 @@ function draw() {
       if(r[i] <= 400) {
         r[i] += 3;
         stroke(dropColor[i], 400, 400- r[i]);
-        strokeWeight(4);
+        strokeWeight(2);
         noFill();
         ellipse(cX[i],cY[i],r[i],r[i]); 
       } else {
