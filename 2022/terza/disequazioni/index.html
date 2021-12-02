@@ -12,7 +12,8 @@
 </head>
 <body>
     <h1>Disequazioni</h1>
-    <h2>Disequazioni di I grado</h2>
+    <br>
+    <h2>1) Disequazioni di I grado</h2>
     <p>
         Diciamo che una disequazione è di I grado se, una volta svolti eventuali calcoli, l'incognita compare solo con esponente \(1\).
     </p>
@@ -42,34 +43,41 @@
     </p>
     <br>
     <h3>Esempio</h3>
-    <br>
-    <div class="media-container">
-        <video src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/disequazioneRibalta.mp4" controls></video>
+    <div class="esempi-container">
+        <div class="media-container">
+            <video src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/disequazioneRibalta.mp4" controls></video>
+        </div>
     </div>
+    
     <br>
     <p>
         Riassumendo, questi sono i passi per svolgere una disequazione di I grado:
     </p>
 
-    <ul>    
-        <li>
-            Svolgiamo eventuali calcoli.
-        </li>
-        <li>
-            Separiamo le <i>incognite</i> (i termini con la \(x\)) dai <i>termini noti</i> (i termini senza \(x\)).
-        </li>
-        <li>
-            Dividiamo per il coefficiente della \(x\)
+    <div class="grayBackground">
+        <ul>    
+            <li>
+                Svolgiamo eventuali calcoli.
+            </li>
             <br>
-            ⚠️⚠️⚠️
+            <li>
+                Separiamo le <i>incognite</i> (i termini con la \(x\)) dai <i>termini noti</i> (i termini senza \(x\)).
+            </li>
             <br>
-            Se il coefficiente della \(x\) è <b>negativo</b> allora il verso della diseguaglianza si <b>ribalta</b> 
-        </li>
-    </ul>     
+            <li>
+                <p>Dividiamo per il coefficiente della \(x\).</p>
+                <br>
+                <p style="text-align: center;">⚠️⚠️⚠️</p>
+                
+                <p>Se il coefficiente della \(x\) è <b>negativo</b> allora il verso della diseguaglianza si <b>ribalta</b>. </p>
+            </li>
+        </ul>     
+    </div>
+    
     <br>
     <hr>
     <br>
-    <h2>Come disegnare una parabola</h2>
+    <h2>2) Come disegnare una parabola</h2>
     <p>
         Un polinomio di II grado, tipo \( 2x^2 - x -1 \), si può <i><b>rappresentare</b></i> in con una parabola.
     </p>
@@ -78,22 +86,28 @@
     </p>
     <br>
     <div class="geogebra-container">
+        <br>
         <p id="polinomioParabola" style="text-align: center;">\( y = 2x^2 + x - 1 \)</p>
+        <br>
         <div id="geogebra1"></div>
         <button class="generaEsempio" onclick="generaEsempio()">Genera un altro esempio</button>
+        <br>
     </div>
     <br>
     <p>
         Cliccando il bottone provate a generare un po' di esempi ed osservate che:
     </p>
+    <br>
     <p>
         &bullet; se il coefficiente di \(x^2\) è positivo, allora la parabola ha la conca verso l'alto 
         <img class="concavita" src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/concaAlto.png" alt="">
     </p>
+    <br>
     <p>
         &bullet; se invece è negativo, la conca è verso il basso 
         <img class="concavita" src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/concaBasso.png" alt="">
     </p>
+    <br>
     <p>
         Vediamo ora il procedimento completo per disegnare una parabola.
     </p>
@@ -105,44 +119,60 @@
     </div>
     <br>
     <p>Riassumendo, per disegnare una parabola dobbiamo:</p>
-    <ul>
-        <li>
-            Risolvere l'equazione associata.
-        </li>
-        <li>
-            Guardare il coeffieciente di \(x^2\) per capire se la concavità è verso l'alto o verso il basso.
-        </li>
-        <li>
-            Disegnare le soluzioni dell'associata sull'asse \(x\) e tracciare la parabola con la concavità trovata.
-        </li>
-    </ul>
+    <div class="grayBackground">
+        <ul>
+            <li>
+                Risolvere l'equazione associata.
+            </li>
+            <br>
+            <li>
+                Guardare il coeffieciente di \(x^2\) per capire se la concavità è verso l'alto o verso il basso.
+            </li>
+            <br>
+            <li>
+                Disegnare le soluzioni dell'associata sull'asse \(x\) e tracciare la parabola con la concavità trovata.
+            </li>
+        </ul>
+    </div>
+    
     <br>
     <hr>
     <br>
-    <h2>Equazioni di II grado - metodo della parabola</h2>
-    
+    <h2>3) Equazioni di II grado - 
+        <br>
+        metodo della parabola</h2>
+    <br>
     <div class="media-container">
         <video src="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/img/metodoParabola.mp4" controls></video>
     </div>
     <br>
+    <br>
     <p>Riassumendo, per risolvere una disequazione di II grado con il metodo della parabola:</p>
-    <ul>
-        <li>
-            Svolgiamo eventuali calcoli.
-        </li>
-        <li>
-            Portiamo <u><b>tutti</b></u> i termini, sia incogniti che noti, a sinistra del simbolo di diseguaglianza.
-        </li>
-        <li>
-            Disegnamo la parabola che reppresenta il polinomio di secondo grado.
-        </li>
-        <li>
-            Leggiamo la soluzione a partire dal grafico.
+    <div class="grayBackground">
+        <ul>
+            <li>
+                Svolgiamo eventuali calcoli.
+            </li>
             <br>
-            <span class="gray">Se non hai capito questo punto clicca <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/letturaSoluzioni.html">qua</a></span>
-        </li>
-    </ul>
+            <li>
+                Portiamo <u><b>tutti</b></u> i termini, sia incogniti che noti, a sinistra del simbolo di diseguaglianza.
+            </li>
+            <br>
+            <li>
+                Disegnamo la parabola che reppresenta il polinomio di secondo grado.
+            </li>
+            <br>
+            <li>
+                Leggiamo la soluzione a partire dal grafico.
+                <br>
+                <span class="gray">Se non hai capito questo punto clicca <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/letturaSoluzioni.html">qua</a></span>
+            </li>
+        </ul>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
