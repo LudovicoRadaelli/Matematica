@@ -17,6 +17,17 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h2 {
+    font-size: 1.3rem;
+    color: #4285F4;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #F4B400;
+    font-size: 1.1rem;
+}
+
 .media-container {
     width: 98%;
 }
@@ -24,12 +35,6 @@ h1 {
 video, img {
     display: block;
     width: 100%;
-}
-
-h2 {
-    font-size: 1.3rem;
-    color: #4285F4;
-    margin-bottom: 1rem;
 }
 
 table, td, th {
@@ -43,19 +48,13 @@ td, th {
 }
 
 table {
+    margin: auto;
     border-collapse: collapse;
-}
-
-h3 {
-    color: #F4B400;
-    font-size: 1.1rem;
 }
 
 .grayBackground {
     background-color: rgb(240, 240, 240);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
+    padding: 1rem;    
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -73,6 +72,66 @@ h3 {
     width: auto;
     margin: auto;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.green {
+    color: #0F9D58;
+}
+
+.red {
+    color: #DB4437;
+}
+
+.yellow {
+    color: #F4B400;
+}
+
+.blue {
+    color: #4285F4;
+}
+
+.gray {
+    color: gray;
+}
+
+
+
+.formula {
+    overflow-x: scroll;
+}
+
+button {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 0.3rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
+}
+
+.esempi-container {
+    border: 0.01rem #F4B400 solid; 
+    padding: 1rem;
+}
+
+#geogebra1 {
+    width: 100%;
+    margin: auto;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.generaEsempio {
+    display: block;
+    width: auto;
+    margin: auto;
+    margin-top: 1rem;
     
 }
 
@@ -82,6 +141,8 @@ h3 {
     
 }
 
-.gray {
-    color: gray;
+video {
+    border: 0.01rem solid black;
 }
+
+
