@@ -118,6 +118,14 @@ button {
     width: 100%;
 }
 
+.boxed {
+    border: 0.01rem solid black ;
+}
+
+video {
+    border: 0.01rem black solid;
+}
+
 
 /* .generaEsempio {
     display: block;
