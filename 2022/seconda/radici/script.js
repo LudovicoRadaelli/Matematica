@@ -1,3 +1,25 @@
+/* var ggbApp1 = new GGBApplet({
+    "appName": "classic", 
+    "id": "gg1",
+    "width": 6*window.innerWidth/7, 
+    "height": window.innerHeight/2, 
+    "showToolBar": false, 
+    "showAlgebraInput": false, 
+    "showMenuBar": false, 
+    "enableShiftDragZoom": false,
+    "material_id":"pxd9ynb4"}, true);
+
+window.addEventListener("load", function() { 
+    ggbApp1.inject('geogebra1');
+});
+ */
+
+
+/* 
+MathJax.typesetClear([]);
+MathJax.typesetPromise([]).then(() => {});
+*/
+
 
 
 function generaDefinizione() {
@@ -85,6 +107,38 @@ function generaEsempio(n) {
         
         MathJax.typesetClear([esempioText]);
         MathJax.typesetPromise([esempioText]).then(() => {});
+    }
+
+    if(n === 4) {
+        
+        let arg1 = Math.floor(Math.random()*9+1);
+        let arg2 = Math.floor(Math.random()*9+1);
+        let index = Math.floor(Math.random()*9+1);
+        
+        esempio.innerHTML =
+        `\\[
+            \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg1}}} \\cdot \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg2}}} = \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg1} \\color{black}{\\,\\cdot\\,} \\color{blue}{${arg2}}}}        
+        \\]`
+    }
+
+    if(n === 5) {
+        
+        let arg1 = Math.floor(Math.random()*12+2);
+        let arg2 = Math.floor(Math.random()*12+2);
+        let index = Math.floor(Math.random()*13+2);
+        let form = Math.floor(Math.random()*2);
+        console.log(`form: ${form}`)
+        if(form === 0) {
+            esempio.innerHTML =
+            `\\[
+                \\dfrac{\\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg1}}}}{\\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg2}}}} = \\sqrt[\\color{red}{${index}}]{\\dfrac{\\color{blue}{${arg1}}}{\\color{blue}{${arg2}}}}
+            \\]`
+        } else {
+            esempio.innerHTML =
+            `\\[
+                \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg1}}} : \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg2}}} = \\sqrt[\\color{red}{${index}}]{\\color{blue}{${arg1} \\color{black}{\\,:\\,} \\color{blue}{${arg2}}}}
+            \\]`
+        }
     }
 
     MathJax.typesetClear([esempio]);
