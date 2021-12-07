@@ -21,7 +21,7 @@
 
     <br>
 
-    <h2 id="definizioneParag">1) Radice di indice \(n\) di un numero</h2>
+    <h2 id="definizione">1) Radice di indice \(n\) di un numero</h2>
     <p class="grayBackground">
         \(\sqrt[\color{red}{n}]{\color{blue}{A}}\) è quel numero che elevato alla \(\color{red}{n}\) dà come risultato \(\color{blue}{A}\).
     </p>
@@ -203,97 +203,99 @@
         <button onclick="generaEsempio(3)">Mostrami un altro esempio</button>
     </div>
     <br>
-    <!-- <p>
-        La proprietà invariantiva può essere usata in due modi:
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="blue"> 4) Moltiplicazioni e divisioni tra radici</h2>
+    
+    <p>
+        <b class="blue"><u>Se l'indice di radice è uguale</u></b>
     </p>
 
-    <p>Per semplificare l'indice di radice con l'esponente dell'argomento.</p>
-    <div id="esempio1" class="esempi-container">
+    <br>
+    
+    <p>
+        Il risultato della <b class="blue">moltiplicazione</b> tra due radicali aventi indice uguale è un radicale che 
+    </p>
+    
+    <ul>
+        <li>
+            come indice ha lo stesso indice dei fattori
+        </li>
+        <li>
+            come argomento il prodotto degli argomenti
+        </li>
+    </ul>
+    <br>
+    <p>In formule:
         \[
-            \sqrt[2]{}
+            \boxed{\sqrt[\color{red}{n}]{\color{blue}{A}} \cdot \sqrt[\color{red}{n}]{\color{blue}{B}} = \sqrt[\color{red}{n}]{\color{blue}{A \color{black}{\,\cdot\,} \color{blue}{B}}}}
         \]
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p id="esempio4" >
+            \[
+                \sqrt[\color{red}{5}]{\color{blue}{2}} \cdot \sqrt[\color{red}{5}]{\color{blue}{3}} = \sqrt[\color{red}{5}]{\color{blue}{2 \color{black}{\,\cdot\,} \color{blue}{3}}}
+            \]
+        </p>
+        <br>
+        <button onclick="generaEsempio(4)">Mostrami un altro esempio</button>
     </div>
-    <ul style="color: gray">
+
+    <br>
+    <p>
+        Il risultato della <b class="blue">divisione/frazione</b> tra due radicali aventi indice uguale è un radicale che 
+    </p>
+    
+    <ul>
         <li>
-            L'esponente del risultato è la <u>somma</u> degli esponenti.
+            come indice ha lo stesso indice dei fattori
         </li>
         <li>
-            La base del risultato rimane uguale.
+            come argomento il risultato della divisione/frazione degli argomenti
         </li>
     </ul>
-    <button class="generaEsempio" id="generaEsempio1" onclick="generaEsempio(1)">Genera un altro esempio</button>
-    <hr>
-
-    <p id="esempio2">
+    <br>
+    <p>In formule:
         \[
-            \color{red}{3}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{3}^{\color{blue}{3}} \color{black}{\,\,\,=\,\,\,} \color{red}{3}^{\color{blue}{4}}
+            \boxed{\sqrt[\color{red}{n}]{\color{blue}{A}} : \sqrt[\color{red}{n}]{\color{blue}{B}} = \sqrt[\color{red}{n}]{\color{blue}{A \color{black}{\,:\,} \color{blue}{B}}}}
+        \]
+        \[
+            \boxed{
+                \dfrac{\sqrt[\color{red}{n}]{\color{blue}{A}}}{\sqrt[\color{red}{n}]{\color{blue}{B}}} = \sqrt[\color{red}{n}]{\dfrac{\color{blue}{A}}{\color{blue}{B}}}
+            }
         \]
     </p>
-    <ul style="color: gray">
-        <li>
-            L'esponente del risultato è la <u>differenza</u> degli esponenti
-        </li>
-        <li>
-            La base del risultato rimane uguale.
-        </li>
-    </ul>
-    <button class="generaEsempio" id="generaEsempio2" onclick="generaEsempio(2)">Genera un altro esempio</button>
     <br>
-    <hr>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p id="esempio5" >
+            \[
+                \dfrac{\sqrt[\color{red}{7}]{\color{blue}{50}}}{\sqrt[\color{red}{7}]{\color{blue}{10}}} = \sqrt[\color{red}{7}]{\dfrac{\color{blue}{50}}{\color{blue}{10}}}
+            \]
+        </p>
+        <br>
+        <button onclick="generaEsempio(5)">Mostrami un altro esempio</button>
+    </div>
+
+    <br>
+    <br>
     <br>
 
-    <h2>Potenze con <u>esponente</u> uguale</h2>
-
-    <p id="esempio3">
-        \[
-            \color{red}{3}^{\color{blue}{4}} \color{black}{\,\,\cdot\,\,} \color{red}{7}^{\color{blue}{4}} \color{black}{\,\,\,=\,\,\,} \color{red}{21}^{\color{blue}{4}}
-        \]
+    <p>
+        <b class="blue"><u>Se l'indice di radice è diverso</u></b>
     </p>
-    <ul style="color: gray">
-        <li>
-            La base del risultato è il <u>prodotto</u> delle basi
-        </li>
-        <li>
-            L'esponente della base rimane uguale.
-        </li>
-    </ul>
-    <button class="generaEsempio" id="generaEsempio3" onclick="generaEsempio(3)">Genera un altro esempio</button>
-    <hr>
-
-    <p id="esempio4">
-        \[
-            \color{red}{10}^{\color{blue}{7}} \color{black}{\,\,:\,\,} \color{red}{5}^{\color{blue}{7}} \color{black}{\,\,\,=\,\,\,} \color{red}{2}^{\color{blue}{7}}
-        \]
-    </p>
-    <ul style="color: gray">
-        <li>
-            La base del risultato è la <u>divisione</u> delle basi
-        </li>
-        <li>
-            L'esponente della base rimane uguale.
-        </li>
-    </ul>
-    <button class="generaEsempio" id="generaEsempio4" onclick="generaEsempio(4)">Genera un altro esempio</button>
     <br>
-    <hr>
-    <br>
-    <h2>Potenza di potenza</h2>
-    <p id="esempio5">
-        \[
-            \left(\color{red}{5}\color{black}{}^{\color{blue}{3}}\right)^{\color{blue}{2}} = \color{red}{5}^{\color{blue}{6}}
-        \]
+
+    <p>
+        Per eseguire la moltiplicazione eseguiamo un procedimento simile a quello del calcolo della somma tra due frazioni:
     </p>
-    <ul style="color: gray">
-        <li>
-            L'esponente del risultato è il prodotto degli esponenti.
-        </li>
-        <li>
-            La base del risultato rimane uguale.
-        </li>
-    </ul>
-    <button class="generaEsempio" id="generaEsempio4" onclick="generaEsempio(5)">Genera un altro esempio</button>
-    <hr>
-     -->
+    <br>
+    <video src="img/radicaliMoltiplicazioneIndiciDiversi.mp4" controls></video>
     
     <script src="script.js"></script>
 </body>
