@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>    
+    <h1>Ambrogio's custom metronome</h1>
+
+
+    <div id="sketch"></div>
+
+    <br>
+
+    <div id="controls">
+
+      <div class="controlsLine">
+        <button class="lineElement" onclick="play(true)">Play</button>
+        <button class="lineElement" onclick="play(false)">Stop</button>
+      </div>
+
+
+      <div class="controlsLine">
+        <div class="lineElement">Number of beat: </div>
+        <select id="beat"class="lineElement">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4" selected>4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="11">12</option>
+          <option value="11">13</option>
+          <option value="11">14</option>
+          <option value="11">15</option>
+          <option value="11">16</option>
+        </select>
+        <button id="beat-button" class="lineElement" onclick="selectBeat()">Change</button>
+      </div>
+
+      <div class="controlsLine">
+        <div class="lineElement">Beat subdivision: </div>
+        <select id="beatSub" class="lineElement">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3" selected>3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="11">12</option>
+          <option value="11">13</option>
+          <option value="11">14</option>
+          <option value="11">15</option>
+          <option value="11">16</option>
+        </select>
+        <button id="beatSub-button"  class="lineElement" onclick="selectBeatSub()">Change</button>
+      </div>
+
+      <div class="controlsLine">
+        <button id="bpm-buttonMin" class="lineElement" onclick="changeBpmButton(-1)">-</button>
+        <div id="bpm" class="lineElement">60</div>
+        <button id="bpm-buttonPlus" class="lineElement" onclick="changeBpmButton(1)">+</button>
+      </div>
+
+      <div class="controlsLine">
+        <input type="range" id="bpm-slider" value="60" min="40" max="270" onchange="changeBpmSlider()">
+      </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
