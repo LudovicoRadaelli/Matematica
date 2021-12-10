@@ -83,7 +83,7 @@ function drawGrid() {
         resetMatrix();
         strokeWeight(1);
         fill("gray");
-        text(`${j*2}`, u/2, height - u - j*u);
+        text(`${j}`, u/2, height - u - j*u);
         changeCoordinate()
         //line(0,j*u + u,width, j*u + u);
     }
