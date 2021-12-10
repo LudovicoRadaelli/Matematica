@@ -141,6 +141,24 @@ function generaEsempio(n) {
         }
     }
 
+    if(n === 6) {
+        
+        let exp1 = Math.floor(Math.random()*5+1);
+        let index = Math.floor(Math.random()*5+2);
+        let exp2 = Math.floor(Math.random()*(index-1))+1;
+        console.log(`exp2: ${exp2}`)
+        let base = Math.floor(Math.random()*13+2);
+        
+        esempio.innerHTML = 
+        `\\[
+            \\begin{align}
+                \\sqrt[${index}]{${base}^{${exp1*index + exp2}}} \\,&=\\, \\sqrt[${index}]{${base}^{${exp1*index}}\\,\\cdot\\,${base}^{${exp2}}} \\,=\\\\\\\\
+                &=\\, ${base}^{${exp1}}\\,\\sqrt[${index}]{${base}^{${exp2}}}\\,= \\\\\\\\
+                &=\\, ${Math.pow(base,exp1)}\\,\\sqrt[${index}]{${Math.pow(base,exp2)}} 
+            \\end{align}
+        \\]`
+    }
+
     MathJax.typesetClear([esempio]);
     MathJax.typesetPromise([esempio]).then(() => {});
 }
