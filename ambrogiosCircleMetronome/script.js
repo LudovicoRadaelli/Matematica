@@ -206,19 +206,19 @@ function selectBeat() {
     }
 
     if(Math.floor(i/beatSub) === 0) {
-      littleCirc[i].syl = "ta"
-    }
-  
-    if(Math.floor(i/beatSub) === 1) {
       littleCirc[i].syl = "ti"
     }
   
+    if(Math.floor(i/beatSub) === 1) {
+      littleCirc[i].syl = "mo"
+    }
+  
     if(Math.floor(i/beatSub) === 2) {
-      littleCirc[i].syl = "to"
+      littleCirc[i].syl = "te"
     }
   
     if(Math.floor(i/beatSub) === 3) {
-      littleCirc[i].syl = "te"
+      littleCirc[i].syl = "ta"
     }
   
     console.log(`
