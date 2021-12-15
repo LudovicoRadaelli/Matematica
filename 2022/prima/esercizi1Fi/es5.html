@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Risolvere la seguente espressione:
+        \[
+            2x^2 + \left(-3x\right)\left(-4x\right) - 8\left(-2x\right)\left(-x\right)
+        \]
+    </p>
+    <button id="hint1-button" onclick="showHint(1)">Suggerimento</button>
+    <p id="hint1" style="display: none;" class="gray">
+        Svolgete prima le due moltiplicazioni indicate dalle graffe:
+        \[
+            2x^2 + \underbrace{\left(-3x\right)\left(-4x\right)} - \underbrace{8\left(-2x\right)\left(-x\right)}
+        \]
+        Successivamente sommate i risultati ottenuti
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Risolvere la seguente espressione:
+        \[
+            3x^2y + x\left(-x\right)\left(-y\right) + x^2\left(-y\right)
+        \]
+    </p>
+    <button id="hint2-button" onclick="showHint(2)">Suggerimento</button>
+    <p id="hint2" style="display: none;" class="gray">
+        Svolgete prima le due moltiplicazioni indicate dalle graffe:
+        \[
+            3x^2y + \underbrace{x\left(-x\right)\left(-y\right)} + \underbrace{x^2\left(-y\right)}
+        \]
+        Successivamente sommate i risultati ottenuti
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Risolvere la seguente espressione:
+        \[
+            \left(6x +3x -4x\right)\cdot\left(-5ax +2ax +ax\right) + 10ax^2
+        \]
+    </p>
+    <button id="hint3-button" onclick="showHint(3)">Suggerimento</button>
+    <p id="hint3" style="display: none;" class="gray">
+        Svolgete prima le somme dentro le parentesi indicate dalle graffe:
+        \[
+            \underbrace{\left(6x +3x -4x\right)}\cdot\underbrace{\left(-5ax +2ax +ax\right)} + 10ax^2
+        \]
+        Successivamente effettuate la moltiplicazione tra i riusltati ottenuti.
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <script>
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        }
+        */
+
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        } 
+    </script>
+    
+</body>
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
