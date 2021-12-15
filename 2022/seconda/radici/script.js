@@ -159,6 +159,21 @@ function generaEsempio(n) {
         \\]`
     }
 
+    if(n === 7) {
+        
+        let arg = Math.floor(Math.random()*12+2);
+        let index1 = Math.floor(Math.random()*13+2);
+        let index2 = Math.floor(Math.random()*13+2);
+        esempio.innerHTML = 
+        `\\[
+            \\sqrt[\\color{red}{${index1}}]{\\sqrt[\\color{red}{${index2}}]{${arg}}} = \\sqrt[\\color{red}{${index1*index2}}]{${arg}}
+        \\]`
+        document.getElementById("esempio-text7").innerHTML = 
+        `L'indice del risultato è il prodotto tra gli indici delle due radici \\(\\color{red}{${index1} \\,\\cdot\\,${index2} = ${index1*index2}}\\).`
+        MathJax.typesetClear([document.getElementById("esempio-text7")]);
+        MathJax.typesetPromise([document.getElementById("esempio-text7")]).then(() => {});
+    }
+
     MathJax.typesetClear([esempio]);
     MathJax.typesetPromise([esempio]).then(() => {});
 }
