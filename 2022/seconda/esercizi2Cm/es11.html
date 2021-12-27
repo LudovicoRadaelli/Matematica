@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Cm</title>
+</head>
+<style>
+    
+
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+    <p>
+        Ripassare gli argomenti svolti finora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue"> 1) Radice di indice \(n\) di un numero</b>
+        </li>
+        <li>
+            <b class="blue"> 2) Definizione di una radice</b>
+        </li>
+        <li>
+            <b class="blue"> 3) Proprietà invariantiva</b>
+        </li>
+        <li>
+            <b class="blue"> 4) Moltiplicazioni e divisioni tra radici</b>
+        </li>
+        <li>
+        <b class="blue"> 5) Portare fuori dalla radice</b>
+        <li>
+            <b class="blue"> 6) Radici di radicali</b>
+        </li>
+        <li>
+            <b class="blue"> 7) Somma di radicali</b>
+        </li>
+    </ul>
+    <br>
+    <p>
+        disponibili <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/radici/index.html">QUI</a>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Aiutandovi con gli <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/radici/index.html">appunti online</a> esercitatevi ad inventare un esempio per ognuno dei \(7\) argomenti elencati sopra.
+    </p>
+    <p>
+        <b>Inventare un esempio non significa impararlo a memoria</b>.
+    </p>
+    <br>
+    <p class="gray">
+        Durante la prima lezione al rientro dalle vacanze chiamerò alla lavagna e chiederò di inventare un esempio di un dato argomento.
+    </p>
+    <br>
+    
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            <i>Prof:</i> 
+            <br>
+            Fammi un esempio di <b class="blue">4) Moltiplicazioni e divisioni tra radici, se l'indice di radice è diverso</b>.
+        </p>
+        
+        <br>
+        
+        <p>           
+            <i>Studente:</i>
+            \[
+                \sqrt[3]{2^3} \cdot \sqrt[2]{3}
+            \]
+            Per svolgerla troviamo il m.c.m. tra gli indici dei radicali etc etc...
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <p>
+            <i>Prof:</i> 
+            <br>
+            Fammi un esempio di <b class="blue">7) Somma di radicali</b>.
+        </p>
+        <br>
+        
+        <p>           
+            <i>Studente:</i>
+            \[
+                3\sqrt{8} + 5\sqrt{2} -\sqrt{18}
+            \]
+            Per svolgerla prima di tutto scomponiamo tutti i numeri sotto radice:
+            \[
+                3\sqrt{2^3} + 5\sqrt{2} - \sqrt{3^2\cdot 2}
+            \]
+            A questo punto tiriamo fuori da ogni radice tutti i fattori possibili:
+            \[
+                3\sqrt{2^2 \cdot 2^1} + 5\sqrt{2} - \sqrt{3^2\cdot 2}
+            \]
+            \[
+                3 \cdot 2^1 \sqrt{2^1} + 5\sqrt{2} - 3^1 \sqrt{2}
+            \]
+            \[
+                6\sqrt{2} + 5\sqrt{2} - 3\sqrt{2}
+            \]
+            Ora sommo tutti i termini con parte radicale simile:
+            \[
+                8\sqrt{2}
+            \]
+        </p>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Svolgere l'espressione
+        \[
+            \sqrt{8} \cdot \sqrt{6} + \sqrt{18} \cdot \sqrt{24}
+        \]
+    </p>
+    <p class="gray">
+        <b>Soluzione</b>: \(16\sqrt{3}\)
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Svolgere l'espressione
+        \[
+            \left(7\sqrt{3} -6\sqrt{3}\right) \cdot \sqrt[3]{3} + 14\sqrt[6]{3^5}
+        \]
+    </p>
+    <p class="gray">
+        <b>Soluzione</b>: \(15\sqrt[6]{3^5}\)
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+    <script src="es11.js"></script>
+</body>
+      
+<!-- 
+    <button id="hint1-button" onclick="showHint(1)">Non riesco a svolgerlo</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p>Se non avete capito provate a guardare quest'esercizio svolto:</p>
+        <br>
+        <video src="img/distanzaTraDuePuntiEsempio.mp4" controls></video>
+    </div>
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
+
+
+
+
+
