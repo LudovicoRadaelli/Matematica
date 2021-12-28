@@ -77,8 +77,48 @@
         <input type="range" id="bpm-slider" value="60" min="40" max="270" onchange="changeBpmSlider()">
       </div>
 
+
+      <div class="controlsLine" style="display: none;">
+        <div>Change percentuals all together</div>
+        <input type="radio" name="" id="changeAll" checked>
+        <div>Change percetuals one by one</div>
+        <input type="radio" name="" id="changeOneByOne">
+      </div>
+
+      <div id="percentuals-container" class="controlsLine">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual0" value="33.33">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual1" value="33.33">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual2" value="33.33">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual3" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual4" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual5" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual6" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual7" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual8" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual9" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual10" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual11" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual12" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual13" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual14" style="display: none;">
+        <input type="number" class="beatSubPercentual" id="beatSubPercentual15" style="display: none;">
     </div>
     
+    <br>
+
+    <div class="controlsLine">
+      <button id="changePercentual" onclick="changePercentual()">Change</button>
+    </div>
+
+    </div>
+
+    
+      
+
+    <br>
+    <br>
+    <br>
+
     <script src="script.js"></script>
   </body>
 </html>
