@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -54,3 +52,43 @@ canvas {
     width: 80%;
 }
 
+
+#percentuals-container{
+    width: 50%;
+    height: 2.3rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    border: 0.2rem black solid;
+}
+
+.beatSubPercentual {
+    width: auto;
+    display: block;
+    height: 2rem;
+    padding: 0.3rem;
+    border: 0.05rem gray solid;
+    text-align: center;
+}
+
+#beatSubPercentual0 {
+    width: 33.333%;
+}
+
+#beatSubPercentual1 {
+    width: 33.333%;
+}
+
+#beatSubPercentual2 {
+    width: 33.333%;
+}
+
+
+
+#changePercentual {
+    width: 20%;
+    
+ 
+}
