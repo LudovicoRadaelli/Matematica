@@ -6,7 +6,7 @@ let teletransport = false;
 let teletransportRest = 0;
 let randomSpeedRest = 0;
 
-let speed = 0;
+let speed = 16;
 
 function setup() {
   sketch = document.getElementById(`sketch`);
