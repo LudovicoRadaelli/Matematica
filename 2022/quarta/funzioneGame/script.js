@@ -1,12 +1,14 @@
 
 let time = 0;
 let position = 0;
-let positionMemory = [[0,0]];
+let positionMemory = [[0,0,""]];
 let teletransport = false;
 let teletransportRest = 0;
 let randomSpeedRest = 0;
 
-let speed = 16;
+let breakPoint = [];
+
+let speed = 0;
 
 function setup() {
   sketch = document.getElementById(`sketch`);
@@ -22,7 +24,7 @@ function draw() {
   
   //Disegno il tempo che avanza
   noStroke();
-  fill(200);
+  fill(230,230,250);
   rect(0,-height/4,time, height);
   
   //Disegno gli assi cartesiani
@@ -30,6 +32,8 @@ function draw() {
   stroke("black")
   line(0, -height/4, 0, 3*height/4);
   line(-width/4, 0, width*5, 0);
+
+  let type = "";
   
   if(keyIsDown(UP_ARROW)) {
     //incrementa velocità
@@ -49,11 +53,14 @@ function draw() {
     speed = 0;
   } else if(keyIsDown(83) && teletransportRest > 40) { 
     //teletrasporto controllato (tasto S)
-    position = random(-height/4, 3*height/4)
-    teletransportRest = 0;
+    position = random(-height/4, 3*height/4);
+    teletransportRest = 0;    
+    type = "jump";
   } else if(keyIsDown(88)) {
     //teletrasporto selvaggio (tasto X)
-    position = random(-height/4, 3*height/4)
+    position = random(-height/4, 3*height/4);
+    type = "dirichlet";
+    
   } else if(keyIsDown(81) && randomSpeedRest > 40) {
     //velocità random (tasto Q)
     speed = random(-5, 5);
@@ -77,14 +84,30 @@ function draw() {
   point(-width/16, position);
   
   //Aggiungo il nuovo punto a positionMemory
-  positionMemory.push([time, position]);
+  positionMemory.push([time, position,type]);
   
   //Disegno tutti i punti della funzione
+  noFill();
+  beginShape();
   for(let i = 0; i < positionMemory.length; i++) {
     stroke("blue");
     strokeWeight(4);
-    point(positionMemory[i][0], positionMemory[i][1])
+    if(positionMemory[i][2] === "jump") {
+      endShape();
+      beginShape();
+    }
+    if(positionMemory[i][2] === "dirichlet") {
+      endShape();
+      beginShape(POINTS);
+    } else {
+      if(i > 1 && positionMemory[i-1][2] === "dirichlet") {
+        endShape();
+        beginShape();
+      }
+    }
+    vertex(positionMemory[i][0], positionMemory[i][1]);
   }
+  endShape();
 
   //disegno la linea che congiunge il centro dello spirte all'ultimo punto disegnato
   lastIndex = positionMemory.length - 1;
@@ -114,6 +137,9 @@ function changeCoordSystem() {
   translate(width/8, 3*height/4);
   applyMatrix(1,0,0,-1,0,0);
 }
+
+
+
 
 
 
