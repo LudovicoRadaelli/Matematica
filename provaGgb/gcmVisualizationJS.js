@@ -5,7 +5,7 @@ var ggbApp = new GGBApplet({
     "showToolBar": false, 
     "showAlgebraInput": false, 
     "showMenuBar": false, 
-    "filename":"limiteInfinito.ggb"}, true);
+    "filename":"img/limiteInfinito.ggb"}, true);
       window.addEventListener("load", function() { 
           ggbApp.inject('ggb-element1');
       });
