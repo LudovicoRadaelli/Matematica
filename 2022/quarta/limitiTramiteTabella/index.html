@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>Limiti tramite grafico</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async 
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    #esempiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <h1>Limiti
+        <br>
+        <span style="font-size: 1.5rem;">stima a partire dal grafico di funzione</span>
+    </h1>
+    <div id="valueTable-container">
+
+        <table>
+            <tr>
+                <th>
+                    \(x\)
+                </th>
+                <th>
+                    \(f(x)\)
+                </th>
+            </tr>
+            <tr>
+                <td id="lx1">
+
+                </td>
+                <td id="ly1">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="lx2">
+
+                </td>
+                <td id="ly2">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="lx3">
+
+                </td>
+                <td id="ly3">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="lx4">
+
+                </td>
+                <td id="ly4">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="lx5">
+
+                </td>
+                <td id="ly5">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="lx6">
+
+                </td>
+                <td id="ly6">
+
+                </td>
+            </tr>            
+        </table>
+
+        <table>
+            <tr>
+                <th>
+                    \(x\)
+                </th>
+                <th>
+                    \(f(x)\)
+                </th>
+            </tr>
+            <tr>
+                <td id="rx1">
+
+                </td>
+                <td id="ry1">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="rx2">
+
+                </td>
+                <td id="ry2">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="rx3">
+
+                </td>
+                <td id="ry3">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="rx4">
+
+                </td>
+                <td id="ry4">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="rx5">
+
+                </td>
+                <td id="ry5">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="rx6">
+
+                </td>
+                <td id="ry6">
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>    
+    <div id="esempiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="10">11</option>
+            <option value="10">12</option>
+            <option value="10">13</option>
+            <option value="10">14</option>
+            <option value="10">15</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Seleziona esercizio</button>
+    </div>
+    <br>
+    <p>
+        Dedurre il limite per \(x\) che tende a <span class="x0">\(\color{#0079FF}{3}\)</span> della funzione di cui sono rappresentati alcuni valori in tabella.
+    </p>
+    <br>
+    <p>
+        In altre parole:
+    </p>
+    <br>
+    <ul>
+        <li>
+            Che output ottengo quando l'input è di pochissimo più piccolo di <span class="x0">\(\color{#0079FF}{3}\)</span>?
+        </li>
+        <br>
+        <li>
+            E quando l'input è di pochissimo più grande di <span class="x0">\(\color{#0079FF}{3}\)</span>?
+        </li>
+        <br>
+        <li>
+            I risultati ottenuti sono uguali?
+        </li>
+    </ul>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
