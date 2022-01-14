@@ -104,6 +104,6 @@ function vai() {
 
 
 
-window.onload(()=>{
+window.onload = function() {
     compilaTabella(1);
-})
+}
