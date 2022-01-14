@@ -20,7 +20,17 @@ function vai() {
     console.log(`ex[i]: ${ex[i].index}`);
 
     gg1.setValue(`n`,i+1);
+    
+    inserisciX0(i+1);
+}
 
+function inserisciX0(nEx) {
+    for(let j = 0; j < document.getElementsByClassName("x0").length; j++) {
+        document.getElementsByClassName("x0")[j].innerHTML = `\\( \\color{#0079FF}{${gg1.getValue("l2("+nEx+")")}} \\)`
+    
+        MathJax.typesetClear([document.getElementsByClassName("x0")[j]]);
+        MathJax.typesetPromise([document.getElementsByClassName("x0")[j]]).then(() => {});
+    }
     
 }
 
