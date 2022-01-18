@@ -36,7 +36,7 @@ function generaDefinizione() {
 
 function generaEsempio(n) {
 
-    let esempio =document.getElementById("esempio"+n);
+    let esempio = document.getElementById("esempio"+n);
 
     if(n === 1) {
         let ind = Math.floor(Math.random()*20+1);
@@ -172,6 +172,19 @@ function generaEsempio(n) {
         `L'indice del risultato è il prodotto tra gli indici delle due radici \\(\\color{red}{${index1} \\,\\cdot\\,${index2} = ${index1*index2}}\\).`
         MathJax.typesetClear([document.getElementById("esempio-text7")]);
         MathJax.typesetPromise([document.getElementById("esempio-text7")]).then(() => {});
+    }
+
+    if(n === 8) {
+        let num = Math.floor(Math.random()*12+2);
+        let den = Math.floor(Math.random()*12+2);
+        /* let simplified = Math.floor(Math.random()*5 + 2);
+        let num = den*simplified; */
+        
+        esempio.innerHTML = 
+        `\\[
+            \\dfrac{${num}}{\\sqrt{${den}}} = \\dfrac{${num}}{\\sqrt{${den}}} \\cdot \\color{red}{\\dfrac{\\sqrt{${den}}}{\\sqrt{${den}}}} \\color{black}{} = \\dfrac{${num}\\,\\sqrt{${den}}}{${den}}
+         \\]`
+
     }
 
     MathJax.typesetClear([esempio]);
