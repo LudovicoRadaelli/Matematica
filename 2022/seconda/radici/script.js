@@ -20,6 +20,22 @@ MathJax.typesetClear([]);
 MathJax.typesetPromise([]).then(() => {});
 */
 
+function gcd(x, y) {
+    if ((typeof x !== 'number') || (typeof y !== 'number')) 
+      return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
+    }
+    return x;
+  }
+
+function lcm(a,b){
+    return a/gcd(a,b)*b;
+}
 
 
 function generaDefinizione() {
@@ -184,6 +200,67 @@ function generaEsempio(n) {
         `\\[
             \\dfrac{${num}}{\\sqrt{${den}}} = \\dfrac{${num}}{\\sqrt{${den}}} \\cdot \\color{red}{\\dfrac{\\sqrt{${den}}}{\\sqrt{${den}}}} \\color{black}{} = \\dfrac{${num}\\,\\sqrt{${den}}}{${den}}
          \\]`
+
+    }
+
+    if(n === 9) {
+        signA = [``,`-`];
+        signB = [`+`,`-`];
+        let a = {
+            singIndex: Math.floor(Math.random()*2),
+            value: Math.floor(Math.random()*12+2)
+        };
+        a.sign = signA[a.singIndex];
+
+        let b = {
+            signIndex: Math.floor(Math.random()*2),
+            value: Math.floor(Math.random()*12+2)
+        };
+        b.sign = signB[b.signIndex];
+
+        let result = {};
+
+        if(a.singIndex === b.signIndex) {
+            result.sign = ``;
+        } else {
+            result.sign = `-`
+        }
+        if(a.sign === `-`) {
+            result.ineq = `\\leq`
+        } else {
+            result.ineq = `\\geq`
+        }
+
+        let gcdAB = gcd(a.value, b.value);
+
+        let extraString = ``;
+        if(gcdAB === 1) {
+            extraString = ``;
+        } else {
+            num = b.value/gcdAB;
+            den = a.value/gcdAB;
+            if(num % den === 0) {
+                result.value = num/den;
+            } else {
+                result.value = `\\dfrac{${num}}{${den}}`
+            }
+
+            extraString = `\\\\\\\\x & ${result.ineq} ${result.sign}${result.value} `
+        }
+        esempio.innerHTML = 
+        `\\[
+            \\sqrt{\\color{red}{${a.sign}${a.value}x ${b.sign} ${b.value}}} \\,\\,\\,\\text{esiste}
+        \\]
+        \\[
+        \\Updownarrow
+        \\]
+        \\[
+            \\begin{align*}    
+            \\color{red}{${a.sign} ${a.value}x ${b.sign} ${b.value} }&\\color{blue}{\\,\\,\\geq 0 } \\\\\\\\
+            ${a.sign}${a.value}x & \\geq ${signB[(b.signIndex + 1) % 2]}${b.value} \\\\\\\\
+            x & ${result.ineq} ${result.sign}\\dfrac{${b.value}}{${a.value}} ${extraString}
+            \\end{align*}    
+        \\]`
 
     }
 
