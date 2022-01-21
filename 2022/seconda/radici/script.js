@@ -207,10 +207,10 @@ function generaEsempio(n) {
         signA = [``,`-`];
         signB = [`+`,`-`];
         let a = {
-            singIndex: Math.floor(Math.random()*2),
+            signIndex: Math.floor(Math.random()*2),
             value: Math.floor(Math.random()*12+2)
         };
-        a.sign = signA[a.singIndex];
+        a.sign = signA[a.signIndex];
 
         let b = {
             signIndex: Math.floor(Math.random()*2),
@@ -220,9 +220,21 @@ function generaEsempio(n) {
 
         let result = {};
 
-        if(a.singIndex === b.signIndex) {
+        if(a.signIndex === (b.signIndex + 1)%2) {
+            console.log(`
+            a.signIndex: ${a.signIndex}, 
+            b.signIndex: ${b.signIndex}, 
+            segno opposto b: ${(b.signIndex + 1)%2}},
+            ${a.signIndex === signB[(b.signIndex + 1)%2]}
+            `)
             result.sign = ``;
         } else {
+            console.log(`
+            a.signIndex: ${a.signIndex}, 
+            b.signIndex: ${b.signIndex}, 
+            segno opposto b: ${(b.signIndex + 1)%2}},
+            ${a.signIndex === signB[(b.signIndex + 1)%2]}
+            `)
             result.sign = `-`
         }
         if(a.sign === `-`) {
@@ -258,7 +270,8 @@ function generaEsempio(n) {
             \\begin{align*}    
             \\color{red}{${a.sign} ${a.value}x ${b.sign} ${b.value} }&\\color{blue}{\\,\\,\\geq 0 } \\\\\\\\
             ${a.sign}${a.value}x & \\geq ${signB[(b.signIndex + 1) % 2]}${b.value} \\\\\\\\
-            x & ${result.ineq} ${result.sign}\\dfrac{${b.value}}{${a.value}} ${extraString}
+            x & ${result.ineq} ${result.sign}\\dfrac{${b.value}}{${a.value}} 
+            ${extraString}
             \\end{align*}    
         \\]`
 
