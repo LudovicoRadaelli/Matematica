@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 3° Ei</title>
+</head>
+<body>
+    <h1>Compiti</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Studiare i paragrafi <span class="blue"><b>Funzioni pari</b></span> e <span class="blue"><b>Funzioni dispari</b></span> disponibili <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/funzioniAstratte/index#pari">QUI</a>
+    </p>
+    
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Considerate la funzione \(f\,: \,\,\mathbb{R} \longrightarrow \mathbb{R}\) definita da 
+        \[
+            f\left(x\right) = 6x^4 + 7
+        \]
+    </p>
+    <p>
+        Verificate se è pari, dispari o nessuna delle due.
+    </p>
+
+
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Suggerimento</button>
+    <div id="hint1" class="gray" style="display: none;">
+    <p>
+        <b>Suggerimento:</b> calcolate \(f\left(\color{blue}{-x}\color{black}{}\right)\).
+    </p>
+    <br>
+    <ul >
+        <li>
+            se ciò che avete ottenuto è uguale a \(f\left(x\right)\), allora la funzione è pari.
+        </li>
+        <br>
+        <li>
+            se ciò che avete ottenuto è opposto a \(f\left(x\right)\), allora la funzione è dispari.
+        </li>
+        <br>
+        <li>
+            Altrimenti non è né pari nè dispari.
+        </li>
+    </ul>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Considerate la funzione \(f\,: \,\,\mathbb{R} \longrightarrow \mathbb{R}\) definita da 
+        \[
+            f\left(x\right) = x^2 - 7x^3
+        \]
+    </p>
+    <p>
+        Verificate se è pari, dispari o nessuna delle due.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Considerate la funzione \(f\,: \,\,\mathbb{R} \longrightarrow \mathbb{R}\) definita da 
+        \[
+            f\left(x\right) = 22x^5 - 8x^3 + 1 
+        \]
+    </p>
+    <p>
+        Verificate se è pari, dispari o nessuna delle due.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 style="margin-bottom: 0">Esercizio di recupero</h2>
+    <p class="gray" style="margin-top: 0;">
+        (Solo per chi ha preso l'insufficienza al compito)
+    </p>
+    <br>
+    <p>
+        Svolgere la seguente espressione letterale
+        \[
+            2x\left(-3x + 1\right) - x^2\left(x + 1\right) - \left(-x\right)^3
+        \]
+    </p>
+
+    <script>
+         function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+    </script>
+
+</body>

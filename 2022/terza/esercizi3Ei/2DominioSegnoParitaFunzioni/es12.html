@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 3° Ei</title>
+</head>
+<style>
+    #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <h1>Compiti</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Ripassare il materiale <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/dominioFunzioni/index#comprendereGrafico">QUI</a>
+    </p>
+    <br>
+    <p>
+        Se volete rifare vecchi esercizi, oppure vedere i video di spiegazione pubblicati con essi, selezionate le schede relative dal seguente menù:
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
+
+    
+    <br>
+    <hr>
+    <br>
+
+    <p class="gray">
+        Questa è una <b>simulazione</b> del compito: stesso numero di esercizi , difficoltà simile. Provate a svolgerlo in 1 ora su foglio protocollo, cercando produrre un lavoro quanto più leggibile.
+        Allenarsi nelle stesse condizioni della prova è importante!
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Assegnata una funzione \(f\), sappiamo che
+    </p>
+    <br>
+    <p>
+        <b>Dominio</b>:
+        <br>
+        \[
+            -6 \lt x \lt -2 \quad\lor\quad x \gt 0
+        \]
+    </p>
+    <p>
+        <b>Segno</b>:
+        <br>
+        \[
+            f\left(x\right) \gt 0 \quad\text{se}\quad -6 \lt x \lt -4 \quad\lor\ x\gt2
+        \]
+    </p>
+    <br>
+    <p>Rappresentare dominio e segno nel grafico cartesiano.</p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 2</h2>
+    <p>
+        Data la funzione
+        \[
+            f(x) = \sqrt{-6x^2 -x +5}
+        \]
+    </p>
+    <br>
+    <ul>
+        <li>
+            stabilire il suo dominio;
+        </li>
+        <li>
+            studiare come varia il suo segno al variare dell'input \(x\);
+        </li>
+        <li>
+            determinare se è pari, dispari o nessuna delle due.
+        </li>
+        <li>
+            Graficare le informazioni ottenute.
+        </li>
+    </ul>
+    
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Data la funzione
+        \[
+            f(x) = \dfrac{9-x^2}{x^2 - 1}
+        \]
+    </p>
+    <br>
+    <ul>
+        <li>
+            stabilire il suo dominio;
+        </li>
+        <li>
+            studiare come varia il suo segno al variare dell'input \(x\);
+        </li>
+        <li>
+            Graficare le informazioni ottenute.
+        </li>
+        <li>
+            determinare se è pari, dispari o nessuna delle due.
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio extra</h2>
+    <p>
+        Scrivere una funzione che abbia
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b>Dominio</b> 
+            <p>
+                \[
+                    x \neq 3
+                \]
+            </p>
+        </li>
+        <br>
+        <li>
+            <b>Segno</b>
+            <br>
+            <br>
+            <p>
+                \(
+                    f\left(x\right) \gt 0 \quad\text{se}\quad x \lt 1 \quad\lor\quad x \gt 3
+                \)
+                <br>
+                <br>
+                \(
+                    f\left(x\right) = 0 \quad\text{se}\quad x = 1 
+                \)
+                <br>
+                <br>
+                \(
+                    f\left(x\right) \lt 0 \quad\text{se}\quad 1 \lt x \lt 3
+                \)
+
+            </p>
+        </li>
+    </ul>
+    <br>
+
+    <p class="gray">
+        (L'esercizio extra è veramente extra. Già facendo i 3 esercizi avete la possibilità di accedere ad un signor voto)
+    </p>
+    
+    
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- <h2 style="margin-bottom: 0">Esercizio di recupero</h2>
+    <p class="gray" style="margin-top: 0;">
+        (Solo per chi ha preso l'insufficienza al compito)
+    </p>
+    <br>
+    <p>
+        Svolgere la seguente disequazione di secondo grado:
+        \[
+            } \leq 0
+        \]
+    </p>
+    
+    <div class="gray">
+        <p><b>Suggerimento</b></p>
+        <br>
+        
+        <p>
+            Usate il metodo della parabola. Per ripassarlo guardate <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/index#metodoParabola">QUI</a>
+        </p>
+        
+    </div> -->
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/terza/esercizi3Ei/es${ex[i].index + 1}.html`;
+        }
+
+    </script>
+
+</body>
