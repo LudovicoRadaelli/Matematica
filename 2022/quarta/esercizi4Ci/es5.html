@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 4Ci</title>
+</head>
+<body style="position: relative;">
+
+    <div id="warning" style="position: absolute; top: 50%; display: none; width: 90vw; height: 50vh; margin: auto; background-color: rgb(255, 255, 98); z-index: 100;border: black 1rem solid; ">
+        <div style="position: absolute; top: 0.3rem; right: 0.3rem;" onclick="closeWarning()"><b>X</b></div>
+        <br>
+        <p style="display: block; font-size: 1.5rem; line-height: 1.7rem; width: 70%; margin: auto; margin-top: auto;">
+            Prima di fare gli esercizi studiate <u>veramente</u> il paragrafo <b>3)</b> disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/index.html">QUI</a>
+        </p>
+
+    </div>
+
+    <h1>Compiti per casa</h1>
+    <br>
+    <h2>Da studiare</h2>
+    <p>
+        Di seguito gli argomenti svolti fino ad ora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Stima del limite a partire dalla tabella</b>
+        </li>
+        <li>
+            <b class="blue">2) Stima del limite a partire dal grafico</b>
+        </li>
+        <li>
+            <b class="blue">3) Calcolo dei limiti tramite sostituzione</b>
+            <ul>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è <b>definito</b></span> 
+                </li>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è \(\boldsymbol{\dfrac{L}{0}}\)</span>
+                </li>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è \(\boldsymbol{\dfrac{0}{0}}\)</span>
+                    <ul>
+                        <li>
+                            <span style="color: #4285F4;">Tramite scomposizione</span>
+                        </li>
+                        <li>
+                            <span style="color: #4285F4;">Tramite razionalizzazione</span>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <b class="blue">4) Teorema dei carabinieri</b>
+        </li>
+        <li>
+            <b class="blue">5) Definizione di continuità in un punto \(\boldsymbol{c}\)</b>
+            
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
+        </li>
+    </ul>
+
+    <br>
+
+    <p>
+        Studiare il paragrafo <b class="blue">5)</b> disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/index#definizioneFunzioneContinua">QUI</a>
+    </p>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h1>
+    <p>
+        Verificare se la seguente funzione è continua in \(1\):
+        \[
+            f(x) = 
+            \begin{cases}
+                \dfrac{3x + 1}{2x - 1} \qquad\quad\,\,\,\,\,\,\,\,\,\, \text{se}\,\,x \leq 1\\\\
+                2^{x+1}\cdot \cos(x - 1) \quad \text{se}\,\,x \gt 1
+            \end{cases}
+        \]
+    </p>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        La funzione è continua in \(1\)
+    </p>
+    
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Video spiegazione</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <video src="img/es5(1).mp4" controls></video>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h1>
+    <p>
+        Verificare se la seguente funzione è continua in \(3\):
+        \[
+            f(x) = 
+            \begin{cases}
+                \dfrac{3x -7}{1 -x} \quad \text{se}\,\,x \leq 3\\\\
+                5x -16 \quad \text{se}\,\,x \gt 3
+            \end{cases}
+        \]
+    </p>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Suggerimento</button>
+    
+    <div id="hint2" class="gray" style="display: none;">
+        
+        <b>Suggerimento:</b>
+        <ul class="gray">
+            <br>
+            <li>
+                Calcolo \(\underset{x \longrightarrow 3}{lim}\,\,\,f(x)\)
+            </li>
+            <br>
+            <li>
+                Calcolo \(f(3)\)
+            </li>
+            <br>
+            <li>
+                Se coincidono, la funzione è continua in \(3\), altrimenti è discontinua in \(3\).
+            </li>
+        </ul>
+    </div>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        La funzione è continua in \(3\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h1>
+    <p>
+        Verificare se la seguente funzione è continua in \(-1\):
+        \[
+            f(x) = 
+            \begin{cases}
+                \ln(x + 2) \quad \text{se}\,\,x \lt -1\\\\
+                \cdot\dfrac{\sqrt{5 + x} - 2}{x +1} \quad \text{se}\,\,x \geq -1
+            \end{cases}
+        \]
+    </p>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        l limite per \(x\) che tende a \(-1\) non esiste:
+        \[
+            \underset{\text{non esiste}}{\underbrace{\underset{x \rightarrow -1}{lim}\,\,\,f(x)}} = f(-1)
+        \]
+        Di conseguenza l'uguaglianza non è vera e dunque la funzione non è continua in \(-1\).
+    </p>
+
+
+    
+
+    <script>
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/terza/esercizi3Ei/2DominioSegnoParitaFunzioni/es${ex[i].index + 1}.html`;
+        }
+
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+    </script>
+    
+</body>
