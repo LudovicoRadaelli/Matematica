@@ -57,13 +57,12 @@ let timer = 0;
 
 function preload() {
   soundFormats('mp3');
-  mySound = loadSound('https://ludovicoradaelli.github.io/Matematica/rainDrops/sound/rain.mp3');
+  let rain = loadSound('https://ludovicoradaelli.github.io/Matematica/rainDrops/sound/rain.mp3');
 }
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight, 400);
   colorMode(HSB,400);
-  rain = new p5.Noise("white")
 }
 
 function draw() {
