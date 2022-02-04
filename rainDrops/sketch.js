@@ -44,7 +44,7 @@ function mouseClicked() {
 
 
 
-//VERSIONE RANDOM 
+//VERSIONE RANDOM
 
 r = [];
 cX = [];
@@ -54,6 +54,11 @@ let dropOn = false;
 let start = false;
 let rain;
 let timer = 0;
+
+function preload() {
+  soundFormats('mp3');
+  mySound = loadSound('https://ludovicoradaelli.github.io/Matematica/rainDrops/sound/rain.mp3');
+}
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight, 400);
@@ -69,7 +74,7 @@ function draw() {
       if(r[i] <= 400) {
         r[i] += 3;
         stroke(dropColor[i], 400, 400- r[i]);
-        strokeWeight(2);
+        strokeWeight(4);
         noFill();
         ellipse(cX[i],cY[i],r[i],r[i]); 
       } else {
@@ -100,6 +105,5 @@ function draw() {
 
 function mouseClicked() {
     start = true;
-    rain.amp(0.025);
-    rain.start();
+    rain.play();
 } 
