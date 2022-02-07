@@ -187,13 +187,47 @@
     <br>
 
     <h2 id="classificazioneDiscontinuita">6) Classificazione delle discontinuità</h2>
-    <div style="position: relative; height: 90vh; width: 90vw; overflow-x: scroll;">
-        <img src="img/schemaDiscontinuita(1).png" style="display: block; position: absolute; height: 90vh; width: 100%; margin:auto;">
-    </div>
-    <p class="gray">
-        Per visualizzare lo schema completo scorrete a destra.
+    <br>
+    <video src="img/classificazioneDiscontinuita.mp4" controls></video>
+    <br>
+    <p>
+        Consideriamo una funzione \(f\) definita sull'intervallo \(\left(a\,;\,B\right)\) e sia \(c \in \left(a\,;\,B\right)\).
     </p>
+    <p>
+        La funzione \(f\) presenta una discontinuità in \(x = c\,\) se l'uguaglianza 
+        \[
+            \underset{x \longrightarrow c}{lim}\,\,f\left(x\right) = f(c)
+        \]
+        è <b>falsa</b>. Cosa può renderla tale?
+    </p>
+    
+    <br>
+    <h3 class="blue">6.1) Discontinuità di I specie (di salto)</h3>
+    <p class="grayBackground">
+        Una funzione presenta una <b>discontinua di I specie</b> se entrambi i due limiti \(x \rightarrow c\) da destra e da sinistra esistono finiti,
+        ma non sono uguali.
+    </p>
+    
+    <br>
+    <img src="img/primaSpecie.png">
+    <br>
 
+    <h3 class="blue">6.2) Discontinuità di II specie specie</h3>
+    <p class="grayBackground">
+        Una funzione presenta una <b>discontinua di II specie</b> se almeno uno dei due limiti per \(x \rightarrow c\) da destra o da sinistra,
+        o non esiste o non è finito.
+    </p>
+    <br>
+    <img src="img/secondaSpecie.png">
+    <br>
+
+    <h3 class="blue">6.2) Discontinuità di III specie specie (eliminabile)</h3>
+    <p class="grayBackground">
+        Una funzione presenta una <b>discontinua di III specie</b> se il limite per \(x \rightarrow c\) esiste finito, ma è diverso da \(f(c)\).
+    </p>
+    <br>
+    <img src="img/terzaSpecie.png">
+    <br>
     <br>
     <p>
         Di seguito uno schema pratico da usare per controllare se una funzione è discontinua ed in caso positivo classificare il tipo di discontinuità.
