@@ -34,93 +34,96 @@
         <li>
             <b class="blue">5) Insiemi di rette dipendenti da un parametro</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/insiemiDiRette1Parametro/index.html">(link)</a>
         </li>
-        <!-- <li>
-            <b class="blue">5) Insiemi di rette dipendenti da un parametro</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/INSERISCI/index.html">(link)</a>
+        <li>
+            <b class="blue">6) Distanza tra due punti </b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/distanzaTraDuePunti/index.html">(link)</a>
             <br>
             <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
-        </li> -->
+        </li>
     </ul>
 
 
     <br>
     <hr>
     <br>
-
+    
     <h2>Esercizio 1</h2>
     <p>
-        Trovare l'equazione della retta che 
+        Trovare la distanza tra i punti \(A\left(-3\,;5\right)\) e \(B\left(-1\,;-4\right)\).
     </p>
-    <br>
-    <ul>
-        <li>
-            è perpendicolare alla retta di equazione \(y = -\dfrac{2}{3}x + 1\)
-        </li>
-        <br>
-        <li>
-            passa per il punto \(A\left(-4; -2\right)\)
-        </li>
-    </ul>
     <br>
     <p class="gray">
         <b>Soluzione</b>:
         <br>
-        \(y = \dfrac{3}{2}x + 4\)
+        \(\sqrt{85}\)
     </p>
 
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Non riesco a svolgerlo</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p>In questo video trovate lo svolgimento di un esercizio simile:</p>
+        <br>
+        <video src="img/es9(1).mp4" controls></video>
+    </div>
+    
     <br>
     <hr>
     <br>
 
     <h2>Esercizio 2</h2>
     <p>
-        Trovare l'equazione della retta che 
-    </p>
-    <br>
-    <ul>
-        <li>
-            è parallela alla retta di equazione \(y = -7x + 1\)
-        </li>
-        <br>
-        <li>
-            passa per il punto \(A\left(-3; 5\right)\)
-        </li>
-    </ul>
-    <br>
-    <p class="gray">
-        <b>Soluzione</b>:
-        <br>
-        \(y = -7x - 16\)
-    </p>
-
-
-    <br>
-    <hr>
-    <br>
-
-    <h2>Esercizio 3</h2>
-    <p>
-        Trovare il punto di intersezione tra le rette 
-    </p>
-    <p>
-        \[
-            y = 2x + 1 \quad\text{e}\quad y = -3x - 4 
-        \]
+        Trovare la distanza tra i punti \(A\left(-5\,;1\right)\) e \(B\left(-7\,;2\right)\).
     </p>
     <br>
     <p class="gray">
         <b>Soluzione</b>:
         <br>
-        Il punto di intersezione ha coordinate \(\left(-1;\,\,-1\right)\)
+        \(\sqrt{5}\)
     </p>
     
     <br>
     <hr>
     <br>
 
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare la distanza tra il punto \(A\left(1\,;-3\right)\) ed il punto intersezione tra le rette \(y = 5x -7\) e \(y = -2x + 7\)
+    </p>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        \(\sqrt{37}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 4</h2>
+    <p>
+        Disegnate sul piano cartesiano tre punti scelti da voi in modo che formino un triangolo <a href="https://it.wikipedia.org/wiki/Triangolo_isoscele">isoscele</a>.
+    </p>
+    <p>
+        Dopo di che usate la formula della distanza tra due punti per controllare che i lati obliqui siano congruenti.
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 5 <span style="font-size: 1rem;">(facoltativo, con voto)</span></h2>
+    <p>
+        Scrivere le equazioni di \(4\) rette che formino tra loro un quadrato che non abbia lati paralleli all'asse \(x\).
+    </p>
+    
 
 
 
     <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
 
         /* function mostraSoluzione(n) {
             document.getElementById("soluzione-button"+n).style.display = "none";
