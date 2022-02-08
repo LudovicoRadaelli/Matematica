@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 3° Ei</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Di seguito l'elenco degli argomenti svolti fino ad ora. 
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Il piano cartesiano</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/pianoCartesiano/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">2) Equazione della retta</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/equazioneRetta/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">3) Retta passante per due punti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/rettaPassantePerDuePunti/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">4) Posizione reciproca tra rette</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/posizioneReciprocaRette/index.html">(link)</a> 
+        </li>
+        <li>
+            <b class="blue">5) Insiemi di rette dipendenti da un parametro</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/insiemiDiRette1Parametro/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">6) Distanza tra due punti </b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/distanzaTraDuePunti/index.html">(link)</a>
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
+        </li>
+    </ul>
+
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Trovare la distanza tra i punti \(A\left(-3\,;5\right)\) e \(B\left(-1\,;-4\right)\).
+    </p>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        \(\sqrt{85}\)
+    </p>
+
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Non riesco a svolgerlo</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p>In questo video trovate lo svolgimento di un esercizio simile:</p>
+        <br>
+        <video src="img/es9(1).mp4" controls></video>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Trovare la distanza tra i punti \(A\left(-5\,;1\right)\) e \(B\left(-7\,;2\right)\).
+    </p>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        \(\sqrt{5}\)
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare la distanza tra il punto \(A\left(1\,;-3\right)\) ed il punto intersezione tra le rette \(y = 5x -7\) e \(y = -2x + 7\)
+    </p>
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>:
+        <br>
+        \(\sqrt{37}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 4</h2>
+    <p>
+        Disegnate sul piano cartesiano tre punti scelti da voi in modo che formino un triangolo <a href="https://it.wikipedia.org/wiki/Triangolo_isoscele">isoscele</a>.
+    </p>
+    <p>
+        Dopo di che usate la formula della distanza tra due punti per controllare che i lati obliqui siano congruenti.
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 5 <span style="font-size: 1rem;">(facoltativo, con voto)</span></h2>
+    <p>
+        Scrivere le equazioni di \(4\) rette che formino tra loro un quadrato che non abbia lati paralleli all'asse \(x\).
+    </p>
+    
+
+
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+</body>
+      
+
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
