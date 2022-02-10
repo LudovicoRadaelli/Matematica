@@ -133,32 +133,185 @@
         <video src="img/schemaRisolutivo.mp4" controls></video>
     </div>
 
+    <br>
+    <hr>
+    <br>
 
-    
+    <h2 id="casiParticolari">3) Casi particolari</h2>
+    <p>
+        Ci sono alcuni casi in cui possiamo usare strade alternative e più rapide rispetto all'applicaizione della formula.
+    </p>
 
+    <br>
 
+    <h3 class="blue">3.1) \(\,\,\)Se \(\boldsymbol{b = 0}\)</h3>
+    <br>
+    <p>
+        Nel caso in cui \(b\) sia \(0\), il termine con la \(x\) non compare nell'equazione:
+        \[
+            ax^2 + c = 0
+        \]
+    </p>
+    <p>
+        Esaminiamo un caso concreto:
+        \[
+            2x^2 - 18 = 0
+        \]
+        In questo caso possiamo isolare la \(x^2\).
+    </p>
+    <p>
+        Primo passo, spostiamo il \(-18\) dall'altra parte dell'uguale.
+        \[
+            2x^2 = 18
+        \]
+        Dividiamo per \(2\)
+    </p>
+    <p>
+        \[
+            x^2 = \dfrac{18}{2} 
+        \]
+        ovvero 
+        \[
+            x^2 = 9
+        \]
+    </p>
+    <p>
+        Bene, sappiamo che \(x\) è quel numero che elevato al quadrato fa \(9\)... 
+        la <a href="">radice quadrata</a> di \(9\)!
+        \[
+            x = \sqrt{9} 
+        \]
+    </p>
+    <p>
+        Ma vediamo che \(\sqrt{9}\) non è l'unico numero che elevato al quadrato fa \(9\), anche \(\left(-\sqrt{9}\right)^2\) fa \(9\).
+    </p>
+    <p>
+        Quindi
+        \[
+            x = \sqrt{9} \quad\text{oppure}\quad x = -\sqrt{9}
+        \]
+    </p>
 
-
-    <!-- <h3>Esempi</h3>
+    <h3>Esempi</h3>
     <div class="esempi-container">
         <p id="esempio1">
+            Risolviamo l'equazione
             \[
-                
-            \]`
+                3x^2 - 8 = 0
+            \]
+            Isoliamo la \(x^2\):
+            \[
+                3x^2 = 8
+            \]
+            \[
+                x^2 = \dfrac{8}{3}
+            \]
+            Dunque 
+            \[
+                x = \sqrt{\dfrac{8}{3}} \quad\text{oppure}\quad x = -\sqrt{\dfrac{8}{3}}
+            \]
         </p>
+        <br>
+
+        <button onclick="generaEsempio(1)">Mostrami un altro esempio</button>
     </div>
+
     <br>
-    <button onclick="generaEsempio(1)">Mostrami un altro esempio</button> -->
+    <hr>
+    <br>
 
-    <!-- <h2>Numero di soluzioni</h2> -->
-    
+    <h3 class="blue">3.2) \(\,\,\) Se \(\boldsymbol{c = 0}\)</h3>
+    <br>
+    <p>
+        Nel caso in cui \(c\) sia \(0\), il termine senza \(x\) non compare nell'equazione:
+        \[
+            ax^2 + bx = 0
+        \]
+    </p>
+    <p>
+        Esaminiamo un caso concreto:
+        \[
+            5x^2 +3x = 0
+        \]
+        Notate che il polinomio \(5x^2 +3x\) può essere riscritto come \(x\cdot\left(5x + 3\right)\). 
+        <br>
+        L'equazione quindi si riscrive così:
+        \[
+            x\cdot\left(5x + 3\right) = 0
+        \]
+        Leggiamolo in questo modo:
+    </p>
+    <p>
+        \[
+            \underset{\color{red}{\text{il numero \(x\)}}}{\underbrace{\color{red}{x}}}
+            \underset{\color{darkgreen}{\,\,\text{moltiplicato}}}{\color{darkgreen}{\underbrace{\cdot}}}
+            \underset{\,\,\color{blue}{\text{per il numero \(5x +3\)}}}{\underbrace{\color{blue}{\left(5x + 3\right) }}}
+            \underset{\text{fa \(0\)}}{\underbrace{= 0}}
+        \]
+    </p>
+    <!-- <p style="width: 80%; margin: auto;">
+        <i>il numero \(x\) moltiplicato per il numero \(\,5x +3\,\) fa \(\,0\).</i>
+    </p> -->
+    <br>
+    <p>
+        Ma allora deve esser vero che almeno uno tra \(\color{red}{x}\) e \(\,\color{blue}{5x +3}\,\) è \(0\) 
+        <br>
+        (sennò il loro prodotto non potrebbe essere \(0\)!).
+        <br>
+        Quindi 
+    </p>
+    <p class="formula">
+        \[
+            \color{red}{x\,} \color{black}{=0} \quad\text{oppure}\quad\color{blue}{5x +3\,}\color{black}{ = 0}
+        \]
+    </p>
+    <p class="formula">
+        \[
+            x = 0 \quad\text{oppure}\quad 5x = -3 
+        \]
+    </p>
+    <p class="formula">
+        \[
+            x = 0 \quad\text{oppure}\quad x = -\dfrac{3}{5} 
+        \]
+    </p>
 
-   
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p id="esempio2">
+            Risolviamo l'equazione
+            \[
+                2x^2 - 7x = 0
+            \]
+            Mettiamo in evidenza la \(x\) al primo membro:
+            \[
+                x \cdot \left(2x - 7\right) = 0
+            \]
+            Dunque
+            \[
+                x = 0 \quad\text{oppure}\quad 2x - 7 = 0    
+            \]
+            Svolgiamo l'equazione di primo grado a destra:
+            \[
+                x = 0 \quad\text{oppure}\quad 2x = 7  
+            \]
+            \[
+                x = 0 \quad\text{oppure}\quad x = \dfrac{7}{2}  
+            \]
+        </p>
+        <br>
+
+        <button onclick="generaEsempio(2)">Mostrami un altro esempio</button>
+    </div>
+
+    <br>
+    <hr>
+    <br>
 
 
 
 
-    
+
     <script src="script.js"></script>
 </body>
 </html>
