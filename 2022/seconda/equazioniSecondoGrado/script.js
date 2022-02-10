@@ -19,15 +19,18 @@ window.addEventListener("load", function() {
 MathJax.typesetClear([]);
 MathJax.typesetPromise([]).then(() => {});
 */
+
+let sign = ['+','-'];
+
 class Coeff {
     constructor(module, sign) {
         this.module = module;
         this.sign = sign;
-        this.value = [];
+        this.value;
         if(this.sign === "+") {
-            this.value[0] = this.module;
+            this.value = this.module;
         } else {
-            this.value[0] = -this.module;
+            this.value = -this.module;
         }
     }
     
@@ -35,52 +38,137 @@ class Coeff {
         if(this.sign === "+") {
             return `${this.module}`
         } else {
-            return `\\left(${-this.module}\\right)`
+            return `${-this.module}`
         }
     }
 }
+
+function signProduct(s1, s2) {
+    if(s1 === s2) {
+        return ``;
+    } else {
+        return `-`
+    }
+}
+
+function oppositeSign(s) {
+    if(s === `+`) {
+        return `-`
+    } else {
+        return `+`
+    }
+}
+
 
 function generaEsempio(n) {
 
     let esempio = document.getElementById("esempio"+n);
 
     if(n === 1) {
-        
+            
+        let a = new Coeff(Math.floor(Math.random()*15 + 1),`${ sign[Math.floor(Math.random()*2)] }`);
+        let c = new Coeff(Math.floor(Math.random()*15 + 1),`${ sign[Math.floor(Math.random()*2)] }`);
 
-        let sol1 = Math.floor(Math.random()*20-10);
-        let sol2 = Math.floor(Math.random()*20-10);
-        let a = Math.floor(Math.random()*20-5);
-        let b = -a*(sol1 + sol2);
-        let c = a*sol1*sol2
+        console.log(`
+        a.module: ${a.module},
+        a.sign: ${a.sign},
+        a.value: ${a.value},
+        c.module: ${c.module},
+        c.sign: ${c.sign},
+        c.value: ${c.value},
+        a.value*c.value: ${a.value*c.value}`);
 
-        document.getElementById("esempio"+n).innerHTML = 
-        `
-        <p>
-            Risolvere l'equazione
+
+        if(a.value*c.value < 0) {
+            esempio.innerHTML = 
+            `Risolviamo l'equazione
             \\[
-                \\color{red}{${a}}\\,\\color{black}{x^2}\\, + \\color{blue}{${b}}\\,\\color{black}{x}\\, + \\color{darkorange}{${c}}\\,\\,  \\color{black}{}= 0
+                ${a.value}x^2 ${c.sign} ${c.module}  = 0
             \\]
-        </p>
-        <p>
-            Usiamo la formula 
+            Isoliamo la \\(x^2\\):
             \\[
-                \\begin{align*}
-                    x &= \\dfrac{-\\color{blue}{b}\\color{black}{} \\pm \\sqrt{\\color{blue}{b}\\color{black}{}^2 - 4 \\cdot \\color{red}{a}\\color{black} \\cdot  \\color{darkorange}{c}\\color{black}}}{2\\color{red}{a}}    \\\\\\\\
-                      &= \\dfrac{-\\color{blue}{${b}}\\color{black}{} \\pm \\sqrt{\\color{blue}{${b}}\\color{black}{}^2 - 4 \\cdot \\color{red}{${a}}\\color{black} \\cdot  \\color{darkorange}{${c}}\\color{black}}}{2\\cdot\\color{red}{${a}}}    
-                \\end{align*}
+                ${a.value}x^2 = ${-c.value}
             \\]
-        </p>
-        `;
+            \\[
+                x^2 = \\dfrac{${-c.value}}{${a.value}}
+            \\]`
+            if(a.sign = '-') {
+                esempio.innerHTML += 
+                `\\[
+                    x^2 = \\dfrac{${c.module}}{${a.module}}
+                \\]`
+            }
+            esempio.innerHTML += 
+            `Dunque 
+            \\[
+                x = \\sqrt{\\dfrac{${c.module}}{${a.module}}} \\quad\\text{oppure}\\quad x = -\\sqrt{\\dfrac{${c.module}}{${a.module}}}
+            \\]`
+            
+        } else {
+            esempio.innerHTML = 
+            `Risolviamo l'equazione
+            \\[
+                ${a.value}x^2 ${c.sign} ${c.module}  = 0
+            \\]
+            Isoliamo la \\(x^2\\):
+            \\[
+                ${a.value}x^2 = ${-c.value}
+            \\]
+            \\[
+                x^2 = \\dfrac{${-c.value}}{${a.value}}
+            \\]
+            \\[
+                x^2 = -\\dfrac{${c.module}}{${a.module}}
+            \\]
+            Siccome non esiste alcun numero che elevato al quadrato dia come risultato 
+            un numero negativo, l'equazione non ha soluzione
+            `
+        }
+
         
-        
+    }
+
+    if(n === 2) {
+            
+        let a = new Coeff(Math.floor(Math.random()*15 + 1),`${ sign[Math.floor(Math.random()*2)] }`);
+        let b = new Coeff(Math.floor(Math.random()*15 + 1),`${ sign[Math.floor(Math.random()*2)] }`);
+
+        console.log(`
+        a.module: ${a.module},
+        a.sign: ${a.sign},
+        a.value: ${a.value},
+        b.module: ${b.module},
+        b.sign: ${b.sign},
+        b.value: ${b.value},
+        `);
+
+        esempio.innerHTML = 
+        `Risolviamo l'equazione
+        \\[
+            ${a.value}x^2 ${b.sign} ${b.module}x = 0
+        \\]
+        Mettiamo in evidenza la \\(x\\) al primo membro:
+        \\[
+            x \\cdot \\left(${a.value}x ${b.sign} ${b.module}\\right) = 0
+        \\]
+        Dunque
+        \\[
+            x = 0 \\quad\\text{oppure}\\quad ${a.value}x ${b.sign} ${b.module} = 0    
+        \\]
+        Svolgiamo l'equazione di primo grado a destra:
+        \\[
+            x = 0 \\quad\\text{oppure}\\quad ${a.value}x = ${-b.value}  
+        \\]
+        \\[
+            x = 0 \\quad\\text{oppure}\\quad x = \\dfrac{${-b.value}}{${a.value}}  
+        \\]
+        \\[
+            x = 0 \\quad\\text{oppure}\\quad x = ${signProduct(a.sign, oppositeSign(b.sign))}\\dfrac{${b.module}}{${a.module}}  
+        \\]`
 
     }
 
+    
     MathJax.typesetClear([esempio]);
     MathJax.typesetPromise([esempio]).then(() => {});
-}
-
-function show(n) {
-    document.getElementById(`show-button${n}`).style.display = "none";
-    document.getElementById(`show${n}`).style.display = "block";
 }
