@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Esercizi 4Ci</title>
 </head>
+<style>
+     #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
 <body style="position: relative;">
 
     
@@ -70,6 +90,30 @@
     </p>
 
 
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        Usate il menù a tendina per accedere agli esercizi delle lezioni passate:
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <!-- <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="10">11</option> -->
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
     <br>
     <hr>
     <br>
@@ -207,7 +251,7 @@
         <p class="gray">
             <b>Soluzione</b>:
             <br>
-            La funzione è continua se il valore del parametro \(a\) è \(-\dfrac{11}{18}\)
+            La funzione è continua se il valore del parametro \(a\) è \(-\dfrac{18}{11}\)
         </p>
     
         <br>
@@ -222,7 +266,7 @@
             let ex = document.getElementById("ex").options;
             let i = document.getElementById("ex").selectedIndex;
             console.log(`ex[i]: ${ex[i].index}`)
-            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/terza/esercizi3Ei/2DominioSegnoParitaFunzioni/es${ex[i].index + 1}.html`;
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/quarta/esercizi4Ci/es${ex[i].index + 1}.html`;
         }
 
         function showHint(i) {
