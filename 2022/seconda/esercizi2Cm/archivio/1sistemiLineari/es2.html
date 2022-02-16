@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2° Cm</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <p style="color: gray;">
+        Siccome in classe me lo avevate richiesto, ma non abbiamo avuto il tempo di svolgerlo, alla fine della pagina vi lascio un esercizio risolto sul metodo di sostituzione con coefficienti frazionari.
+    </p>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di sostituzione:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    \dfrac{x-1}{3} - \dfrac{y+2}{2} = \dfrac{1}{6} \\
+                    \\
+                    -2x + y = 5
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <button id="soluzione-button1" onclick="mostraSoluzione(1)" >Soluzione</button>
+    <p id="soluzione1" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = -6\\
+                        \\
+                        y = -7
+                    \end{cases}
+                \end{equation*} \)
+        </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+    <h2>Esercizio 2</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo di <b><i>riduzione</i></b>:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    11x + 3y = 2 \\
+                    \\
+                    4x - \dfrac{2}{3}y = 6
+                \end{cases}
+            \end{equation*}
+        \] 
+    </p>
+    <button id="soluzione-button2" onclick="mostraSoluzione(2)">Soluzione</button>
+    <p id="soluzione2" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = 1\\
+                        \\
+                        y = -3
+                    \end{cases}
+                \end{equation*} \)
+        </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 3</h2>
+    <p>
+        Risolvere il seguente sistema con il metodo che ritenete puù opportuno.
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    \dfrac{2x - y}{3} - 2 = x \\
+                    \\
+                    \dfrac{1}{6}x + \dfrac{y-1}{3} = -\dfrac{3}{2}
+                \end{cases}
+            \end{equation*}
+        \] 
+    </p>
+    <button id="soluzione-button3" onclick="mostraSoluzione(3)">Soluzione</button>
+    <p id="soluzione3" style="text-align: center; display: none;">
+        <span style ="color: gray">
+            Soluzione: 
+            \( 
+                \begin{equation*}
+                    \begin{cases}
+                        x = -5\\
+                        \\
+                        y = -1
+                    \end{cases}
+                \end{equation*} \)
+        </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+
+    <h3>Esempio svolto</h3>
+    <br>
+    <p>
+        Risolvere il seguente sistema con il metodo di sostituzione:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    \dfrac{2}{3}x - \dfrac{1}{6}y = -1\\
+                    \\
+                    3x + \dfrac{7}{2}y = 4
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        Prima di tutto lavoriamo per togliere i denominatori nella prima e seconda equazione. 
+    </p>
+        <ul class="gray">
+            <li>
+                Facciamo il m.c.m.
+            </li>
+            <li>
+                Eliminiamo i denminatori
+            </li>
+        </ul>
+    <p class="gray">
+        \[
+        \begin{equation*}
+            \begin{cases}
+                \dfrac{4x - y}{\cancel{6}} = \dfrac{-6}{\cancel{6}}\\
+                \\
+                \dfrac{6x + 7y}{\cancel{2}} = \dfrac{8}{\cancel{2}}
+            \end{cases}
+        \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        
+        \[
+        \begin{equation*}
+            \begin{cases}
+                4x - y = -6\\
+                \\
+                6x + 7y = 8
+            \end{cases}
+        \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        Ora isoliamo la \(y\) nella prima equazione:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    - y = -4x -6\\
+                    \\
+                    6x + 7y = 8
+                \end{cases}
+            \end{equation*}
+        \]
+
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = 4x +6\\
+                    \\
+                    6x + 7y = 8
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        Ora sostituiamo \(-4x +6\) nell'altra equazione:
+
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = \color{red}{4x +6}\\
+                    \\
+                    6x + 7\color{red}{y} \color{black}{=} 8
+                \end{cases}
+            \end{equation*}
+        \]
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = -4x +6\\
+                    \\
+                    6x + 7\left(4x +6\right) = 8
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        Da qua svolgiamo i calcoli:
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = 4x +6\\
+                    \\
+                    6x +28x +42 = 8
+                \end{cases}
+            \end{equation*}
+        \]
+
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = 4x +6\\
+                    \\
+                    34x  = 8 - 42
+                \end{cases}
+            \end{equation*}
+        \]
+
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = 4\color{red}{x} \color{black}{+6}\\
+                    \\
+                    x  = \dfrac{-34}{34} = \color{red}{-1}
+                \end{cases}
+            \end{equation*}
+        \]
+
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    y = 4\left(-1\right) +6 = 2\\
+                    \\
+                    x  = -1
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    <p class="gray">
+        Quindi la soluzione è
+        \[
+            \begin{equation*}
+                \begin{cases}
+                    x  = -1\\
+                    \\
+                    y = 2
+                \end{cases}
+            \end{equation*}
+        \]
+    </p>
+    
+
+
+      
+    <script>
+
+        function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            /* document.getElementById("soluzione"+n).style.textAlign = "center"; */
+        }
+
+    </script>
+</body>
