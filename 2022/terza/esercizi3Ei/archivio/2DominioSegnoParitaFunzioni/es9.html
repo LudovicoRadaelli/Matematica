@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 3° Ei</title>
+</head>
+<body>
+    <h1>Compiti</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Ripassare il materiale disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/dominioFunzioni/index.html">QUI</a>
+    </p>
+    
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Data la funzione
+        \[
+            f(x) = \dfrac{x^2-8}{2x-1}
+        \]
+    </p>
+    <br>
+    <ul>
+        <li>
+            stabilire il suo dominio;
+        </li>
+        <li>
+            studiare come varia il suo segno al variare dell'input \(x\);
+        </li>
+        <li>
+            determinare se è pari, dispari o nessuna delle due.
+        </li>
+        <li>
+            Graficare le informazioni ottenute.
+        </li>
+    </ul>
+    
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Video spiegazione</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <video src="img/es9(1).mp4" controls></video>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 2</h2>
+    <p>
+        Data la funzione
+        \[
+            f(x) = \dfrac{x}{x^2+4}
+        \]
+    </p>
+    <br>
+    <ul>
+        <li>
+            stabilire il suo dominio;
+        </li>
+        <li>
+            studiare come varia il suo segno al variare dell'input \(x\);
+        </li>
+        <li>
+            determinare se è pari, dispari o nessuna delle due.
+        </li>
+        <li>
+            Graficare le informazioni ottenute.
+        </li>
+    </ul>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Video spiegazione</button>
+    <div id="hint2" class="esempi-container" style="display: none;">
+        <video src="img/es9(2).mp4" controls></video>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- <h2 style="margin-bottom: 0">Esercizio di recupero</h2>
+    <p class="gray" style="margin-top: 0;">
+        (Solo per chi ha preso l'insufficienza al compito)
+    </p>
+    <br>
+    <p>
+        Svolgere la seguente disequazione di secondo grado:
+        \[
+            } \leq 0
+        \]
+    </p>
+    
+    <div class="gray">
+        <p><b>Suggerimento</b></p>
+        <br>
+        
+        <p>
+            Usate il metodo della parabola. Per ripassarlo guardate <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/disequazioni/index#metodoParabola">QUI</a>
+        </p>
+        
+    </div> -->
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+    </script>
+
+</body>
