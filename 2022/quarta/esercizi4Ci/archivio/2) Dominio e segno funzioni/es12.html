@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 4Ci</title>
+</head>
+<style>
+    #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+    <br>
+
+    <h2>Da studiare</h2>
+    <p>
+        
+    </p>
+    <br>
+    <p>
+        Chi vuole essere interrogato al rientro, può prepararsi ripassando il materiale disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/dominioFunzioni/index.html">QUI</a> e 
+        svolgendo gli esercizi passati, accessibili dal menù che trovate di seguito.
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="10">11</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Studiare dominio e segno della funzione
+        \[
+            f\left(x\right) = \dfrac{2\cos{x} + 1}{\tan{x}}
+        \]
+        e graficarli sul piano cartesiano.
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Guardate almeno uno dei video che vi ho linkato di seguito. Ne discuteremo lunedì classe.
+        <br>
+        (Sono tutti incredibilmente belli!)
+    </p>
+    <p class="gray">
+        Per ogni video sono disponibili i sottotitoli in italiano.
+        <br>
+        Non mettete il video in modalità full-screen, altrimenti dopo un po' si blocca (non so perché).
+    </p>
+    <br>
+    <ul>
+        <li>
+            <a href="https://www.ted.com/talks/amy_webb_how_i_hacked_online_dating?referrer=playlist-the_influence_of_algorithms">How I hacked online dating</a>
+        </li>
+        <br>
+        <li>
+            <a href="https://www.ted.com/talks/randall_munroe_comics_that_ask_what_if?referrer=playlist-talks_for_people_who_hated_mat#t-552823">I fumetti del "cosa succede se...?"</a>
+        </li>
+        <br>
+        <li>
+            <a href="https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen?referrer=playlist-the_best_hans_rosling_talks_yo">La migliore statistica che tu abbia mai visto</a>
+        </li>
+        <br>
+        <li>
+            <a href="https://www.ted.com/talks/kevin_slavin_how_algorithms_shape_our_world?referrer=playlist-the_influence_of_algorithms">L'influenza degli algoritmi</a>
+            <br>
+            <br>
+            <span class="gray"><u>Nota</u>: gli stealth sono arei invisibili ai radar, il compito del fisico ungherese era quello di scovarli. </span>
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3 <span style="font-size: 1rem;">(facoltativo)</span></h2>
+    <p>
+        Guardate questo i video. Racconta (anche) come sono nati i numeri complessi.
+        <br> 
+        <span class="gray">Ci sono i sottotitoli in inglese</span>.
+    </p>
+    
+    <br>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <iframe width="300" height="158.3" src="https://www.youtube.com/embed/cUzklzVXJwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>(Non-)Esercizio 4</h2>
+    <p>
+        <a href="http://www.cristinacampo.it/public/immortale%20racconto%20di%20j.l.borges.pdf">QUA</a> trovate il racconto di Borges di cui vi parlavo, <i>"L'immortale"</i>.
+    </p>
+    <br>
+    <p>
+        Questo di seguito invece un frammento di una sua poesia, comparsa in una puntata di Boris:
+    </p>
+    <br>
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <iframe width="300" height="168.75" src="https://www.youtube.com/embed/KKLM8OkncBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+    <div style="width: 80%; height: 40vh; margin:auto; overflow-y: scroll;">
+        <p>
+            <i>
+                <b style="color: black;">Un'altra poesia dei doni</b>
+                <p><i>J.L.Borges</i></p>
+                <br>
+                Ringraziare voglio il divino
+                <br>
+                labirinto degli effetti e delle cause
+                <br>
+                per la diversità delle creature
+                <br>
+                che compongono questo singolare universo,
+                <br>
+                <br>
+                per la ragione, che non cesserà di sognare
+                <br>
+                un qualche disegno del labirinto,
+                <br>
+                <br>
+                per il viso di Elena e la perseveranza di Ulisse,
+                <br>
+                <br>
+                per l’amore, che ci fa vedere gli altri
+                <br>
+                come li vede la divinità,
+                <br>
+                <br>
+                per il saldo diamante e l’acqua sciolta,
+                <br>
+                <br>
+                per l’algebra, palazzo dai precisi cristalli,
+                <br>
+                <br>
+                per le mistiche monete di Angelus Silesius,
+                <br>
+                <br>
+                per Schopenhauer,
+                <br>
+                che forse decifrò l’universo,
+                <br>
+                <br>
+                per lo splendore del fuoco
+                <br>
+                che nessun essere umano può guardare senza uno stupore antico,
+                <br>
+                <br>
+                per il mogano, il cedro e il sandalo,
+                <br>
+                <br>
+                per il pane e il sale,
+                <br>
+                <br>
+                per il mistero della rosa
+                <br>
+                che prodiga colore e non lo vede,
+                <br>
+                <br>
+                per certe vigilie e giornate del 1955,
+                <br>
+                <br>
+                per i duri mandriani che nella pianura
+                <br>
+                aizzano le bestie e l’alba,
+                <br>
+                <br>
+                per il mattino a Montevideo,
+                <br>
+                <br>
+                per l’arte dell’amicizia,
+                <br>
+                <br>
+                per l’ultima giornata di Socrate,
+                <br>
+                <br>
+                per le parole che in un crepuscolo furono dette
+                <br>
+                da una croce all’altra.
+                <br>
+                <br>
+                per quel sogno dell’Islam che abbracciò
+                <br>
+                mille notti e una notte,
+                <br>
+                <br>
+                per quell’altro sogno dell’inferno,
+                <br>
+                della torre del fuoco che purifica,
+                <br>
+                e delle sfere gloriose,
+                <br>
+                <br>
+                per Swedenborg,
+                <br>
+                che conversava con gli angeli per le strade di Londra,
+                <br>
+                <br>
+                per i fiumi segreti e immemorabili
+                <br>
+                che convergono in me,
+                <br>
+                <br>
+                per la lingua che, secoli fa, parlai nella Northumbria,
+                <br>
+                <br>
+                per la spada e Tarpa dei sassoni,
+                <br>
+                <br>
+                per il mare, che è un deserto risplendente
+                <br>
+                e una cifra di cose che non sappiamo,
+                <br>
+                <br>
+                per la musica verbale dell’Inghilterra,
+                <br>
+                <br>
+                per la musica verbale della Germania,
+                <br>
+                <br>
+                per l’oro, che sfolgora nei versi,
+                <br>
+                <br>
+                per l’epico inverno,
+                <br>
+                <br>
+                per il nome di un libro che non ho letto: Gesta Dei per Francos
+                <br>
+                <br>
+                per Verlaine, innocente come gli uccelli,
+                <br>
+                <br>
+                per il prisma di cristallo e il peso d’ottone,
+                <br>
+                <br>
+                per le strisce della tigre,
+                <br>
+                <br>
+                per le alte torri di San Francisco e dell’isola di Manhattan
+                <br>
+                <br>
+                per il mattino nel Texas,
+                <br>
+                <br>
+                per quel sivigliano che stese l’Epistola Morale
+                <br>
+                e il cui nome, come egli avrebbe preferito, ignoriamo,
+                <br>
+                <br>
+                per Seneca e Lucano, di Cordova,
+                <br>
+                che prima dello spagnolo scrissero
+                <br>
+                tutta la letteratura spagnola,
+                <br>
+                <br>
+                per il geometrico e bizzarro gioco degli scacchi,
+                <br>
+                <br>
+                per la tartaruga di Zenone e la mappa di Royce,
+                <br>
+                <br>
+                per l’odore medicinale degli eucalipti,
+                <br>
+                <br>
+                per il linguaggio, che può simulare la sapienza,
+                <br>
+                <br>
+                per l’oblio, che annulla o modifica il passato,
+                <br>
+                <br>
+                per la consuetudine,
+                <br>
+                che ci ripete e ci conferma come uno specchio,
+                <br>
+                <br>
+                per il mattino, che ci procura l’illusione di un principio
+                <br>
+                <br>
+                per la notte, le sue tenebre e la sua astronomia,
+                <br>
+                <br>
+                per il coraggio e la felicità degli altri,
+                <br>
+                <br>
+                per la patria, sentita nei gelsomini
+                <br>
+                o in una vecchia spada,
+                <br>
+                <br>
+                per Whitman e Francesco d’Assisi, che scrissero già questa poesia,
+                <br>
+                per il fatto che questa poesia è inesauribile
+                <br>
+                e si confonde con la somma delle creature
+                <br>
+                e non arriverà mai all’ultimo verso
+                <br>
+                e cambia secondo gli uomini,
+                <br>
+                <br>
+                per Frances Haslam, che chiese perdono ai suoi figli
+                <br>
+                <br>
+                perché moriva così lentamente,
+                <br>
+                <br>
+                per i minuti che precedono il sonno,
+                <br>
+                per il sonno e la morte,
+                <br>
+                <br>
+                per due tesori occulti,
+                <br>
+                <br>
+                per gli intimi doni che non elenco,
+                <br>
+                <br>
+                per la musica, misteriosa forma del tempo.
+            </i>
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/quarta/esercizi4Ci/es${ex[i].index + 1}.html`;
+        }
+    </script>
+</body>
