@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Bi</title>
+</head>
+<style>
+    
+
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+    <p>
+        <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/index.html">QUA</a> trovate tutto il materiale relativo agli argomenti svolti finora.
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <br>
+    <h2>Esercizio 1</h2>
+    <p>
+        Rappresentare sul piano cartesiano a figura che si ottiene disegnando tutti i punti che hanno coordinata 
+        \(y\) uguale al doppio della coordinata \(x\).
+    </p>
+
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Video spiegazione</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <video src="img/esercizio1.mp4" controls></video>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    
+    <h2>Esercizio 2</h2>
+    <p>
+        Considerate le rette di equazione 
+        \[
+            y = -x + 1 \quad\text{e}\quad y = x + 7
+        \]
+    </p>
+    <br>
+    <ul>
+        <li>
+            Trovare le cordinate del punto d'intersezione tra di esse;
+        </li>
+        <br>
+        <li>
+            Stabilire se due rette sono perpendicolari, motivando la propria risposta.
+        </li>
+    </ul>
+
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Video spiegazione</button>
+    <div id="hint2" class="esempi-container" style="display: none;">
+        <video src="img/esercizio2.mp4" controls></video>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare la distanza tra
+    </p>
+    <br>
+    <ul>
+        <li>
+            il punto medio dei punti \(P\left(2; -5\right)\) e \(Q\left(8; 3\right)\)
+        </li>
+        <br>
+        <li>
+            il punto medio dei punti \(A\left(-1; -2\right)\) e \(B\left(2; -3\right)\)
+        </li>
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 4</h2>
+    <p>
+        Considerate i punti \(A\left(-2\,;\,-5\right)\) e \(B\left(3\,;\,7\right)\)
+    </p>
+    <br>
+    <ul>
+        <li>
+            quanto distano tra di loro?
+        </li>
+        <br>
+        <li>
+            verificare se il punto \(A\) ed il punto \(B\) appartengono alla retta \(y = 5x + 5\).
+        </li>
+        <br>
+        <li>
+            trovare la retta passante per \(A\) e \(B\)
+        </li>
+    </ul>
+
+    <br>
+    <button id="hint4-button" onclick="showHint(4)">Video spiegazione</button>
+    <div id="hint4" class="esempi-container" style="display: none;">
+        <video src="img/esercizio4.mp4" controls></video>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 5</h2>
+    <p>
+        Trovare l'equazione della retta 
+    </p>
+    <br>
+    <ul>
+        <li>
+            perpendicolare alla retta di equazione \(y = -\dfrac{1}{2}x + 1\)
+        </li>
+        <br>
+        <li>
+            passante per il punto di intersezione delle rette
+            \[
+                y = 2x \quad\text{e}\quad y = x + 2
+            \]
+        </li>
+    </ul>
+
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="img/esercizio5.mp4" controls></video>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
+
+
+    
+
+
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+    <script src="es11.js"></script>
+</body>
+      
+<!-- 
+    <button id="hint1-button" onclick="showHint(1)">Non riesco a svolgerlo</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p>Se non avete capito provate a guardare quest'esercizio svolto:</p>
+        <br>
+        <video src="img/distanzaTraDuePuntiEsempio.mp4" controls></video>
+    </div>
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->

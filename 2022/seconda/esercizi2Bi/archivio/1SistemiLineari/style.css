@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: #DB4437;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    width: 98%;
+}
+
+video, img {
+    display: block;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #4285F4;
+    margin-bottom: 1rem;
+}
+
+table, td, th {
+    border: 0.01rem solid black; 
+}
+
+td, th {
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h3 {
+    color: #F4B400;
+    font-size: 1.1rem;
+}
+
+
+
+button {
+    display: block;
+    width: auto;
+    margin: auto;
+    box-shadow: 0.2rem 0.2rem 0.3rem lightgray;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#si, #no {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#right, #wrong {
+    display: none;
+}
+
+#altraDomanda {
+    display: none;
+}
+
+#quiz-container {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formula {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.gray {
+    color: gray;
+}
+
+.blue {
+    color: #4285F4;
+}
