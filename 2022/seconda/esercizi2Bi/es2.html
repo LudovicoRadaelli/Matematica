@@ -7,454 +7,268 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Verifica 2° Bi</title>
+    <title>Esercizi - 2°Bi</title>
 </head>
 <style>
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-size: 20px;
-        line-height: 1.5rem;
-    }
-
-    h1 {
-        text-align: center;
-
-    }
-
-    #first-page,
-    #second-page,
-    #third-page {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .column {
-        width: 50%;
-        padding: 2rem;
+    #table-container {
+        width: 100%;
+        overflow-x: scroll;
     }
 
     table {
-        width: 50%;
-        margin: auto;
-        border-collapse : collapse;
-        border: 0.01rem black solid;
+        width: 200%;    
     }
 
-    td, th {
-        text-align: center;
-        padding: 0.5rem;
-        border: 0.01rem black solid;
+    td {
+        width: 40%;
+        text-align: left;
+
     }
 
-    h1 {
-        font-size: 1.4rem;
-    }
-    h2 {
-        font-size: 1.2rem;
+    .td1 {
+        width: 35%;
+        min-width: 35%;
     }
 
-
-    @media print {
-        .break {
-            page-break-before: always;
-        }
+    .td2 {
+        width: 20%;
+        min-width: 20%;
     }
 
+    .td3 {
+        width: 35%;
+        min-width: 35%;
+    }
 </style>
+
 <body>
-    <div id="filaA">
-        
-        <div id="first-page">
-            <div class="column">
-                <h2>Esercizio 1</h2>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+    <p>
+        Studiare il paragrafo <span class="blue"><b>1) Formula risolutiva</b></span> disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/equazioniSecondoGrado/index.html">QUA</a>
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <li>
+        <b class="blue">1) Il piano cartesiano</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/pianoCartesiano/index.html">(link)</a>
+    </li>
+    <li>
+        <b class="blue">2) Equazione della retta</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/equazioneRetta/index.html">(link)</a>
+    </li>
+    <li>
+        <b class="blue">3) Retta passante per due punti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/rettaPassantePerDuePunti/index.html">(link)</a>
+    </li>
+    <li>
+        <b class="blue">4) Posizione reciproca tra rette</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/posizioneReciprocaRette/index.html">(link)</a> 
+    </li>
+    <li>
+        <b class="blue">5) Insiemi di rette dipendenti da un parametro</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/insiemiDiRette1Parametro/index.html">(link)</a>
+    </li>
+    <li>
+        <b class="blue">6) Distanza tra due punti </b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/distanzaTraDuePunti/index.html">(link)</a>
+    </li>
+    <li>
+        <b class="green"> 7) Ripasso disequazioni fratte</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/disequazioniFratte/index.html">(link)</a> 
+        <br>
+        <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> 
+    </li>
+</ul>
+
+<br>
+<hr>
+<br>
+
+
+<h2>Esercizio 1</h2>
+<p>
+    Copiare e compilare la seguente tabella, traducendo le informazioni nei linguaggi parlato, simbolico e grafico:
+</p>
+
+<br>
+    
+<div id="table-container">
+    <table>
+        <tr>
+            <th  class="td1">
+                linguaggio parlato
+            </th>
+            <th class="td2">
+                linguaggio simbolico
+            </th>
+            <th class="td3">
+                linguaggio grafico
+            </th>
+        </tr>            
+        <tr>
+            <td class="td1">
                 <p>
-                    Stabilire se le seguenti uguaglianze sono vere, <b>motivando la propria risposta</b>.
                     <br>
-                    Nel caso in cui siano false, scrivere il risultato corretto.
-                </p>
-                <ol>
-                    <li>
-                        \[\sqrt[10]{2} \cdot \sqrt[10]{9} = \sqrt[100]{18}\]
-                    </li>
-                    <li>
-                        \[\sqrt{2} \cdot \sqrt[3]{10} = \sqrt[5]{5}\]
-                    </li>
-                    <li>
-                        \[\sqrt[4]{6^{35}} = 4^{31}\]
-                    </li>
-                    <li>
-                        \[\sqrt{75} = 5\,\sqrt{3} \]
-                    </li>
-                    <li>
-                        \[\sqrt[5]{-32} = -2\]
-                    </li>
-
-
-                </ol>
-                
-                <hr>
-
-                <h2>Esercizio 2</h2>
-                <p>
-                    Determinare per quale valori di \(b\) esiste
-                    \[
-                        \sqrt[2]{\dfrac{3b -18}{-b + 6}}
-                    \]
-                </p>
-
-                <hr>
-
-                <h2>Esercizio 3</h2>
-                <p>
-                    Svolgere la seguente espressione tra radicali:
-                </p>
-                <p class="formula">
-                    \[
-                        \sqrt{20} - 6\,\sqrt[3]{64} + 2\,\sqrt{45} -3\,\sqrt[4]{5^{8}} + 2\,\sqrt{6}
-                    \]
-                </p>
-                
-                <hr>
-
-                <h2>Esercizio 4</h2>
-                <p>
-                    Razionalizzare la frazione
-                    \(
-                        \dfrac{28}{\sqrt{12}}
-                    \)
-                </p>
-                
-
-            </div>
-            <div class="column">
-                <h2>Esercizio 1</h2>
-                <p>
-                    Stabilire se le seguenti uguaglianze sono vere, <b>motivando la propria risposta</b>.
+                    Il polinomio \(5b + 10\) ha segno \(\color{red}{\boldsymbol{+}}\) 
                     <br>
-                    Nel caso in cui siano false, scrivere il risultato corretto.
+                    <br>
+                    se \(b\) è più grande di \(-2\)
+                    <br>
                 </p>
-                <ol>
-                    <li>
-                        \[\sqrt[6]{-64} = -2\]
-                    </li>
-                    <li>
-                        \[\sqrt{360} = 6 \sqrt{10} \]
-                    </li>
-                    <li>
-                        \[\sqrt[7]{9^{30}} = 9^{23}\]
-                    </li>
-                    <li>
-                        \[\sqrt{5} \cdot \sqrt[3]{3} = \sqrt[6]{15}\]
-                    </li>
-                    <li>
-                        \[\sqrt[5]{2^5} \cdot \sqrt[5]{2^{10}} = 8\]
-                    </li>
-                </ol>
-                
-                <hr>
-
-                <h2>Esercizio 2</h2>
-                <p>
-                    Determinare per quale valori di \(k\) esiste
-                    \[
-                        \sqrt[2]{\dfrac{2k -4}{1 -k}}
-                    \]
-                </p>
-
-                <hr>
-
-                <h2>Esercizio 3</h2>
-                <p>
-                    Svolgere la seguente espressione tra radicali:
-                </p>
-                <p class="formula" style="font-size: 1.1rem;">
-                    \[
-                        5\,\sqrt{12} + 3\,\sqrt{27} - 2\,\sqrt[3]{64} -4\,\sqrt[5]{6^{10}} + 2\,\sqrt{10}
-                    \]
-                </p>
-                
-                <hr>
-
-                <h2>Esercizio 4</h2>
-                <p>
-                    Razionalizzare la frazione
-                    \(
-                        \dfrac{15}{\sqrt{30}}
-                    \)
-                </p>
-                
-            </div>
-        </div>
-    </div>
-
-    <div id="second-page" class="break">
-        <div class="column">
-            <h2>Esercizio 1</h2>
-            <p>
-                Stabilire se le seguenti uguaglianze sono vere, <b>motivando la propria risposta</b>.
+            </td>
+            <td class="td2">
                 <br>
-                Nel caso in cui siano false, scrivere il risultato corretto.
-            </p>
-            <ol>
-                <li>
-                    \[\sqrt{2} \cdot \sqrt[3]{10} = \sqrt[5]{5}\]
-                </li>
-                <li>
-                    \[\sqrt{75} = 5\,\sqrt{3} \]
-                </li>
-                <li>
-                    \[\sqrt[5]{-32} = -2\]
-                </li>
-
-
-            </ol>
-            
-            <hr>
-
-            <h2>Esercizio 2</h2>
-            <p>
-                Determinare per quale valori di \(b\) esiste
-                \[
-                    \sqrt[2]{\dfrac{b - 1}{-3b + 6}}
-                \]
-            </p>
-
-            <hr>
-
-            <h2>Esercizio 3</h2>
-            <p>
-                Svolgere la seguente espressione tra radicali:
-            </p>
-            <p class="formula">
-                \[
-                    2\,\sqrt{18} -5\,\sqrt{45} + 3\,\sqrt{3^{4}} + 4
-                \]
-            </p>
-        
-
-        </div>
-        <div class="column">
-
-            <h2>Esercizio 1</h2>
-            <p>
-                Stabilire se le seguenti uguaglianze sono vere, <b>motivando la propria risposta</b>.
+                \(5b +10 > 0\)
                 <br>
-                Nel caso in cui siano false, scrivere il risultato corretto.
-            </p>
-            <ol>
-                <li>
-                    \[\sqrt[6]{-64} = -2\]
-                </li>
-                <li>
-                    \[\sqrt{360} = 6 \sqrt{10} \]
-                </li>
-                <li>
-                    \[\sqrt{5} \cdot \sqrt[3]{3} = \sqrt[6]{15}\]
-                </li>
-            </ol>
-            
-            <hr>
+                <br>
+                se \(b > -2\)
+                <br>
+            </td>
+            <td class="td3">
+                <img src="img/es2(1).png" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <p>
+                    <br>
+                    Il polinomio \(-2b - 3\) ha segno \(\color{blue}{\boldsymbol{-}}\) 
+                    <br>
+                    <br>
+                    se \(b\) è più grande di \(-\dfrac{3}{2}\)
+                    <br>
+                </p>
+            </td>
+            <td class="td2">
+                <br>
+                \(-2b -3 \lt 0\)
+                <br>
+                <br>
+                se \(b > -\dfrac{3}{2}\)
+                <br>
+            </td>
+            <td class="td3">
+                <img src="img/es2(2).png" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <br>
+                Il polinomio \(11b - 3\) ha segno \(\color{red}{\boldsymbol{+}}\) 
+                <br>
+                <br>
+                se \(b\) è più grande di \(\dfrac{3}{11}\)
+                <br>
+            </td>
+            <td class="td2">
+                
+            </td>
+            <td class="td3">
+                <br>
+                
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <p>
+                    <br>
+                    <br>
+                </p>
+            </td>
+            <td class="td2">
+                <br>
+                \(-b -7 \lt 0\)
+                <br>
+                <br>
+                se \(b \gt -7\)
+                <br>
+            </td>
+            <td class="td3">
+                <br>
+                
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td class="td1">
+                <br>
+                <br>
+                <br>
+                <br>
 
-            <h2>Esercizio 2</h2>
-            <p>
-                Determinare per quale valori di \(k\) esiste
-                \[
-                    \sqrt[2]{\dfrac{-2k - 6}{k - 1}}
-                \]
-            </p>
+            </td>
+            <td class="td2">
 
-            <hr>
-
-            <h2>Esercizio 3</h2>
-            <p>
-                Svolgere la seguente espressione tra radicali:
-            </p>
-            <p class="formula" style="font-size: 1.1rem;">
-                \[
-                    6\,\sqrt{8} -2\,\sqrt[3]{3^{6}} -1 + \sqrt{20}
-                \]
-            </p>
-            
-            <hr>
-            
-        </div>
-    </div>
-
-    <div class="break">
-        
-        <h2>Esercizio 1</h2>
-        <p>
-            Risolvere la seguente disequazione e disegnare il grafico che rappresenta la soluzione.
-            \[
-                4x + 8 > 0
-            \]
-        </p>
-
-        <br>
-
-        <h2>Esercizio 2</h2>
-        <p>
-            Completare gli spazi lasciati vuoti:
-            \[
-                \begin{align*}    
-                    &\sqrt{2^5\cdot 7} =  
-                    \\\\
-                    &\sqrt{2^{\cdots}\,\,\,\,  2^{\cdots}\,\,\,\, 7}
-                    \\\\
-                    &2^{\cdots} \cdot \sqrt{\dots} = 
-                \end{align*}
-            \]
-        </p>
-
-
-        <h2>Esercizio 3</h2>
-        <p>
-            Stabilire per quali valori del parametro \(x\) esiste il seguente radicale:
-            \[
-                \sqrt{\dfrac{1 + x}{4x +8}}
-            \]
-        </p>
-        <p>
-            <b>Svolgimento:</b>            
-        </p>
-        <p>
-            Studio il segno del numeratore:
-        </p>
-        <p>
-            \[
-                \text{.........................} \geq 0
-            \]
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <p>
-            Studio il segno del denominatore:
-        </p>
-        <p>
-            \[
-                \text{.........................} \geq 0
-            \]
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="break">
-            Disegno il grafico dei segni:   
-        </p>
-        <br>
-        <p>
-            \[
-                \begin{align*}
-                &\text{__________________________________________________}  
-                \\\\
-                \text{segno numeratore}&
-                \\\\
-                \text{segno denominatore}&
-
-                \end{align*}
-            \]
-        </p>
-    </div>
-
-    <div class="break">
-        
-        <h2>Esercizio 1</h2>
-        <p>
-            Risolvere la seguente disequazione e disegnare il grafico che rappresenta la soluzione.
-            \[
-                6x + 12 > 0
-            \]
-        </p>
-
-        <br>
-
-        <h2>Esercizio 2</h2>
-        <p>
-            Completare gli spazi lasciati vuoti:
-            \[
-                \begin{align*}    
-                    &\sqrt{3^7\cdot 2} =  
-                    \\\\
-                    &\sqrt{3^{\cdots}\,\,\,\,  3^{\cdots}\,\,\,\, 2}
-                    \\\\
-                    &2^{\cdots} \cdot \sqrt{\dots} = 
-                \end{align*}
-            \]
-        </p>
-
-
-        <h2>Esercizio 3</h2>
-        <p>
-            Stabilire per quali valori del parametro \(x\) esiste il seguente radicale:
-            \[
-                \sqrt{\dfrac{4 - 2x}{6x + 12}}
-            \]
-        </p>
-        <p>
-            <b>Svolgimento:</b>            
-        </p>
-        <p>
-            Studio il segno del numeratore:
-        </p>
-        <p>
-            \[
-                \text{.........................} \geq 0
-            \]
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <p>
-            Studio il segno del denominatore:
-        </p>
-        <p>
-            \[
-                \text{.........................} \geq 0
-            \]
-        </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p class="break">
-            Disegno il grafico dei segni:   
-        </p>
-        <br>
-        <p>
-            \[
-                \begin{align*}
-                &\text{__________________________________________________}  
-                \\\\
-                \text{segno numeratore}&
-                \\\\
-                \text{segno denominatore}&
-
-                \end{align*}
-            \]
-        </p>
-    </div>
+            </td>
+            <td class="td3">
+                <img src="img/es2(3).png" alt="">
+            </td>
+        </tr>
+    </table>
 </div>
 
-</body>
+<br>
+<hr>
+<br>
 
-
-<!-- 
-    <h2>Esercizio 6 (extra)</h2>
+   
+<h2>Esercizio 2</h2>
     <p>
-        Rappresentare sul piano cartesiano a figura che si ottiene disegnando tutti i punti tali che la somma tra le 
-        loro coordinate sia positiva.
+        Stabilire per quali valori di \(a\) il prodotto di polinomi 
+        \[
+            \left(4a + 5\right)\cdot\left(-2a + 7\right)\cdot\left(-a + 2\right)
+        \]
+        è <b>negativo</b>
     </p>
+    
+    <br>
+    <p class="gray">
+        <b>Suggerimeto:</b>
+        <br>
+        Analizzate il segno di ciascuno dei tre fattori e fate il grafico dei segni:
+        \[
+            \underset{\color{red}{\text{1° fattore}}}{\underbrace{\color{red}{\left(4a + 5\right)}}} \cdot
+            \underset{\color{blue}{\text{2° fattore}}}{\underbrace{\color{blue}{\left(-2a + 7\right)}}} \cdot
+            \underset{\color{orange}{\text{3° fattore}}}{\underbrace{\color{orange}{\left(-a + 2\right)}}}
+        \]
+    </p>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        \(x \lt -\dfrac{5}{4} \quad\text{oppure}\quad  2 \lt x \lt \dfrac{7}{2} \)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="green">Extra</h2>
+    <video src="img/es12(4).mp4" controls></video>
+    <script>
+        /* function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        } */
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+    <script src="es11.js"></script>
+</body>
+      
+<!-- 
+    <button id="hint1-button" onclick="showHint(1)">Non riesco a svolgerlo</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p>Se non avete capito provate a guardare quest'esercizio svolto:</p>
+        <br>
+        <video src="img/distanzaTraDuePuntiEsempio.mp4" controls></video>
+    </div>
  -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
