@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 3° Ei</title>
+</head>
+<style>
+    #table-container {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    table {
+        width: 200%;    
+    }
+
+    td {
+        width: 40%;
+        text-align: left;
+
+    }
+
+    .td1 {
+        width: 35%;
+        min-width: 35%;
+    }
+
+    .td2 {
+        width: 20%;
+        min-width: 20%;
+    }
+
+    .td3 {
+        width: 35%;
+        min-width: 35%;
+    }
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Di seguito l'elenco degli argomenti svolti fino ad ora. 
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Il piano cartesiano</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/pianoCartesiano/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">2) Equazione della retta</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/equazioneRetta/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">3) Retta passante per due punti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/rettaPassantePerDuePunti/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">4) Posizione reciproca tra rette</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/posizioneReciprocaRette/index.html">(link)</a> 
+        </li>
+        <li>
+            <b class="blue">5) Insiemi di rette dipendenti da un parametro</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/insiemiDiRette1Parametro/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="blue">6) Distanza tra due punti </b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/distanzaTraDuePunti/index.html">(link)</a>
+        </li>
+        <li>
+            <b class="green"> 7) Ripasso disequazioni fratte</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/disequazioniFratte/index.html">(link)</a> 
+            
+            <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>  -->
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Stabilire per quali valori di \(b\) il punto di coordinate \[\left(b + \dfrac{1}{2}\,;\,5b^2 + 2b\right)\] appartiene alla retta di equazione \[y = -4x + 1\]
+    </p>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        \(b = -1  \quad\text{oppure}\quad b = -\dfrac{1}{5}\)
+    </p>
+    
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Studiare il segno del seguente prodotto al variare di \(b\)
+        \[
+          \left(3b - 1\right)\cdot\left(5b - 2\right)\cdot\left(-6b - 2\right)
+        \]
+    </p>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        Il prodotto 
+        <ul class="gray">
+            <li>
+                assume segno \(+\) se
+                <br>
+                \(b \lt -\dfrac{1}{3} \quad\text{oppure}\quad  \dfrac{1}{3} \lt a \lt \dfrac{2}{5}\)
+            </li>
+            <br>
+            <li>
+                vale \(0\) se 
+                <br>
+                \(b = -\dfrac{1}{3} \quad\text{oppure}\quad b = \dfrac{1}{3} \quad\text{oppure}\quad b = \dfrac{2}{5} \)
+            </li>
+            <br>
+            <li>
+                assume segno \(-\) se
+                <br>
+                \(-\dfrac{1}{3} \lt a \lt \dfrac{1}{3} \quad\text{oppure}\quad  b \gt \dfrac{2}{5}\)
+            </li>
+
+        </ul>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare l'equazione della retta che
+    </p>
+    <br>
+    <ul>
+        <li>
+            è perpendicolare alle retta di equazione 
+            \[
+                y = -\dfrac{1}{3}x + 1000
+            \]
+        </li>
+        <br>
+        <li>
+            passa per il punto di intersezione tra le rette di equazione
+            \[
+                y = 2x - 1 \quad\text{e}\quad y = 4x -5
+            \]
+        </li>
+    </ul>
+
+    
+    <br>
+    <p class="gray">
+        <b>Soluzione:</b>
+        La retta che stiamo cercando ha equazione della forma
+        \[
+            y = mx + q
+        \]
+        Siccome la retta deve essere perpendicolare a quella di equazione 
+        \[
+            y =-\dfrac{1}{3}x +1000
+        \]
+        il coefficiente angolare \(m\) deve essere l'opposto del reciproco di \(-\dfrac{1}{3}\),
+        ovvero \(m = 3\).
+        <br>
+        Quindi la retta sarà della forma 
+        \[
+            y = 3x + q
+        \]
+        Per trovare quanto vale \(q\) sfruttiamo la seconda informazione.
+        <br>
+        Troviamo il punto di intersezione tra le rette di equazione \(y = 2x - 1\,\) e \(\,y = 4x -5\):
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                y = 4x -5
+            \end{cases}
+        \]
+        Usiamo il metodo di confronto:
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                2x - 1 = 4x -5
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                2x -4x =  -5 +1
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                -2x =  -4
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                x =  \dfrac{-4}{-2}
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                y = 2x - 1
+                \\\\
+                x = 2
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                y = 2 \cdot \color{red}{2}\color{gray}{} - 1 = 4 -1 = 3
+                \\\\
+                x = \color{red}{2}
+            \end{cases}
+        \]
+        \[
+            \begin{cases}
+                x = 2
+                \\\\
+                y = 3
+            \end{cases}
+        \]
+        Il punto ha coordinate \(\left(\color{red}{2}\color{gray}{}\,;\,\color{blue}{3}\right)\). Perché appartenga alla retta le sue coordinate devo soddifare l'equazione \(y = 3x + q\):
+        \[
+            \begin{align*}    
+                \color{blue}{3} &= 3\cdot \color{red}{2}\color{gray} + q
+                \\\\
+                3 &= 6 + q
+                \\\\
+                -q &= 6 -3
+                \\\\
+                -q &= 3
+                \\\\
+                q &= -3
+            \end{align*}
+        \]
+        La retta dell'equazione richiesta è quindi
+        \[
+            y = 3x -3
+        \]
+    <hr>
+    <br>
+    <br>
+
+    <h2>Esercizio 4</h2>
+    <p>
+        Dati i punti \(A\left(2 \,;\, -3\right)\) e \(B\left(-1 \,;\,4\right)\)
+    </p>
+    <br>
+    <ul>
+        <li>
+            trovare la misura della loro distanza;
+        </li>
+        <br>
+        <li>
+            trovare l'equazione della retta passante per entrambi i punti.
+        </li>
+    </ul>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        <ul class="gray">
+            <li>
+                \(\sqrt{58}\)
+            </li>
+            <br>
+            <li>
+                La retta ha equazione della forma \(y = mx +q\).
+                Perché entrambi i punti apprtengano alla retta deve essere vero che
+                \[
+                    \begin{cases}
+                        -3 = m \cdot 2 + q 
+                        \\\\
+                        4 = m \cdot \left(-1\right) + q
+                    \end{cases}
+                \]
+                Isoliamo \(q\) nella prima equazione
+                \[
+                    \begin{cases}
+                    -q = 2m +3
+                    \\\\
+                    4 = -m + q
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    4 = -m + q
+                    \end{cases}
+                \]
+                Ora sostituiamo \(-2m -3\) al posto di \(q\) nella seconda equazione
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    4 = -m -2m -3
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    4 = -3m -3
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    3m = -4 -3
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    3m = -7
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = -2m -3
+                    \\\\
+                    m = \dfrac{-7}{3}
+                    \end{cases}
+                \]
+                Ora sostituiamo \(-\dfrac{7}{3}\) al posto di \(m\) nella prima equazione
+                \[
+                    \begin{cases}
+                    q = -2\cdot \left(-\dfrac{7}{3}\right) -3
+                    \\\\
+                    m = -\dfrac{7}{3}
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = \dfrac{14}{3} -3
+                    \\\\
+                    m = -\dfrac{7}{3}
+                    \end{cases}
+                \]
+                \[
+                    \begin{cases}
+                    q = \dfrac{14 - 9}{3} = \dfrac{5}{3}
+                    \\\\
+                    m = -\dfrac{7}{3}
+                    \end{cases}
+                \]
+                La retta passante per i punti \(A\)  e \(B\) ha quindi equazione
+                \[
+                    y = -\dfrac{7}{3}x + \dfrac{5}{3}
+                \]
+            </li>
+        </ul>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 5</h2>
+    <p>
+        Date i due insiemi di rette 
+        \[
+            y = \left(4k +1\right)x -7k +1 
+        \]
+        e
+        \[
+            y = \dfrac{5k -3}{2}x -2k +1 
+        \]
+        stabilire per quali valori del parametro \(k\) si ottiengono due rette parallele
+    </p>
+    <!-- <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        \(b = -1  \quad\text{oppure}\quad b = -\dfrac{1}{5}\)
+    </p> -->
+    
+
+    <br>
+    <hr>
+    <br>
+
+
+
+
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+</body>
+      
+
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
