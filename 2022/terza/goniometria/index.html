@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.min.js"></script> 
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Goniometria</title>
+</head>
+<body>
+    <h1>Goniometria</h1>
+    
+    <h2 id="definizioneGeometrica">
+        Funzioni trigonometriche:
+        <br>
+        definizione geometrica
+    </h2>
+
+    <br>
+    <video src="img/funzioniTrigonometriche.mp4" controls></video>
+
+    <br>
+    <p>
+        Nella figura interattiva di seguito potete variare gli elementi del triangolo così come mostrato nel video.
+    </p>
+    
+    <br>
+    <div id="geogebra1" class="geogebra-container" style="border: 0.01rem black solid;"></div>
+    <br>
+    
+    <p>
+        Dato un triangolo rettangolo \(ABC\) possiamo considerare le seguenti funzioni trigonomeriche:
+    </p>
+
+    <div class="grayBackground">
+        <ul>
+            <li>
+                \[sin\left(\text{angolo}\right) = \dfrac{\text{cateto opposto}}{\text{ipotenusa}} \]
+            </li>
+            <br>
+            <li>
+                \[cos\left(\text{angolo}\right) = \dfrac{\text{cateto adiacente}}{\text{ipotenusa}} \]
+            </li>
+            <br>
+            <li>
+                \[sin\left(\text{angolo}\right) = \dfrac{\text{cateto opposto}}{\text{cateto adiacente}} \]
+            </li>
+            <br>
+        </ul>    
+    </div>
+    <br>
+
+    <p>
+        Consideriamo il triangolo in \(ABC\) in figura. 
+    </p>
+
+    <br>
+    <img src="img/triangoloABC.png" style="width: 70%; margin: auto;">
+    <br>
+
+    <p>
+        Seguendo le definizioni appena date si ha che  ha che
+    </p>
+    <br>
+    <ul>
+        <li>
+            \[
+                sin\left(\color{blue}{\beta}\color{black}{}\right) = \dfrac{\color{blue}{b}}{\color{red}{a}}
+                \quad
+                sin\left(\color{#009900}{\gamma}\color{black}{}\right) = \dfrac{\color{#009900}{c}}{\color{red}{a}}
+            \]
+        </li>
+        
+        <li>
+            
+            \[
+                cos\left(\color{blue}{\beta}\color{black}{}\right) = \dfrac{\color{#009900}{c}}{\color{red}{a}}
+                \quad
+                cos\left(\color{#009900}{\gamma}\color{black}{}\right) = \dfrac{\color{blue}{b}}{\color{red}{a}}
+            \]
+        </li>
+        <li>
+            \[
+                tan\left(\color{blue}{\beta}\color{black}{}\right) = \dfrac{\color{blue}{b}}{\color{#009900}{c}}
+                \quad
+                tan\left(\color{#009900}{\gamma}\color{black}{}\right) = \dfrac{\color{#009900}{c}}{\color{blue}{b}}
+            \]
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 id="gradiVSRadianti">Gradi v.s. Radianti</h2>
+    
+    <p>
+        <b>Un grado</b> è la \(360\)-esima parte di un angolo giro.
+    </p>
+    <br>
+    <p>
+        Data una qualsiasi circonferenza di raggio \(r\), <b>un radiante</b> è l'angolo che determina un arco di lunghezza uguale a quella del raggio.
+    </p>
+
+    <br>
+    <video src="img/gradiRadianti.mp4" controls></video>
+    <br>
+    
+    
+    <hr>
+    <br>
+
+    <p>
+        Un angolo giro in gradi misura \(360°\), mentre in radianti misura \(2\pi\)
+    </p>
+
+    <br>
+    <video src="img/angoloGiroInRadianti.mp4" controls></video>
+    <br>
+    
+    <hr>
+    <br>
+
+    <br>
+    <p>
+        Il meccanismo che ci permette di passare da gradi a radianti e viceversa è si basa sulla seguente proporzione:
+    </p>
+    <p class="grayBackground">
+        \[
+            \dfrac{\color{red}{\text{angolo in gradi}}}{\color{blue}{\text{angolo in radianti}}} = \dfrac{\color{red}{360°}}{\color{blue}{2\pi}}
+        \]
+    </p>
+
+    
+    <video src="img/trasformazioneGradiRadianti.mp4" controls></video>
+    <br>
+    <hr>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
