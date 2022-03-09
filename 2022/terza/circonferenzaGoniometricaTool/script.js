@@ -1,6 +1,7 @@
 let n = document.getElementById("angle").value;
 let r = 150;
 let angle;
+let gridUnit = [1,2,3,4,6];
 
 let changeAngle = false;
 
@@ -27,7 +28,8 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(400, 400);
+  let size = window.innerWidth;
+  let cnv = createCanvas(size, size);
   cnv.parent("sketch");
   background(255);
   angleMode(RADIANS);
@@ -152,7 +154,8 @@ function drawCircle() {
 }
 
 function changeGrid() {
-  n = document.getElementById("angle").value;
+  n = gridUnit[document.getElementById("angle").value];
+  console.log(`n = ${n}`)
 }
 
 function tooltip() {
@@ -214,3 +217,4 @@ function drawTg() {
   stroke(0, 200, 0);
   line(r,0,r,r*tan(angle));
 }
+
