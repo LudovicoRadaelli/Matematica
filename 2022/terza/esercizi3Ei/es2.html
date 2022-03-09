@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 3° Ei</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Di seguito l'elenco degli argomenti svolti fino ad ora. 
+    </p>
+    <br>
+    <ul>
+        
+        <li>
+            <b class="blue">1) Seno, coseno, tangente: definizione geometrica</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#definizioneGeometrica">(link)</a>
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>  
+        </li> 
+        <li>
+            <b class="blue">2) Gradi v.s. Radianti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a>
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>  
+        </li> 
+        
+       
+        
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Considerate il triangolo rettangolo in figura. 
+    </p>
+    <img src="img/es2(2).png" alt="">
+    <p>
+        Supponiamo che la misura del lato \(AB\) sia \(k\). Siccome il triangolo isoscele, sappiamo che anche il lato \(AC\) misura \(k\).
+    </p>
+    <br>
+    <ul>
+        <li>
+            calcolare il seno dell'angolo \(45°\)
+        </li>
+        <br>
+        <li>
+            calcolare il coseno dell'angolo \(45°\)
+        </li>
+        <br>
+        <li>
+            calcolare la tangente dell'angolo \(45°\)
+        </li>
+    </ul>
+
+    <br>
+    <p class="gray">
+        <b>Suggerimento:</b>
+        <br>
+        Trovate l'ipotenusa \(AB\) applicando il teorema di Pitgora.
+        <br>
+        Successivamente applicate la <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#definizioneGeometrica">definizione</a> di seno, coseno e tangente utilizzado le misure dei cateti fornite dal problema e quella dell'ipotenusa che avete trovato al passo precedente.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Considerate il triangolo rettangolo in figura. 
+    </p>
+    <img src="img/es2(1).png" alt="">
+    <p>
+        Supponiamo che la misura di \(BC\) sia \(k\). Osserviamo che il triangolo è esattamente la metà di un triangolo equilatero.
+    </p>
+    <img src="img/es2(3).png" alt="">
+    <p>
+        Da questo possiamo dedurre che il lato \(AC\) misura la metà del lato \(BC\), ovvero \(\overline{BC} = \dfrac{k}{2}\)
+    </p>
+    <br>
+    <ul>
+        <li>
+            Calcolare  il seno, coseno e tangente dell'angolo \(30°\);
+        </li>
+        <br>
+        <li>
+            calcolare  il seno, coseno e tangente dell'angolo \(60°\);
+        </li>
+    </ul>
+
+    <br>
+    <p class="gray">
+        <b>Suggerimento:</b>
+        <br>
+        Trovate il cateto maggiore \(AB\) applicando il teorema di Pitgora.
+        <br>
+        Successivamente applicate la <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#definizioneGeometrica">definizione</a> di seno, coseno e tangente utilizzado le misure del cateto minore ed ipotenusa fornite dal problema e del cateto maggiore che avete trovato al passo precedente.
+    </p>
+    
+
+    
+
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+</body>
+      
+
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
