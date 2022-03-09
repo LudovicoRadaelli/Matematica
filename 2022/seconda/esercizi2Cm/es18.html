@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Cm</title>
+</head>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+    <p>
+        Argomenti svolti finora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue"> 1) Formula risolutiva</b>
+        </li>
+        <li>
+            <b class="blue"> 2) Numero di soluzioni</b> 
+        </li>
+        <li>
+            <b class="blue"> 3) Schema di risoluzione </b> 
+        </li>
+        <li>
+            <b class="blue"> 4) Casi particolari </b> 
+            <ul>
+                <li>
+                    <b class="blue"> 4.1) Se \(b = 0\)</b> 
+                </li>
+                <li>
+                    <b class="blue"> 4.2) Se \(c = 0\) </b> 
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b class="blue"> 5) Equazioni risolvibili tramite la legge di annullamento del prodotto</b> 
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
+        </li>
+        <li>
+            <b class="blue"> 6) Scomposizione di polinomi di secondo grado </b> 
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
+        </li>
+    </ul>
+    <br>
+    <p>
+        <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/equazioniSecondoGrado/index.html">QUA</a> trovate il materiale da ripassare.
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre il polinomio \(-9x^2 +46x -5\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Scomporre il polinomio \(2x^3 -3x^2 +x\)
+    </p>
+
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Suggerimento</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <p class="gray">
+            <b>Suggerimento:</b>
+            <br>
+            <u>Prima</u> raccogliete a fattor comune la \(x\) e <u>dopo</u> scomponete il polinomio in parentesi:
+            <br>
+            <br>
+            Non ricordate il <b><i>raccoglimento a fattor comune</i></b>?
+            <br>
+            Eccone due esempi:
+            <br>
+            <br>
+            <b>Esempio 1</b>
+            <br>
+            
+            Consideriamo il polinomio 
+            \[
+                15x^5 + 6x^4 + 9x^2
+            \]
+            cerchiamo un numero che divida \(15\), \(6\) e \(6\)... facile: \(3\)!
+            <br>
+            Osserviamo tutti i termini del polinomio hannno la lettera \(x\) e l'esponente più piccolo con cui compare è \(2\).
+            <br>
+            A questo punto raccogliamo a fattor comune \(3x^2\)
+        </p>
+            
+        <p class="formula">
+            \[
+                \color{red}{15x^5} \color{gray}{\,+\,} \color{blue}{6x^4} \color{gray}{\,+\,} \color{#009900}{9x^2} \color{gray}{\,\,\,\,=\,\,\,\,} \color{black}{3x^2} \color{gray}{\,\cdot\, }\left(\color{red}{5x^3} \color{gray}{\,+\,} \color{blue}{2x^2} \color{gray}{\,+\,} \color{#009900}{3}\right)
+            \]
+        </p>
+        <p class="gray">
+            Nella parentesi abbiamo scritto i termini che moltiplicati per \(3x^2\) danno come
+            risultato \(15x^5\), \(6x^4\) e \(9x^2\).
+        </p>
+            
+        <br>
+        <p class="gray">
+            <b>Esempio 2</b>
+        </p>
+        <p class="gray formula">
+            \[
+                14x^7 - 49x^4 + 21x^3 = 7x^3 \cdot \left(2x^4 - 7x + 12\right)
+            \]
+        </p>
+
+        <br>
+
+    </div>
+
+    <br>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Rappresentare sul piano cartesiano tutti i punti che hanno coordinata \(y\) uguale al quadrato della coordinata \(x\).
+    </p>
+    <br>
+    <p class="gray">
+        Il disegno va realizzato sul quaderno. Potete aiutarvi usando <a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/pianoCartesiano/index.html">questa applicazione</a>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+
+    
+
+    
+   <!--  <h2 class="green">Extra</h2> -->
+
+
+    
+
+    
+
+    
+    
+    <script>
+        /* function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/es${ex[i].index + 1}.html`;
+        } */
+
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        /* function mostraSoluzione(n) {
+            document.getElementById("soluzione-button"+n).style.display = "none";
+            document.getElementById("soluzione"+n).style.display = "block";
+            
+        } */
+
+    </script>
+    <script src="es11.js"></script>
+</body>
+      
+<!-- 
+    
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
