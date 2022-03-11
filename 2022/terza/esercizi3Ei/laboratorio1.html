@@ -270,7 +270,106 @@
             </ol>
         </li>
         <br>
+    </ul>
     
+    <h2>Attività 4:
+        <br>
+        <span class="yellow">Successioni</span>
+    </h2>
+    <ul>
+        <p>
+            Vogliamo disegnare la seguente <i>successione</i> di rette:
+            <br>
+            <br>
+            <ul style="height: 30vh; overflow-y: scroll; border: 0.01rem lightgray solid; box-shadow: lightgray 0.3rem 0.3rem 0.6rem;">
+                <br>
+                <li>
+                    \(y = -\dfrac{10}{1}x + 9\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{9}{2}x + 9\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{8}{3}x + 8\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{7}{4}x + 7\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{6}{5}x + 6\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{5}{6}x + 5\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{4}{7}x + 4\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{3}{8}x + 3\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{2}{9}x + 2\)
+                </li>
+                <br>
+                <li>
+                    \(y = -\dfrac{1}{10}x + 1\)
+                </li>
+            </ul>
+            <br>
+            Notate qualche regolarità nello schema dei numeri che compaiono nelle equazioni?
+            <br>
+            <br>
+            Riuscite a scrivere tutte le rette come insieme i rette rispetto ad un parametro \(k\)?
+            <br>
+            <br>
+            <br>
+            <button id="hint1-button" onclick="showHint(1)">Risposta</button>
+            <div id="hint1" style="display: none;">
+                <p class="formula">
+                    \[
+                        y = -\dfrac{10 - k}{1 +k}x + 10 -k \quad\text{con \(k\) che varia da \(1\) a \(10\)}
+                    \]
+                </p>
+            </div>
+        </p>
+        <br>
+        <br>
+        <p>
+            GeoGebra permette di disegnare <b><i>successioni</i></b> di oggetti attraverso il comando
+        </p>
+        <br>
+        <p class="formula">
+            \(\texttt{sequence}(\color{red}{\texttt{expression}}, \color{blue}{\texttt{variable}}, \color{#009900}{\texttt{start value}}, \color{#F4B400}{\texttt{end value}}, \color{red}{\texttt{increment}})\)
+        </p>
+        <br>
+
+        <p>
+            Provate a digitare il comando
+        </p>
+        <br>
+        <p class="formula">
+            \( \texttt{sequence}(
+                \color{red}{-\dfrac{10 - k}{1 +k}x + 10 -k}, 
+                \,\,\color{blue}{k}, 
+                \,\,\color{#009900}{1}, 
+                \,\,\color{#F4B400}{10}, 
+                \,\,\color{red}{1})\)
+        </p>
+        <br><br>
+        <p>Cosa succede variando l'incremeto?</p>
+
+
+        
+    </ul>
+    <br>
 
 
 
@@ -280,13 +379,6 @@
             document.getElementById("hint"+i+"-button").style.display = "none";
             document.getElementById("hint"+i).style.display = "block";
         }
-
-        /* function mostraSoluzione(n) {
-            document.getElementById("soluzione-button"+n).style.display = "none";
-            document.getElementById("soluzione"+n).style.display = "block";
-            
-        } */
-
     </script>
 </body>
       
