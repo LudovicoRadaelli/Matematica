@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">Monomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/monomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Polinomi e prodotti notevoli</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Scoposizione di polinomi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>)             -->
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor comune</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor parziale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite prodotti notevoli</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+            </ul>
+        </li>
+
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+       <b>Se possibile</b> scomporre il polinomi
+    </p>
+    <br>
+    <ol>
+        <li>
+            \[
+                x^3 +x^2 -9x -9 
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                x^11 - 5x^6 +25x
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                -72x^2 +8x^4
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                8x^3 -12x^2 +6x -1
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                x^5 - x
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                12x +147x^3 -84x^2
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <p class="gray">
+        <b>Suggerimento</b>:
+        <br>
+        Una volta effettuata una scomposizione chiedetevi sempre:
+        <span style="width: 90%; margin: auto">
+            <i>
+                "i fattori in cui ho scomposto il polinomio iniziale sono ancora scomponibili?"
+            </i>
+        </span>
+        <br>
+        <br>
+        <b>Esempio:</b>
+        <br>
+        \[
+            \begin{align*}
+                &-9 + 9 a^2 + 6 x - 6 a^2 x - x^2 + a^2 x^2 = 
+                \\\\
+                =& \color{blue}{\,-\,9\,}\color{red}{\,+\,9a^2\,}\color{blue}{\,+\,6x\,}\color{red}{\,-\,6a^2x\,}\color{blue}{\,-\,x^2\,}\color{red}{\,+\,a^2x^2\,} = 
+                \\\\
+                =& \, \color{red}{\,a^2\,} \color{gray}{\cdot} \color{#009900}{\,\left(9 -6x +x^2\right)\,} \color{blue}{\,-\,1\,}  \color{gray}{\cdot} \color{#009900}{\left(9 -6x +x^2\right)} = 
+                \\\\
+                =& \, \underset{\text{somma per diff.}}{\underbrace{\left(\color{red}{\,a^2\,} \color{blue}{\,-1\,}\color{gray}{}\right)}} \cdot \color{gray}{\underset{\text{quad. di bin.}}{\underbrace{\color{#009900}{\left(9 -6x +x^2\right)}}}} =
+                \\\\
+                =& \, \underbrace{\left(a + 1\right) \cdot \left(a -1\right)} \cdot \underbrace{\left(3 - x\right)^2}
+            \end{align*}
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <!-- <h2 class="green">Extra</h2> -->
+    
+    
+    
+
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
