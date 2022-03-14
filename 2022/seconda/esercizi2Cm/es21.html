@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Esercizi - 2°Cm</title>
 </head>
@@ -66,7 +67,7 @@
     <p>
         Stabilire per quali valori della \(x\) il polinomio
         \[
-            2x^2 + 11x -6 
+            -x^2 +5x +6
         \]
     </p>
     <br>
@@ -83,48 +84,25 @@
             è negativo (ovvero ha segno \(-\)).
         </li>
     </ul>
-
     <br>
-    <hr>
-    <br>
-
-    <h2>Esercizio 2</h2>
-    <p>
-        Stabilire per quali valori della \(x\) il polinomio
-        \[
-            -x^2 +5x -6
-        \]
+    <p class="gray">
+        Per svolgere questo esercizio ragionate sul seguente disegno interattivo. 
+        <br>
+        Provate a cambiare la posizione del punto verde o trascinandolo o usando lo slider a destra.
+        <br>
+        <ul class="gray">
+            <li>
+                Per quali valori la coordinata \(y\) del punto ha segno \(+\)?
+            </li>
+            <li>
+                Per quali valori la coordinata \(y\) del punto ha segno \(-\)?
+            </li>
+        </ul>
     </p>
-    <br>
-    <ul>
-        <li>
-            è positivo (ovvero ha segno \(+\));
-        </li>
-        <br>
-        <li>
-            vale \(0\);
-        </li>
-        <br>
-        <li>
-            è negativo (ovvero ha segno \(-\)).
-        </li>
-    </ul>
-
+    <div class="geogebra-container" id="geogebra1"></div>
     <br>
     <hr>
-    <br>
-
-    <h2>Esercizio 3</h2>
-    <p>
-        Stabilire per quali valori di \(x\) si ha
-        \[
-            24x^2 -10x +1 \leq 0
-        \]
-    </p>    
-
-    <br>
-    <hr>
-    <br>
+    <br>   
 
 
     
@@ -147,19 +125,26 @@
             document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/es${ex[i].index + 1}.html`;
         } */
 
-        function showHint(i) {
+        /* function showHint(i) {
             document.getElementById("hint"+i+"-button").style.display = "none";
             document.getElementById("hint"+i).style.display = "block";
-        }
-
-        /* function mostraSoluzione(n) {
-            document.getElementById("soluzione-button"+n).style.display = "none";
-            document.getElementById("soluzione"+n).style.display = "block";
-            
         } */
+        
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "material_id":"jhqkcnvr"}, true);
+
+        window.addEventListener("load", function() { 
+        ggbApp1.inject('geogebra1');
+        });
 
     </script>
-    <script src="es11.js"></script>
 </body>
       
 <!-- 
