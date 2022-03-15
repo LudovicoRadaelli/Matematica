@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">Monomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/monomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Polinomi e prodotti notevoli</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Scoposizione di polinomi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>)             -->
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor comune</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor parziale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite prodotti notevoli</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+            </ul>
+        </li>
+
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Scomposizione somma/differenza di cubi</h2>
+    <div class="gray">
+        <div>
+            <h3>Somma</h3>
+            \[
+                A^3\,\, \color{red}{\boldsymbol{+}}\color{gray}{} \,\,B^3 =\left(A \,\,\color{red}{\boldsymbol{+}}\color{gray}{}\,\, B\right)\cdot\left(A^2\,\, \color{red}{\boldsymbol{-}}\color{gray}{} AB \color{gray}{} \,\,+ B^2\right)
+            \]
+        </div>
+        <div class="esempi-container">
+            <p class="formula">
+                \[
+                a^3 + 27b^9y^{15} = \left(a + 3b^3y^5\right) \cdot \left(a^2 +3ab^3y^5 + 9b^6y^{10}\right)
+            \]
+            </p>
+        </div>
+        <br>
+        <br>
+        <div>
+            <h3>Differenza</h3>
+            \[
+                A^3\,\, \color{red}{\boldsymbol{-}}\color{gray}{} \,\,B^3 =\left(A \,\,\color{red}{\boldsymbol{-}}\color{gray}{}\,\, B\right)\cdot\left(A^2\,\, \color{red}{\boldsymbol{+}}\color{gray}{} AB \color{gray}{} \,\,+ B^2\right)
+            \]
+        </div>
+        <div class="esempi-container">
+            <p class="formula">
+                \[
+                9x^6 - 125y^{12} = \left(3x^2 - 5y^4\right) \cdot \left(9x^4 +15x^2y^4 +25y^8\right)
+            \]
+            </p>
+        </div>
+        <br>
+
+        <p>
+            Ricordate che il termine \(A^2 \pm AB + B^2\) viene chiamato <b>falso quadrato</b> perché assomiglia molto ad un quadrato, ma presenta il prodotto tra \(A\) e \(B\) anziché il loro doppio prodotto.
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre i seguenti polinomi attrverso la somma/differenza di cubi:
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(x^3 - 8a^6 \)
+        </li>
+        <br>
+        <li>
+            \(64a^6 + 1\)
+        </li>
+        <br>
+        <li>
+            \(27x^3 - 1000y^9\)
+        </li>
+        <br>
+        <li>
+            \(1 - x^3\)
+        </li>
+    </ul>
+    <br>
+
+    <br>
+    <hr>
+    <br>
+
+    
+    <h2>Esercizio 2</h2>
+    <p>
+       <b>Se possibile</b> scomporre il polinomi. Se necessario effettuare più scomposizioni successive.
+    </p>
+    <br>
+    <ol>
+        <li>
+            \[
+                x^4 - x^3
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                1 + x +3x^2 + 3x^3
+            \]
+
+        <br>
+        <button id="hint1-button" onclick="showHint(1)">Suggerimento</button>
+        <div id="hint1" class="esempi-container" style="display: none;">
+            <p class="gray">
+                <b>Suggerimento:</b>
+                <br>
+                \[
+                    \color{red}{1 + x} \color{blue}{+3x^2 + 3x^3}
+                \]  
+                isolate \(3x^2\) nel polinomio blu.
+            </p>
+        </div> 
+            
+                        
+        </li>
+        <br>
+        <li>
+            \[
+                -2x^3 -x^2 +2x +1
+            \]
+            <br>
+            <button id="hint2-button" onclick="showHint(2)">Suggerimento</button>
+            <div id="hint2" class="esempi-container" style="display: none;">
+                <p class="gray">
+                    <b>Suggerimento:</b>
+                    <br>
+                    \[
+                        \color{red}{-2x^3 -x^2} \color{blue}{+2x + 1}
+                    \]  
+                    isolate \(-x^2\) nel polinomio rosso. Una volta scomposto il polinomio tramite il fattore parziale notate che una delle parentesi è un prodotto notevole
+                    
+                </p>
+            </div> 
+        </li>
+    </ol>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <!-- <h2 class="green">Extra</h2> -->
+    
+    
+    
+
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
