@@ -283,6 +283,9 @@
         let angleGG;
         let angleToPrint;
 
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
         let trigFunctionList = [`sin`, `cos`, `tan`];
         let angleListGradi = [0, 30, 45, 60, 90, 180, 270, 360];
         let angleListRadianti = ["0", "\\dfrac{\\pi}{6}", "\\dfrac{\\pi}{4}", "\\dfrac{\\pi}{3}", "\\dfrac{\\pi}{2}", "\\pi", "\\dfrac{3\\pi}{2}", "2\\pi"];
@@ -293,7 +296,7 @@
             [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{3}`],
             [`1`, `0`, `\\text{non esiste}`],
             [`0`, `-1`, `0`],
-            [`-1`, `0`, `\\text{non esiste}`]
+            [`-1`, `0`, `\\text{non esiste}`],
             [`0`, `1`, `0`],
         ];
 
@@ -301,19 +304,23 @@
 
             document.getElementById("rispostaCorretta").disabled = false;
 
-            let trigFunctionIndex = Math.floor(Math.random()*trigFunctionList.length);
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
             trigFunction = trigFunctionList[trigFunctionIndex]
 
-            let randomIndex = Math.floor(Math.random()*angleListGradi.length);
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length))%angleListGradi.length;
             angleGG = angleListGradi[randomIndex];
             angleToPrint = angleListRadianti[randomIndex];
 
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
             rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
 
-            console.log(`
-            index: ${randomIndex},
-            angleGG: ${angleGG}
-            `)
+            
 
             gg1.setValue("a", angleGG);
 
