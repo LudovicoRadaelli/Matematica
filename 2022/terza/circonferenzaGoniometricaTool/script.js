@@ -28,9 +28,14 @@ function preload() {
 }
 
 function setup() {
-  let size = window.innerWidth;
+  let size;
+  if(window.innerWidth > 400) {
+    size = 400;
+  } else {
+    size = window.innerWidth
+  }
   let cnv = createCanvas(size, size);
-  cnv.parent("sketch");
+  cnv.parent("sketch")
   background(255);
   angleMode(RADIANS);
   angle = PI/4
@@ -79,6 +84,7 @@ function drawRay() {
 }
 
 function touchStarted() {
+  
   let mX = mouseX - width/2;
   let mY = -mouseY + height/2
   if(sqrt((r*cos(angle)-mX)*(r*cos(angle)-mX) + (r*sin(angle)-mY)*(r*sin(angle)-mY))<10) {
