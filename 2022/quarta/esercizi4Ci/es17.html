@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 4Ci</title>
+</head>
+<!-- <style>
+     #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style> -->
+<body style="position: relative;">
+
+    
+
+    <h1>Compiti per casa</h1>
+    <br>
+    <h2>Da studiare</h2>
+    <p>
+        Di seguito gli argomenti svolti fino ad ora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Stima del limite a partire dalla tabella</b>
+        </li>
+        <li>
+            <b class="blue">2) Stima del limite a partire dal grafico</b>
+        </li>
+        <li>
+            <b class="blue">3) Calcolo dei limiti tramite sostituzione</b>
+            <ul>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è <b>definito</b></span> 
+                </li>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è \(\boldsymbol{\dfrac{L}{0}}\)</span>
+                </li>
+                <li>
+                    <span style="color: #4285F4;">Se il risultato della sostituzione è \(\boldsymbol{\dfrac{0}{0}}\)</span>
+                    <ul>
+                        <li>
+                            <span style="color: #4285F4;">Tramite scomposizione</span>
+                        </li>
+                        <li>
+                            <span style="color: #4285F4;">Tramite razionalizzazione</span>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <b class="blue">4) Teorema dei carabinieri</b>
+        </li>
+        <li>
+            <b class="blue">5) Definizione di continuità in un punto \(\boldsymbol{c}\)</b>
+        </li>
+        <li>
+            <b class="blue">6) Classificazione discontinuità</b>
+        </li>
+        <li>
+            <b class="blue">7) Limiti per \(\boldsymbol{x \longrightarrow \pm\infty}\)</b>
+        </li>
+        <li>
+            <b class="blue">8) Gerarchia degli infiniti</b>
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+        </li>
+        <li>
+            <b class="blue">9) Asintoti obliqui</b>
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>
+        </li>
+        
+    </ul>
+
+    <br>
+
+    <p>
+        Il materiale è disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/index.html">QUI</a>
+    </p>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Diagramma di flusso per la ricerca di asintoti obliqui</h2>
+    <div style="width: 100%; margin: auto; overflow-x: scroll;">
+        <img src="img/es17(1).png" alt="" style="width: 200%; margin: auto;">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Esercizio svolto</h2>
+    <p>
+        Determinare se la seguente funzione presenta asintoti obliqui per \(x \rightarrow \pm\infty\)
+        \[
+            f\left(x\right) = \dfrac{x^4}{1 -x^3}
+        \]
+    </p>
+    <br>
+    <b>Svolgimento</b>
+    <br>
+    <br>
+
+    <p>
+        Calcoliamo il limite per \(x \rightarrow +\infty\) della funzione:
+    </p>
+    <p class="formula">
+        \[
+            \begin{align*}
+                & \underset{x \longrightarrow +\infty}{lim}\,\,\,\dfrac{x^4}{1 -x^3} = \underset{x \longrightarrow +\infty}{lim}\,\,\,\dfrac{x^4}{-x^3} =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\,-x = -\infty
+            \end{align*}
+        \]
+    </p>
+    <p>
+        La funzione <b>potrebbe</b> avere un asitoto obliquo.
+    </p>
+    <p>
+        Calcoliamo \(\underset{x \longrightarrow +\infty}{lim}\,\,\,\dfrac{f\left(x\right)}{x}\):
+    </p>
+    <p class="formula">
+        \[
+            \begin{align*}
+                & \underset{x \longrightarrow +\infty}{lim}\,\,\,\color{red}{\dfrac{\color{black}{\frac{x^4}{1 -x^3}}}{\color{black}{x}}} \color{black}{}= 
+                  \underset{x \longrightarrow +\infty}{lim}\,\,\,\dfrac{x^4}{1 - x^3} \color{red}{\,\,\boldsymbol{:}\,\,}\color{black}{} x =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x^4}{1 - x^3} \color{red}{\,\,\boldsymbol{\cdot}\,\,} \color{black}{}\dfrac{1}{x} = 
+                    \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x^4}{x -x^4} = 
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x^4}{-x^4} = -1
+            \end{align*}
+        \]
+    </p>
+    <p>
+        Dunque \(m := \color{#009900}{-1}\).
+    </p>
+    <br>
+    <p>
+        Calcoliamo \( \underset{x \longrightarrow +\infty}{lim}\,\,\,\left(f\left(x\right) -\color{#009900}{m}\color{black}{}x\right)\):
+    </p>
+    <p class="formula">
+        \[
+            \begin{align*}
+                & \underset{x \longrightarrow +\infty}{lim}\,\,\, \left(\dfrac{x^4}{1 -x^3} - \color{#009900}{\left(-1\right)}\color{black}{}x\right) =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \left(\dfrac{x^4}{1 -x^3} +x \right) =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x^4 + x \cdot \left(1 -x^3\right)}{1 -x^3}  =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x^4 + x -x^4}{1 -x^3}  =
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x}{1 -x^3}  = 
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{x}{-x^3}  = 
+                \\\\
+                = & \underset{x \longrightarrow +\infty}{lim}\,\,\, \dfrac{1}{-x^2}  = 0
+            \end{align*}
+        \]
+    </p>
+    <p>
+        Dunque \(q := \color{blue}{0}\)
+    </p>
+    <br>
+    <p>
+        In conclusione la retta presenta asintoto obliquo 
+        \[
+            y = \color{#009900}{-1}\color{black}{}x +  \color{blue}{0}
+        \]
+        per \(x \longrightarrow +\infty\).
+    </p>
+    <p>
+        Lo stesso identico risultato lo troviamo per \(x \longrightarrow -\infty\).
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    
+
+    <h2>Esercizio 1</h1>
+    <p>
+        Determinare se la seguente funzione presenta asintoti obliqui per \(x \rightarrow \pm\infty\)
+        \[
+            f\left(x\right) = \dfrac{4x^2 + x +1}{x + 5}
+        \]
+    </p>
+
+    <br>
+    
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        Sia per \(x \rightarrow +\infty\) che per  per \(x \rightarrow -\infty\) la funzione ha asintoto obliquo 
+        \[
+            y = 4x -19
+        \].
+    </p>
+
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h1>
+        <p>
+            Determinare se la seguente funzione presenta asintoti obliqui per \(x \rightarrow \pm\infty\)
+            \[
+                f\left(x\right) = \sqrt{x^2 -1}
+            \]
+        </p>
+    
+        <br>
+        
+        <p class="gray">
+            <b>Soluzione:</b>
+            <br>
+            Per \(x \rightarrow +\infty\)  la funzione ha asintoto obliquo 
+            \[
+                y = x
+            \]
+            Per \(x \rightarrow -\infty\) la funzione ha asintoto obliquo
+            \[
+                y = -x
+            \]
+            
+        </p>
+    
+        <hr>
+        <br>
+    
+    
+    <!-- <h2 class="green">Extra</h2> -->
+    
+    
+    
+
+
+    <!-- <br>
+    <button id="hint1-button" onclick="showHint(1)">Video spiegazione</button>
+    <div id="hint1" class="esempi-container" style="display: none;">
+        <video src="img/es7(1).mp4" controls></video>
+    </div> -->
+
+    
+    
+
+
+    <script>
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/quarta/esercizi4Ci/es${ex[i].index + 1}.html`;
+        }
+
+        /* function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        } */
+    </script>
+    
+</body> 
+
+<!-- <p>
+    Usate il menù a tendina per accedere agli esercizi delle lezioni passate:
+</p>
+<br>
+<div id="compitiSelector-container">
+    <select id="ex">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+    </select>
+      <button id="ex-button" onclick="vai()">Apri compiti</button>
+</div>
+<br>
+<hr>
+<br> -->
