@@ -1,0 +1,43 @@
+canvas {
+    width: 100%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+  }
+
+#control-container {
+  width: 100%;
+  height: auto;
+  margin-left: 600px;
+  font-size: 3rem;
+}
+
+#button-container {
+  display: flex;
+  margin-top: auto;
+}
+
+#chiave {
+  width: 5%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#chiave-text {
+  width: 15%;
+}
+
+#control-container button {
+  width: 2rem;
+  margin-left: 0.5rem;
+  border: 0.1rem black solid;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem lightgray;
+}
+
+#control-container button:hover {
+  transform: scale(1.1);
+}
