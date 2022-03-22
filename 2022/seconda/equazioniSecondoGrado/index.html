@@ -137,14 +137,14 @@
     <hr>
     <br>
 
-    <h2 id="casiParticolari">3) Casi particolari</h2>
+    <h2 id="casiParticolari">4) Casi particolari</h2>
     <p>
         Ci sono alcuni casi in cui possiamo usare strade alternative e più rapide rispetto all'applicaizione della formula.
     </p>
 
     <br>
 
-    <h3 class="blue">3.1) \(\,\,\)Se \(\boldsymbol{b = 0}\)</h3>
+    <h3 class="blue">4.1) \(\,\,\)Se \(\boldsymbol{b = 0}\)</h3>
     <br>
     <p>
         Nel caso in cui \(b\) sia \(0\), il termine con la \(x\) non compare nell'equazione:
@@ -220,7 +220,7 @@
     <hr>
     <br>
 
-    <h3 class="blue">3.2) \(\,\,\) Se \(\boldsymbol{c = 0}\)</h3>
+    <h3 class="blue">4.2) \(\,\,\) Se \(\boldsymbol{c = 0}\)</h3>
     <br>
     <p>
         Nel caso in cui \(c\) sia \(0\), il termine senza \(x\) non compare nell'equazione:
@@ -302,17 +302,269 @@
         <br>
 
         <button onclick="generaEsempio(2)">Mostrami un altro esempio</button>
+        <br>
     </div>
 
     <br>
     <hr>
     <br>
 
+    <h2>5) Equazioni risolvibili tramite la legge di annullamento del prodotto</h2>
+    
+    <p>
+        Iniziamo con un indovinello:
+    </p>
+    <br>
+    <p>
+        <i>
+            Sto pensando a due numeri. 
+            <br>
+            Se li moltiplico, il risultato che ottengo è zero.
+            <br>
+            Cosa sapete dirmi su quei numeri?
+        </i>
+    </p>
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Soluzione</button>
+    <div id="hint1" style="display: none;">
+        <p>
+            Beh... almeno uno dei due numeri dovrà essere zero! 
+            <br>
+            Se entrambi i numeri fossero diversi da zero, sicuramente il prodotto non darebbe come risultato zero.
+        </p>
+    </div> 
+    <br>
+    <p>
+        Questo semplice ragionamento, prende l'altisonante nome di <b>legge dell'annullamento del prodotto</b>.
+    </p>
+
+    <p class="grayBackground">
+        Se 
+        \[
+            \color{red}{A}\color{black}{} \cdot \color{blue}{B} \color{black}{} = 0
+        \]
+        allora 
+        \[
+            \color{red}{A}\color{black}{}  = 0 \quad\text{oppure}\quad \color{blue}{B}\color{black}{} = 0
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        Consideriamo la seguente equazione:
+    </p>
+    <p class="formula">
+        \[
+            \left(5x +10\right) \cdot \left(4x -12\right) = 0
+        \]
+    </p>
+    <p>
+        Come potete notare dei colori, siamo in presenza della <span style="color: #009900">moltiplicazione</span> tra due numeri:
+    </p>
+    <p class="formula">
+        \[
+            \underset{\color{red}{A}}{\underbrace{\color{red}{\left(5x +10\right)}}} \color{#009900}{\boldsymbol{\,\,\cdot\,\,}}\color{black}{} \underset{\color{blue}{B}}{\underbrace{\color{blue}{\left(4x -12\right)}}} = 0
+        \]
+    </p>
+    
+    <ul>
+        <li>
+            il <span style="color: red">primo numero</span> è il risultato dell'operazione \(5x + 10\)
+        </li>
+        <br>
+        <li>
+            il <span style="color: blue">secondo numero</span> è il risultato dell'operazione \(4x -12\)
+        </li>
+    </ul>
+    <br>
+    <p>
+        Sappiamo che la loro moltiplicazione dà come risultato zero, di conseguenza almeno uno dei due numeri dovrà essere zero:
+    </p>
+    <p class="formula">
+        \[
+            \color{red}{5x +10}\color{black}{} = 0 \quad\text{oppure}\quad \color{blue}{4x -12} \color{black}{} = 0
+        \]
+    </p>
+    <p>
+        Da entrambe le parti abbiamo delle equazioni di primo grado, che possiamo risolvere con la solita tecnica:
+    </p>
+    <p>
+        \[
+            \begin{align*}
+                5x + 10 = 0 \quad&\text{oppure}\quad 4x -12 = 0
+                \\\\
+                5x = -10 \quad&\text{oppure}\quad 4x = 12
+                \\\\
+                \dfrac{\cancel{5}x}{\cancel{\color{gray}{5}}} = \dfrac{-10}{\color{gray}{5}} \quad&\text{oppure}\quad \dfrac{\cancel{4}x}{\cancel{\color{gray}{4}}} = \dfrac{12}{\color{gray}{4}}
+                \\\\
+                x = -2 \quad&\text{oppure}\quad x = 3
+            \end{align*}
+        \]
+    </p>
+    <p>
+        Abbiamo trovato così le due soluzioni dell'equazione.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        Il ragionamento visto può essere esteso ad un numero qualsiasi di fattori.
+        <br>
+        Considerate il seguente esempio:
+    </p>
+    <p class="formula">
+        \[
+            \color{red}{\left(5x +1\right)}  \,\,\color{black}{\cdot}\,\, \color{blue}{\left(2x -1\right)} \,\,\color{black}{\cdot}\,\, \color{#009900}{\left(x -1\right)} \,\,\color{black}{\cdot}\,\, \color{gray}{\left(-x -2\right)} \color{black}= 0
+        \]
+    </p>
+    <p>
+        Come prima, essendo il prodotto uguale a zero, almeno uno dei fattori deve essere zero.
+    </p>
+    <p class="formula">
+        \[
+            \color{red}{5x +1}  \color{black}{} \,\,=\,\, 0 \quad\text{oppure}\quad \color{blue}{2x -1} \,\,\color{black}{ = }\,\, 0 \quad\text{oppure}\quad\color{#009900}{x -1} \,\,\color{black}{= }\,\, 0 \quad\text{oppure}\quad \color{gray}{-x -2} \color{black}= 0
+        \]
+    </p>
+    <p>
+        Da cui otteniamo
+    </p>
+    <p class="formula">
+        \[
+            5x = -1 \quad\text{oppure}\quad 2x = 1 \quad\text{oppure}\quad x = 1 \quad\text{oppure}\quad -x = 2
+        \]
+    </p>
+    <p class="formula">
+        \[
+            x = -\dfrac{1}{5} \quad\text{oppure}\quad x = \dfrac{1}{2} \quad\text{oppure}\quad x = 1 \quad\text{oppure}\quad x = -2
+        \]
+    </p>
+
+    <!-- TODO esempi automatici -->
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>6) Scomposizione di polinomi di secondo grado</h2>
+    <p>
+        <b>Scomporre</b> un polinomio significa scriverlo come prodotto di polinomi di grado minore.
+    </p>
+    <p>
+        Nel prossimo video vediamo qual è il ragionamento che ci permette di scomporre un polinomio di secondo grado.
+    </p>
+    
+    <br>
+    <video src="img/spiegazioneScomposizione.mp4" controls></video>
+    <br>
+
+    <p> 
+        Nel seguente video rivediamo in maniera più schematica il procedimento per scomporre 
+        un polinomio di secondo grado.
+    </p>
+
+    <br>
+    <video src="img/spiegazioneScomposizione.mp4" controls></video>
+    <br>
+
+    <p>Riassumendo:</p>
+    <div class="grayBackground">
+        <p>
+            Per scomporre un polinomio di secondo grado
+            \[
+                \color{red}{a}\color{black}x^2 + bx +c
+            \]
+        </p>
+        <ul>
+            <li>
+                risolviamo l'equazione associata, 
+                \[
+                    ax^2 + bx +c = 0
+                \]
+                in maniera da trovare le soluzioni \(\color{blue}{s_{1}}\) ed \(\color{blue}{s_{2}}\)
+            </li>
+            <br>
+            <li>
+                usiamo la formula
+                \[
+                    \begin{align*}
+                        & \color{red}{a}\color{black}x^2 + bx +c = 
+                        \\\\
+                        = \,\,& \color{red}{a} \color{black}{} \cdot \left(x - \color{blue}{s_{1}}\color{black}{}\right) \cdot \left(x - \color{blue}{s_{2}}\color{black}{}\right)
+                    \end{align*}
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            Scomporre il polinomio 
+            \[
+                \color{red}{8}\color{black}{}x^2 -2x -1
+            \]
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Risolviamo l'equazione associata 
+                    \[
+                        8x^2 -2x -1 = 0
+                    \]
+                    \[
+                        \begin{align*}
+                            x &= \dfrac{+2 \pm \sqrt{\left(-2\right)^2 -4 \cdot 8 \cdot \left(-1\right)}}{16} = 
+                            \\\\
+                            = & \dfrac{+2 \pm \sqrt{4 + 32}}{16} =  \dfrac{+2 \pm \sqrt{36}}{16} = 
+                            \\\\
+                            = & \dfrac{+2 \pm 6}{16}
+                        \end{align*}
+                    \]
+                    \[
+                        x = \dfrac{+2 + 6}{16} \quad\text{oppure}\quad x = \dfrac{+2 - 6}{16}
+                    \]
+                    \[
+                        x = \dfrac{+8}{16} \quad\text{oppure}\quad x = \dfrac{-4}{16}
+                    \]
+                    \[
+                        x = \dfrac{1}{2} \quad\text{oppure}\quad x = -\dfrac{1}{4}
+                    \]
+                    Dunque le soluzioni sono
+                    \[
+                        s_{1} = \color{blue}{\dfrac{1}{2}} \color{gray}{} \quad\text{e}\quad s_{2} = \color{blue}{-\dfrac{1}{4}}
+                    \]
+                </p>
+            </li>
+            <br>
+            <li>
+                Applichiamo la formula:
+                \[
+                    \begin{align*}
+                        & \color{red}{8}\color{gray}x^2 + bx +c = 
+                        \\\\
+                        = \,\,& \color{red}{8} \color{gray}{} \cdot \left(x \color{blue}{\,-\dfrac{1}{2}}\color{gray}{}\right) \cdot \left(x \color{blue}{\,+\,\dfrac{1}{4}}\color{gray}{}\right)
+                    \end{align*}
+                \]
+            </li>
+        </ul>
+    </div>
+
 
 
 
 
     <script src="script.js"></script>
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+    </script>
 </body>
 </html>
 
