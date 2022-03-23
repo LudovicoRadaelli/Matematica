@@ -554,6 +554,292 @@
         </ul>
     </div>
 
+    <br>
+    <hr>
+    <br>
+
+    <h2>7) Polinomi di II grado e parabola</h2>
+    <p>
+        Dato un polinomio qualsiasi è possibile rappresentarlo graficamente sul piano cartesiano.
+    </p>
+    <br>
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            Rappresentiamo il polinomio \(x -1\) sul piano cartesiano.
+            <br>
+            Per farlo andiamo a disegnare <u>tutti</u> i punti che hanno la coordinata \(y\) 
+            uguale alla coordinata \(x\) diminutita di \(1\), ovvero tutti i punti tali che:
+            \[
+                y = x -1 
+            \]
+        </p>
+        
+        <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+            <div style="width: 100%; height: 35vh;">
+                <div id="geogebra1" class="geogebra-container1" style="width: auto; margin: auto;"></div>
+            </div>
+    
+            <div style="width: 100%;">
+                <table style="width: auto; margin: auto;">
+                    <tr>
+                        <th>
+                            \(\boldsymbol{x}\)
+                        </th>
+                        <th>
+                            \(\boldsymbol{y}\)
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            \(1\)
+                        </td>
+                        <td>
+                            \(0\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            \(2\)
+                        </td>
+                        <td>
+                            \(1\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            \(-1\)
+                        </td>
+                        <td>
+                            \(-2\)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="number" name="" id="coordX" style="width: 2rem">
+                        </td>
+                        <td>
+                            <input type="number" name="" id="coordY" style="width: 2rem;">
+                        </td>
+                    </tr>
+                </table>
+                <button style="width: 5rem; margin-top: 0.5rem;" onclick="disegnaPunto()">Aggiungi punto</button>
+                
+                <button style="width: 5rem; margin-top: 0.5rem;" onclick="disegnaPolinomio()">Disegna <u>tutti</u> i punti</button>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        La rapprentazione di un polinomio di secondo grado \(ax^2 +bx +c\) è una curva detta <b>parabola</b>. 
+    </p>
+    <br>
+    <p>
+        Vediamo come varia il grafico 
+    </p>
+    <br>
+    <ul>
+        <li>
+            in funzione del coefficiente \(\color{blue}{a}\);
+        </li>
+        <br>
+        <li>
+            in funzione delle soluzioni \(\color{red}{s_{1}}\) ed \(\color{#009900}{s_{2}}\) dell'equazione associata al polinomio 
+        </li>
+    </ul>
+
+    <br>
+    <div class="geogebra-container2" id="geogebra2"></div>
+    <br>
+    <p class="gray">
+        Provate a variare \(\color{blue}{a}\), \(\color{red}{s_{1}}\) ed \(\color{#009900}{s_{2}}\) tramite gli slider ed osservate come cambia la figura.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="grayBackground">
+        <p>
+            Per disegnare la parabola associata ad un polinomio di secondo grado
+            \[
+                ax^2 + bx + c 
+            \]
+        </p>
+        <br>
+        <ul>
+            <li>
+                risolviamo l'equazione associata \(ax^2 + bx + c = 0\), ottenendo le soluzioni \(\color{red}{s_{1}}\) ed \(\color{#009900}{s_{2}}\).
+                <br>
+                Queste indicano le ascisse dei punti di intersezione della parabola con l'asse delle \(x\);
+            </li>
+            <br>
+            <li>
+                osserviamo il segno del coefficiente \(\color{blue}{a}\).
+                <br>
+                <ul>
+                    <li>
+                        se \(\color{blue}{a} \color{black}{} \gt 0\)  allora la concavità della parabola è verso l'alto;
+                        <div style="width: 50%;">
+                            <img src="img/parabolaSorride.png" alt="" style="display: block; width: 100%; margin: auto;">
+                        </div>
+                    </li>
+                    <br>
+                    <li>
+                        se \(\color{blue}{a}\color{black}{} \lt 0\)  allora la concavità della parabola è verso il basso;
+                        <div style="width: 50%;">
+                            <img src="img/parabolaTriste.png" alt="" style="display: block; width: 100%; margin: auto;">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <b>Esempio 1</b>
+        <br>
+        <p>
+            Rappresentare graficamente il polinomio 
+            \[
+                2x^2 +2x -4
+            \]    
+        </p>
+        <br>
+        <ul>
+            <li>
+                <p>
+                    Risolviamo l'equazione associata \(2x^2 +2x -4 = 0\):
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                        
+                            x =  \dfrac{-2 \pm \sqrt{2^2 -4 \cdot 2 \cdot \left(-4\right)}}{2 \cdot 2} =
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            =  \dfrac{-2 \pm \sqrt{4 +32}}{4} = \dfrac{-2 \pm \sqrt{36}}{4} =
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            =  \dfrac{-2 \pm 6}{4} 
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            x = \color{red}{-2} \color{black}{} \quad\text{oppure}\quad x = \color{#009900}{1}  
+                    \)
+                </p>
+                <br>
+                <p>
+                    Di conseguenza la parabola interseca l'asse delle \(x\) in corrispondenza di \(x = \color{red}{-2}\) e \(x = \color{#009900}{1}\)
+                </p>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Guardiamo il polinomio
+                    \[
+                        \color{blue}{2}\,\color{black}{}x^2 +2x -4
+                    \]
+                </p>
+                <p>
+                    Il coefficiente \(\color{blue}{a}\) ha valore \(\color{blue}{2}\), dunque ha segno positivo. Di conseguenza la parabola ha la concavità verso l'alto.
+                </p>
+                <p>
+                    Abbiamo tutti gli elementi per disegnare la parabola:
+                </p>
+                <br>
+
+                <img src="img/esempioParabolaSorridente.png" alt="">
+            </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <b>Esempio 2</b>
+        <br>
+        <p>
+            Rappresentare graficamente il polinomio 
+            \[
+                -x^2 +x +6 
+            \]    
+        </p>
+        <br>
+        <ul>
+            <li>
+                <p>
+                    Risolviamo l'equazione associata \(-x^2 +x +6  = 0\):
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                        
+                            x =  \dfrac{-1 \pm \sqrt{1^2 -4 \cdot \left(-1\right) \cdot 6}}{2 \cdot \left(-1\right)} =
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            =  \dfrac{-1 \pm \sqrt{1 + 24}}{-2} = \dfrac{-1 \pm \sqrt{25}}{-2} =
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            =  \dfrac{-1 \pm 5}{-2} 
+                    \)
+                </p>
+                <br>
+                <p class="formula">
+                    \(
+                            x = \color{red}{-2} \color{black}{} \quad\text{oppure}\quad x = \color{#009900}{3}  
+                    \)
+                </p>
+                <br>
+                <p>
+                    Di conseguenza la parabola interseca l'asse delle \(x\) in corrispondenza di \(x = \color{red}{-2}\) e \(x = \color{#009900}{3}\)
+                </p>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Guardiamo il polinomio
+                    \[
+                        \color{blue}{-}\,\color{black}{}x^2 +x +6
+                    \]
+                </p>
+                <p>
+                    Il coefficiente \(\color{blue}{a}\) ha valore \(\color{blue}{-1}\), dunque ha segno negativo. Di conseguenza la parabola ha la concavità verso il basso.
+                </p>
+                <p>
+                    Abbiamo tutti gli elementi per disegnare la parabola:
+                </p>
+                <br>
+
+                <img src="img/esempioParabolaTriste.png" alt="">
+            </li>
+        </ul>
+    </div>
+    
+
+
+
 
 
 
