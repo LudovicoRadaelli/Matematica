@@ -1,3 +1,3 @@
 function goToLink(url) {
-    document.location.href = "https://ludovicoradaelli.github.io/Matematica/2022/quarta/"+url;
+    window.open("https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/sketch.html");
 }
