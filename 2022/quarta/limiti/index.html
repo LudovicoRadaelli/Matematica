@@ -241,37 +241,168 @@
         Per visualizzare lo schema completo scorrete a destra.
     </p>
 
+    <br>
+    <hr>
+    <br>
+
+    <h2 id="teoremiFunzioniContinue">Teoremi sulle funzioni continue</h2>
+    <p>
+        Iniziamo con qualche definizione:
+    </p>
+    
+    <br>
+
+    <b>Funzione continua</b>
+    <p class="grayBackground">
+        Consideriamo una funzione \(f\) definita su un dominio \(D\).
+        <br>
+        La funzione \(f\) si dice  <b>continua su </b>\(\boldsymbol{D}\) se è continua in ogni punto di \(D\).
+    </p>
+
+    <br>
+
+    <b>Massimo assoluto</b>
+    <p class="grayBackground">
+        Consideriamo una funzione \(f\) definita su un dominio \(D\).
+        <br>
+        Si dice che la funzione ammette un <b>massimo assoluto</b> se esiste un output della funzione più grande di tutti gli altri output assunti sul dominio \(D\).
+        In simboli:
+        \[ \exists x_{M} \in D \quad\text{tale che }\,\,\, f\left(x_{M}\right) \geq f\left(x\right)\,\,\, \forall x \in D\] 
+        Il punto \(x_{M}\) viene detto <b>punto di massimo assoluto</b>.
+    </p>
+
+    <br>
+
+    <b>Minimo assoluto</b>
+    <p class="grayBackground">
+        Consideriamo una funzione \(f\) definita su un dominio \(D\).
+        <br>
+        Si dice che la funzione ammette un <b>minimo assoluto</b> se esiste un output della funzione più piccolo di tutti gli altri output assunti sul dominio \(D\).
+        In simboli:
+        <span style="overflow-x: scroll;">
+            \[ \exists x_{m} \in D \quad\text{tale che }\,\,\,f\left(x_{m}\right) \leq f\left(x\right)\,\,\, \forall x \in D\] 
+        </span>
+        Il punto \(x_{m}\) viene detto <b>punto di minimo assoluto</b>.
+    </p>
+
+    <br>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <b>Esempio 1</b>
+        <br>
+        <p>
+            La funzione \(f\left(x\right) = sin\left(x\right)\) ha 
+        </p>
+        <br>
+        <ul>
+            <li>
+                <p>
+                    massimo assoluto \(1\) assunto nei punti \(x = \dfrac{\pi}{2} + 2k\pi\), con \(k \in \mathbb{Z}\)
+                </p>
+                <br>
+                <div style="overflow-x: scroll;">
+                    <img src="img/esempioMassimiAssoluti.png" alt="" style="width: 200%;">
+                </div>
+                <p class="gray">Scorrete per vedere tutta la figura</p>
+            </li>
+            <br>
+            <li>
+                <p>
+                    minimo assoluto \(-1\) assunto nei punti \(x = \dfrac{\pi}{2} + 2k\pi\), con \(k \in \mathbb{Z}\)
+                </p>
+                <br>
+                <div style="overflow-x: scroll;">
+                    <img src="img/esempioMinimiAssoluti.png" alt="" style="width: 200%;">
+                </div>
+                <p class="gray">Scorrete per vedere tutta la figura</p>
+            
+            </li>
+        </ul>
+
+        <br>
+        <hr>
+        <br>
+
+        <b>Esempio 2</b>
+        <br>
+
+        <p>
+            La funzione \(f\left(x\right) = ln\left(x\right)\) 
+        </p>
+        <br>
+        <ul>
+            <li>
+                <b>non ammette</b> minimo assoluto;
+            </li>
+            <br>
+            <li>
+                <b>non ammette</b> massimo assoluto.
+            </li>
+        </ul>
+        <br>
+
+        <p>
+            Infatti sappiamo che quando la \(x\) si avvicina a \(0\) da destra la funzione assume output sempre più bassi. Di conseguenza la funzione non assume un output più piccolo rispetto a tutti gli altri.
+        </p>
+        <p>
+            Lo stesso identico discorso vale per \(x\) che assume valori sempre più grande.
+        </p>
+        <br>
+        <div style="overflow-x: scroll;">
+            <img src="img/esempioIllimitata.png" alt="" style="width: 200%;">
+        </div>
+        <p class="gray">Scorrete per vedere tutta la figura</p>
+
+    </div>  
+
+    <br>
+    <hr>
+    <br>
+    
+
+    <p>
+        Come abbiamo visto dagli esempi non tutte le funzioni ammettono massimo o minimo assoluti.
+    </p>
+    <p>
+        Ci sono delle proprietà della funzione che ci assicurano che abbia massimi e minimi assoluti?
+    </p>
+
+    <div class="grayBackground">
+        <p>
+            <b>Teorema di Weierstrass</b>
+            <br>
+            <br>
+            Se \(f\) è una funzione 
+        </p>
+        <br>
+        <ol>
+            <li>
+                definita su un intervallo chiuso e limitato \(D\)
+            </li>
+            <br>
+            <li>
+                continua su \(D\)
+            </li>
+        </ol>
+        <br>
+        <p>
+            allora ammette massimo assoluto e minimo assoluto in \(D\).
+        </p>
+    </div>
+
+    <br>
+
+    <p>
+        Provare per credere: provate a disegnare una funzione continua che sia definita sull'intervallo rosso, che è chiuso e limitato.
+    </p>
+    <br>
+    <img src="img/sketch.png" alt="" onmousedown="goToLink()">
+    <p class="gray">
+        Cliccate l'immagine
+    </p>
 
 
 
     <script src="script.js"></script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
