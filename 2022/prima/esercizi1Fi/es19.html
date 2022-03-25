@@ -58,6 +58,31 @@
     <hr>
     <br>
 
+    <p class="gray">
+        Questa è una simulazione del compito in classe. Provate a svolgerla <b>alle stesse condizioni del compito in classe</b>:
+    </p>
+    <ul class="gray">
+        <li>
+            un'ora a disposizione;
+        </li>
+        <li>
+            foglio di bella scritto in maniera comprensibile;
+        </li>
+        <li>
+            niente cellulare;
+        </li>
+        <li>
+            calcolatrice scientifica alla mano;
+        </li>
+        <li>
+            le soluzioni vedetele <b><u>dopo</u></b> aver finito di svolgere la simulazione.
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
     <h2>Esercizio 1</h2>
     <p>
         Scomporre i seguenti polinomi con le tecniche indicate a fianco:
@@ -65,20 +90,122 @@
     <br>
     <ul>
         <li>
-            \(36x^10 -4  \quad\text{somma per differenza}\)
+            <p>
+                \(36x^{10} -4  \quad\text{somma per differenza}\)
+            </p>
+            <br>
+            <button id="hint1-button" onclick="showHint(1)">Soluzione</button>
+            <div id="hint1"class="esempi-container" style="display: none;">
+                \(36x^{10} -4 = \left(6x^5 +2\right)\cdot\left(6x^5 -2\right)\)
+            </div> 
+
         </li>
         <br>
         <li>
-            \(81x^8 + 36x^4 +4 \quad\text{quadrato di binomio} \)
+            <p>
+                \(81x^8 + 36x^4 +4 \quad\text{quadrato di binomio} \)
+            </p>
+            <br>
+            <button id="hint2-button" onclick="showHint(2)">Soluzione</button>
+            <div id="hint2" class="esempi-container" style="display: none;">
+                <p>
+                    \(81x^8 + 36x^4 +4 = \left(9x^4 +2\right)^2\)
+                </p>
+                <br>
+                <hr>
+                <br>
+                <p>
+                    <b>Spiegazione</b>
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        \(81x^8\) è il quadrato di \(9x^4\)
+                    </li>
+                    <br>
+                    <li>
+                        \(4\) è il quadrato di \(2\)
+                    </li>
+                    <br>
+                    <li>
+                        Il doppio prodotto tra \(9x^4\) e \(2\) è \(2\cdot \left(9x^4\right) \cdot 2 = 36x^4\)
+                    </li>
+                </ul>
+            </div> 
         </li>
         
         <br>
         <li>
             \(6x^3 -15x^2 -4x +10  \quad\text{raccoglimento a fattor parziale}\)
+            <br>
+            <button id="hint3-button" onclick="showHint(3)">Soluzione</button>
+            <div id="hint3" class="esempi-container gray" style="display: none;">
+                \(
+                    \begin{align*}
+                        & \color{red}{6x^3 -15x^2} \color{blue}{-4x +10} = 
+                        \\\\
+                        = & \,\color{red}{3x^2} \color{black}{}\cdot\left(2x -5\right) \color{blue}{-2}\color{black}\cdot\left(2x -5\right) = 
+                        \\\\
+                        = & \,\color{black}{}\left(2x -5\right) \cdot \left(\color{red}{3x^2} \color{blue}{\,-2}\color{black}{}\right)
+                    \end{align*}
+                \)
+            </div> 
         </li>
         <br>
         <li>
-            \(x^2 -12x +20  \quad\text{trinomio speciale}\)
+            <p>
+                \(x^2 -12x +20  \quad\text{trinomio speciale}\)
+            </p>
+            <br>
+            <button id="hint4-button" onclick="showHint(4)">Soluzione</button>
+            <div id="hint4" class="esempi-container" style="display: none;">
+                <p>
+                    Cerchiamo una coppia di numeri che 
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        moltiplicati tra di loro danno come risultato \(20\);
+                    </li>
+                    <br>
+                    <li>
+                        sommati tra di loro danno come risultato \(-12\) 
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Di seguito tutte le coppie di numeri che hanno prodotto \(20\):
+                </p>
+                <br>
+                <p>
+                    \[
+                        \begin{align*}
+                            1 &\quad 20
+                            \\\\
+                            -1 &\quad -20
+                            \\\\
+                            2 &\quad 10
+                            \\\\
+                            \boldsymbol{\color{red}{-2}} &\quad \boldsymbol{\color{blue}{-10}}
+                            \\\\
+                            5 &\quad 4
+                            \\\\
+                            -5 &\quad -4
+                        \end{align*}
+                    \]
+                </p>
+                <br>
+                <p>
+                    Quella evidenziata è l'unica coppia di numeri che hanno somma \(-12\)
+                </p>
+                <br>
+                <p>
+                    Di conseguenza 
+                    \[
+                        x^2 -12x +20 = \left(x \color{red}{-2}\color{black}{}\right) \cdot \left(x \color{blue}{-10}\color{black}{}\right)
+                    \]
+                </p>
+            </div> 
         </li>                
     </ul>
     
@@ -94,18 +221,140 @@
     <ul>
         <li>
             \(7x^6 -7x^2\)
+            <br>
+            <button id="hint5-button" onclick="showHint(5)">Soluzione</button>
+            <div id="hint5" class="esempi-container" style="display: none;">
+                <p>
+                    Raccogliamo a fattor comune
+                    \[
+                        \begin{align*}
+                            & 7x^6 -7x^2 =
+                            \\\\
+                            =\, &7x^2 \cdot \left(x^4 -1\right) = 
+                        \end{align*}
+                    \]
+                    Scomoponiamo il <span style="color: red;">polinomio in parentesi</span>, che è il risultato di una somma per differenza
+                    \[
+                        \begin{align*}
+                            =\, & 7x^2 \cdot \color{red}{\underbrace{\color{black}{\left(x^4 -1\right)}}} \color{black}{}= 
+                            \\\\
+                            =\, & 7x^2 \cdot \left(x^2 +1\right) \cdot \left(x^2 -1\right) = 
+                        \end{align*}
+                    \]
+                    Scomoponiamo il <span style="color: blue;">polinomio nell'ultima parentesi</span>, che è il risultato di una somma per differenza
+                    \[
+                        \begin{align*}
+                            =\, & 7x^2 \cdot \left(x^2 +1\right) \cdot \color{blue}{\underbrace{\color{black}{\left(x^2 -1\right)}}} = 
+                            \\\\
+                            =\, & 7x^2 \cdot \left(x^2 +1\right) \cdot \left(x +1\right) \cdot \left(x -1\right) = 
+                        \end{align*}
+                    \]
+                </p>
+            </div> 
         </li>
         <br>
         <li>
-            \(-9x^5 +4x^3 +72x^2 -32\)
+            <p>
+                \(-9x^5 +4x^3 +72x^2 -32\)
+            </p>
+            <br>
+            <button id="hint6-button" onclick="showHint(6)">Soluzione</button>
+            <div id="hint6" class="esempi-container" style="display: none;">
+                <p>
+                    Raccogliamo a fattor parziale
+                    \[
+                        \begin{align*}
+                            & \color{red}{-9x^5 +4x^3} \color{blue}{+72x^2 -32} = 
+                            \\\\
+                            =\, & \color{red}{x^3}\color{black}{} \left(-9x^2 +4\right) \color{blue}{-8}\color{black}{} \left(-9x^2 +4\right) =
+                            \\\\
+                            =\, & \left(-9x^2 +4\right) \cdot \left(\color{red}{x^3} \color{blue}{-8} \color{black}{}\right) = 
+                        \end{align*}
+                    \]
+                    Scomponiamo la <span style="color: #009900">prima parentesi</span> tramite somma per differenza e la <span style="color: blue">seconda parentesi</span> tramite differenza di cubi
+                    \[
+                        \begin{align*}
+                            
+                            =\, & \color{#009900}{\underbrace{\color{black}{}\left(-9x^2 +4\right)}} \cdot \color{blue}{\underbrace{\color{black}{}\left(x^3 -8 \right)}} =
+                            \\\\
+                            =\, & \left(2 - 3x\right) \cdot \left(2 + 3x\right) \cdot \left(x -2\right) \cdot \left(x^2 +2x +4\right)
+                        \end{align*}
+                    \]
+                </p>
+            </div> 
         </li>
         <br>
         <li>
-            \(x^4 -26x^2 +25\)
+            <p>
+                \(x^4 -26x^2 +25\)
+            </p>
+            <br>
+            <button id="hint7-button" onclick="showHint(7)">Soluzione</button>
+            <div id="hint7" class="esempi-container" style="display: none;">
+                <p>
+                    La forma del polinomio è simile a quella di un trinomio speciale. Definiamo \(y := x^2\) e riscriviamo il polinomio
+                    \[
+                        \begin{align*}
+                            & x^4 -26x^2 +25
+                            \\\\
+                            =\, & y^2 -26y +25 = 
+                        \end{align*}
+                    \]
+                    la coppia di numeri che ha somma \(25\) e prodotto \(-26\) è \[\boldsymbol{\color{red}{-25}} \qquad \boldsymbol{\color{blue}{-1}}\].
+                    Di conseguenza si ha 
+                    \[
+                        \begin{align*}
+                            =\, & y^2 -26y +25 = 
+                            \\\\
+                            =\,&  \left(y \color{red}{-25}  \color{black}{}\right) \cdot \left(y \color{blue}{-1}  \color{black}{}\right) =
+                        \end{align*}
+                    \]
+                    Risostituiamo \(x^2\) al posto di \(y\)
+                    \[
+                        \begin{align*}
+                            =\, & \left(y-25\right) \cdot \left(y -1\right) = 
+                            \\\\
+                            =\, & \left(x^2-25\right) \cdot \left(x^2 -1\right) = 
+                        \end{align*}
+                    \]
+                    Scomponiamo sia la <span style="color: #009900">prima parentesi</span> che la <span style="color: blue">seconda parentesi</span> tramite somma per differenza
+                    \[
+                        \begin{align*}
+                            =\, & \color{#009900}{\underbrace{\color{black}{}\left(x^2-25\right)}} \cdot \color{blue}{\underbrace{\color{black}{}\left(x^2 -1\right)}} = 
+                            \\\\
+                            =\, & \left(x + 5\right) \cdot \left(x - 5\right) \cdot \left(x + 1\right) \cdot \left(x - 1\right) = 
+                        \end{align*}
+                    \]
+                </p>
+            </div> 
         </li>
         <br>
         <li>
-            \(20x^4 +60x^3 +45x^2\)
+            <p>
+                \(20x^4 +60x^3 +45x^2\)
+            </p>
+            <br>
+            <button id="hint8-button" onclick="showHint(8)">Soluzione</button>
+            <div id="hint8" class="esempi-container" style="display: none;">
+                <p>
+                    Raccogliamo a fattor comune
+                    \[
+                        \begin{align*}
+                            & 20x^4 +60x^3 +45x^2 = 
+                            \\\\
+                            =\, & 5x^2 \cdot \left(4x^2 + 12x + 9\right) = 
+                        \end{align*}
+                    \]
+                    Scomponiamo il <span style="color: #009900;">polinomio in parentesi</span> attraverso il quadrato di binomio
+                    \[
+                    \begin{align*}
+                        =\, & 5x^2 \cdot \color{#009900}{\underbrace{\color{black}{\left(4x^2 + 12x + 9\right)}}} = 
+                        \\\\
+                        =\, & 5x^2 \cdot \left(2x +3\right)^2
+                    \end{align*}
+                    \]
+                </p>
+            </div> 
         </li>
     </ul>
 
