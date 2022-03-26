@@ -178,6 +178,10 @@ function aggiornaB () {
 }
 
 function miglioraIntervallo() {
+    //disabilita pulsante
+    document.getElementById("miglioraIntervallo-button").disabled = true;
+
+
     //definisco il valore medio tra searchA e searchB
     gg1.evalCommand(`c = (searchA + searchB)/2`);
     c = gg1.getValue(`c`);
@@ -309,6 +313,7 @@ function zoom() {
     } else {
         oldCenterOfView = newCenterOfView;
         console.log(`i'm in stopZoom`);
+        document.getElementById("miglioraIntervallo-button").disabled = false;
         clearInterval(zoomFunction);
     }   
 }
