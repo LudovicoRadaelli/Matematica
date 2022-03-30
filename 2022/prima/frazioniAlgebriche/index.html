@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    
+    <title>Frazioni algebriche</title>
+</head>
+<body>
+    <h1>Frazioni algebriche</h1>
+    
+    <h2>Minimo comune multiplo tra polininomi</h2>
+    <p>
+        Il meccanismo per trovare il m.c.m. tra polinomi ricalca quello messo in atto nel calo numerico.
+    </p>
+    <div class="grayBackground">
+        <p>
+            Per trovare il m.c.m tra più polinomi
+        </p>
+        <br>
+        <ul>
+            <li>
+                scompongo tutti i polinomi in fattori irriducibili;
+            </li>
+            <br>
+            <li>
+                scrivo il prodotto tra tutti i fattori comuni e non comuni delle scompoizioni, presi con l'esonente maggiore.
+            </li>
+        </ul>
+    </div>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Trovare il m.c.m. tra i polinomi 
+            \[
+                3x^3 -3x^2\,,\qquad 2x^2 -2x \,,\qquad x^2 -2x +1 
+            \]
+        </p>
+        
+        <p>
+            <b>Svolgimento</b>
+            <br>
+        </p>
+        <ul>
+            <li>
+                <p>
+                    Scompongo i tre polinomi:
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        \(
+                            \begin{align*}
+                                3x^3 -3x^2 = &\,\, 3x^2 \cdot \left(x^2 -1\right) = 
+                                \\\\
+                                = & \,\, 3 \cdot \color{blue}{x^2}\color{black}{} \cdot \color{red}{\left(x -1\right)}\color{black}{} \cdot \color{#009900}{\left(x +1\right)} 
+                            \end{align*}
+                        \)
+                    </li>
+                    <br>
+                    <li>
+                        \(
+                            2x^2 -2x  =   \color{gray}{2}\cdot \color{black}{}\color{blue}{x}\color{black}{} \cdot \color{red}{\left(x -1\right)}
+                        \)
+                    </li>
+                    <br>
+                    <li>
+                        \(
+                            x^2 -2x +1  = \color{red}{\left(x - 1\right)^2}
+                        \)
+                    </li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Scrivo il prodotto tra i fattori comuni e non comuni delle scomposizioni, presi con l'esponente maggiore:
+                </p>
+                
+                <p>
+                    \(\Longrightarrow\) il m.c.m. è 
+                    \[
+                        \begin{align*}
+                            &\color{gray}{2}\color{black}{} \cdot \color{black}{3} \cdot \color{blue}{x^2}\color{black}{} \cdot \color{red}{\left(x -1\right)}\color{black}{} \cdot  \color{#009900}{\left(x +1\right)}\color{black}{} =
+                            \\\\
+                            = \,\,& 6x^4 - 6x^2
+                        \end{align*}
+                    \]
+                </p>
+            </li>
+        </ul>
+        
+    </div>
+    
+    
+    <script src="script.js"></script>
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
