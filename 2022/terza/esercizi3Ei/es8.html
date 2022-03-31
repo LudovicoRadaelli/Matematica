@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 3° Ei</title>
+</head>
+<style>
+    .input {
+        font-size: 0.7rem;
+        width: 30%;
+        margin: auto;
+    }
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Di seguito l'elenco degli argomenti svolti fino ad ora. 
+    </p>
+    <br>
+    <ul>
+        
+        <li>
+            <b class="blue">1) Seno, coseno, tangente: definizione geometrica</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#definizioneGeometrica">(link)</a>
+        </li> 
+        <li>
+            <b class="blue">2) Gradi v.s. Radianti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a>
+        </li> 
+        <li>
+            <b class="blue">3) Visualizzazione sulla circonferenza goniometrica</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+        </li>
+        <li>
+            <b class="blue">4) Seno, coseno e tangente di angoli notevoli e dei loro multipli</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        <li>
+            <b class="blue">5) Archi associati</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        <li>
+            <b class="blue">6) Leggi fondamentali della goniometria</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        
+       
+        
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2 class="yellow">Leggi fondamentali della trigonometria</h2>
+        <p>
+            <b>Prima legge</b>
+            <br>
+            Per ogni angolo \(\alpha\), vale la seguente relazione:
+            \[
+                sin^2\left(\alpha\right) + cos^2\left(\alpha\right) = 1
+            \]
+        </p>
+        <br>
+        <hr>
+        <br>
+        <p>
+            <b>Seconda legge</b>
+            <br>
+            Per ogni angolo \(\alpha\), vale la seguente relazione:
+            \[
+                tan\left(\alpha\right) = \dfrac{sin\left(\alpha\right)}{cos\left(\alpha\right) }
+            \]
+        </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio svolto</h2>
+    <p>
+        Semplificare la seguente espressione usando le leggi fondamentali della goniometria e gli archi associati.
+        \[
+            1 - \color{red}{cos^2\left(2\pi - \alpha\right)}\color{black}{} + \color{blue}{sin\left(\pi + \alpha\right)}\color{black}{} \cdot \dfrac{1}{\color{#009900}{tan\left(\alpha\right)}} + sin^2\left(\alpha\right)
+        \]
+    </p>
+    <br>
+    <p>
+        <b>Svolgimento</b>
+        <br>
+        Prima di tutto osserviamo che
+        \[
+            \begin{align*}
+                \color{red}{cos^2\left(2\pi -\alpha\right)}\color{black}{} = & \left[cos\left(2\pi -\alpha\right)\right]^2 =
+                \\\\
+                = &\, \left[cos\left(\alpha\right)\right]^2 = 
+                \\\\
+                = &\, \color{red}{cos^2\left(\alpha\right) }
+            \end{align*}            
+        \]
+        che 
+        \[
+            \begin{align*}
+                \color{blue}{sin\left(\pi + \alpha\right)} \color{black}{} = \color{blue}{-sin\left(\alpha\right)}
+            \end{align*}
+        \]
+        ed infine che
+        \[
+            \color{#009900}{tan\left(\alpha\right)} \color{black}{}= \color{#009900}{\dfrac{sin\left(\alpha\right)}{cos\left(\alpha\right)}}
+        \]
+        possiamo dunque riscrivere l'espressione come segue:
+        \[
+            \begin{align*}
+                & 1 - \color{red}{cos^2\left(2\pi - \alpha\right)}\color{black}{} + \color{blue}{sin\left(\pi + \alpha\right)}\color{black}{} \cdot \dfrac{1}{\color{#009900}{tan\left(\alpha\right)}} + sin^2\left(\alpha\right) = 
+                \\\\
+                = & \, 1 - \color{red}{cos^2\left(\alpha\right)}\color{black}{} \color{blue}{- sin\left(\alpha\right)}\color{black}{} \cdot \color{orange}{\dfrac{\color{black}{1}}{\color{black}{\color{#009900}{\frac{sin\left(\alpha\right)}{cos\left(\alpha\right)}}}}} \color{black} + sin^2\left(\alpha\right)=
+                \\\\
+                = & \, 1 - cos^2\left(\alpha\right) - sin\left(\alpha\right) \cdot 1 \color{orange}{\boldsymbol{\cdot}}\color{black}{} \frac{cos\left(\alpha\right)}{sin\left(\alpha\right)} + sin^2\left(\alpha\right) =
+                \\\\
+                = & \, 1 - cos^2\left(\alpha\right) - \cancel{sin\left(\alpha\right)} \cdot \dfrac{cos\left(\alpha\right)}{\cancel{sin\left(\alpha\right)}} + sin^2\left(\alpha\right) = 
+                \\\\
+                = & \, 1 - cos^2\left(\alpha\right) - cos\left(\alpha\right) + \color{blue}{sin^2\left(\alpha\right)}\color{black}{} = \left(*\right)
+            \end{align*}
+        \]
+        Usiamo la prima legge della goniometria per scrivere il \(sin^2\left(\alpha\right)\) in termini del \(cos^2\left(\alpha\right)\)
+        \[
+            sin^2\left(\alpha\right) + cos^2\left(\alpha\right) = 1 \quad\Rightarrow\quad \color{blue}{sin^2\left(\alpha\right)}\color{black}{}  = \color{blue}{1 - cos^2\left(\alpha\right)}
+        \]
+        
+        sotituiamolo nell'espressione
+        \[
+            \begin{align*}
+                \left(*\right) = &\, 1 - cos^2\left(\alpha\right) - cos\left(\alpha\right) + \color{blue}{1 -cos^2\left(\alpha\right)}\color{black}{} =
+                \\\\
+                = & \,2 - 2cos^2\left(\alpha\right) - cos\left(\alpha\right) 
+            \end{align*}
+        \]
+
+    </p>
+
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Semplificare la seguente espressione usando le leggi fondamentali della goniometria e gli archi associati.
+        \[
+            sin^2\left(\pi + \alpha\right) + cos^2\left(\alpha\right) + tan\left(\alpha\right) \cdot cos^2\left(\alpha\right)
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Semplificare la seguente espressione usando le leggi fondamentali della goniometria e gli archi associati.
+        \[
+            sin\left(\dfrac{\pi}{2} + \alpha\right) \cdot tan\left(\alpha\right) \cdot sin\left(\pi - \alpha\right)  + cos^2\left(-\alpha\right)
+        \]
+    </p>
+
+    
+
+    
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        var ggbApp1 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg1",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "material_id":"bvrds2et"}, true);
+
+        var ggbApp2 = new GGBApplet({
+        "appName": "classic", 
+        "id": "gg2",
+        "showToolBar": false, 
+        "showAlgebraInput": false, 
+        "showMenuBar": false, 
+        "enableShiftDragZoom": false,
+        "scaleContainerClass":"geogebra-container",
+        "material_id":"uyg8bgbc"}, true);
+
+        window.addEventListener("load", function() { 
+            ggbApp1.inject('geogebra1');
+            ggbApp2.inject('geogebra2');
+        });
+
+        let rispostaCorretta;
+
+        let trigFunction;
+        let angleGG;
+        let angleToPrint;
+
+        let trigFunctionIndex = 0;
+        let randomIndex = 0;
+
+        let trigFunctionList = [`sin`, `cos`, `tan`];
+        let angleListGradi = [0, 30, 45, 60, 90, 180, 270, 360];
+        let angleListRadianti = ["0", "\\dfrac{\\pi}{6}", "\\dfrac{\\pi}{4}", "\\dfrac{\\pi}{3}", "\\dfrac{\\pi}{2}", "\\pi", "\\dfrac{3\\pi}{2}", "2\\pi"];
+        let trigFunctionValue = [
+            [`0`, `1`, `0`],
+            [`\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{2}`, `\\sqrt{3}`],
+            [`\\dfrac{\\sqrt{2}}{2}`, `\\dfrac{\\sqrt{2}}{2}`, `1`],
+            [`\\dfrac{\\sqrt{3}}{2}`, `\\dfrac{1}{2}`, `\\dfrac{\\sqrt{3}}{3}`],
+            [`1`, `0`, `\\text{non esiste}`],
+            [`0`, `-1`, `0`],
+            [`-1`, `0`, `\\text{non esiste}`],
+            [`0`, `1`, `0`],
+        ];
+
+        function generaDomanda() {
+
+            document.getElementById("rispostaCorretta").disabled = false;
+
+            trigFunctionIndex = (trigFunctionIndex +  Math.floor(Math.random()*trigFunctionList.length))%trigFunctionList.length;
+            trigFunction = trigFunctionList[trigFunctionIndex]
+
+            randomIndex = (randomIndex + Math.floor(Math.random()*angleListGradi.length))%angleListGradi.length;
+            angleGG = angleListGradi[randomIndex];
+            angleToPrint = angleListRadianti[randomIndex];
+
+            console.log(`
+            randomIndex: ${randomIndex},
+            angleGG: ${angleGG},
+            trigFunctionIndex:${trigFunctionIndex},
+            trigFunction: ${trigFunctionList[trigFunctionIndex]}
+            `)
+
+            rispostaCorretta = trigFunctionValue[randomIndex][trigFunctionIndex];
+
+            
+
+            gg1.setValue("a", angleGG);
+
+            
+
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = \\text{.......}\\,\\,\\,?
+            \\]`
+
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function controllaSoluzione() {
+            let domanda = document.getElementById("domanda");
+            domanda.innerHTML = 
+            `\\[
+                ${trigFunction}\\left(${angleToPrint}\\right) = ${rispostaCorretta}
+            \\]`
+            MathJax.typesetClear([domanda]);
+            MathJax.typesetPromise([domanda]).then(() => {});
+        }
+
+        function cambiaGriglia(n) {
+            /* for(let i = 0; i < 2; i++) {
+                
+                document.getElementsByClassName("input")[i].checked = false;
+            } */
+            gg2.setValue("b",n)
+        }
+
+    </script>
+</body>
+      
+
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
