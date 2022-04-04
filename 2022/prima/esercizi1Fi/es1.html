@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">Monomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/monomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Polinomi e prodotti notevoli</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Scoposizione di polinomi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>)             -->
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor comune</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor parziale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite prodotti notevoli</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">somma/differenza di cubi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">trinomio speciale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+            </ul>
+        </li>
+        <li>
+            <b class="blue">m.c.m. tra polinomi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+        </li>
+
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            6x^2\,, \qquad 15x^3\,, \qquad 4x^2 -2x
+        \]        
+    </p>
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Soluzione</button>
+    <div id="hint1" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            60x^4 -30x^3
+        \]
+    </div> 
+
+    
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            8x^4 -8x^3 +2x^2\,,\quad\quad 4x^2 -1\,, \quad\quad 4x^7 -8x^6 + 4x^5
+        \]
+    </p>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Soluzione</button>
+    <div id="hint2" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            32x^8 -16x^7 -8x^6 +4x^5
+        \]
+    </div> 
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            x^4 + 6x^3 +12x^2 +8x\,, \quad\quad 14x^3 - 7x^2\,, \quad\quad x^2 +4x +4
+        \]
+    </p>
+    <br>
+    <button id="hint3-button" onclick="showHint(3)">Soluzione</button>
+    <div id="hint3" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            7x^5 +42x^4 +84x^3 +56x^2
+        \]
+    </div> 
+
+<br>
+<hr>
+<br>
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->

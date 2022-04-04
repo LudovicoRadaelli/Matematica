@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Minimo comune multiplo tra polinomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/frazioniAlgebriche/index.html">link</a>)
+        </li>
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            6x^2 + 3ax\,, \qquad 2x^3 + ax^2\,, \qquad 4x^2 + a^2 +4ax
+        \]        
+    </p>
+    <br>
+    <button id="hint1-button" onclick="showHint(1)">Soluzione</button>
+    <div id="hint1" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            6a^2y^2 +24ax^3 +24x^2
+        \]
+    </div> 
+
+    
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            9x^2 -4 \,,\quad\quad a^2 -2a +1\,, \quad\quad 3ax +2a -3x -2
+        \]
+    </p>
+    <br>
+    <button id="hint2-button" onclick="showHint(2)">Soluzione</button>
+    <div id="hint2" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            9a^2x^2 -4a^2 -18ax^2 +8a +9x^2 -4
+        \]
+    </div> 
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Trovare il \(m.c.m.\) tra i seguenti polinomi:
+        \[
+            x^3 -8\,, \quad\quad x^4 + 2x^3 + 4x^2\,, \quad\quad x^2-2x
+        \]
+    </p>
+    <br>
+    <button id="hint3-button" onclick="showHint(3)">Soluzione</button>
+    <div id="hint3" class="gray" style="display: none;">
+        <b>Soluzione</b>
+        <br>
+        \[
+            x^5 -8x^2
+        \]
+    </div> 
+
+<br>
+<hr>
+<br>
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
