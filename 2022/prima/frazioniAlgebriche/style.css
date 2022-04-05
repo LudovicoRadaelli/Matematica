@@ -18,13 +18,12 @@ article {
 }
  */
 
- * {
+* {
     box-sizing: border-box;
-    margin: 0;
 }
 
 body {
-    width: 90%;
+    width: 90vw;
     margin: auto;
     font-size: 17px;
     line-height: 1.5rem;
@@ -82,18 +81,12 @@ table {
 }
 
 
-
-.ggbTransform {
-    width: 100% !important;
-}
-
 .generaEsempio {
     display: block;
     width: auto;
     margin: auto;
     margin-top: 1rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem;   
 }
 
 .green {
@@ -131,7 +124,7 @@ button {
 
 
 .esempi-container {
-    width: 96%;
+    width: 98vw;
     margin:auto;
     border: 0.01rem #F4B400 solid; 
     padding: 1rem;
@@ -139,31 +132,7 @@ button {
 
 
 
-#home-container {
-    display: block;
-    position: fixed;
-    right: 0.5rem;
-    top: 0.5rem;
-    width: 2.5rem;
-    padding: 0.5rem;
-    background-color: lightgray;
-    border-radius: 50%;
-    z-index: -1;
-}
+
 
 /* ----------------- */
 
-#container-container {
-    display: block;
-    position: relative;
-}
-
-#container {
-    width: 100%;
-}
-
-#nextButton {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
