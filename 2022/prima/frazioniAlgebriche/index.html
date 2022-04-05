@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    
-    
     <title>Frazioni algebriche</title>
 </head>
+
 <body>
     <h1>Frazioni algebriche</h1>
     
@@ -97,10 +96,274 @@
         </ul>
         
     </div>
+
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Frazioni algebriche</h2>
+    <p class="grayBrackground">
+        Una <b>frazione algebrica</b> è una frazione che presenta dei polinomi al numeratore ed al denominatore.
+    </p>
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>Tutte quelle che seguono sono frazioni algebriche:</p>
+        <br>
+        <ul>
+            <li>
+                \(\dfrac{2x +1}{5 - x}\);
+            </li>
+            <br>
+            <li>
+                \(\dfrac{x^5 -a^2}{7 - x^2}\);
+            </li>
+            <br>
+            <li>
+                \(\dfrac{8x^2 -7x +2}{x}\);
+            </li>
+            <br>
+            <li>
+                \(\dfrac{x}{9x^4 -4x^3 -x^2 +1}\);
+            </li>
+            <br>
+            <li>
+                \(\dfrac{5}{x -2}\);
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <h3 class="blue">2.1) Somma di frazioni algebriche</h3>
+    <p>
+        Il procedimento di somma e sottrazione di frazioni algebriche è del tutto analogo a quello del caso numerico.
+    </p>
+
+    <h3>Esempi</h3>
+    <div class="esempi-container" style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+        <!-- testo somma -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+                <p>
+                    Sommare le seguenti frazioni numeriche
+                    \[
+                        \dfrac{3}{10} + \dfrac{9}{4}
+                    \]
+                </p>
+            </div>
+            <div style="width: 48%; margin: auto;">
+                <p>
+                    Sommare le seguenti frazioni algebriche
+                    \[
+                        \dfrac{2 + x}{x^2 -1} + \dfrac{3 -4x}{x^2+2x +1}
+                    \]
+                </p>
+            
+            </div>
+        </div>
+
+        <br>
+        
+
+        <!-- passaggio 1-->
+        <p>
+            Scompongo i denominatori per poter effettuare il m.c.m.
+        </p>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+                <p>
+                    \[
+                        \dfrac{\color{red}{3}}{\color{#E15FED}{2 \cdot 5}} + \dfrac{\color{red}{9}}{\color{#E15FED}{2^2}}
+                    \]
+                </p>
+            </div>
+            <div style="width: 48%; margin: auto;">
+                <p class="formula">
+                    \[
+                        \dfrac{\color{red}{2 + x}}{\color{#E15FED}{\left(x +1\right) \cdot \left(x  -1\right)}} + \dfrac{\color{red}{3 -4x}}{\color{#E15FED}{\left(x+1\right)^2}}
+                    \]
+                </p>            
+            </div>
+        </div>
+
+        <!-- passaggio 2-->
+        <li>
+            Scrivo come <span style="color: blue;">denominatore comune</span> il m.c.m. tra i denominatori
+        </li>
+        <br>
+        <li>
+            Per ogni frazione divido il <span style="color: blue;">denominatore comune</span>  per il <span style="color: #E15FED">vecchio denominatore</span>   e moltiplico il risultato per il numeratore*
+        </li>
+        <br>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            
+            <div style="width: 48%; margin: auto;">
+                <p>
+                    \[
+                        \dfrac{2 \cdot \color{red}{3} \color{black}{}+ 5 \cdot \color{red}{9}\color{black}{}}{\color{blue}{2^2 \cdot 5}}
+                    \]
+                </p>
+            </div>
+            <div style="width: 48%; margin: auto;">
+                <p class="formula">
+                    \[
+                        \dfrac{\left(x + 1\right) \cdot \color{red}{\left(2 +x\right)}\color{black}{} + \left(x -1\right) \cdot \color{red}{\left(3 - 4x\right)}\color{black}{}}{\color{blue}{\left(x + 1\right)^2 \cdot \left(x - 1\right)}}
+                    \]
+                </p> 
+            </div>
+        </div>
+
+        <p class="gray">* Se non avete chiaro come abbiamo ottenuto i numeri neri al numeratore cliccate il pulsante</p>
+        <button id="hint1-button" onclick="showHint(1)">Passaggi intermedi</button>
+        <div id="hint1" class="gray" style="display: none;">
+        <!-- passaggio 3-->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+                <p>
+                    \[
+                        \dfrac{\color{blue}{2^{\cancel{2}} \cdot \cancel{5}}}{\color{#E15FED}{\cancel{2} \cdot \cancel{5}}} \color{black}{}=  2
+                    \]
+
+                    \[
+                        \dfrac{\color{blue}{\cancel{2^{2}}} \cdot 5}{\color{#E15FED}{\cancel{2^2}} }\color{black}{}=  5
+                    \]
+                </p>
+            </div>
+            <div style="width: 48%; margin: auto;">
+                <p class="formula">
+                    \[
+                        \dfrac{\color{blue}{\left(x + 1\right)^{\cancel{2}} \cdot \cancel{\left(x - 1\right)}}}{\color{#E15FED}{\cancel{\left(x +1\right)} \cdot \cancel{\left(x  -1\right)}}} \color{black}{}= x +1
+                    \]
+                </p>
+                <p class="formula">
+                    \[
+                        \dfrac{\color{blue}{\cancel{\left(x + 1\right)^2} \cdot \left(x - 1\right)}}{{\color{#E15FED}{\cancel{\left(x+1\right)^2}}}} \color{black}{}= x -1
+                    \]
+                </p>
+                
+            </div>
+        </div>
+        </div> 
+
+        
+
+        <!-- passaggio 4-->
+        <p>
+            Svolgo i conti al numeratore
+        </p>
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+                \[
+                    \begin{align*}
+                        \dfrac{6  + 45}{20} = 
+                         \dfrac{51}{20}
+                    \end{align*}
+                \]
+            </div>
+            <div style="width: 48%; margin: auto;">
+                <p class="formula">
+                    \[
+                        \begin{align*}
+                            & \dfrac{2x + x^2 +2 +x + 3x -4x^2 -3 +4x}{\left(x +1\right)^2 \cdot \left(x - 1\right)} = 
+                            \\\\
+                            = & \dfrac{-3x^2 + 10x -1}{\left(x +1\right)^2 \cdot \left(x - 1\right)} = 
+                        \end{align*}
+                    \]
+                </p>
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+
+        <!-- passaggio -->
+        <div style="width: 100%; display: flex; flex-direction: row; justify-content: center; align-items: flex-start;">
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+            <div style="width: 48%; margin: auto;">
+            
+            </div>
+        </div>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
     
     
     <script src="script.js"></script>
-    
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+    </script>
     
     
     
