@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Cm</title>
+</head>
+<style>
+    .table, .tableEs {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 0.1rem black solid;
+        width: 90%;
+        margin: auto;
+    }
+
+    .tr, .trEs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1rem;
+        
+    }
+
+    .td, .tdEs {
+        width: 20%;
+        border: 0.01rem solid black; 
+        text-align: center;
+        margin: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+    }
+
+
+    .table,  .tableEs{
+        border-collapse: separate;
+    }
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+    
+    <h2>Problema</h2>
+    <p>
+        La vostra classe è composta da \(18\) alunni. 
+    </p>
+    <p>
+        Per comodità (e per privacy), ognuno di voi verrà indicato con il numero corrispondente alla propria posizione nell'appello.
+    </p>
+    <p>
+        Considerate la seguente piantina della classe:
+    </p>
+
+    <br>
+    <div class="table">
+        <div class="tr">
+            <div class="td">\[1\]</div>
+            <div class="td">\[2\]</div>
+            <div class="td">\[3\]</div>
+            <div class="td">\[4\]</div>
+        </div>
+        <div class="tr">
+            <div class="td">\[5\]</div>
+            <div class="td">\[6\]</div>
+            <div class="td">\[7\]</div>
+            <div class="td">\[8\]</div>
+        </div>
+        <div class="tr">
+            <div class="td">\[9\]</div>
+            <div class="td">\[10\]</div>
+            <div class="td">\[11\]</div>
+            <div class="td">\[12\]</div>
+        </div>
+        <div class="tr">
+            <div class="td">\[13\]</div>
+            <div class="td">\[14\]</div>
+            <div class="td">\[15\]</div>
+            <div class="td">\[16\]</div>
+        </div>        
+        <div class="tr">
+            <div class="td">\[17\]</div>
+            <div class="tdEs" style="border: 0rem;">\[\quad\]</div>
+            <div class="tdEs" style="border: 0rem;">\[\quad\]</div>
+            <div class="td">\[18\]</div>
+        </div>
+        <div class="tr">
+            <div class="tdEs" style="width: 30%">Cattedra</div>
+        </div>
+    </div>
+
+    <br>
+
+    <button onclick="assegnaPosti()">Assegna i posti</button>
+
+    <br>
+
+    <p class="gray">
+        Cliccando il pulsante è possibile riassegnare i posti.
+    </p>
+
+    <br>
+
+    <p>
+        La domanda che vi pongo è:
+    </p>
+    <p class="grayBackground">
+        in quanti modi diversi posso assegnare i posti alla classe?
+    </p>
+
+    <p>
+        Notate, la domanda chiede in <b>quanti</b> modi diversi posso assegnare i posti, non <b>quali</b> sono tutte le disponibili disposizioni.
+    </p>
+    <p>
+        Di conseguenza la risposta che mi aspetto è un <b>numero</b>, non un elenco.
+    </p>
+    <br>
+
+    <p class="red">
+        Potete lavorare in gruppi, anzi vi consiglio caldamente di farlo.
+    </p>
+    <p class="red">
+        Ad ogni gruppo o singolo chiedo di scrivere la propria proposta di soluzione 
+        su un foglio ed inviarmela su Teams.
+    </p>
+    <p class="red">
+        Non importa che sia corretta, mi interessa che mi mostriate come avete ragionato.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Piccolo aiuto</h2>
+    <p>
+        Una strategia per risolvere il problema potrebbe essere quella di... "rimpicciolire" i numeri.
+    </p>
+    <p>
+        Prima di risolvere il problema per una classe di \(18\) persone potreste provare a considerare lo stesso problema...
+    </p>
+
+    <br>
+
+    <p>
+        ...per una classe di \(3\) persone:
+    </p>
+    
+    <br>
+
+    <div class="tableEs">
+        <div class="trEs">
+            <div class="tdEs">\[1\]</div>
+            <div class="tdEs">\[2\]</div>
+        </div>
+        <div class="trEs">
+            <div class="tdEs">\[3\]</div>
+        </div>      
+        <div class="trEs">
+            <div class="tdEs" style="width: 30%">Cattedra</div>
+        </div> 
+    </div>
+
+    <br>
+
+    <p>
+        ...poi per una classe di \(4\) persone
+    </p>
+
+    <br>
+    <div class="tableEs">
+        <div class="trEs">
+            <div class="tdEs">\[1\]</div>
+            <div class="tdEs">\[2\]</div>
+        </div>
+        <div class="trEs">
+            <div class="tdEs">\[3\]</div>
+            <div class="tdEs">\[4\]</div>
+        </div>      
+        <div class="trEs">
+            <div class="tdEs" style="width: 30%">Cattedra</div>
+        </div> 
+    </div>
+
+    <br>
+
+    <p>
+        ...poi per una classe di \(5\) persone
+    </p>
+
+    <br>
+    <div class="tableEs">
+        <div class="trEs">
+            <div class="tdEs">\[1\]</div>
+            <div class="tdEs">\[2\]</div>
+        </div>
+        <div class="trEs">
+            <div class="tdEs">\[3\]</div>
+            <div class="tdEs">\[4\]</div>
+        </div>         
+        <div class="trEs">
+            <div class="tdEs">\[5\]</div>
+        </div>      
+        <div class="trEs">
+            <div class="tdEs" style="width: 30%">Cattedra</div>
+        </div>  
+    </div>
+
+    <br>
+
+    <p>
+        &Eacute; possibile generalizzare la soluzione nel caso in cui gli studenti siano \(18\)?
+    </p>
+
+
+    
+    <script>
+        /* function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/es${ex[i].index + 1}.html`;
+        } */
+
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function shuffle(array) {
+            let currentIndex = array.length,  randomIndex;
+
+            // While there remain elements to shuffle...
+            while (currentIndex != 0) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+            }
+
+            return array;
+        }
+
+        function assegnaPosti() {
+
+            listaStudenti = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ,15 ,16, 17, 18];
+            listaStudentiShuffled = shuffle(listaStudenti);
+
+            for(let i = 0; i < 18; i++) {
+                document.getElementsByClassName("td")[i].innerHTML = `\\[${listaStudentiShuffled[i]}\\]`;
+            }
+
+            MathJax.typesetClear([document.getElementsByClassName("td")]);
+            MathJax.typesetPromise([document.getElementsByClassName("td")]).then(() => {});
+        }
+        
+
+    </script>
+</body>
+      
+<!-- 
+    
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
