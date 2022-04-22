@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,106 +6,165 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Esercizi 4Ci</title>
 </head>
-<body style="position: relative;">
-
-    <div id="warning" style="position: absolute; top: 50%; display: none; width: 90vw; height: 50vh; margin: auto; background-color: rgb(255, 255, 98); z-index: 100;border: black 1rem solid; ">
-        <div style="position: absolute; top: 0.3rem; right: 0.3rem;" onclick="closeWarning()"><b>X</b></div>
-        <br>
-        <p style="display: block; font-size: 1.5rem; line-height: 1.7rem; width: 70%; margin: auto; margin-top: auto;">
-            Prima di fare gli esercizi studiate <u>veramente</u> il paragrafo <b>3)</b> disponibile <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/index.html">QUI</a>
-        </p>
-
-    </div>
-
+<body>
     <h1>Compiti per casa</h1>
     <br>
 
     <h2>Da studiare</h2>
     <p>
-        Del paragrafo <b class="blue">3)</b> studiare
+        Di seguito gli argomenti svolti fino ad ora:
     </p>
     <br>
     <ul>
         <li>
-            il video "<b>Tramite scomposizione</b>"
+            <b class="blue">1) Coefficiente angolare</b>
         </li>
         <li>
-            il video "<b>Tramite razionalizzazione</b>"
-        </li>
-        <li>
-            lo schema riassuntivo
+            <b class="blue">2) Derivata di una funzione</b>
         </li>
     </ul>
-    <br>
+
     <p>
-         che trovate <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/limiti/index#0su0">QUI</a>
+        Il materiale è disponibile al seguente <a href="https://ludovicoradaelli.github.io/Matematica/2022/quarta/definizioneDerivata/index.html">QUI</a>
     </p>
+
     <br>
     <hr>
     <br>
     
-    <h2>Esercizio 1</h1>
+
+    <p class="gray">
+        Di seguito trovate il testo di una delle file del compito del 05-04-22.
+        <br>
+        Provate a svolgerla per esercitarvi in vista del recupero.
+        <br>
+        Vi ricordo che a recuperare la verifica saranno tutti coloro che erano assenti oppure hanno conseguito un'insufficienza.
+    </p>
+    <br>
+    <br>
+
+    <h2>Correzione verifica</h2>
+    <h3>Esercizio 1</h3>
     <p>
-        Calcolare 
+        Data la funzione
         \[
-            \underset{x \rightarrow 4}{lim} \,\,\, \dfrac{x^2 -x -12}{2x^2 -9x +4}
+            f\left(x\right) = \dfrac{-3x +5}{\sqrt{4x^2 -x -3}}
         \]
     </p>
     <br>
-    <p class="gray">
-        <b>Soluzione</b>:
+    <ol>
+        <li>
+            trovare il suo dominio;
+        </li>
         <br>
-        il limite è 1
+        <li>
+            studiarne il segno al variare dalla \(x\);
+        </li>
+        <br>
+        <li>
+            analizzare il suo comportamento attorno ai punti di frontiera del dominio;
+        </li>
+        <br>
+        <li>
+            stabilire se presenta asintoti obliqui;
+        </li>
+        <br>
+        <li>
+            rappresentare graficamente le informazioni ottenute.
+        </li>
+    </ol>
+
+    <br>
+
+    <p class="gray"><b>Soluzione</b></p>
+    <br>
+    <ul class="gray">
+        <li>
+            <b>Dominio:</b>
+            <br>
+            <br>
+            \(D = \left(-\infty\,;\,\, -\dfrac{3}{4}\right) \cup \left(1\,; \,\,+\infty\right)\)
+        </li>
+        <br>
+        <li>
+            <b>Segno:</b>
+            <br>
+            <br>
+            La funzione è positiva se \(x \lt -\dfrac{3}{4}\,\,\,\) oppure \(\,\,\,1 \lt x \lt \dfrac{5}{3}\)
+        </li>
+        <br>
+        <li>
+            <b>Frontiera del dominio:</b>
+            <br>
+            <br>
+            \(\underset{x \rightarrow \left(-\frac{3}{4}\right)^-}{lim\qquad} f\left(x\right) = +\infty  \)
+            <br>
+            <br>
+            \(\underset{x \rightarrow 1^+}{lim\,\,\,\,} f\left(x\right) = +\infty  \)
+        </li>
+        <br>
+        <li>
+            <b>Asintoti obliqui</b>
+            <br>
+            <br>
+            \(\underset{x \rightarrow \mp\infty}{lim} f\left(x\right) = \pm\dfrac{3}{2}\)
+            <br>
+            <br>
+            quindi non ci sono asintoti obliqui
+        </li>
+        <br>
+        <li>
+            <p>
+                Il grafico della funzione è il seguente
+            </p>
+            <br>
+            <img src="img/es3(1).png" alt="" style="width: 100%;">
+        </li>
+
+    </ul>
+    <br>
+    <br>
+
+    <h3>Esercizio 2</h3>
+    <p>
+        Calcolare i seguenti limiti
     </p>
-    
+    <br>
+    <ul>
+        <li>
+            <p>
+                \(\underset{x \rightarrow 1}{lim} \,\,\, \dfrac{2x^2-3x+1}{5x^2-6x+1}\)
+            </p>
+        </li>
+        <br>
+        <li>
+            <p>
+                \(\underset{x \rightarrow +\infty}{lim} \,\,\, \dfrac{-20x^{10} - 6e^x + 5ln\left(x\right)}{10\,cos\left(x\right) + x^2 - 2^x + 7e^x}\)
+            </p>
+        </li>
+        <br>
+        <li>
+            <p>\(\underset{x \rightarrow -\infty}{lim} \,\,\, \dfrac{\sqrt{2x^5 +2x^6 + 70x^2 -1}}{x^2 + 1}\)</p>
+        </li>
+    </ul>
+
     <br>
     <hr>
     <br>
 
-    <h2>Esercizio 2</h2>
-    <p>
-        Calcolare 
-        \[
-            \underset{x \rightarrow 1}{lim} \,\,\, \dfrac{1 - x}{\sqrt{10 - x} - 3}
-        \]
-    </p>
-    <br>
-    <p class="gray">
-        <b>Soluzione</b>:
-        <br>
-        il limite è 6
-    </p>
-    
-    <br>
-    <hr>
-    <br>
-
-    <h2>Esercizio 3</h2>
-    <p>
-        Calcolare 
-        \[
-            \underset{x \rightarrow -2}{lim} \,\,\, \dfrac{\sqrt{6 + x} - 2}{\left(x + 2\right)^2}
-        \]
-    </p>
-    <br>
-    <p class="gray">
-        <b>Soluzione</b>:
-        <br>
-        il limite da sinistra è \(-\infty\),
-        <br>
-        il limite da destra è \(+\infty\),
-        <br>
-        quindi il limite non esiste
-    </p>
-
-
-    
     
 
-    <script src="es2.js"></script>
+
+    <script>
+        
+
+
+
+    </script>
     
 </body>
