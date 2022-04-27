@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>    
+    <title>Scomposizione di polinomi</title>
+</head>
+<body>
+    <h1 id="scomposizioneDiPolinomi">Scomposizione di polinomi</h1>
+    <p class="grayBackground">
+        Scomporre un polinomio significa scriverlo come <b style="color: red">moltiplicazione</b> di polinomi di <b style="color: #009900">grado minore</b>.
+    </p>
+    <div class="esempi-container">
+        <ul>
+            <li>
+                \[
+                    \underset{\color{#009900}{\text{grado 3}}}{\color{lightgray}{\underbrace{\color{black}{3x^3 - 9x^2}}}} = \underset{\color{#009900}{\text{grado 2}}}{\color{lightgray}{\underbrace{\color{black}{3x^2}}}} \color{red}{\,\boldsymbol{\cdot}\,}\color{black}{} \underset{\color{#009900}{\text{grado 1}}}{\color{lightgray}\underbrace{\color{black}{\left(x -3\right)}}}
+                \]
+            </li>
+            <li>
+                \[
+                    \underset{\color{#009900}{\text{grado 2}}}{\color{lightgray}{\underbrace{\color{black}{x^2 - 5x +6}}}} = \underset{\color{#009900}{\text{grado 1}}}{\color{lightgray}{\underbrace{\color{black}{\left(x -2\right)}}}} \color{red}{\,\boldsymbol{\cdot}\,}\color{black}{} \underset{\color{#009900}{\text{grado 1}}}{\color{lightgray}\underbrace{\color{black}{\left(x -3\right)}}}
+                \]
+            </li>
+        </ul>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 id="raccoglimentoFattorComune">1) Raccoglimento a fattor comune</h2>
+    <h3 id="esempio1-title">Esempi</h3>
+    <div class="esempi-container">
+        <p id="esempio1">            
+            <p>
+                Scomponiamo il polinomio 
+                \[4x^3y - 12x^4y -18x^6\]
+            </p>
+            <p>
+                <b>Troviamo il fattore comune</b>
+            </p>
+            <br>
+            <p>
+                &bullet; Il più grande numero che divide i coefficienti del polinomio è \(2\).
+            </p>
+            <br>
+            <p>
+                &bullet;  La \(x\) è presente in tutti i monomi e l'esponente più piccolo con cui 
+                compare è \(3\).
+            </p>
+            <br>
+            <p>
+                Il fattore comune è \(2x^3\)
+            </p>
+            <br>
+            <p class="grayBackground">
+                Di conseguenza possiamo scomporre il polinomio come segue:
+                \[
+                    \begin{align*}
+                    & 4x^3y - 12x^4y -18x^6 =
+                    \\\\
+                    = \,\,&  2x^3 \cdot \left(2y -6xy -9x^3\right)
+                    \end{align*}
+                \]
+            </p>            
+            <br>
+            <p>
+                <b>Come abbiamo trovato i termini in parentesi</b>
+            </p>
+            <br>
+        </p>
+        <p>
+            \(2y\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(2x^3y\)
+        </p>
+        <br>
+        <p>
+            \(-6xy\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(-12x^4y\)
+        </p>
+        <br>
+        <p>
+            \(-18x^3\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(-18x^6\)
+        </p>
+        <br>
+        <button class="generaEsempio" id="generaEsempio1" onclick="generaEsempio(1)">Genera un altro esempio</button>
+        <hr>
+    </div>
+    
+
+    
+    
+    
+    <script src="monomialAndPolynomial.js"></script>
+    <script src="script.js"></script>
+    
+    
+    
+    
+    
+    
+</body>
+
+</html>
