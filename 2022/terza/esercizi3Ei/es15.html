@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 3° Ei</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <h2>Da studiare</h2>
+
+    <p>
+        Di seguito l'elenco degli argomenti svolti fino ad ora. 
+    </p>
+    <br>
+    <ul>
+        
+        <li>
+            <b class="blue">1) Seno, coseno, tangente: definizione geometrica</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#definizioneGeometrica">(link)</a>
+        </li> 
+        <li>
+            <b class="blue">2) Gradi v.s. Radianti</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a>
+        </li> 
+        <li>
+            <b class="blue">3) Visualizzazione sulla circonferenza goniometrica</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+        </li>
+        <li>
+            <b class="blue">4) Seno, coseno e tangente di angoli notevoli e dei loro multipli</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        <li>
+            <b class="blue">5) Archi associati</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        <li>
+            <b class="blue">6) Leggi fondamentali della goniometria</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#gradiVSRadianti">(link)</a> -->
+            <!-- <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>   -->
+        </li>
+        <li>
+            <b class="blue">7) Coordinate polari</b> <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a>
+        </li>
+        <li>
+            <b class="blue">8) Formule goniometriche</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a> -->
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">8.1) Formule di addizione e sottrazione</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a> -->        
+                </li>
+                <br>
+                <li>
+                    <b class="blue">8.2) Formule di duplicazione</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a> -->        
+                </li>
+                <br>
+                <li>
+                    <b class="blue">8.3) Formule di bisezione</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a> -->        
+                </li>
+            </ul>
+        </li> 
+        <li>
+            <b class="blue">9) Equazioni goniometriche</b> <!-- <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index#coordinatePolari">(link)</a> -->
+            <br>
+            <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span>  
+        </li> 
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Equazioni goniometriche</h2>
+
+    <h3>Esempio 1</h3>
+    <p>
+        Stabilire per quale valore della \(x\) si ha
+        \[
+            -2sin\left(x\right) = \sqrt{2}
+        \]
+    </p>
+    <br>
+    <p>
+        Prima di tutto isoliamo il seno:
+
+        \[
+            \begin{align*}
+                -2sin\left(x\right) & = \sqrt{2}
+                \\\\
+                \color{gray}{\dfrac{\color{black}{-2sin\left(x\right)}}{-2}} & = \color{gray}{\dfrac{\color{black}{\sqrt{2}}}{-2}}
+                \\\\
+                sin\left(x\right) & = -\dfrac{\sqrt{2}}{2}
+            \end{align*}
+        \]
+        Ora chiediamoci:
+        <br>
+        quali sono gli angoli il cui seno è \(-\dfrac{\sqrt{2}}{2}\)?
+        <br>
+        Usiamo la circonferenza goniometrica per rispondere:
+    </p>
+    <br>
+    <img src="img/es15(1).png" alt="" style="max-width: 300px;">
+    <br>
+    <p>
+        Gli angoli che hanno seno \(-\dfrac{\sqrt{2}}{2}\) sono 
+        \[
+            x = \dfrac{5}{4}\pi \quad\text{e}\quad x = \dfrac{7}{4}\pi
+        \]
+    </p>
+    <p>
+        Queste non sono le uniche soluzioni, ma in un certo senso sono "madri" di tutte le altre.
+    </p>
+    <p>
+        Le soluzioni dell'equazione infatti sono
+    </p>
+    <div class="grayBackground">
+        <p>
+            \[
+                x = \dfrac{5}{4}\pi + k\cdot 2\pi \quad\text{se}\quad k \in \mathbb{Z}
+            \]
+        </p>
+        <p>
+            \[
+                x = \dfrac{7}{4}\pi + k\cdot 2\pi \quad\text{se}\quad k \in \mathbb{Z}
+            \]
+        </p>
+    </div>
+    <p>
+        Ogni volta che a partire dall'angolo \(\dfrac{5}{4}\pi\) effettuiamo un giro completo in senso orario o antiorario otteniamo una nuova soluzione.
+    </p>
+    <p>
+        Infatti possiamo leggere
+        \[
+            x = \dfrac{5}{4}\pi + k\cdot \color{red}{2\pi}\color{black}{} \quad\text{se}\quad k \in \mathbb{Z}
+        \]
+        come 
+        \[
+            x = \dfrac{5}{4}\pi + k\,\, \color{red}{\text{giri completi}}\color{black}{}
+        \]
+    </p>
+    <p>
+        Se \(k\) è <u>positivo</u>,  ad esempio \(k = 5\), la soluzione è ottenuta a partire da \(\dfrac{5}{4}\pi\) effettuando \(5\) giri completi in senso <u>antiorario</u>.
+    </p>
+    <p>
+        Se \(k\) è <u>negativo</u>,  ad esempio \(k = -3\), la soluzione è ottenuta a partire da \(\dfrac{5}{4}\pi\) effettuando \(3\) giri completi in senso <u>orario</u>.
+    </p>
+    <p>
+        Stesso discorso vale per il secondo insieme di soluzioni.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3 class="yellow">Esempio 2</h3>
+    <p>
+        Stabilire per quale valore della \(x\) si ha
+        \[
+            2cos\left(2x - \dfrac{3\pi}{5}\right) = \sqrt{3}
+        \]
+    </p>
+    <br>
+    <p>
+        Osserviamo che in questo caso l'argomento del coseno è \(\color{red}{2x - \dfrac{3\pi}{5}}\).
+        \[
+            2cos\left(\color{red}{2x - \dfrac{3\pi}{5}}\color{black}{}\right) = \sqrt{3}
+        \]
+    </p>
+    <p>
+        Per ora "bariamo": al posto di \(\color{red}{2x - \dfrac{3\pi}{5}}\) scriviamo \(\color{red}{a}\)
+        \[
+            2cos\left(\color{red}{a}\color{black}{}\right) = \sqrt{3}
+        \]
+    </p>
+    <p>
+        Questa equazione è del tutto analoga a quella del primo esempio, risolviamola come prima.
+        <br>
+        Isoliamo il coseno
+        \[
+            \begin{align*}
+                2cos\left(\color{red}{a}\color{black}{}\right) & = \sqrt{3}
+                \\\\
+                \color{black}{\dfrac{2cos\left(\color{red}{a}\color{black}{}\right)}{\color{gray}{2}}} & = \color{black}{\dfrac{\sqrt{3}}{\color{gray}{2}}}
+                \\\\
+                cos\left(\color{red}{a}\color{black}{}\right) & = \dfrac{\sqrt{3}}{2}
+            \end{align*}
+        \]
+        Tramite la circonferenza goniometrica troviamo quali valori deve assumere \(\color{red}{a}\) perché il suo coseno sia \(\dfrac{\sqrt{3}}{2}\).
+    </p>
+    <br>
+    <img src="img/es15(2).png" alt="">
+    <br>
+    <p>
+        \[
+            \color{red}{a}\color{black}{} = \dfrac{\pi}{6} + k\cdot2\pi \quad\text{con}\quad k \in \mathbb{Z}
+        \]
+        \[
+        \color{red}{a}\color{black}{} = \dfrac{11\pi}{6} + k\cdot2\pi \quad\text{con}\quad k \in \mathbb{Z}  
+        \]
+    </p>
+    <p>
+        Ora ricordiamo che avevamo barato.
+        <br>
+        Quello che finora abbiamo indicato con \(\color{red}{a}\) in realtà è \(\color{red}{2x - \dfrac{3\pi}{5}}\). 
+        <br>
+        Quindi  possiamo riscrivere 
+    
+        \[
+            \color{red}{\color{red}{2x - \dfrac{3\pi}{5}}}\color{black}{} = \dfrac{\pi}{6} + k\cdot2\pi \quad\text{con}\quad k \in \mathbb{Z}
+        \]
+        \[
+            \color{red}{\color{red}{2x - \dfrac{3\pi}{5}}}\color{black}{} = \dfrac{11\pi}{6} + k\cdot2\pi \quad\text{con}\quad k \in \mathbb{Z}  
+        \]        
+    </p>
+    <p>
+        A questo punto isoliamo la \(x\) in ciascuna delle due espressioni
+    </p>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Stabilire per quali valori della \(x\) si ha
+        \[
+            2sin\left(x\right) + \sqrt{3} = 0
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Stabilire per quali valori della \(x\) si ha
+        \[
+            2cos\left(5x - \dfrac{5}{7}\pi\right) - \sqrt{2} = 0
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    
+
+    <!-- Licenza -->
+
+    <div class="gray">
+        <span style="font-size: 0.7rem;">Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.</span>
+        <br>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Licenza Creative Commons" style="border-width:0; width: 30%; min-width:75px; max-width: 100px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+        </a>
+    </div>
+    <br>
+    <br>
+    
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+    </script>
+</body>
+      
+
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
