@@ -322,7 +322,7 @@
         <ul>
             <li>
                 <p class="formula">
-                    \(\left(\dfrac{1}{\sqrt[11]{x^2}}\right)^{'} = \left(\dfrac{1}{x^{\frac{2}{11}}}\right)^{'} = \left(x^{-\frac{2}{11}}\right)^{'} \color{red}{\,\,=\,\,}\color{black}{} -\dfrac{2}{11}\,x^{-\frac{2}{11}-1} = -\dfrac{2}{11}\,x^{\frac{-2 - 11}{2}} = -\dfrac{2}{11}\,x^{\frac{-13}{2}} = -\dfrac{2}{11} \dfrac{1}{x^{\frac{13}{2}}} = -\dfrac{2}{11} \dfrac{1}{\sqrt{x^{13}}}\)
+                    \(\left(\dfrac{1}{\sqrt[11]{x^2}}\right)^{'} = \left(\dfrac{1}{x^{\frac{2}{11}}}\right)^{'} = \left(x^{-\frac{2}{11}}\right)^{'} \color{red}{\,\,=\,\,}\color{black}{} -\dfrac{2}{11}\,x^{-\frac{2}{11}-1} = -\dfrac{2}{11}\,x^{\frac{-2 - 11}{11}} = -\dfrac{2}{11}\,x^{\frac{-13}{11}} = -\dfrac{2}{11} \dfrac{1}{x^{\frac{13}{11}}} = -\dfrac{2}{11} \dfrac{1}{\sqrt[11]{x^{13}}}\)
                 </p>
             </li>
             <br>
@@ -346,7 +346,7 @@
     <hr>
     <br>
 
-    <!-- <p class="grayBackground">
+    <p class="grayBackground">
         \(\boldsymbol{f\left(x\right) = ln\left(x\right) \quad\Rightarrow\quad f^{'}\left(x\right) = \dfrac{1}{x}}\)
     </p>
     
@@ -437,7 +437,201 @@
     <br>
     <hr>
     <br>
-    -->
+
+    <h2 id="regoleDerivazione">3) Regole di derivazione</h2>
+    <p>
+        Ora che conosciamo le derivate delle funzioni più comuni, studiamo alcune regole che ci permettono di trovare la derivata di funzioni più articolate definite a partire dalle funzioni elementari.
+    </p>
+
+    <br>
+
+    <b>Derivata della somma di funzioni</b>
+    <p class="grayBackground">
+        \[
+            \color{black}{\left(\color{red}{f\left(x\right)} \color{black}{+} \color{blue}{g\left(x\right)}\color{black}{}\right)^{'}} = 
+            \color{red}{f^{\color{black}{'}}\left(x\right)} \color{black}{+} \color{blue}{g^{\color{black}{'}}\left(x\right)}
+        \]
+    </p>
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            \(
+                \begin{align*}
+                    & \color{black}{}\left(\color{red}{cos\left(x\right)} \color{black}{\,+\,} \color{blue}{}x^5 \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{black}{}\left( \color{red}{cos\left(x\right)} \color{black}{}\right)^{'} + \color{black}{}\left( \color{blue}{x^5} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{sin\left(x\right)} \color{black}{} + \color{blue}{} 5 x^{4}
+                \end{align*}
+            \)
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <p>
+            \(
+                \begin{align*}
+                    & \color{black}{}\left(\color{red}{tan\left(x\right)} \color{black}{\,+\,} \color{blue}{}ln\left(x\right) \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{black}{}\left( \color{red}{tan\left(x\right)} \color{black}{}\right)^{'} + \color{black}{}\left( \color{blue}{ln\left(x\right)} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{\dfrac{1}{cos^2\left(x\right)}} \color{black}{} + \color{blue}{} \dfrac{1}{x}
+                \end{align*}
+            \)
+        </p>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <b>Derivata del prodotto tra una costante ed una funzione </b>
+    <p class="grayBackground">
+        \[
+            \color{black}{}\left(\color{red}{c} \,\color{blue}{f\left(x\right)}\color{black}{}\right)^{'} = \color{red}{c}\,\color{blue}{f^{\color{black}{'}}\left(x\right)}
+        \]
+    </p>
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{5} \,\,\color{blue}{arcsin\left(x\right)} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{5} \color{black}{}\cdot \left( \color{blue}{arcosin\left(x\right)} \color{black}{} \right)^{'}
+                    \\\\
+                    = \,\,& \color{red}{5} \color{black}{} \,\cdot\, \color{blue}{\dfrac{1}{\sqrt{1 -x^2}}} = 
+                    \\\\
+                    = \,\,& \dfrac{5}{\sqrt{1 -x^2}}
+                \end{align*}
+            \)
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{6} \color{blue}{x^4} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{6} \color{black}{}\cdot \left( \color{blue}{x^4} \color{black}{} \right)^{'}
+                    \\\\
+                    = \,\,& \color{red}{6} \color{black}{} \,\cdot\, \color{blue}{4 x^{3}} = 
+                    \\\\
+                    = \,\,& 24x^3
+                \end{align*}
+            \)
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{\dfrac{\sqrt{37}}{5}} \,\,\color{blue}{cos\left(x\right)} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{\dfrac{\sqrt{37}}{5}} \color{black}{}\cdot \left( \color{blue}{cos\left(x\right)} \color{black}{} \right)^{'}
+                    \\\\
+                    = \,\,& \color{red}{\dfrac{\sqrt{37}}{5}} \color{black}{} \,\cdot\, \left( \color{blue}{- sin\left(x\right)\color{black}{}}\right) = 
+                    \\\\
+                    = \,\,& - \dfrac{\sqrt{37}\,\,sin\left(x\right)}{5}
+                \end{align*}
+            \)
+        </p>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <b>
+        Derivata del prodotto tra due funzioni
+        <br>
+        (regola di Leibniz)
+    </b>
+    <p class="grayBackground">
+        \[
+            \color{black}{}\left(\color{red}{f\left(x\right)} \color{black}{\,\cdot\,} \color{blue}{g\left(x\right)}\color{black}{}\right)^{'} = 
+            \color{red}{f^{\color{black}{'}}\left(x\right)} \color{black}{\,\cdot\,} \color{blue}{g\left(x\right)} + 
+            \color{red}{f\left(x\right)} \color{black}{\,\cdot\,} \color{blue}{g^{\color{black}{'}}\left(x\right)}
+        \]
+    </p>
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{sin\left(x\right)} \color{black}{}\,\cdot\, \color{blue}{ln\left(x\right)} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{black}{}\left(\color{red}{sin\left(x\right)} \color{black}{}\right)^{'}\cdot \color{blue}{ln\left(x\right)} +
+                        \color{red}{sin\left(x\right)} \color{black}{}\cdot \left( \color{blue}{ln\left(x\right)} \color{black}{} \right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{cos\left(x\right)} \color{black}{} \cdot \color{blue}{} ln\left(x\right) \color{black}{} + \color{red}{} sin\left(x\right) \color{black}{} \cdot \color{blue}{} \dfrac{1}{x}
+                    \\\\
+                    = \,\, & cos\left(x\right)\,ln\left(x\right) + \dfrac{sin\left(x\right)}{x}
+                \end{align*}
+            \)
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{arctan\left(x\right)} \color{black}{}\,\cdot\, \color{blue}{e^x} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{black}{}\left(\color{red}{arctan\left(x\right)} \color{black}{}\right)^{'}\cdot \color{blue}{e^x} +
+                        \color{red}{arctan\left(x\right)} \color{black}{}\cdot \left( \color{blue}{e^x} \color{black}{} \right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{\dfrac{1}{1 + x^2}} \color{black}{} \cdot \color{blue}{} e^x \color{black}{} + \color{red}{} arctan\left(x\right) \color{black}{} \cdot \color{blue}{} e^{x}
+                    \\\\
+                    = \,\, & e^x\left(\dfrac{1}{1 +x^2} + arctan\left(x\right) \right)
+                \end{align*}
+            \)
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <p>
+            \(
+                \begin{align*}
+                    & \left( \color{red}{cos\left(x\right)} \color{black}{}\,\cdot\, \color{blue}{\dfrac{5}{x^2}} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \color{black}{}\left(\color{red}{cos\left(x\right)} \color{black}{}\right)^{'}\cdot \color{blue}{\dfrac{5}{x^2}} +
+                        \color{red}{cos\left(x\right)} \color{black}{}\cdot \left( \color{blue}{5\,x^{-2}} \color{black}{} \right)^{'} = 
+                    \\\\
+                    = \,\,& \color{red}{-sin\left(x\right)} \color{black}{} \cdot \color{blue}{} \dfrac{5}{x^2} \color{black}{} + \color{red}{} cos\left(x\right) \color{black}{} \cdot \color{blue}{} 5 \cdot \left(-2\right)x^{-3}
+                    \\\\
+                    = \,\,& -\dfrac{5\,sin\left(x\right)}{x^2} -10\,cos\left(x\right) \, x^{-3} = 
+                    \\\\
+                    = \,\,& -\dfrac{5\,sin\left(x\right)}{x^2} -\dfrac{10\,cos\left(x\right)}{x^{3}} = 
+                \end{align*}
+            \)
+        </p>
+
+    </div>
+
+    <br>
+    <hr>
+    <br>
 
 
     <!-- Licenza -->
