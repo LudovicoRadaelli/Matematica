@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">1) Minimo comune multiplo tra polinomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/frazioniAlgebriche/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">2) Operazioni tra frazioni algebriche</b> 
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">2.1) Somma e sottrazione</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/frazioniAlgebriche/index#sommaFrazioniAlgebriche">link</a>)
+                </li>
+                <li>
+                    <b class="blue">2.2) Moltiplicazione</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/frazioniAlgebriche/index#sommaFrazioniAlgebriche">link</a>) -->
+                </li>
+            </ul>
+        </li>        
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>    
+    <p>
+        \[
+            \dfrac{1}{9x^2 -4} - \dfrac{2 -x}{27x^3 + 8}
+        \]
+    </p>
+
+    <p class="gray">
+        <b>Soluzione</b>
+        <br>
+        <br>
+        \(\dfrac{12x^2 -14x +8}{\left(3x -2\right)\cdot\left(3x +2\right)\cdot\left(9x^2 -6x +4\right)}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p class="formula">
+        \[
+            \dfrac{-x^3 +5x^2 +4x -20}{-x^2 +3x +10} \cdot \dfrac{-4}{x^2 -2x} + \dfrac{7x -x^2}{49 -x^2}
+        \]
+    </p>
+
+    <br>
+
+    <p class="gray">
+        <b>Soluzione</b>
+        <br>
+        <br>
+        \(\dfrac{x^2 -4x -28}{x\cdot\left(x +7\right)}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p class="formula">
+        \[
+            \dfrac{6x +6}{12x^2 +24x +12} : \dfrac{7x -1}{x^3 +1} - \dfrac{2-x}{6} \cdot \dfrac{12x}{4 -x^2}
+        \]
+    </p>
+
+    <br>
+
+    <p class="gray">
+        <b>Soluzione</b>
+        <br>
+        <br>
+        \(\dfrac{x^3 -27x^2 +3x +2}{2\left(x +2\right)\left(7x -1\right)}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    
+
+     <!-- Licenza -->
+
+    <div class="gray">
+        <span style="font-size: 0.7rem;">Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.</span>
+        <br>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Licenza Creative Commons" style="border-width:0; width: 30%; min-width:75px; max-width: 100px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+        </a>
+    </div>
+    <br>
+    <br>
+
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
