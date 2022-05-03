@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Cm</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <br>
+    <h2>Da studiare</h2>
+    <p>
+        Argomenti svolti finora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue"> 1) Studio del segno di prodotti e frazioni di polinomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/disequazioniFratte/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue"> 2) Scomposizione di polinimi</b> 
+            <br>
+            <ul>
+                <li>
+                    <b class="blue"> 2.1) Raccoglimento a fattor comune</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/scomposizionePolinomi/index#raccoglimentoFattorComune">link</a>)
+                </li>
+                <li>
+                    <b class="blue"> 2.2) Raccoglimento a fattor parziale</b> <!--(<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/scomposizionePolinomi/index#raccoglimentoFattorComune">link</a>)-->
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Raccoglimento a fattor parziale</h2>
+    <h3>Esempio 1</h3>
+    <p>
+        \[
+            2x^3 + 3x^2 - 2x - 3
+        \]
+        Osserviamo che non si può raccogliere a fattor <u>comune</u>.
+        <br>
+        Individuiamo gruppi di monomi con qualcosa in comune; ad esempio i termini \(2x^3\) e \(-2x\) sono entrambi divisibili per \(2\).
+        Evidenziamoli in rosso ed evidenziamo in blu i termini rimanenti.
+        <br>
+        \[
+            \color{red}{2x^3} \color{blue}{\,+3x^2} \color{red}{\,-2x\,} \color{blue}{\,-3} 
+        \]
+        Scomponiamo i termini rossi e quelli blu a fattor comune, separatamente:
+        \[
+            \color{red}{2x \cdot \left(x^2 -1\right)} \color{black}{\,\,+\,\,} \color{blue}{\,3 \cdot \left(x^2 - 1\right)}
+        \] 
+        Osserviamo che il polinomio \(x^2 -1\) è a sua volta un fattore comune. Raccogliamolo
+        \[
+            \begin{align*}
+                & \color{red}{2x\,}\color{black}{\,\cdot\,} \color{#009900}{\,\left(x^2 -1\right)} \color{black}{\,\,+\,\,} \color{blue}{\,3} \color{black}{\,\cdot\,}\color{#009900}{\,\left(x^2 -1\right)} =
+                \\\\
+                &= \color{#009900}{\,\left(x^2 - 1\right)} \color{black}{} \left(\color{red}{2x} \color{black}{\,+\,} \color{blue}{3}\color{black}{}\right)
+            \end{align*}
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Esempio 2</h3>
+    <p>
+        \[
+            8ax +20bx + 6ay +15by
+        \]
+        Osserviamo che non si può raccogliere a fattor comune.
+        <br>
+        Individuiamo dei monomi con qualcosa in comune; ad esempio i termini \(8ax\) e \(6ay\) hanno entrambi la \(a\).
+        Evidenziamoli in rosso ed evidenziamo in blu i termini rimanenti.
+        <br>
+        \[
+            \color{red}{8ax} \color{blue}{\,+20bx} \color{red}{\,+6ay\,} \color{blue}{\,+15by} 
+        \]
+        Scomponiamo i termini rossi e quelli blu a fattor comune, separatamente:
+        \[
+            \color{red}{2a \cdot \left(4x + 3y\right)} \color{black}{\,\,+\,\,} \color{blue}{\,5b \cdot \left(4x + 3y\right)}
+        \] 
+        Osserviamo che il polinomio \(4x +3\) è a sua volta un fattore comune. Raccogliamolo
+        \[
+            \begin{align*}
+                & \color{red}{2a\,}\color{black}{\,\cdot\,} \color{#009900}{\,\left(4x + 3y\right)} \color{black}{\,\,+\,\,} \color{blue}{\,5b} \color{black}{\,\cdot\,}\color{#009900}{\,\left(4x + 3y\right)} =
+                \\\\
+                &= \color{#009900}{\,\left(4x + 3y\right)} \color{black}{} \left(\color{red}{2a} \color{black}{\,+\,} \color{blue}{5b}\color{black}{}\right)
+            \end{align*}
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 0</h2>
+    <p>
+        <b><u>Studiare</u></b> i due esempi di scomposizione a fattor parziale che trovate all'inizio di questa pagina.
+        <br>
+        Per intenderci sul significato di <i>"studiare"</i>, analizzate il seguente diagramma di flusso:
+    </p>
+    <br>
+    <div style="overflow-y: scroll; height: 40vh;">
+        <img src="img/es12(1).png" alt="">
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre i seguenti polinomi tramite raccoglimento a fattor parziale
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(
+                -x^3 +7x^2 -5x +35
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                -6x^3 +8x^2 -9x + 12
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                7bx -2by +42x^2 -12xy
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                2 a - 2 x + a y - x y
+            \)
+        </li>
+    </ul>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ul class="gray">
+        <li>
+            \(
+                \left(7 - x\right)\cdot\left(x^2 +5\right)
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(4 -3x\right)\cdot\left(2x^2 +3\right)
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(b + 6x\right)\cdot\left(7x -2y\right)
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(y + 2\right)\cdot\left(a -x\right)
+            \)
+        </li>
+    </ul>
+
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Studiare il seguente polinomio al variare del valore di \(x\):
+        \[    
+            -7x^3 +5x^2 -14x + 10
+        \]
+    </p>
+
+    <br>
+
+    <p class="gray">
+        <b>Suggerimento</b>
+        <br>
+        <u>Prima</u> scomponete il polinomio, <u>successivamente</u> studiate il segno dei fattori e realizzate il grafico dei segni.
+    </p>
+    
+    <br>
+
+    <p class="gray">
+        <b>Soluzione</b>
+        <br>
+        \( x \lt \dfrac{5}{7}\)
+    </p>
+
+    
+
+    <!-- Licenza -->
+
+    <br>
+    <hr>
+    <br>
+    <div class="gray">
+        <span style="font-size: 0.7rem;">Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.</span>
+        <br>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Licenza Creative Commons" style="border-width:0; width: 30%; min-width:75px; max-width: 100px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+        </a>
+    </div>
+    <br>
+    <br>
+
+    <script>
+    </script>
+</body>
+      
+<!-- 
+    
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
