@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">Monomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/monomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Polinomi e prodotti notevoli</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Scoposizione di polinomi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>)             -->
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor comune</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor parziale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite prodotti notevoli</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">somma/differenza di cubi</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">trinomio speciale</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+            </ul>
+        </li>
+
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Scomposizione di un trionmio speciale</h2>
+    <div class="gray">
+        <p>
+            Dato un trinomio 
+            \[
+                x^2 +\color{blue}{s}\color{gray}{} x + \color{#009900}{p} 
+            \]
+            per scomporlo troviamo una coppia di numeri \(\color{red}{n_{1}}\) ed \(\color{red}{n_{2}}\) tali che
+        </p>
+        <br>
+        <ul>
+            <li>
+                Il loro prodotto abbia come risultato \(\color{#009900}{p}\), ovvero
+                \[
+                    \color{red}{n_{1}}\color{gray}{} \cdot \color{red}{n_{2}}\color{black}{} = \color{#009900}{p}
+                \]
+            </li>
+            <li>
+                La loro somma abbia come risultato \(\color{blue}{s}\), ovvero
+                \[
+                    \color{red}{n_{1}}\color{gray}{} + \color{red}{n_{2}}\color{black}{} = \color{blue}{s}
+                \]
+            </li>
+        </ul>
+        <br>
+        <p>
+            Una volta trovati li usiamo per scomporre il polinomio come segue:
+            \[
+                x^2 +\color{blue}{s}\color{gray}{} x + \color{#009900}{p} \color{gray}{} = \left(x - \color{red}{n_{1}} \color{gray}{}\right) \cdot \left(x - \color{red}{n_{2}}\right)
+            \]
+        </p>
+
+        <br>
+        <h3>Esempio</h3>
+        <div class="esempi-container">
+            <p>
+                Scomporre il polinomio speciale 
+                \[
+                    x^2 \color{blue}{\,+ 7}\color{gray}{} x \color{#009900}{\,- 18} 
+                \]
+                Innanzitutto cerchiamo delle coppie di numeri che moltiplicati diano \(\color{#009900}{- 18}\):
+                <br>
+                \[
+                    \begin{align*}
+                        -1 \quad &\quad  18
+                        \\\\
+                        1 \quad &\quad  -18
+                        \\\\
+                        -2 \quad &\quad  9
+                        \\\\
+                        2 \quad &\quad  -9
+                        \\\\
+                        -3 \quad &\quad  6
+                        \\\\
+                        3 \quad &\quad  -6
+                    \end{align*}
+                \]
+                Tra tutte queste coppie cerchiamo quella che dà come somma \(\color{blue}{+ 7}\)
+                
+                \[-1 + 18 = 17\]
+                quindi scartiamo la prima coppia;
+                
+                \[1 - 18 = -17\] 
+                scartiamo anche la seconda coppia;
+                
+                \[-2 + 9 = \color{blue}{\,+7}\] 
+                quindi la coppia cercata è 
+                \[\color{red}{-2} \quad\quad \color{red}{9}\]
+                <br>
+                Usiamo questi numeri per scomporre il polinomio iniziale:
+                \[
+                    \begin{align*}
+                        & x^2 \color{blue}{\,+ 7}\color{gray}{} x \color{#009900}{\,- 18} \color{gray}{} = \left(x \color{red}{\,-2}\color{gray}{}\right) \cdot  \left(x \color{red}{\,+ 9}\color{gray}{}\right)
+                    \end{align*}
+                \]
+            </p>
+        </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre i seguenti trinomi speciali
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(x^2 +5x +6\)
+        </li>
+        <br>
+        <li>
+            \(x^2 +9x -10\)
+        </li>
+        <br>
+        <li>
+            \(x^2 +x -20\)
+        </li>
+        <br>
+        <li>
+            \(x^2 +2x -3\)
+        </li>
+    </ul>
+    <br>
+
+    <br>
+    <hr>
+    <br>    
+
+
+    <!-- <h2 class="green">Extra</h2> -->
+    
+    
+    
+
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->

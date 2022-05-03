@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi 1° Fi</title>
+</head>
+<style>
+</style>
+<body>
+    <h1>Compiti per casa</h1>    
+
+    <br>
+    
+    <h2>Da studiare</h2>
+
+    <p>Argomenti svolti:</p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue">Monomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/monomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Polinomi e prodotti notevoli</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue">Scoposizione di polinomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>)            
+            <br>
+            <ul>
+                <li>
+                    <b class="blue">tramite raccoglimento a fattor comune</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+                <li>
+                    <b class="blue">tramite prodotti notevoli</b> <!-- (<a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/scomposizionePolinomi.html">link</a>) -->            
+                </li>
+            </ul>
+        </li>
+
+        <!-- <span style="color: white; background-color: red;"><b><u>Nuovo</u></b></span> -->
+    </ul>
+    
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esempio di raccoglimento a fattor parziale</h2>
+    <p>
+        \[
+            8ax +20bx + 6ay +15by
+        \]
+        Osserviamo che non si può usare nessuna delle scomposizioni che conosciamo.
+        <br>
+        Individuiamo dei monomi con qualcosa in comune; ad esempio i termini \(8ax\) e \(6ay\) hanno entrambi la \(a\).
+        Evidenziamoli in rosso ed evidenziamo in blu i termini rimanenti.
+        <br>
+        \[
+            \color{red}{8ax} \color{blue}{\,+20bx} \color{red}{\,+6ay\,} \color{blue}{\,+15by} 
+        \]
+        Scomponiamo i termini rossi e quelli blu a fattor comune, separatamente:
+        \[
+            \color{red}{2a \cdot \left(4x + 3y\right)} \color{black}{\,\,+\,\,} \color{blue}{\,5b \cdot \left(4x + 3y\right)}
+        \] 
+        Osserviamo che il polinomio \(4x +3\) è a sua volta un fattore comune. Raccogliamolo
+        \[
+            \begin{align*}
+                & \color{red}{2a\,}\color{black}{\,\cdot\,} \color{#009900}{\,\left(4x + 3y\right)} \color{black}{\,\,+\,\,} \color{blue}{\,5b} \color{black}{\,\cdot\,}\color{#009900}{\,\left(4x + 3y\right)} =
+                \\\\
+                &= \color{#009900}{\,\left(4x + 3y\right)} \color{black}{} \left(\color{red}{2a} \color{black}{\,+\,} \color{blue}{5b}\right)
+            \end{align*}
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre il polinomio 
+        \[
+            -2 a b + 6 a x - b y + 3 x y
+        \]
+        usando il raccoglimento a fattor parziale
+    </p>
+
+    <br>
+    <p class="gray">
+        Se non vi è chiaro come procedere potere guardare <a href="https://www.youtube.com/watch?v=rLsoq7bBWYY">questo tutorial</a>
+    </p>
+   
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Scomporre il polinomio 
+        \[
+            2 a - 2 x + a y - x y
+        \]
+        usando il raccoglimento a fattor parziale
+    </p> 
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 3</h2>
+    <p>
+        Scomporre il polinomio 
+        \[
+            7bx -2by +42x^2 -12xy
+        \]
+        usando il raccoglimento a fattor parziale
+    </p> 
+
+    <br>
+    <hr>
+    <br>
+
+
+    <!-- <h2 class="green">Extra</h2> -->
+    
+    
+    
+
+    
+    <script>
+
+        /* function mostraSoluzione(n) {
+            document.getElementsByClassName("soluzione-button")[n].style.display = "none";
+            document.getElementsByClassName("soluzione")[n].style.display = "block";
+        } */
+
+        /* function vai1() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/prima/esercizi1Fi/es${ex[i].index + 1}.html`;
+        } */
+  
+        
+        
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }  
+
+    </script>
+    
+    
+    
+    
+</body>
+
+
+<!-- 
+    <br>
+    <button id="hint5-button" onclick="showHint(5)">Video spiegazione</button>
+    <div id="hint5" class="esempi-container" style="display: none;">
+        <video src="https://ludovicoradaelli.github.io/Matematica/2022/seconda/esercizi2Cm/img/es16(5).mp4" controls></video>
+    </div> 
+-->
