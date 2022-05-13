@@ -632,6 +632,164 @@
     <hr>
     <br>
 
+    <h3 class="blue">4.4) 
+        Derivata del rapporto tra due funzioni
+    </h3>
+    <p class="grayBackground">
+        \[
+            \color{black}{}\left( \dfrac{\color{red}{f\left(x\right)}}{\color{blue}{g\left(x\right)}} \color{black}{}\right)^{'} = 
+            \dfrac{\color{red}{f^{\color{black}{'}}\left(x\right)} \color{black}{\,\cdot\,} \color{blue}{g\left(x\right)} \color{black}{} - \color{red}{f\left(x\right)} \color{black}{\,\cdot\,} \color{blue}{g^{\color{black}{'}}\left(x\right)}}{\left[\color{blue}{g\left(x\right)}\color{black}{}\right]^2}
+        \]
+    </p>
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            \(
+                \begin{align*}
+                    & \color{black}{}\left( \dfrac{\color{red}{sin\left(x\right)}}{\color{blue}{4x^5 -1}} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \dfrac{\left(\color{red}{sin\left(x\right)}\color{black}{}\right)^{'} \cdot \left(\color{blue}{4x^5 -1}\color{black}{}\right) - \color{red}{sin\left(x\right)} \color{black}{} \cdot \left(\color{blue}{4x^5 -1}\color{black}{}\right)^{'} }{\left[\color{blue}{4x^5 -1}\right]^{2}} =
+                    \\\\
+                    = \,\,& \dfrac{\color{red}{cos\left(x\right)}\color{black}{} \cdot \left(\color{blue}{4x^5 -1}\color{black}{}\right) - \color{red}{sin\left(x\right)} \color{black}{} \cdot \color{blue}{20 x^4}\color{black}{} }{\left[\color{blue}{4x^5 -1}\right]^{2}} =
+                \end{align*}
+            \)
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <p class="gray">
+            Notate come nell'esempio che segue l'applicazione della regola vera e propria sia seguita da una manipolazione abbastanza elaborata (i passaggi in colore nero), tesa a semplificare la forma con cui si presenta la derivata.
+        </p>
+        <br>
+        <p>
+            \(
+                \begin{align*}
+                    & \color{black}{}\left( \dfrac{\color{red}{ln\left(x\right)}}{\color{blue}{\sqrt{x}}} \color{black}{}\right)^{'} = 
+                    \\\\
+                    = \,\,& \dfrac{\left(\color{red}{ln\left(x\right)}\color{black}{}\right)^{'} \cdot \left(\color{blue}{\sqrt{x}}\color{black}{}\right) - \color{red}{ln\left(x\right)} \color{black}{} \cdot \left(\color{blue}{\sqrt{x}}\color{black}{}\right)^{'} }{\left[\color{blue}{\sqrt{x}}\right]^{2}} =
+                    \\\\
+                    = \,\,& \dfrac{\left(\color{red}{ln\left(x\right)}\color{black}{}\right)^{'} \cdot \left(\color{blue}{\sqrt{x}}\color{black}{}\right) - \color{red}{ln\left(x\right)} \color{black}{} \cdot \left(\color{blue}{x^{\frac{1}{2}}}\color{black}{}\right)^{'} }{\left[\color{blue}{\sqrt{x}}\right]^{2}} =
+                    \\\\
+                    = \,\,& \dfrac{\color{red}{\dfrac{1}{x}}\color{black}{} \cdot \left(\color{blue}{x^{\frac{1}{2}}}\color{black}{}\right) - \color{red}{ln\left(x\right)} \color{black}{} \cdot \color{blue}{\dfrac{1}{2}x^{-\frac{1}{2}}}\color{black}{} }{|x|} =
+                    \\\\
+                    = \,\,& \dfrac{x^{-1} \cdot \left(x^{\frac{1}{2}}\right) - ln\left(x\right)  \cdot \dfrac{1}{2}\dfrac{1}{\sqrt{x}}}{|x|} =
+                    \\\\
+                    = \,\,& \dfrac{x^{-\frac{1}{2}}  - \dfrac{ln\left(x\right)}{2\sqrt{x}}}{|x|} =
+                    \\\\
+                    = \,\,& \dfrac{\dfrac{1}{\sqrt{x}} - \dfrac{ln\left(x\right)}{2\sqrt{x}}}{|x|} =
+                    \\\\
+                    = \,\,& \dfrac{\dfrac{1}{\sqrt{x}} \left(1 - \dfrac{ln\left(x\right)}{2}\right)}{|x|} =
+                    \\\\
+                    = \,\,& \dfrac{1 - \dfrac{ln\left(x\right)}{2}}{|x|\sqrt{x}} =
+                    \\\\
+                    = \,\,& \dfrac{\frac{2 - ln\left(x\right)}{2}}{|x|\sqrt{x}} =
+                    \\\\
+                    = \,\,& \dfrac{2 - ln\left(x\right)}{2|x|\sqrt{x}} =
+                \end{align*}
+            \)
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3 class="blue">4.5) 
+        Derivata della composizione di due funzioni
+    </h3>
+    <p class="grayBackground">
+        \[
+            \left[\color{red}{}f\left(\color{blue}{}g\left(\color{black}{}x\color{blue}{}\right)\color{red}{}\right) \color{black}{}\right]^{'} = \color{red}{} f\color{black}{}^{'}\color{red}{}\left( \color{blue}{g\left(\color{black}{}x\color{blue}{}\right)} \color{red}{}\right) \color{black}{} \,\,\cdot\,\, \color{blue}{} g\color{black}{}^{'}\color{blue}{} \left(\color{black}{}x\color{blue}{}\right)
+        \]
+    </p>
+    <br>
+    <p>
+        La funzione composta \(\color{red}{}f\left(\color{blue}{}g\left(\color{black}{}x\color{blue}\right)\color{red}{}\right)\) è la funzione che si ottiene applicando prima la funzione \(\color{blue}{g}\) all'input \(x\) e successivamente applicando la funzione \(\color{blue}{g}\) ad \(\color{red}{f\left(x\right)}\):
+        \[
+            x \longmapsto \color{blue}{}g\left(\color{black}{}x\color{blue}{}\right) \longmapsto \color{red}{}f\left(\color{blue}{}g\left(\color{black}{}x\color{blue}{}\right)\color{red}{}\right)
+        \]
+    </p>
+    <p>
+        Il primo fattore che troviamo nella regola di derivazione è 
+        \[
+            \color{red}{} f\color{black}{}^{'}\color{red}{}\left( \color{blue}{g\left(\color{black}{}x\color{blue}{}\right)} \color{red}{}\right)
+        \]
+        Questo termine è costituito dalla derivata della funzione \(\color{red}{f}\) calcolata in corrispondenza dell'input \(\color{blue}{}g\left(\color{black}{}x\color{blue}{}\right)\)
+    </p>
+
+    <br>
+    <h3>Esempi</h3>
+    <div class="esempi-container">
+        <p>
+            Calcoliamo la seguente derivata
+            \[
+                \left[ \color{red}{}cos\left( \color{blue}{} ln\left(\color{black}{}x\color{blue}{}\right) \color{red}{}\right) \color{black}{}\right]^{'}
+            \]
+            
+            La funzione più intena è 
+            \[
+                \color{blue}{} g \left( \color{black}{} x \color{blue}{}\right) \color{black}{} = \color{blue}{} ln \left( \color{black}{} x \color{blue}{}\right) \color{black}{}
+            \]
+            Quella più esterna è 
+            \[
+                \color{red}{} f \left( \color{black}{} x \color{red}{}\right) \color{black}{} = \color{red}{} cos \left( \color{black}{} x \color{red}{}\right) \color{black}{}
+            \]
+        </p>
+        
+        <br>
+
+        <ol>
+            <li>
+                <p>
+                    Calcoliamo la derivata di \(\color{red}{}f\):
+                    \[
+                        \color{red}{}f\color{black}{}^{'}\color{red}{}\left(\color{#009900}{}x\color{red}{}\right) \color{black}{}= 
+                        \left[\color{red}{}cos\left(\color{#009900}{}x\color{red}{}\right)\color{black}{}\right]^{'} = -sin\left(\color{#009900}{}x\color{black}{}\right)
+                    \]
+                    e valutiamola in corrispondenza dell'input \(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\). In soldoni, al posto della \(\color{#009900}{}x\) che vi ho indicato in verde andiamo a sotituire \(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\).
+                </p>
+                <p class="formula">
+                    \[
+                        \color{red}{}f\color{black}{}^{'}\color{red}{}\left(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\color{red}{}\right) \color{black}{}= 
+                        \left[\color{red}{}cos\left(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\color{red}{}\right)\color{black}{}\right]^{'} = -sin\left(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\color{black}{}\right)
+                    \]
+                </p>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Ora calcoliamo la derivata di \(\color{blue}{g}\)
+                    \[
+                        \color{blue}{} g \color{black}{}^{'} \color{blue}{} \left( \color{black}{} x\color{blue}{}\right) = 
+                        \left[ \color{blue}{} ln \left( \color{black}{} x\color{blue}{}\right) \color{black}{}\right]\color{black}{}^{'} = \dfrac{1}{x}
+                    \]
+                </p>
+            </li>
+            
+        </ol>
+        
+        <br>
+        
+        <p>
+            Infine mettiamo insieme i fattori calcolati
+            \[
+            \left[ \color{red}{}cos\left( \color{blue}{} ln\left(\color{black}{}x\color{blue}{}\right) \color{red}{}\right) \color{black}{}\right]^{'} = 
+            -sin\left(\color{blue}{}ln\left(\color{black}{}x\color{blue}{}\right)\color{black}{}\right) \cdot \dfrac{1}{x}
+            \]
+        </p>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+
 
     <!-- Licenza -->
 
