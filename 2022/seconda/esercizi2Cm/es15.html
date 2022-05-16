@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Esercizi - 2°Cm</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <h1>Compiti per casa</h1>
+
+    <br>
+    <h2>Da studiare</h2>
+    <p>
+        Argomenti svolti finora:
+    </p>
+    <br>
+    <ul>
+        <li>
+            <b class="blue"> 1) Studio del segno di prodotti e frazioni di polinomi</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/disequazioniFratte/index.html">link</a>)
+        </li>
+        <li>
+            <b class="blue"> 2) Scomposizione di polinimi</b> 
+            <br>
+            <ul>
+                <li>
+                    <b class="blue"> 2.1) Raccoglimento a fattor comune</b> (<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/scomposizionePolinomi/index#raccoglimentoFattorComune">link</a>)
+                </li>
+                <li>
+                    <b class="blue"> 2.2) Raccoglimento a fattor parziale</b> <!--(<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/scomposizionePolinomi/index#raccoglimentoFattorComune">link</a>)-->
+                </li>
+                <li>
+                    <b class="blue"> 2.3) Tramite somma per differenza</b> <!--(<a href="https://ludovicoradaelli.github.io/Matematica/2022/seconda/scomposizionePolinomi/index#raccoglimentoFattorComune">link</a>)-->
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2 class="yellow">Scomposizione tramite somma per differenza</h2>
+    <b>Prodotto notevole <i>somma per differenza</i></b>
+    <p class="grayBackground">
+        \[
+            \left(\color{red}{A} \color{black}{} + \color{blue}{B}\color{black}{}\right) \cdot \left(\color{red}{A} \color{black}{} - \color{blue}{B}\color{black}{}\right) = \color{red}{A}^{\color{black}{2}} \color{black}{}- \color{blue}{B}^{\color{black}{2}}
+        \]
+    </p>
+    <p>
+        Questa formula ci dice che se una moltiplicazione ha la struttura 
+        \[\left(\color{red}{A} \color{black}{} + \color{blue}{B}\color{black}{}\right) \cdot \left(\color{red}{A} \color{black}{} - \color{blue}{B}\color{black}{}\right)\]
+        possiamo usare una "scorciatoia" per i calcoli:         
+    </p>
+
+    <br>
+    <ul>
+        <li>
+            prendiamo il termine \(\color{red}{A}\), lo eleviamo alla seconda
+        </li>
+        <br>
+        <li>
+            gli sottraiamo il termine \(\color{blue}{B}\) elevato alla seconda
+        </li>
+    </ul>
+
+    <br>
+    <div class="esempi-container">
+        <b>Esempio 1</b>
+    <br>
+    <p class="formula">
+        \[
+            \begin{align*}
+                \left(\color{red}{5x^3} \color{black}{} + \color{blue}{7}\color{black}{}\right) \cdot \left(\color{red}{5x^3} \color{black}{} - \color{blue}{7}\color{black}{}\right) = & \color{black}{}\left(\color{red}{5x^3}\color{black}{}\right)^{\color{black}{2}} \color{black}{}- \color{blue}{7}^{\color{black}{2}} \color{black}{} =
+                \\\\
+                = \,& 25x^6 - 49
+            \end{align*}
+        \]
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <b>Esempio 2</b>
+    <br>
+    <p class="formula">
+        \[
+            \begin{align*}
+                \left(\color{red}{6} \color{black}{} + \color{blue}{11x^2}\color{black}{}\right) \cdot \left(\color{red}{6} \color{black}{} - \color{blue}{11x^2}\color{black}{}\right) = & \color{black}{}\color{red}{6}\color{black}{}^{\color{black}{2}} \color{black}{}- \left(\color{blue}{11x^2}\color{black}{}\right)^{\color{black}{2}} \color{black}{} =
+                \\\\
+                = \,& 36 - 121x^4
+            \end{align*}
+        \]
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>
+        <a href="https://ludovicoradaelli.github.io/Matematica/2022/prima/polinomi/index#sommaPerDifferenza">QUI</a> trovate un generatore automatico di esempi di prodotti del tipo <i>somma per differenza</i>.
+    </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <b>Scomposizione tramite somma per differenza</b>
+    <br>
+    <br>
+    <p>
+        Il prodotto notevola <i>somma per differnza</i> può essere usato anche per scomporre un polinomio.
+        <br>
+        Infatti se osserviamo che un polinomio è della forma 
+        \[
+            \color{red}{A}\color{black}{}^2 - \color{blue}{B}\color{black}{}^2
+        \]
+        di conseguenza sarà il risultato di un prodotto del tipo somma per differenza.
+    </p>
+
+    <br>
+    
+    <br>
+    <div class="esempi-container">
+        <b>Esempio 1</b>
+        <br>
+        <p class="formula">
+            \[
+                \begin{align*}
+                    4x^8 - 9 = &\,\color{black}{}\left(\color{red}{2x^4}\color{black}{}\right)^{\color{black}{2}} \color{black}{}- \color{blue}{3}^{\color{black}{2}} \color{black}{}
+                    \\\\
+                    = \,&  \left(\color{red}{2x^4} \color{black}{} + \color{blue}{3}\color{black}{}\right) \cdot \left(\color{red}{2x^4} \color{black}{} - \color{blue}{3}\color{black}{}\right) 
+                \end{align*}
+            \]
+        </p>
+
+        <br>
+        <hr>
+        <br>
+
+        <b>Esempio 2</b>
+        <br>
+        <p class="formula">
+            \[
+                \begin{align*}
+                    100x^2 - 1 = &\,\color{black}{}\left(\color{red}{10x}\color{black}{}\right)^{\color{black}{2}} \color{black}{}- \color{blue}{1}^{\color{black}{2}} \color{black}{}
+                    \\\\
+                    = \,&  \left(\color{red}{10x} \color{black}{} + \color{blue}{1}\color{black}{}\right) \cdot \left(\color{red}{10x} \color{black}{} - \color{blue}{1}\color{black}{}\right) 
+                \end{align*}
+            \]
+        </p>
+    </div>
+
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizio 1</h2>
+    <p>
+        Scomporre i seguenti polinomi:
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(4x^{4} - 9\)
+        </li>
+        <br>
+        <li>
+            \(25x^4 - 1\)
+        </li>
+        <br>
+        <li>
+            \(\dfrac{4}{9}x^2 - 5\)
+        </li>
+        <br>
+        <li>
+            \(81 - x^6\)
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 1</h2>
+    <p>
+        Studiare il segno del seguente polinomio al variare del valore di \(x\):
+        \[    
+            4x^{4} - 9
+        \]
+    </p>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} \gt 0\) se
+        <br>
+        <br>
+        \(x \lt -\sqrt{\dfrac{3}{2}} \quad\text{oppure}\quad x \gt -\sqrt{\dfrac{3}{2}}\)
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} \lt 0\) se
+        <br>
+        <br>
+        \(-\sqrt{\dfrac{3}{2}} \lt  x \lt -\sqrt{\dfrac{3}{2}}\)
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} = 0\) se
+        <br>
+        <br>
+        \(x = -\sqrt{\dfrac{3}{2}} \quad\text{oppure}\quad x = -\sqrt{\dfrac{3}{2}}\)
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizio 2</h2>
+    <p>
+        Studiare il segno del seguente polinomio al variare del valore di \(x\):
+        \[    
+            \sqrt[3]{3 -x} \cdot \sqrt{x^2 - 5x -4}
+        \]
+    </p>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione:</b>
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} \gt 0\) se
+        <br>
+        <br>
+        \(x \lt -\dfrac{5 - \sqrt{41}}{2}\)
+        <br>
+        <br>
+        Non esiste alcun valore di \(x\) tale che \(\boldsymbol{P\left(x\right)} \lt 0\).
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} = 0\) se
+        <br>
+        <br>
+        \(x = -\dfrac{5 - \sqrt{41}}{2}\)
+        <br>
+        <br>
+        \(\boldsymbol{P\left(x\right)} \quad\text{non esiste}\,\,\,\) se
+        <br>
+        <br>
+        \(x \gt -\dfrac{5 - \sqrt{41}}{2}\)\
+    </p>
+    
+    <br>
+    <hr>
+    <br>
+
+    <!-- Licenza -->
+
+    <div class="gray">
+        <span style="font-size: 0.7rem;">Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribuzione - Non commerciale - Non opere derivate 4.0 Internazionale</a>.</span>
+        <br>
+        <br>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+            <img alt="Licenza Creative Commons" style="border-width:0; width: 30%; min-width:75px; max-width: 100px;" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+        </a>
+    </div>
+    <br>
+    <br>
+
+    <script>
+    </script>
+</body>
+      
+<!-- 
+    
+ -->
+<!-- 
+    https://ludovicoradaelli.github.io/Matematica/2022/seconda/
+-->
