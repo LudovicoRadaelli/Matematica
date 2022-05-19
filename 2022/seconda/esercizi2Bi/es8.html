@@ -90,6 +90,12 @@
             \sqrt[3]{6 - 4x} \cdot \sqrt{-x^2 -4x +21}
         \]
     </p>
+
+    <br>
+        <button id="hint1-button" onclick="showHint(1)">Video spiegazione</button>
+        <div id="hint1" class="esempi-container" style="display: none;">
+            <video src="img/es8(1).mp4" controls></video>
+        </div> 
     
     <br>
     <hr>
@@ -109,6 +115,10 @@
     <br>
 
     <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
     </script>
 </body>
       
