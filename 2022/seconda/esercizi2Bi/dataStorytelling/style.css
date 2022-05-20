@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.4rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.box {
+    width: calc(100% - 4rem);
+    height: calc(100vh - 4rem);
+    text-align: center;
+    padding: 2rem;
+    border: 0.01rem black solid;
+    margin: 2rem;
+
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sviluppiProgetto {
+    overflow-y: scroll;
+}
+
+#elementiPerLoSviluppo {
+    overflow-y: scroll;
+}
+
