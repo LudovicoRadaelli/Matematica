@@ -20,6 +20,7 @@ h2 {
     padding: 2rem;
     border: 0.01rem black solid;
     margin: 2rem;
+    overflow-y: scroll;
 
 }
 
@@ -29,11 +30,5 @@ h2 {
     justify-content: center;
 }
 
-#sviluppiProgetto {
-    overflow-y: scroll;
-}
 
-#elementiPerLoSviluppo {
-    overflow-y: scroll;
-}
 
