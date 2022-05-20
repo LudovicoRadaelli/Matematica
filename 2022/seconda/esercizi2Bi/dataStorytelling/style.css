@@ -20,7 +20,7 @@ h2 {
     padding: 2rem;
     border: 0.01rem black solid;
     margin: 2rem;
-    overflow-y: scroll;
+    overflow-y: auto;
 
 }
 
