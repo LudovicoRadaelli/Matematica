@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.4rem;
+}
+
+html {
+    background-color: #1e1e1e;
+}
+
+h1 {
+    /* font-variant: small-caps; */
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(218, 218, 218);
+    text-decoration: underline dotted rgb(141, 141, 141);
+}
+
+.box {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+    padding: auto;
+    z-index: -4;
+    color: rgb(218, 218, 218);
+    position: relative;
+    background-color: #1e1e1e;
+    z-index: 0;
+}
+
+#intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0px;
+    color: rgb(255, 255, 255);
+    border-bottom: 0.3rem solid rgb(232, 61, 140);
+}
+    /* color: rgb(232, 61, 140);
+    color: rgb(103, 200, 187); 
+    #a47ad8*/
+
+.arrow {
+    position: absolute;
+    bottom: calc(-7.5vw - 0.2rem);
+    left: calc((21.21vw - 15vw)/2);
+    width: 15vw;
+    height: 15vw;
+    background-color: #1e1e1e;
+    transform: rotate(45deg);
+}
+
+.spaceBetween {
+    
+    width: 100vw;
+    min-height: calc(21.21vw/2);
+    background-color: #1e1e1e;
+    padding: 0;
+}
+
+#firstArrow {
+    border-right: 0.35rem solid rgb(232, 61, 140);
+    border-bottom: 0.35rem solid rgb(232, 61, 140);
+}
+
+#primaFase {
+    position: relative;
+    background-color: #1e1e1e;
+    border-bottom: 0.3rem solid rgb(103, 200, 187);
+}
+
+#secondArrow {
+    border-right: 0.35rem solid rgb(103, 200, 187);
+    border-bottom: 0.35rem solid rgb(103, 200, 187);
+}
+
+#secondaFase {
+    border-bottom: 0.3rem solid #da8258;
+}
+
+#thirdArrow {
+    border-right: 0.35rem solid #da8258;
+    border-bottom: 0.35rem solid #da8258;
+    
+}
+
+#sviluppiProgetto {
+    border-bottom: 0.3rem solid #b092d5;  
+}
+
+#fourthArrow {
+    border-right: 0.35rem solid #b092d5;
+    border-bottom: 0.35rem solid #b092d5;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline;
+    text-decoration: underline dotted rgb(141, 141, 141);
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 50vw;
+    height: 50vw;
+    min-height: 50vw;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  embed {
+    width: 50vw; 
+    height: 50vw;
+  }
