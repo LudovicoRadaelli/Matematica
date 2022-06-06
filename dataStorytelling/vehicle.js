@@ -33,7 +33,7 @@ function Vehicle(x, y) {
   this.vel = p5.Vector.random2D();
   this.acc = createVector();
   this.r = random(8,13);
-  this.maxspeed = 10;
+  this.maxspeed = 12;
   this.maxforce = 1;
   this.number = Math.floor(Math.random()*10);
   this.stable = false;
