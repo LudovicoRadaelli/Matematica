@@ -52,7 +52,7 @@ function draw() {
   stable = true;
   for (var i = 0; i < vehicles.length; i++) {
     var v = vehicles[i];
-    if(millis() > 4000) {
+    if(millis() > 2000) {
       v.behaviors();
     };
     v.update();
