@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Raccoglimento a fattor comune</title>
+</head>
+<body>
+    <h1>Raccoglimento a fattor comune</h2>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: pag. 351;
+        <br>
+        <br>
+        <i>Esercizi</i>: pag. 372 dal 195 al 225.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+
+    <div class="esempi-container">
+        <b class="yellow">Esempio 1</b>
+        <br>
+        <br>
+        <p id="esempio1">            
+            <p>
+                Scomponiamo il polinomio 
+                \[4x^3y - 12x^4y -18x^6\]
+            </p>
+            <p>
+                <b>Troviamo il fattore comune</b>
+            </p>
+            <br>
+            <p>
+                &bullet; Il più grande numero che divide i coefficienti del polinomio è \(2\).
+            </p>
+            <br>
+            <p>
+                &bullet;  La \(x\) è presente in tutti i monomi e l'esponente più piccolo con cui 
+                compare è \(3\).
+            </p>
+            <br>
+            <p>
+                Il fattore comune è \(2x^3\)
+            </p>
+            <br>
+            <p class="grayBackground">
+                Di conseguenza possiamo scomporre il polinomio come segue:
+                \[
+                    \begin{align*}
+                    & 4x^3y - 12x^4y -18x^6 =
+                    \\\\
+                    = \,\,&  2x^3 \cdot \left(2y -6xy -9x^3\right)
+                    \end{align*}
+                \]
+            </p>            
+            <br>
+            <p>
+                <b>Come abbiamo trovato i termini in parentesi?</b>
+            </p>
+            <br>
+        </p>
+        <p>
+            \(2y\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(2x^3y\)
+        </p>
+        <br>
+        <p>
+            \(-6xy\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(-12x^4y\)
+        </p>
+        <br>
+        <p>
+            \(-18x^3\) è il monomio che moltiplicato per \(2x^3\) dà come risultato \(-18x^6\)
+        </p>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <b class="yellow">Esempio 2</b>
+        <br>
+        <br>
+        <p id="esempio2">            
+            <p>
+                Scomponiamo il polinomio 
+                \[20x^9y^3 - 24x^4y^7 -16x^2y^3\]
+            </p>
+            <p>
+                <b>Troviamo il fattore comune</b>
+            </p>
+            <br>
+            <p>
+                &bullet; Il più grande numero che divide i coefficienti del polinomio è \(4\).
+            </p>
+            <br>
+            <p>
+                &bullet;  La \(x\) è presente in tutti i monomi e l'esponente più piccolo con cui 
+                compare è \(2\). Anche la \(y\) è presente in tutti i monomi e l'esponente più piccolo con cui 
+                compare è \(3\). 
+            </p>
+            <br>
+            <p>
+                Il fattore comune è \(4x^2y^3\)
+            </p>
+            <br>
+            <p class="grayBackground">
+                Di conseguenza possiamo scomporre il polinomio come segue:
+                \[
+                    \begin{align*}
+                    & 20x^9y^3 - 24x^4y^7 -16x^2y^3 =
+                    \\\\
+                    = \,\,&  4x^2y^3 \cdot \left(5x^7 - 6x^2y^4 - 4\right)
+                    \end{align*}
+                \]
+            </p>            
+            <br>
+            <p>
+                <b>Come abbiamo trovato i termini in parentesi?</b>
+            </p>
+            <br>
+        </p>
+        <p>
+            \(5x^7\) è il monomio che moltiplicato per \(4x^2y^3\) dà come risultato \(20x^9y^3\)
+        </p>
+        <br>
+        <p>
+            \(-6x^2y^4\) è il monomio che moltiplicato per \(4x^2y^3\) dà come risultato \(-24x^4y^7\)
+        </p>
+        <br>
+        <p>
+            \(-4\) è il monomio che moltiplicato per \(4x^2y^3\) dà come risultato \(-16x^2y^3\)
+        </p>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizi aggiuntivi</h2>
+
+    <ul>
+        <li>
+            \(6x^3y - 12x^7y^2 - 15x^2\)
+        </li>
+        <br>
+        <li>
+            \(-9x^2y^8 + 27x^4y - 6y^2\)
+        </li>
+        <br>
+        <li>
+            \(49x^2 + 14xy + 35y^2\)
+        </li>
+    </ul>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ul class="gray">
+        <li>
+            \(
+                3x^2 \cdot \left(2xy - 4x^5y^2 - 5\right)
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                 3y \cdot \left(-3x^2y^7 + 9x^4 - 2y \right)
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                7 \cdot \left(7x^2 + 2xy + 5y^2\right)
+            \)
+        </li>
+    </ul>
+
+    <br>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Raccoglimento tramite somma per differenza</title>
+</head>
+<body>
+    <h1>Raccoglimento tramite somma per differenza</h2>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: pag. 353;
+        <br>
+        <br>
+        <i>Esercizi</i>: pag. 380 dal 357 al 386.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+    
+    <div class="esempi-container">
+
+    <b class="yellow">Prodotto notevole <i>somma per differenza</i></b>
+    <p class="grayBackground">
+        \[
+            \left(\color{red}{A} \color{black}{} + \color{blue}{B}\color{black}{}\right) \cdot \left(\color{red}{A} \color{black}{} - \color{blue}{B}\color{black}{}\right) = \color{red}{A}^{\color{black}{2}} \color{black}{}- \color{blue}{B}^{\color{black}{2}}
+        \]
+    </p>
+    <p>
+        Questa formula ci dice che se una moltiplicazione ha la struttura 
+        \[\left(\color{red}{A} \color{black}{} + \color{blue}{B}\color{black}{}\right) \cdot \left(\color{red}{A} \color{black}{} - \color{blue}{B}\color{black}{}\right)\]
+        possiamo usare una "scorciatoia" per i calcoli:         
+    </p>
+
+    <br>
+    <ul>
+        <li>
+            prendiamo il termine \(\color{red}{A}\), lo eleviamo alla seconda
+        </li>
+        <br>
+        <li>
+            gli sottraiamo il termine \(\color{blue}{B}\) elevato alla seconda
+        </li>
+    </ul>
+
+    <br>
+    <hr>
+    <br>
+    <b class="yellow">Scomposizione tramite somma per differenza</b>
+    <br><br>
+    
+        <b>Esempio 1</b>
+        <br>
+        <p class="formula">
+            \[
+                \begin{align*}
+                    25x^6 - 49 = & \color{black}{}\left(\color{red}{5x^3}\color{black}{}\right)^{\color{black}{2}} \color{black}{}- \color{blue}{7}^{\color{black}{2}} \color{black}{} =
+                    \\\\
+                    = \,& \left(\color{red}{5x^3} \color{black}{} + \color{blue}{7}\color{black}{}\right) \cdot \left(\color{red}{5x^3} \color{black}{} - \color{blue}{7}\color{black}{}\right)
+                \end{align*}
+            \]
+        </p>
+        
+        <br>
+        <hr>
+        <br>
+
+        <b>Esempio 2</b>
+        <br>
+        <p class="formula">
+            \[
+                \begin{align*}
+                    36 - 121x^4 = & \color{black}{}\color{red}{6}\color{black}{}^{\color{black}{2}} \color{black}{}- \left(\color{blue}{11x^2}\color{black}{}\right)^{\color{black}{2}} \color{black}{} =
+                    \\\\
+                    = \,& \left(\color{red}{6} \color{black}{} + \color{blue}{11x^2}\color{black}{}\right) \cdot \left(\color{red}{6} \color{black}{} - \color{blue}{11x^2}\color{black}{}\right)
+
+                \end{align*}
+            \]
+        </p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    
+    <h2>Esercizi aggiuntivi</h2>
+    
+    <p>
+        Scomporre i seguenti polinomi:
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(49x^{10} - 9\)
+        </li>
+        <br>
+        <li>
+            \(25x^4 - 1\)
+        </li>
+        <br>
+        <li>
+            \(\dfrac{4}{9}x^2 - 25\)
+        </li>
+        <br>
+        <li>
+            \(81 - x^6\)
+        </li>
+        <br>
+        <li>
+            \(\dfrac{1}{81}x^{10} - \dfrac{4}{25}y^2\)
+        </li>
+    </ul>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ul class="gray">
+        <li>
+            \(
+                \left(7x^5 + 3\right) \cdot \left(7x^5 -3\right)    
+            \)
+        </li>
+        <br>
+        <li>
+            
+            \(
+                \left(5x^2 + 1\right) \cdot \left(5x^2 - 1\right)    
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(\dfrac{2}{3}x + 5\right) \cdot \left(\dfrac{2}{3}x -5\right)    
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(9 + x^3\right) \cdot \left(9 - x^3\right)    
+            \)
+        </li>
+        <br>
+        <li>
+            \(
+                \left(\dfrac{1}{9}x^5 + \dfrac{2}{5}y\right) \cdot \left(\dfrac{1}{9}x^5 - \dfrac{2}{5}y\right)    
+            \)
+        </li>
+    </ul>
+
+    
+    <br>
+    <hr>
+    <br>
+
+</body>
+</html>

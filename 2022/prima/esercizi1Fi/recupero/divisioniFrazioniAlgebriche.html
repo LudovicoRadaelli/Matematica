@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Divisione tra frazioni algebriche e semplificazione incrociata</title>
+</head>
+<body>
+    <h1>Divisione tra frazioni algebriche e semplificazione incrociata</h2>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: pag. 401;
+        <br>
+        <br>
+        <i>Esercizi</i>: pag. 423 dal 309 al 333.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+
+    <p>
+        La divisione tra due frazioni algebriche è equivalente alla moltiplicazione tra il dividendo ed il reciproco del divisore:
+    </p>
+    <p class="grayBackground">
+        \[
+
+            \dfrac{A\left(x\right)}{B\left(x\right)} \color{rgb(15, 157, 88)}{\,\boldsymbol{:}\,}\color{black}{} \dfrac{\color{red}{C\left(x\right)}}{\color{blue}{D\left(x\right)}} = \dfrac{A\left(x\right)}{B\left(x\right)} \color{rgb(15, 157, 88)}{\,\boldsymbol{\cdot}\,} \color{black}{} \dfrac{\color{blue}{D\left(x\right)}}{\color{red}{C\left(x\right)}} 
+        \]
+    </p>
+    <p>
+        In parole semplici, la divisione si "trasforma" in moltiplicazione a patto di invertire numeratore e denominatore del divisore.
+    </p>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        \[
+            \begin{align*}
+                &\dfrac{2x -1}{3x +2} \color{rgb(15, 157, 88)}{\,\boldsymbol{:}\,}\color{black}{} \dfrac{\color{red}{5 + x}}{\color{blue}{x^2}} = 
+                \\\\
+                = \,&
+                \dfrac{2x -1}{3x +2} \color{rgb(15, 157, 88)}{\,\boldsymbol{\cdot}\,}\color{black}{} \dfrac{\color{blue}{x^2}}{\color{red}{5 +x}} =
+                \\\\
+                = \,& \dfrac{\left(2x -1\right) \cdot x^2}{\left(3x +2\right) \cdot \left(5 + x\right)} =
+                \\\\
+                = \,& \dfrac{2x^3 -x^2}{15x +3x^2 +10 +2x} =
+                \\\\
+                = \,& \dfrac{2x^3 -x^2}{3x^2 +17x +10} =
+            \end{align*}
+        \]
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizi aggiuntivi</h2>
+
+    <p>
+        Svolgere le seguenti divisioni tra frazioni algebriche
+    </p>
+    <ol>
+        <li>
+            \[
+                \dfrac{7x -2}{x} \,:\, \dfrac{49x^2 -4}{x^2}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{9x^3 +63x^2 -4x -28}{x -1} \,:\, \dfrac{9x^2 -4}{x^2 - 2x +1}
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ol class="gray">
+        <li>
+            \[
+                \dfrac{x}{7x +2}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                x^2 +6x -7
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <br>
+
+</body>
+</html>

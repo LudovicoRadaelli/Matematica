@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Semplficazione di una frazione algebrica</title>
+</head>
+<body>
+    <h1>Raccoglimento a fattor comune</h2>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: pag. 399-400;
+        <br>
+        <br>
+        <i>Esercizi</i>: pag. 413 dal 79 al 106.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+
+    <p>
+        Alcune frazioni algebriche possono essere <b>semplificate</b>, ovvero riscritte come frazioni algebriche equivalenti più semplici.
+    </p>
+
+    <br>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        Semplifichiamo la frazione algebrica
+        \[ 
+            \dfrac{x^2 +4 -4x}{x^2 -5x +6} =
+        \]
+        Innanzitutto scomponiamo i polinomi al numeratore e denominatore
+        \[
+            = \dfrac{\left(x -2\right)^2}{\left(x - 2\right)\cdot\left(x -3\right)} =
+        \]
+        Ora, esattamente come nel caso delle frazioni numeriche, semplifichiamo i fattori che compaiono sia al numeratore che al denominatore
+        \[
+            = \dfrac{\color{red}{\left(x -2\right)^{\color{black}{\cancel{\color{red}{2}}}}}}{\color{black}{\cancel{\color{red}{\left(x - 2\right)}}}\color{black}{\cdot}\color{blue}{\left(x -3\right)}} \color{black}{} = \dfrac{x-2}{x-3}
+        \]
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizi aggiuntivi</h2>
+
+    <ol>
+        <li>
+            \[
+                \dfrac{9x^2 -4}{3x^4 + 2x^3}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{x^2 + 6x + 5}{x^2 + 2x +1}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{27x^3 - 8}{18x^3 + 12x^2 +8x}
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ol class="gray">
+        <li>
+            \[
+                \dfrac{3x -2}{x^3}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{x +5}{x + 1}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{3x -2}{2x}
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <br>
+
+</body>
+</html>

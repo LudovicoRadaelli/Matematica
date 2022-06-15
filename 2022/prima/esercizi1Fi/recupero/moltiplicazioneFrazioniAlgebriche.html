@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Moltiplicazione tra frazioni algebriche e semplificazione incrociata</title>
+</head>
+<body>
+    <h1>Moltiplicazione tra frazioni algebriche e semplificazione incrociata</h2>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: pag. 401;
+        <br>
+        <br>
+        <i>Esercizi</i>: pag. 420 dal 245 al 272.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+
+    <p>
+        Per moltiplicare due frazioni algebriche si moltiplicano numeratore con numeratore e denominatore con denominatore:
+    </p>
+    <p class="grayBackground">
+        \[
+            \dfrac{A\left(x\right)}{B\left(x\right)} \cdot \dfrac{C\left(x\right)}{D\left(x\right)} = \dfrac{A\left(x\right) \cdot C\left(x\right)}{B\left(x\right) \cdot D\left(x\right)}
+        \]
+    </p>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            \[
+                \begin{align*}
+                    & \dfrac{5x +1}{2x -1} \cdot \dfrac{x^2 +2x -1}{3x -1} = 
+                    \\\\
+                    = \,& \dfrac{\left(5x +1\right)\cdot\left(x^2 +2x -1\right)}{\left(2x -1\right) \cdot \left(3x -1\right)} =
+                    \\\\
+                    = \,& \dfrac{5x^3 +10x^2 -5x +x^2 +2x -1}{6x^2 -2x -3x +1} =
+                    \\\\
+                    = \,& \dfrac{5x^3 +11x^2 -3x -1}{6x^2 -5x +1} 
+                \end{align*}
+            \]
+            come potete i passaggi successivi all'applicazione della regola consistono solamente nello svolgimento di calcoli.
+        </p>
+        
+    </div>
+    
+    <br>
+    <br>
+
+    <p>
+        Così come nel caso numerico, prima di effettuare una moltiplicazione tra frazioni algebriche è opportuno controllare se sia possibile effettuare <b>semplificazioni incrociate</b>.
+    </p>
+    <br>
+    <ul>
+        <li>
+            si scompongono i polinomi ai numeratori e denominatori delle frazioni
+        </li>
+        <li>
+            si semplificano eventuali fattori che figurano sia al numeratore di una fraizone che al denominatore dell'altra
+        </li>
+    </ul>
+    <br>
+
+    <h3>Esempio</h3>
+    <div class="esempi-container">
+        <p>
+            \[
+                \begin{align*}
+                    & \dfrac{x^2 - 25}{4x^2 + 2x^3} \cdot \dfrac{x^9}{x^2 +25 +10x} = 
+                    \\\\
+                    = \,& \dfrac{\color{red}{\left(x +5\right) \color{black}{\cdot \left(x -5\right)}}}{2 \cdot \color{blue}{x^2} \color{black}{} \cdot \left(2 + x\right)} \cdot \dfrac{\color{blue}{x^9}}{\color{red}{\left(x +5\right)^2}}
+                    \\\\
+                    = \,& \dfrac{\color{black}{\cancel{\color{red}{\left(x +5\right)}}} \color{black}{\cdot \left(x -5\right)}}{2 \cdot \cancel{\color{blue}{x^2}} \color{black}{} \cdot \left(2 + x\right)} \cdot \dfrac{\color{blue}{x^{\overset{\color{black}{7}}{\color{black}{\cancel{\color{blue}{9}}}}}}}{\color{red}{\left(x +5\right)^{\color{black}{\cancel{\color{red}{2}}}}}}
+                    \\\\
+                    = \,& \dfrac{x -5}{2 \cdot \left(2 + x\right)} \cdot \dfrac{x^7}{x +5} =
+                    \\\\
+                    = \,& \dfrac{\left(x -5\right) \cdot x^7}{2 \cdot \left(2 + x\right) \cdot \left(x + 5\right)} =
+                    \\\\
+                    = \,& \dfrac{x^8 -5x^7}{\left(4 + 2x\right) \cdot \left(x + 5\right)} =
+                    \\\\
+                    = \,& \dfrac{x^8 -5x^7}{4x +20 +2x^2 +10x} =
+                    \\\\
+                    = \,& \dfrac{x^8 -5x^7}{2x^2 +14x +20} =
+
+                \end{align*}
+            \]
+            
+        </p>
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizi aggiuntivi</h2>
+
+    <p>
+        Svolgere le seguenti moltiplicazioni tra frazioni algebriche
+    </p>
+    <ol>
+        <li>
+            \[
+                \dfrac{\left(1 -x\right)^2}{-25x^3 +25x^2 +x -1} \cdot \dfrac{5x^2 + x}{1 -x}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{9x^4}{25x^2 -4} \cdot \dfrac{25x^2 +4 -20x}{6x^2 +3x}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{3x - x^2}{x^2 +7x +12} \cdot \dfrac{9 -x^2}{x^2}
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <p class="gray">
+        <b>Soluzione</b>
+    </p>
+    <br>
+    <ol class="gray">
+        <li>
+            \[
+                \dfrac{x}{5x -1}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{15x^4 -6x^3}{10x^2 +9x +2}
+            \]
+        </li>
+        <br>
+        <li>
+            \[
+                \dfrac{x^2 -6x +9}{x^2 +4x}
+            \]
+        </li>
+    </ol>
+
+    <br>
+    <br>
+
+</body>
+</html>
