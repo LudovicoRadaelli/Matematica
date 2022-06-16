@@ -21,7 +21,7 @@
 
     <br>
 
-    <h2>1) Formula risolutiva</h2>
+    <h2 id="formulaRisolutiva">1) Formula risolutiva</h2>
     <video src="img/formulaEquazioniSecondoGrado.mp4" controls></video>
     <br>
     <p class="grayBackground">
@@ -838,6 +838,211 @@
     </div>
     
 
+    <br>
+    <hr>
+    <br>
+
+    <h2>8) Segno di un polinomio di II grado: metodo della parabola</h2>
+    <p>
+        Consideriamo il polinomio 
+        \[
+            3x^2 +2x -5
+        \]
+        Il <b>segno</b> di questo polinomio dipende dal valore che assegnamo alla \(x\).
+        <br>
+        <br>
+        Raccogliamo qualche esempio nella taballa che segue
+        <br>
+        <br>
+        <div style="width: 100%; overflow-x:auto">
+            <table style="margin: 0.1rem">
+                <tr>
+                    <th>
+                        \[
+                            \text{valore di}\,\,\,\color{red}{x}
+                        \]
+                    </th>
+                    <th>
+                        \[
+                            \text{valore di}\,\,\, 3\color{red}{x}\color{black}{}^2 +2\color{red}{x}\color{black}{} -5
+                        \]
+                    </th>
+                    <th>
+                        <p>Segno</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                            \color{red}{2}
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            3\cdot\color{red}{2}\color{black}{}^2 +2\cdot\color{red}{2}\color{black}{} -5 = 11
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            \boldsymbol{+}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                            \color{red}{-1}
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            3\cdot\color{red}{\left(-1\right)}\color{black}{}^2 +2\cdot\color{red}{\left(-1\right)}\color{black}{} -5 = -4
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            \boldsymbol{-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                            \color{red}{0}
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            3\cdot\color{red}{0}\color{black}{}^2 +2\cdot\color{red}{0}\color{black}{} -5 = -5
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            \boldsymbol{-}
+                        \]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        \[
+                            \color{red}{-5}
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            3\cdot\color{red}{\left(-5\right)}\color{black}{}^2 +2\cdot\color{red}{\left(-5\right)}\color{black}{} -5 = 110
+                        \]
+                    </td>
+                    <td>
+                        \[
+                            \boldsymbol{+}
+                        \]
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <br>
+    </p>
+    
+
+    <p>
+        Il nostro obiettivo è scoprire quali valori della \(x\) rendono il polinomio
+    </p>
+    <br>
+    <ul>
+        <li>
+            positivo
+        </li>
+        <li>
+            nullo
+        </li>
+        <li>
+            negativo
+        </li>
+    </ul>
+    <br>
+    <p>
+        In altre parole vogliamo <b>studiare il segno</b> del polinomio al variare del valore della \(x\).
+    </p>
+    <br>
+    <p>
+        Per farlo risolviamo l'equazione associata al polinomio e disegnamo la parabola che lo rappresenta:
+    </p>
+    <p>
+        \[
+            \begin{align*}
+                x = \,& \dfrac{-2 \pm \sqrt{2^2 -4 \cdot 3 \cdot \left(-5\right)}}{2 \cdot 3} = 
+                \\\\
+                = \,& \dfrac{-2 \pm \sqrt{64}}{6} = \dfrac{-2 \pm 8}{6} 
+            \end{align*}
+        \]
+        quindi
+        \[
+            \begin{align*}
+                x = \dfrac{-2 + 8}{6} \quad&\text{oppure}\quad x = \dfrac{-2 - 8}{6}
+                \\\\
+                x = 1 \quad&\text{oppure}\quad x = -\dfrac{5}{3}
+            \end{align*}
+        \]
+        di conseguenza la parabola che rappresenta il polinomio è la seguente
+    </p>
+    <br>
+    <img src="img/segnoParabola(1).png" alt="" style="max-width: 300px; width: 100%; margin: auto">
+    <br>
+    <p>
+        A partire da questo grafico è possibile stabilire il segno del polinomio \(3x^2 +2x -5\). Infatti, 
+    </p>
+    <br>
+    <ul>
+        <li>
+            i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: red">sopra</b> l'asse delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{red}{+}}\)
+        </li>
+        <br>
+        <li>
+            i valori della \(x\) in corrispondenza dei quali il grafico si trova <b style="color: blue">sotto</b> l'asse delle \(x\) sono quelli per cui il polinomio ha segno \(\boldsymbol{\color{blue}{-}}\)
+        </li>
+        <br>
+        <li>
+            i valori della \(x\) in corrispondenza dei quali il grafico <b style="color: gray">interseca</b> l'asse delle \(x\) sono quelli per cui il polinomio vale \(\boldsymbol{\color{gray}{0}}\)
+        </li>
+    </ul>
+    <br>
+    <p>
+        Rappresentiamo queste informazioni sul grafico della parabola:
+    </p>
+    <br>
+    <img src="img/segnoParabola(2).png" alt="" style="max-width: 300px; width: 100%; margin: auto;">
+    <br>
+    <p>
+        Possiamo concludere che 
+    </p>
+    <br>
+    <ul>
+        <li>
+            \(3x^2 +2x -5 \lt 0 \quad\)  se
+            <br>
+            <br>
+            \(x \lt -\dfrac{5}{3}\quad\)  oppure \(\quad x \gt 1\)
+        </li>
+        <br>
+        <li>
+            \(3x^2 +2x -5 = 0 \quad\)  se
+            <br>
+            <br>
+            \(x = -\dfrac{5}{3}\quad\)  oppure \(\quad x = 1\)
+        </li>
+        <br>
+        <li>
+            \(3x^2 +2x -5 \gt 0 \quad\)  se
+            <br>
+            <br>
+            \(\dfrac{5}{3} \lt x \lt 1\)
+        </li>
+    </ul>
+
+
+    
 
 
 
