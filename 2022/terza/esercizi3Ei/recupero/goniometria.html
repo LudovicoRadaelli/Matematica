@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Goniometria</title>
+</head>
+<style>
+    #compitiSelector-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    select {
+        display: block;
+        padding: auto; 
+        margin-right: 1rem;
+    }
+
+    #ex-button {
+        margin-left: 1rem;
+        margin-right: 0;
+    }
+
+</style>
+<body>
+    <h1>Goniometria</h1>
+
+    <h2>Riferimenti al libro di testo</h2>
+
+    <p>
+        <i>Teoria</i>: 
+        <br>
+        Capitolo 10: paragrafi 1, 2, 3, 5, 6 da pag. 450 a 469;
+        <br>
+        Capitolo 11: paragrafi 1, 2, 3 da pag. 524 a 530;
+        <br>
+        Capitolo 12: paragrafi 1, 2 da pag. 552 a 558.
+        <br>
+
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Dispense aggiuntive</h2>
+
+    <p>
+        Materiale disponibili <a href="https://ludovicoradaelli.github.io/Matematica/2022/terza/goniometria/index.html">QUI</a>
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2>Esercizi aggiuntivi</h2>
+
+    <p>
+        Tramite questa lista potete accedere a tutti gli esercizi sulla goniometria svolti durante l'anno.
+    </p>
+    <br>
+    <div id="compitiSelector-container">
+        <select id="ex">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="1">12</option>
+            <option value="3">13</option>
+            <option value="4">14</option>
+            <option value="5">15</option>
+            <option value="6">16</option>
+            <option value="7">17</option>
+            <option value="8">18</option>
+            <option value="9">19</option>
+            <option value="10">19</option>
+            <option value="11">20</option>
+            <option value="11">21</option>
+          </select>
+          <button id="ex-button" onclick="vai()">Apri compiti</button>
+    </div>
+
+    <br>
+    <br>
+    <script>
+        function showHint(i) {
+            document.getElementById("hint"+i+"-button").style.display = "none";
+            document.getElementById("hint"+i).style.display = "block";
+        }
+
+        function vai() {
+            let ex = document.getElementById("ex").options;
+            let i = document.getElementById("ex").selectedIndex;
+            console.log(`ex[i]: ${ex[i].index}`)
+            document.location.href=`https://ludovicoradaelli.github.io/Matematica/2022/terza/esercizi3Ei/es${ex[i].index + 1}.html`;
+        }
+
+    </script>
+
+
+</body>
+</html>
